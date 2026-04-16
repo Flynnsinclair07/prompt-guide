@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Studying | PromptGuide</title>
+<meta name="description" content="The best AI prompt for studying any subject. Turn your notes into flashcards, study guides, practice tests, and easy explanations.">
+<link rel="stylesheet" href="/prompt-guide/style.css">
+</head>
+<body>
+<nav>
+  <a href="/prompt-guide/" class="logo">PromptGuide</a>
+  <a href="/prompt-guide/categories.html">All Prompts</a>
+</nav>
+<main>
+  <article>
+    <h1>Best ChatGPT Prompt for Studying</h1>
+    <p class="subtitle">Turn any subject into flashcards, study guides, and practice tests — study smarter, not harder.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-header">
+        <span>The Prompt</span>
+        <button onclick="copyPrompt(this)">Copy</button>
+      </div>
+      <pre class="prompt-text">You are an expert tutor who specializes in making complex topics easy to understand. Help me study for an upcoming exam.
+
+Subject: [e.g. Biology, US History, Calculus, Marketing 101]
+Specific topic or chapter: [e.g. Cell Division, The Civil War, Derivatives, Consumer Behavior]
+My current understanding: [beginner / intermediate / advanced]
+Exam format: [multiple choice / short answer / essay / mixed]
+Time until exam: [e.g. 3 days, 1 week]
+
+What I need:
+1. A concise summary of the key concepts (under 500 words)
+2. 10 flashcard-style Q&A pairs covering the most important facts
+3. 5 practice exam questions in the format of my actual exam
+4. A list of the 3 most commonly tested topics in this subject area
+5. One simple analogy or memory trick for the hardest concept
+
+Requirements:
+- Explain everything like I'm smart but unfamiliar with the topic
+- Highlight terms I should definitely memorize
+- If there are formulas, list them clearly
+- Prioritize what's most likely to be on the exam, not obscure details</pre>
+    </div>
+
+    <section>
+      <h2>How to Use This Prompt</h2>
+      <ol>
+        <li>Copy the prompt and fill in your subject and exam details</li>
+        <li>If you have notes or a textbook chapter, paste the key content after the prompt: "Here are my notes: [paste]"</li>
+        <li>The AI will create a complete study package you can use immediately</li>
+        <li>After the first response, ask "Quiz me on this" — the AI will test you interactively</li>
+      </ol>
+      <p>This works for any subject at any level — high school, college, professional certifications, or self-study.</p>
+    </section>
+
+    <section>
+      <h2>Example Output</h2>
+      <div class="example-box">
+        <p><strong>Key Concepts: Cell Division (Mitosis)</strong></p>
+        <p>Cell division is how one cell becomes two identical cells. The process has four main phases: Prophase (chromosomes condense and become visible), Metaphase (chromosomes line up in the middle), Anaphase (chromosomes pull apart to opposite sides), and Telophase (two new nuclei form). Remember: <strong>PMAT</strong> — Prophase, Metaphase, Anaphase, Telophase.</p>
+        <p><strong>Flashcard #1:</strong></p>
+        <p>Q: What happens during metaphase?<br>A: Chromosomes align along the cell's equator (middle), attached to spindle fibers at their centromeres.</p>
+        <p><strong>Memory trick:</strong> Think of "Meta" as "Middle" — in metaphase, chromosomes line up in the middle.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips to Get Better Results</h2>
+      <ul>
+        <li><strong>Paste your actual notes.</strong> The AI can identify gaps in your understanding and focus on what you're missing.</li>
+        <li><strong>Ask for wrong-answer explanations.</strong> Say "For each practice question, explain why each wrong answer is wrong." This is how top students study.</li>
+        <li><strong>Use the Feynman technique.</strong> After studying, tell the AI: "Let me explain this topic to you. Correct any mistakes." Then explain it in your own words.</li>
+        <li><strong>Space it out.</strong> Come back the next day and say "Quiz me again on yesterday's material" — spaced repetition is proven to improve retention.</li>
+      </ul>
+    </section>
+
+    <section class="tools-section">
+      <h2>Best AI Tools for This</h2>
+      <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+    </section>
+
+    <section>
+      <h2>Related Prompts</h2>
+      <div class="related">
+        <a href="/prompt-guide/prompts/best-chatgpt-prompt-for-writing-a-resume.html">Best Prompt for Writing a Resume</a>
+        <a href="/prompt-guide/prompts/best-chatgpt-prompt-for-meal-planning.html">Best Prompt for Meal Planning</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+</footer>
+<script>
+function copyPrompt(btn) {
+  const text = btn.parentElement.nextElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>

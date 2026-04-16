@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Budgeting | PromptGuide</title>
+<meta name="description" content="The best AI prompt for creating a personal budget. Get a realistic monthly budget, savings plan, and debt payoff strategy tailored to your income.">
+<link rel="stylesheet" href="/prompt-guide/style.css">
+</head>
+<body>
+<nav>
+  <a href="/prompt-guide/" class="logo">PromptGuide</a>
+  <a href="/prompt-guide/categories.html">All Prompts</a>
+</nav>
+<main>
+  <article>
+    <h1>Best ChatGPT Prompt for Budgeting</h1>
+    <p class="subtitle">Get a realistic monthly budget with savings goals and spending categories — tailored to your actual income.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-header">
+        <span>The Prompt</span>
+        <button onclick="copyPrompt(this)">Copy</button>
+      </div>
+      <pre class="prompt-text">You are a certified financial planner who specializes in helping regular people manage their money. Create a monthly budget for me.
+
+My situation:
+- Monthly take-home pay: $[AMOUNT]
+- Other income (side hustles, etc.): $[AMOUNT or none]
+- Monthly rent/mortgage: $[AMOUNT]
+- Car payment: $[AMOUNT or none]
+- Debt: [list debts with balances and minimum payments, or "none"]
+- Dependents: [number of people you support]
+- Location: [city/state — cost of living matters]
+
+My goals:
+- [e.g. save $5,000 emergency fund, pay off credit card, save for a house, just stop overspending]
+- Timeline: [when do you want to hit this goal]
+
+Requirements:
+- Use the 50/30/20 rule as a starting framework, then adjust to my situation
+- Break down every category with specific dollar amounts
+- Include a realistic "fun money" category — don't make me miserable
+- If I have debt, include a payoff strategy (avalanche or snowball, whichever saves me more)
+- Tell me exactly how many months it will take to reach my savings goal
+- Flag any categories where I might be overspending based on averages for my area
+- Keep it simple — no spreadsheets, just clear numbers I can follow</pre>
+    </div>
+
+    <section>
+      <h2>How to Use This Prompt</h2>
+      <ol>
+        <li>Copy the prompt and fill in your real numbers — the AI can't help if the numbers are vague</li>
+        <li>Include all debts with their interest rates if you want a payoff plan</li>
+        <li>Be honest about your income — after taxes, what actually hits your bank account?</li>
+        <li>Paste into ChatGPT or Claude</li>
+        <li>Follow up with: "What are the top 3 things I should cut first to save more?"</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Example Output</h2>
+      <div class="example-box">
+        <p><strong>Monthly Budget — $4,200 Take-Home Pay</strong></p>
+        <p><strong>Needs (50% = $2,100):</strong></p>
+        <ul>
+          <li>Rent: $1,200</li>
+          <li>Utilities: $150</li>
+          <li>Groceries: $350</li>
+          <li>Car payment: $250</li>
+          <li>Car insurance: $100</li>
+          <li>Gas: $50</li>
+        </ul>
+        <p><strong>Wants (30% = $1,260):</strong></p>
+        <ul>
+          <li>Dining out: $200</li>
+          <li>Entertainment/subscriptions: $80</li>
+          <li>Fun money (no questions asked): $150</li>
+          <li>Shopping/personal: $100</li>
+        </ul>
+        <p><strong>Savings & Debt (20% = $840):</strong></p>
+        <ul>
+          <li>Emergency fund: $500/month (goal: $5,000 in 10 months)</li>
+          <li>Credit card extra payment: $340/month (payoff in 8 months)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips to Get Better Results</h2>
+      <ul>
+        <li><strong>Track first, then budget.</strong> If you don't know where your money goes, tell the AI: "I don't know my expenses. Ask me questions to figure them out."</li>
+        <li><strong>Ask for scenarios.</strong> Say "What if I got a $500 raise?" or "What if I cut my food budget by $100?" to see how changes affect your goals.</li>
+        <li><strong>Get a debt payoff comparison.</strong> Ask "Compare avalanche vs snowball for my debts" — it'll show you which method saves more money.</li>
+        <li><strong>Monthly check-in.</strong> Come back each month and say "I overspent on dining by $80 and underspent on gas by $30. Adjust my budget."</li>
+      </ul>
+    </section>
+
+    <section class="tools-section">
+      <h2>Best AI Tools for This</h2>
+      <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+    </section>
+
+    <section>
+      <h2>Related Prompts</h2>
+      <div class="related">
+        <a href="/prompt-guide/prompts/best-chatgpt-prompt-for-writing-a-business-plan.html">Best Prompt for Writing a Business Plan</a>
+        <a href="/prompt-guide/prompts/best-chatgpt-prompt-for-meal-planning.html">Best Prompt for Meal Planning</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+</footer>
+<script>
+function copyPrompt(btn) {
+  const text = btn.parentElement.nextElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>

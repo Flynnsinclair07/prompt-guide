@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Coding | PromptGuide</title>
+<meta name="description" content="The best AI prompt for writing, debugging, and explaining code. Works for Python, JavaScript, and any programming language.">
+<link rel="stylesheet" href="/prompt-guide/style.css">
+</head>
+<body>
+<nav>
+  <a href="/prompt-guide/" class="logo">PromptGuide</a>
+  <a href="/prompt-guide/categories.html">All Prompts</a>
+</nav>
+<main>
+  <article>
+    <h1>Best ChatGPT Prompt for Coding</h1>
+    <p class="subtitle">Write, debug, and understand code faster — works for any programming language.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-header">
+        <span>The Prompt</span>
+        <button onclick="copyPrompt(this)">Copy</button>
+      </div>
+      <pre class="prompt-text">You are a senior software engineer with 15 years of experience. Help me with a coding task.
+
+Language: [Python / JavaScript / Java / C++ / etc.]
+Framework (if any): [React / Django / Node.js / etc.]
+What I'm trying to do: [DESCRIBE THE GOAL IN PLAIN ENGLISH]
+My current code (if any):
+```
+[PASTE YOUR CODE HERE]
+```
+The problem: [what's not working, or what you need built from scratch]
+My skill level: [beginner / intermediate / advanced]
+
+Requirements:
+- Write clean, production-ready code (not just a quick hack)
+- Add brief comments explaining non-obvious logic
+- If there's an error, explain WHY it happened, not just the fix
+- If there are multiple approaches, tell me which one you'd use and why
+- Include example usage showing how to run/test the code
+- Follow best practices for the language (naming conventions, error handling, etc.)</pre>
+    </div>
+
+    <section>
+      <h2>How to Use This Prompt</h2>
+      <ol>
+        <li>Copy the prompt and fill in your language and task</li>
+        <li>Always paste your current code if you have any — the AI needs context</li>
+        <li>Describe the problem in plain English first, then show the error message if there is one</li>
+        <li>Paste into ChatGPT or Claude</li>
+        <li>Test the code it gives you, then come back with: "It works but now I need it to also [next feature]"</li>
+      </ol>
+      <p>The more context you give (error messages, expected vs actual output, what you've tried), the better the answer.</p>
+    </section>
+
+    <section>
+      <h2>Example Output</h2>
+      <div class="example-box">
+        <p><strong>Task:</strong> Python script to scrape product prices from a webpage</p>
+        <p><strong>Response:</strong></p>
+        <pre style="color:#ccc;font-size:13px;">import requests
+from bs4 import BeautifulSoup
+
+def get_product_prices(url):
+    """Fetch and parse product prices from a webpage."""
+    response = requests.get(url, headers={
+        'User-Agent': 'Mozilla/5.0'  # Avoid being blocked
+    })
+    response.raise_for_status()
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    products = []
+
+    for item in soup.select('.product-card'):
+        name = item.select_one('.product-title')
+        price = item.select_one('.product-price')
+        if name and price:
+            products.append({
+                'name': name.text.strip(),
+                'price': price.text.strip()
+            })
+
+    return products</pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips to Get Better Results</h2>
+      <ul>
+        <li><strong>Include error messages.</strong> "It doesn't work" gets a bad answer. "I get TypeError: cannot unpack non-iterable NoneType object on line 14" gets a great one.</li>
+        <li><strong>Ask for explanations.</strong> After getting code, say "Walk me through this line by line" if you want to learn, not just copy.</li>
+        <li><strong>Request tests.</strong> Say "Write unit tests for this function" — catching bugs early saves hours.</li>
+        <li><strong>Iterate.</strong> Build features one at a time. Get the basic version working, then say "Now add error handling" or "Now make it handle edge cases."</li>
+      </ul>
+    </section>
+
+    <section class="tools-section">
+      <h2>Best AI Tools for This</h2>
+      <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+    </section>
+
+    <section>
+      <h2>Related Prompts</h2>
+      <div class="related">
+        <a href="/prompt-guide/prompts/best-chatgpt-prompt-for-writing-a-resume.html">Best Prompt for Writing a Resume</a>
+        <a href="/prompt-guide/prompts/best-chatgpt-prompt-for-studying.html">Best Prompt for Studying</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+</footer>
+<script>
+function copyPrompt(btn) {
+  const text = btn.parentElement.nextElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>
