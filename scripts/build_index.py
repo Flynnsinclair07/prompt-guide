@@ -79,6 +79,29 @@ PROMPTS = [
     ("best-chatgpt-prompt-for-goal-setting", "Goal Setting", "Productivity", "Set goals you'll actually achieve with clear metrics and weekly plans."),
     ("best-chatgpt-prompt-for-habit-building", "Building a Habit", "Productivity", "Build a habit that actually sticks using proven behavior change methods."),
     ("best-chatgpt-prompt-for-meditation-script", "Meditation Scripts", "Productivity", "Get custom guided meditation scripts for sleep, stress, or focus."),
+
+    # Batch 3 additions
+    ("best-chatgpt-prompt-for-book-writing", "Book Writing", "Education", "Outline a novel, develop characters, and write chapters with AI as a partner."),
+    ("best-chatgpt-prompt-for-pitch-deck", "Pitch Deck", "Business", "Build an investor-ready pitch deck with the 10 slides that close rounds."),
+    ("best-chatgpt-prompt-for-press-release", "Press Release", "Marketing", "Write press releases that journalists actually read and cover."),
+    ("best-chatgpt-prompt-for-linkedin-posts", "LinkedIn Posts", "Marketing", "Write LinkedIn posts that get engagement without sounding like an influencer."),
+    ("best-chatgpt-prompt-for-twitter-threads", "Twitter Threads", "Marketing", "Write X/Twitter threads with hooks and pacing that keep people reading."),
+    ("best-chatgpt-prompt-for-tiktok-scripts", "TikTok Scripts", "Marketing", "Write TikTok scripts with hooks that grab attention in 2 seconds."),
+    ("best-chatgpt-prompt-for-newsletter", "Newsletter Writing", "Marketing", "Write newsletters people actually open — for Substack or any list."),
+    ("best-chatgpt-prompt-for-weight-loss", "Weight Loss Plan", "Lifestyle", "Get a realistic, science-based weight loss plan with calories and workouts."),
+    ("best-chatgpt-prompt-for-running-training-plan", "Running Training Plan", "Lifestyle", "Get a custom plan for 5K, 10K, half marathon, or marathon."),
+    ("best-chatgpt-prompt-for-sleep-better", "Sleep Better", "Lifestyle", "Diagnose why you're sleeping badly and get a step-by-step plan to fix it."),
+    ("best-chatgpt-prompt-for-morning-routine", "Morning Routine", "Lifestyle", "Design a morning routine you'll actually keep based on your schedule."),
+    ("best-chatgpt-prompt-for-decluttering", "Decluttering", "Lifestyle", "Declutter your home room-by-room with a realistic plan."),
+    ("best-chatgpt-prompt-for-debt-payoff", "Debt Payoff Plan", "Finance", "Get out of debt faster with a personalized avalanche or snowball plan."),
+    ("best-chatgpt-prompt-for-investing-beginners", "Investing for Beginners", "Finance", "Get the basics of investing — index funds, IRAs, and starting with a few hundred dollars."),
+    ("best-chatgpt-prompt-for-saving-money", "Saving Money", "Finance", "Find hundreds of dollars of savings in your current budget."),
+    ("best-chatgpt-prompt-for-tax-prep", "Tax Prep", "Finance", "Organize for tax season, understand deductions, and decide DIY or CPA."),
+    ("best-chatgpt-prompt-for-road-trip-planning", "Road Trip Planning", "Lifestyle", "Plan a road trip with routes, stops, and daily timing."),
+    ("best-chatgpt-prompt-for-toddler-activities", "Toddler Activities", "Lifestyle", "Age-appropriate activities that keep your toddler engaged."),
+    ("best-chatgpt-prompt-for-homeschooling", "Homeschooling", "Education", "Plan a homeschool curriculum or tackle a tough subject."),
+    ("best-chatgpt-prompt-for-photography-tips", "Photography Tips", "Tech", "Level up your photos with specific, practical advice for your camera."),
+    ("best-chatgpt-prompt-for-logo-design", "Logo Design Brief", "Business", "Write a logo design brief that gets actually useful results."),
 ]
 
 # ===== Build homepage =====
@@ -94,6 +117,16 @@ for slug, title, cat, desc in PROMPTS:
 index_html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Search Console verification (replace content with your verification code) -->
+<meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_CODE">
+<!-- Google Analytics (GA4) - replace G-XXXXXXXXXX with your measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PromptGuide — Best AI Prompts for Every Use Case</title>
@@ -165,6 +198,16 @@ for cat in cat_order:
 categories_html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Search Console verification (replace content with your verification code) -->
+<meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_CODE">
+<!-- Google Analytics (GA4) - replace G-XXXXXXXXXX with your measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){{dataLayer.push(arguments);}}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All AI Prompts — Browse by Category | PromptGuide</title>
