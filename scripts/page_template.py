@@ -5,13 +5,13 @@ TEMPLATE = '''<!DOCTYPE html>
 <head>
 <!-- Google Search Console verification (replace content with your verification code) -->
 <meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_CODE">
-<!-- Google Analytics (GA4) - replace G-XXXXXXXXXX with your measurement ID -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<!-- Google Analytics (GA4) - replace G-1NQKX1S4E6 with your measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1NQKX1S4E6"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){{dataLayer.push(arguments);}}
 gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX');
+gtag('config', 'G-1NQKX1S4E6');
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
