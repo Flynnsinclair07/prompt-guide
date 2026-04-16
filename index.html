@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PromptGuide — Best AI Prompts for Every Use Case</title>
+<meta name="description" content="Free, copy-paste AI prompts for ChatGPT and Claude. Prompts for writing, business, marketing, coding, and more.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">PromptGuide</a>
+  <a href="/categories.html">All Prompts</a>
+</nav>
+<div class="hero">
+  <h1>The Best AI Prompt for Anything</h1>
+  <p>Free, tested prompts for ChatGPT &amp; Claude. Copy, paste, get results.</p>
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search prompts..." oninput="filterCards(this.value)">
+  </div>
+</div>
+<div class="card-grid" id="cardGrid">
+  <a class="card" href="/prompts/best-chatgpt-prompt-for-writing-a-cover-letter.html">
+    <span class="category-tag">Career</span>
+    <h3>Best ChatGPT Prompt for Writing a Cover Letter</h3>
+    <p>Land more interviews with a tailored, professional cover letter in seconds.</p>
+  </a>
+  <a class="card" href="/prompts/best-chatgpt-prompt-for-writing-a-resume.html">
+    <span class="category-tag">Career</span>
+    <h3>Best ChatGPT Prompt for Writing a Resume</h3>
+    <p>Turn your experience into a clean, ATS-friendly resume that gets noticed.</p>
+  </a>
+  <a class="card" href="/prompts/best-chatgpt-prompt-for-meal-planning.html">
+    <span class="category-tag">Lifestyle</span>
+    <h3>Best ChatGPT Prompt for Meal Planning</h3>
+    <p>Get a full week of meals with grocery lists based on your diet and budget.</p>
+  </a>
+  <a class="card" href="/prompts/best-chatgpt-prompt-for-writing-emails.html">
+    <span class="category-tag">Business</span>
+    <h3>Best ChatGPT Prompt for Writing Emails</h3>
+    <p>Professional emails in any tone — cold outreach, follow-ups, or replies.</p>
+  </a>
+  <a class="card" href="/prompts/best-chatgpt-prompt-for-social-media-captions.html">
+    <span class="category-tag">Marketing</span>
+    <h3>Best ChatGPT Prompt for Social Media Captions</h3>
+    <p>Scroll-stopping captions for Instagram, LinkedIn, and Twitter in seconds.</p>
+  </a>
+</div>
+<footer>
+  <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+</footer>
+<script>
+function filterCards(q) {
+  const cards = document.querySelectorAll('.card');
+  q = q.toLowerCase();
+  cards.forEach(c => {
+    const text = c.textContent.toLowerCase();
+    c.style.display = text.includes(q) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>

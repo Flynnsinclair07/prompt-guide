@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Writing Emails | PromptGuide</title>
+<meta name="description" content="The best AI prompt for writing professional emails. Cold outreach, follow-ups, replies, and more — copy paste and send.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">PromptGuide</a>
+  <a href="/categories.html">All Prompts</a>
+</nav>
+<main>
+  <article>
+    <h1>Best ChatGPT Prompt for Writing Emails</h1>
+    <p class="subtitle">Professional emails in any tone — cold outreach, follow-ups, apologies, or replies — done in seconds.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-header">
+        <span>The Prompt</span>
+        <button onclick="copyPrompt(this)">Copy</button>
+      </div>
+      <pre class="prompt-text">You are an expert business communicator. Write an email for me.
+
+Type of email: [cold outreach / follow-up / reply / apology / request / thank you / introduction]
+Who I'm writing to: [their role and relationship to me, e.g. "potential client I met at a conference" or "my manager"]
+Purpose: [what I want to achieve with this email]
+Key points to include: [list 2-3 things that must be mentioned]
+Tone: [formal / friendly / casual / urgent / apologetic]
+
+Context: [any background info that matters, e.g. "we spoke last Tuesday about their marketing budget"]
+
+Requirements:
+- Keep it under 150 words — nobody reads long emails
+- Subject line included
+- Clear call to action at the end
+- No corporate jargon or filler phrases like "I hope this email finds you well"
+- Sound human, not like a template</pre>
+    </div>
+
+    <section>
+      <h2>How to Use This Prompt</h2>
+      <ol>
+        <li>Copy the prompt and fill in the brackets</li>
+        <li>The "context" field is the secret weapon — the more context you give, the more personalized the email sounds</li>
+        <li>Paste into ChatGPT or Claude</li>
+        <li>Read it once, tweak if needed, send</li>
+      </ol>
+      <p>For follow-ups, add: "This is follow-up #[NUMBER]. The last email was sent [DATE] and they haven't responded." The AI will adjust the urgency and angle.</p>
+    </section>
+
+    <section>
+      <h2>Example Output</h2>
+      <div class="example-box">
+        <p><strong>Subject:</strong> Quick question about your Q2 marketing plans</p>
+        <p>Hey Sarah,</p>
+        <p>Great meeting you at the SaaS Connect event last week. Your point about shifting budget from paid to organic stuck with me — we've been helping companies do exactly that.</p>
+        <p>We recently helped a B2B company in your space cut their CAC by 35% by restructuring their content strategy. Figured it might be relevant given what you mentioned about tightening the budget.</p>
+        <p>Would you be open to a 15-minute call this week to see if there's a fit?</p>
+        <p>Best,<br>Alex</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips to Get Better Results</h2>
+      <ul>
+        <li><strong>One email, one ask.</strong> Don't try to do three things in one email. Tell the AI your single goal.</li>
+        <li><strong>Include their name.</strong> Add "Their name is [NAME]" to the context for instant personalization.</li>
+        <li><strong>Chain emails.</strong> Say "They replied with: [paste reply]. Write my response." and the AI keeps the thread going naturally.</li>
+        <li><strong>Ask for options.</strong> Say "Give me 3 different subject lines" or "Give me a short version and a longer version."</li>
+      </ul>
+    </section>
+
+    <section class="tools-section">
+      <h2>Best AI Tools for This</h2>
+      <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+    </section>
+
+    <section>
+      <h2>Related Prompts</h2>
+      <div class="related">
+        <a href="/prompts/best-chatgpt-prompt-for-writing-a-cover-letter.html">Best Prompt for Writing a Cover Letter</a>
+        <a href="/prompts/best-chatgpt-prompt-for-social-media-captions.html">Best Prompt for Social Media Captions</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+</footer>
+<script>
+function copyPrompt(btn) {
+  const text = btn.parentElement.nextElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>

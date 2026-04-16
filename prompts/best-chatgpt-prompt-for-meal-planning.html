@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Meal Planning | PromptGuide</title>
+<meta name="description" content="The best AI prompt for weekly meal planning with grocery lists. Get a full week of meals tailored to your diet, budget, and preferences.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">PromptGuide</a>
+  <a href="/categories.html">All Prompts</a>
+</nav>
+<main>
+  <article>
+    <h1>Best ChatGPT Prompt for Meal Planning</h1>
+    <p class="subtitle">Get a full week of meals with a grocery list — customized to your diet, budget, and schedule.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-header">
+        <span>The Prompt</span>
+        <button onclick="copyPrompt(this)">Copy</button>
+      </div>
+      <pre class="prompt-text">You are a nutritionist and meal prep expert. Create a 7-day meal plan for me.
+
+About me:
+- Diet: [e.g. no restrictions, vegetarian, keto, gluten-free, halal]
+- Cooking skill: [beginner, intermediate, advanced]
+- How many people: [NUMBER]
+- Weekly grocery budget: $[AMOUNT]
+- Time for cooking: [e.g. 30 min max per meal, happy to batch cook on Sundays]
+- Foods I don't like: [LIST ANY]
+- Goals: [e.g. lose weight, build muscle, eat healthier, save money, just need ideas]
+
+Requirements:
+- Plan breakfast, lunch, dinner, and one snack for each day
+- Reuse ingredients across meals to minimize waste and cost
+- Include prep time for each meal
+- End with a consolidated grocery list organized by store section (produce, dairy, meat, pantry)
+- Keep meals simple and realistic — no obscure ingredients
+- Include estimated calories per meal</pre>
+    </div>
+
+    <section>
+      <h2>How to Use This Prompt</h2>
+      <ol>
+        <li>Copy the prompt and fill in your details</li>
+        <li>Be honest about your cooking skill — if you say advanced, you'll get complex recipes</li>
+        <li>The budget matters. $50/week for one person gets very different meals than $150</li>
+        <li>Paste into ChatGPT or Claude</li>
+        <li>Take the grocery list straight to the store</li>
+      </ol>
+      <p>Pro tip: after you get the plan, ask "Can you give me the prep instructions for Sunday batch cooking?" and it'll reorganize everything into a meal prep session.</p>
+    </section>
+
+    <section>
+      <h2>Example Output</h2>
+      <div class="example-box">
+        <p><strong>Monday</strong></p>
+        <ul>
+          <li><strong>Breakfast:</strong> Overnight oats with banana and peanut butter (5 min prep, 350 cal)</li>
+          <li><strong>Lunch:</strong> Chicken and black bean burrito bowl with rice and salsa (20 min, 550 cal)</li>
+          <li><strong>Dinner:</strong> Sheet pan lemon garlic chicken thighs with roasted broccoli and potatoes (10 min prep + 25 min oven, 600 cal)</li>
+          <li><strong>Snack:</strong> Apple with almond butter (150 cal)</li>
+        </ul>
+        <p><strong>Grocery List (partial):</strong></p>
+        <p><em>Produce:</em> 7 bananas, 3 heads broccoli, 5 lbs potatoes, 7 apples, 4 lemons, 1 bag spinach...</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips to Get Better Results</h2>
+      <ul>
+        <li><strong>Tell it what's already in your kitchen.</strong> Add "I already have: rice, olive oil, eggs, basic spices" so it doesn't put those on the grocery list.</li>
+        <li><strong>Ask for substitutions.</strong> "What can I swap the chicken for?" works great for variety.</li>
+        <li><strong>Request a specific cuisine.</strong> Add "Focus on Mexican-inspired meals" or "Mediterranean style" for themed weeks.</li>
+        <li><strong>Scale it.</strong> Once you like a plan, say "Give me the same style for next week with different meals."</li>
+      </ul>
+    </section>
+
+    <section class="tools-section">
+      <h2>Best AI Tools for This</h2>
+      <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+    </section>
+
+    <section>
+      <h2>Related Prompts</h2>
+      <div class="related">
+        <a href="/prompts/best-chatgpt-prompt-for-writing-emails.html">Best Prompt for Writing Emails</a>
+        <a href="/prompts/best-chatgpt-prompt-for-social-media-captions.html">Best Prompt for Social Media Captions</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+  <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+</footer>
+<script>
+function copyPrompt(btn) {
+  const text = btn.parentElement.nextElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>
