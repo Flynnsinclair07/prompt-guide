@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Excel Formulas | PromptGuide</title>
+<meta name="description" content="The best AI prompt for writing Excel formulas. Get VLOOKUP, IF statements, pivot tables, and complex formulas explained and written for you.">
+<link rel="stylesheet" href="/prompt-guide/style.css">
+</head>
+<body>
+<nav><a href="/prompt-guide/" class="logo">PromptGuide</a><a href="/prompt-guide/categories.html">All Prompts</a></nav>
+<main><article>
+<h1>Best ChatGPT Prompt for Excel Formulas</h1>
+<p class="subtitle">Stop Googling Excel formulas — describe what you need in plain English and get the exact formula.</p>
+<div class="prompt-box"><div class="prompt-header"><span>The Prompt</span><button onclick="copyPrompt(this)">Copy</button></div>
+<pre class="prompt-text">You are an Excel expert. Help me write a formula.
+
+What I'm trying to do: [DESCRIBE IN PLAIN ENGLISH, e.g. "look up a product name in column A and return the price from column C"]
+My data looks like: [describe your columns, e.g. "Column A has product names, Column B has quantities, Column C has prices"]
+Sheet name (if relevant): [e.g. "Sheet1", "Sales Data"]
+Excel version: [Excel 365 / Excel 2019 / Google Sheets]
+
+Requirements:
+- Give me the exact formula I can paste into a cell
+- Explain what each part of the formula does in simple terms
+- If there's a simpler way to do it, show me both options
+- Tell me which cell to put the formula in
+- Warn me about common mistakes with this formula
+- If my approach is wrong, suggest a better way to structure my data</pre>
+</div>
+<section><h2>How to Use This Prompt</h2>
+<ol><li>Describe your problem in plain English — you don't need to know any formula names</li><li>Tell it what your columns contain so it can reference the right cells</li><li>Mention your Excel version — some formulas only work in newer versions</li><li>Paste the formula it gives you directly into your spreadsheet</li></ol></section>
+<section><h2>Example Output</h2><div class="example-box">
+<p><strong>Task:</strong> "I want to calculate total sales by multiplying quantity times price, but only for orders over $100"</p>
+<p><strong>Formula:</strong></p>
+<pre style="color:#ccc;font-size:13px;">=SUMPRODUCT((B2:B100*C2:C100)*(B2:B100*C2:C100>100))</pre>
+<p><strong>Explanation:</strong> This multiplies each quantity (column B) by its price (column C), but only includes rows where that product exceeds $100. SUMPRODUCT handles the array math without needing Ctrl+Shift+Enter.</p>
+</div></section>
+<section><h2>Tips to Get Better Results</h2>
+<ul><li><strong>Paste sample data.</strong> Show 3-4 rows of your actual data and the AI will write a more accurate formula.</li>
+<li><strong>Ask for error handling.</strong> Say "What if some cells are blank?" — the AI will add IFERROR or similar protection.</li>
+<li><strong>Chain formulas.</strong> After the first one works, say "Now I also need to..." and build on it.</li>
+<li><strong>Ask for Google Sheets alternatives.</strong> Some Excel formulas don't work in Sheets — specify which you're using.</li></ul></section>
+<section class="tools-section"><h2>Best AI Tools for This</h2>
+<a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+<a href="https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide-20&linkCode=ur2&camp=1789&creative=9325&index=books&keywords=Excel+formulas+guide" target="_blank" rel="noopener">Excel Books on Amazon</a>
+<a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></section>
+<section><h2>Related Prompts</h2><div class="related">
+<a href="/prompt-guide/prompts/best-chatgpt-prompt-for-coding.html">Best Prompt for Coding</a>
+<a href="/prompt-guide/prompts/best-chatgpt-prompt-for-budgeting.html">Best Prompt for Budgeting</a>
+</div></section>
+</article></main>
+<footer><p>&copy; 2026 PromptGuide. AI prompts for every use case.</p></footer>
+<script>function copyPrompt(btn){const text=btn.parentElement.nextElementSibling.textContent;navigator.clipboard.writeText(text).then(()=>{btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',2000)});}</script>
+</body></html>
