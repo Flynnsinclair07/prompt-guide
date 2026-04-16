@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for SQL Queries | PromptGuide</title>
+<meta name="description" content="Write, debug, and optimize SQL queries — for any database (PostgreSQL, MySQL, SQL Server, SQLite, BigQuery).">
+<link rel="stylesheet" href="/prompt-guide/style.css">
+</head>
+<body>
+<nav><a href="/prompt-guide/" class="logo">PromptGuide</a><a href="/prompt-guide/categories.html">All Prompts</a></nav>
+<main><article>
+<h1>Best ChatGPT Prompt for SQL Queries</h1>
+<p class="subtitle">Write, debug, and optimize SQL queries — for any database (PostgreSQL, MySQL, SQL Server, SQLite, BigQuery).</p>
+<div class="prompt-box"><div class="prompt-header"><span>The Prompt</span><button onclick="copyPrompt(this)">Copy</button></div>
+<pre class="prompt-text">You are a SQL expert and database administrator. Help me write or fix a SQL query.
+
+Database: [PostgreSQL / MySQL / SQL Server / SQLite / BigQuery / Snowflake]
+What I'm trying to do: [DESCRIBE THE RESULT YOU WANT IN PLAIN ENGLISH]
+My tables:
+```
+[TABLE 1]: columns (column1 type, column2 type, ...)
+[TABLE 2]: columns (column1 type, column2 type, ...)
+```
+Sample data (3-5 rows per table):
+[PASTE SAMPLE]
+My current query (if any):
+```sql
+[PASTE QUERY]
+```
+The problem: [wrong result / error message / too slow]
+
+Requirements:
+- Write the correct query with proper formatting
+- Explain what each JOIN, WHERE, and aggregate does
+- Warn about NULL handling if relevant
+- Suggest indexes if the query would be slow on large tables
+- If my approach is off, suggest a better structure
+- Show the expected output given my sample data</pre>
+</div>
+<section><h2>How to Use This Prompt</h2><ol><li>Paste your actual table structure with data types — guessing leads to wrong queries</li><li>Include 3-5 sample rows so the AI knows what the data actually looks like</li><li>For slow queries, paste EXPLAIN output if you have it</li><li>Specify your database engine — syntax differs across PostgreSQL, MySQL, and SQL Server</li></ol></section>
+<section><h2>Example Output</h2><div class="example-box"><p><strong>Task:</strong> Find customers who bought in January but not February</p>
+<pre style="color:#ccc;font-size:13px;">SELECT c.customer_id, c.name
+FROM customers c
+WHERE EXISTS (
+  SELECT 1 FROM orders o
+  WHERE o.customer_id = c.customer_id
+    AND o.order_date >= '2026-01-01'
+    AND o.order_date &lt; '2026-02-01'
+)
+AND NOT EXISTS (
+  SELECT 1 FROM orders o
+  WHERE o.customer_id = c.customer_id
+    AND o.order_date >= '2026-02-01'
+    AND o.order_date &lt; '2026-03-01'
+);</pre>
+<p><strong>Explanation:</strong> The EXISTS clause is typically faster than LEFT JOIN + NULL check for 'has X but not Y' queries on large tables.</p></div></section>
+<section><h2>Tips to Get Better Results</h2><ul><li><strong>Use CTEs for clarity.</strong> Ask 'Rewrite with CTEs to make this readable.'</li><li><strong>Optimize by stages.</strong> For slow queries, ask 'What indexes would speed this up?' then 'Can the query itself be rewritten to avoid the slow part?'</li><li><strong>Test with LIMIT.</strong> Always add LIMIT 10 when testing. Ask the AI to remove it once correct.</li><li><strong>Understand the plan.</strong> Ask 'Explain the query execution plan' for queries hitting production.</li></ul></section>
+<section class="tools-section"><h2>Best AI Tools for This</h2>
+<a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+<a href="https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide-20&linkCode=ur2&camp=1789&creative=9325&keywords=SQL+database+book+guide" target="_blank" rel="noopener">SQL Books on Amazon</a>
+<a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></section>
+<section><h2>Related Prompts</h2><div class="related"><a href="/prompt-guide/prompts/best-chatgpt-prompt-for-python-code.html">Python Code</a><a href="/prompt-guide/prompts/best-chatgpt-prompt-for-excel-formulas.html">Excel Formulas</a></div></section>
+</article></main>
+<footer>
+<p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+<p style="margin-top:8px;">
+<a href="/prompt-guide/about.html" style="color:#888;margin-right:16px;">About</a>
+<a href="/prompt-guide/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
+<a href="/prompt-guide/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
+</p>
+</footer>
+<script>function copyPrompt(btn){const text=btn.parentElement.nextElementSibling.textContent;navigator.clipboard.writeText(text).then(()=>{btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',2000)});}</script>
+</body></html>

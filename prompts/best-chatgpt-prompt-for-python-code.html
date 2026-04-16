@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Python Code | PromptGuide</title>
+<meta name="description" content="Write, debug, and understand Python scripts — for automation, data analysis, web scraping, and more.">
+<link rel="stylesheet" href="/prompt-guide/style.css">
+</head>
+<body>
+<nav><a href="/prompt-guide/" class="logo">PromptGuide</a><a href="/prompt-guide/categories.html">All Prompts</a></nav>
+<main><article>
+<h1>Best ChatGPT Prompt for Python Code</h1>
+<p class="subtitle">Write, debug, and understand Python scripts — for automation, data analysis, web scraping, and more.</p>
+<div class="prompt-box"><div class="prompt-header"><span>The Prompt</span><button onclick="copyPrompt(this)">Copy</button></div>
+<pre class="prompt-text">You are a senior Python developer with 15 years of experience. Help me with a Python task.
+
+What I'm trying to do: [DESCRIBE THE GOAL IN PLAIN ENGLISH]
+Python version: [3.10 / 3.11 / 3.12 / don't know]
+Libraries allowed: [list any restrictions, or 'anything on PyPI']
+My current code (if any):
+```python
+[PASTE YOUR CODE]
+```
+The problem: [what's not working, or what needs to be built]
+Expected input format: [what the script receives]
+Expected output format: [what the script should produce]
+My skill level: [beginner / intermediate / advanced]
+
+Requirements:
+- Write clean, Pythonic code (follow PEP 8)
+- Use type hints for function signatures
+- Add docstrings for functions
+- Include error handling for edge cases (empty input, missing files, network errors)
+- Show an example of running the code with sample input
+- If there's a simpler/more efficient approach, mention it
+- Use the standard library when possible — only pull in pip packages when necessary</pre>
+</div>
+<section><h2>How to Use This Prompt</h2><ol><li>Describe what the script should do end-to-end, not just the next step</li><li>Paste error messages fully — the AI can usually diagnose from the traceback</li><li>For data scripts, paste 2-3 sample rows of your real data</li><li>For automation scripts, describe what you currently do manually step by step</li></ol></section>
+<section><h2>Example Output</h2><div class="example-box"><p><strong>Task:</strong> Read a CSV of transactions and produce a monthly summary</p>
+<pre style="color:#ccc;font-size:13px;">import csv
+from collections import defaultdict
+from datetime import datetime
+
+def summarize_by_month(csv_path: str) -> dict[str, float]:
+    """Sum transaction amounts by YYYY-MM month."""
+    totals: dict[str, float] = defaultdict(float)
+    with open(csv_path, newline='') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            date = datetime.strptime(row['date'], '%Y-%m-%d')
+            key = date.strftime('%Y-%m')
+            totals[key] += float(row['amount'])
+    return dict(sorted(totals.items()))
+
+if __name__ == '__main__':
+    summary = summarize_by_month('transactions.csv')
+    for month, total in summary.items():
+        print(f"{month}: ${total:,.2f}")</pre></div></section>
+<section><h2>Tips to Get Better Results</h2><ul><li><strong>Ask for tests.</strong> Say 'Write pytest tests for this function' to catch bugs early.</li><li><strong>Explain before rewriting.</strong> For code you don't understand, say 'Explain this script line by line.'</li><li><strong>Compare approaches.</strong> Ask 'Is there a pandas way and a vanilla Python way? Show me both with tradeoffs.'</li><li><strong>Small scripts.</strong> For one-off tasks, say 'Write the shortest Python that does this, no error handling' — save yourself time.</li></ul></section>
+<section class="tools-section"><h2>Best AI Tools for This</h2>
+<a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+<a href="https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide-20&linkCode=ur2&camp=1789&creative=9325&keywords=Python+programming+book+beginners" target="_blank" rel="noopener">Python Books on Amazon</a>
+<a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></section>
+<section><h2>Related Prompts</h2><div class="related"><a href="/prompt-guide/prompts/best-chatgpt-prompt-for-coding.html">Coding</a><a href="/prompt-guide/prompts/best-chatgpt-prompt-for-excel-formulas.html">Excel Formulas</a></div></section>
+</article></main>
+<footer>
+<p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
+<p style="margin-top:8px;">
+<a href="/prompt-guide/about.html" style="color:#888;margin-right:16px;">About</a>
+<a href="/prompt-guide/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
+<a href="/prompt-guide/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
+</p>
+</footer>
+<script>function copyPrompt(btn){const text=btn.parentElement.nextElementSibling.textContent;navigator.clipboard.writeText(text).then(()=>{btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',2000)});}</script>
+</body></html>
