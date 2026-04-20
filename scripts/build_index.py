@@ -161,7 +161,7 @@ PROMPTS = [
 # ===== Build homepage =====
 cards_html = ""
 for slug, title, cat, desc in PROMPTS:
-    cards_html += f'''  <a class="card" href="/prompt-guide/prompts/{slug}.html">
+    cards_html += f'''  <a class="card" href="/prompts/{slug}.html">
     <span class="category-tag">{cat}</span>
     <h3>{title}</h3>
     <p>{desc}</p>
@@ -185,12 +185,12 @@ gtag('config', 'G-1NQKX1S4E6');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PromptGuide — Best AI Prompts for Every Use Case</title>
 <meta name="description" content="Free, copy-paste AI prompts for ChatGPT and Claude. {len(PROMPTS)}+ prompts for writing, business, marketing, coding, and more.">
-<link rel="stylesheet" href="/prompt-guide/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <nav>
-  <a href="/prompt-guide/" class="logo">PromptGuide</a>
-  <a href="/prompt-guide/categories.html">All Prompts</a>
+  <a href="/" class="logo">PromptGuide</a>
+  <a href="/categories.html">All Prompts</a>
 </nav>
 <div class="hero">
   <h1>The Best AI Prompt for Anything</h1>
@@ -204,9 +204,9 @@ gtag('config', 'G-1NQKX1S4E6');
 <footer>
 <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
 <p style="margin-top:8px;">
-<a href="/prompt-guide/about.html" style="color:#888;margin-right:16px;">About</a>
-<a href="/prompt-guide/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
-<a href="/prompt-guide/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
+<a href="/about.html" style="color:#888;margin-right:16px;">About</a>
+<a href="/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
+<a href="/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
 </p>
 </footer>
 <script>
@@ -240,7 +240,7 @@ for cat in cat_order:
         continue
     items = ""
     for slug, title in by_cat[cat]:
-        items += f'        <li><a href="/prompt-guide/prompts/{slug}.html">{title}</a></li>\n'
+        items += f'        <li><a href="/prompts/{slug}.html">{title}</a></li>\n'
     cat_sections += f'''    <section>
       <h2>{cat}</h2>
       <ul>
@@ -266,12 +266,12 @@ gtag('config', 'G-1NQKX1S4E6');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All AI Prompts — Browse by Category | PromptGuide</title>
 <meta name="description" content="Browse all {len(PROMPTS)} AI prompts by category — career, business, marketing, education, lifestyle, finance, tech, and more. Free to copy and paste.">
-<link rel="stylesheet" href="/prompt-guide/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <nav>
-  <a href="/prompt-guide/" class="logo">PromptGuide</a>
-  <a href="/prompt-guide/categories.html">All Prompts</a>
+  <a href="/" class="logo">PromptGuide</a>
+  <a href="/categories.html">All Prompts</a>
 </nav>
 <main>
   <article>
@@ -283,9 +283,9 @@ gtag('config', 'G-1NQKX1S4E6');
 <footer>
 <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
 <p style="margin-top:8px;">
-<a href="/prompt-guide/about.html" style="color:#888;margin-right:16px;">About</a>
-<a href="/prompt-guide/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
-<a href="/prompt-guide/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
+<a href="/about.html" style="color:#888;margin-right:16px;">About</a>
+<a href="/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
+<a href="/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
 </p>
 </footer>
 </body>
@@ -296,7 +296,7 @@ with open('categories.html', 'w') as f:
     f.write(categories_html)
 
 # ===== Build sitemap =====
-base = "https://flynnsinclair07.github.io/prompt-guide"
+base = "https://snipprompts.com"
 date = "2026-04-16"
 
 lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

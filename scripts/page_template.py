@@ -17,10 +17,10 @@ gtag('config', 'G-1NQKX1S4E6');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title} | PromptGuide</title>
 <meta name="description" content="{meta_description}">
-<link rel="stylesheet" href="/prompt-guide/style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<nav><a href="/prompt-guide/" class="logo">PromptGuide</a><a href="/prompt-guide/categories.html">All Prompts</a></nav>
+<nav><a href="/" class="logo">PromptGuide</a><a href="/categories.html">All Prompts</a></nav>
 <main><article>
 <h1>{title}</h1>
 <p class="subtitle">{subtitle}</p>
@@ -39,9 +39,9 @@ gtag('config', 'G-1NQKX1S4E6');
 <footer>
 <p>&copy; 2026 PromptGuide. AI prompts for every use case.</p>
 <p style="margin-top:8px;">
-<a href="/prompt-guide/about.html" style="color:#888;margin-right:16px;">About</a>
-<a href="/prompt-guide/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
-<a href="/prompt-guide/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
+<a href="/about.html" style="color:#888;margin-right:16px;">About</a>
+<a href="/privacy.html" style="color:#888;margin-right:16px;">Privacy</a>
+<a href="/affiliate-disclosure.html" style="color:#888;">Affiliate Disclosure</a>
 </p>
 </footer>
 <script>function copyPrompt(btn){{const text=btn.parentElement.nextElementSibling.textContent;navigator.clipboard.writeText(text).then(()=>{{btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',2000)}});}}</script>
@@ -52,7 +52,7 @@ def make_page(slug, title, subtitle, prompt, how_to_use, example_output, tips, a
     """Create a prompt page file."""
     amazon_link = f"https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide-20&linkCode=ur2&camp=1789&creative=9325&keywords={amazon_keywords}"
     meta_description = subtitle[:160]
-    related_html = "".join(f'<a href="/prompt-guide/prompts/{r[0]}.html">{r[1]}</a>' for r in related)
+    related_html = "".join(f'<a href="/prompts/{r[0]}.html">{r[1]}</a>' for r in related)
     how_to_use_html = "<ol>" + "".join(f"<li>{step}</li>" for step in how_to_use) + "</ol>"
     tips_html = "".join(f"<li>{tip}</li>" for tip in tips)
 

@@ -4,7 +4,7 @@ import re
 import json
 from pathlib import Path
 
-BASE_URL = "https://flynnsinclair07.github.io/prompt-guide"
+BASE_URL = "https://snipprompts.com"
 SITE_NAME = "PromptGuide"
 
 def build_schema(title, description, slug, h1):
