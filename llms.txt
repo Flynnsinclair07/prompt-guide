@@ -1,0 +1,172 @@
+# SnipPrompts
+
+> Free, tested AI prompts for ChatGPT and Claude. Copy-paste prompts for writing, business, marketing, career, education, and everyday tasks.
+
+## About
+
+- [Home](https://snipprompts.com/): Browse 134+ AI prompts
+- [All Prompts](https://snipprompts.com/categories.html): Full prompt catalog by category
+- [About](https://snipprompts.com/about.html): What SnipPrompts is and how it works
+- [Affiliate Disclosure](https://snipprompts.com/affiliate-disclosure.html): Transparency about affiliate links
+- [Privacy](https://snipprompts.com/privacy.html): Privacy policy
+
+## AI Art
+
+- [Midjourney Prompts](https://snipprompts.com/prompts/best-chatgpt-prompt-for-midjourney.html): Generate detailed Midjourney prompts that produce stunning AI images.
+
+## Business
+
+- [Writing Emails](https://snipprompts.com/prompts/best-chatgpt-prompt-for-writing-emails.html): Professional emails in any tone — cold outreach, follow-ups, or replies.
+- [Writing a Business Plan](https://snipprompts.com/prompts/best-chatgpt-prompt-for-writing-a-business-plan.html): Get a complete, investor-ready business plan with strategy and financials.
+- [Naming a Business](https://snipprompts.com/prompts/best-chatgpt-prompt-for-naming-a-business.html): Generate brandable, memorable business names with available domains.
+- [Negotiation](https://snipprompts.com/prompts/best-chatgpt-prompt-for-negotiation.html): Get a negotiation strategy, scripts, and responses for any deal.
+- [Product Descriptions](https://snipprompts.com/prompts/best-chatgpt-prompt-for-product-descriptions.html): Write product descriptions that convert for Amazon, Shopify, or Etsy.
+- [Real Estate Listings](https://snipprompts.com/prompts/best-chatgpt-prompt-for-real-estate-listings.html): Write property descriptions that make buyers schedule a showing.
+- [Amazon FBA](https://snipprompts.com/prompts/best-chatgpt-prompt-for-amazon-fba.html): Product research, listing optimization, and launch strategy for Amazon.
+- [Sales Pitch](https://snipprompts.com/prompts/best-chatgpt-prompt-for-sales-pitch.html): Write sales pitches that close deals — cold, elevator, or discovery calls.
+- [Side Hustle Ideas](https://snipprompts.com/prompts/best-chatgpt-prompt-for-side-hustle-ideas.html): Get realistic side hustle ideas based on your skills and time.
+- [Pitch Deck](https://snipprompts.com/prompts/best-chatgpt-prompt-for-pitch-deck.html): Build an investor-ready pitch deck with the 10 slides that close rounds.
+- [Logo Design Brief](https://snipprompts.com/prompts/best-chatgpt-prompt-for-logo-design.html): Write a logo design brief that gets actually useful results.
+- [Grant Writing](https://snipprompts.com/prompts/best-chatgpt-prompt-for-grant-writing.html): Write grant proposals that win funding for nonprofits and projects.
+- [Online Course Outline](https://snipprompts.com/prompts/best-chatgpt-prompt-for-online-course-outline.html): Design an online course students actually finish.
+- [Etsy Listing](https://snipprompts.com/prompts/best-chatgpt-prompt-for-etsy-listing.html): Write Etsy listings that rank in search and convert buyers.
+- [Shopify Store Setup](https://snipprompts.com/prompts/best-chatgpt-prompt-for-shopify-store.html): Plan and launch a Shopify store with a 30-day roadmap.
+- [Print on Demand](https://snipprompts.com/prompts/best-chatgpt-prompt-for-print-on-demand.html): Find winning POD niches and launch plans.
+- [Freelance Proposal](https://snipprompts.com/prompts/best-chatgpt-prompt-for-freelance-proposal.html): Write Upwork and cold freelance proposals that get responses.
+- [Consulting Proposal](https://snipprompts.com/prompts/best-chatgpt-prompt-for-consulting-proposal.html): Write consulting proposals that close 5-figure engagements.
+- [Customer Survey](https://snipprompts.com/prompts/best-chatgpt-prompt-for-customer-survey.html): Write survey questions that produce actionable insights.
+- [Pricing Strategy](https://snipprompts.com/prompts/best-chatgpt-prompt-for-pricing-strategy.html): Set the right price without leaving money on the table.
+- [Customer Service Reply](https://snipprompts.com/prompts/best-chatgpt-prompt-for-customer-service-reply.html): Write customer service replies that solve problems and calm customers.
+- [Icebreakers](https://snipprompts.com/prompts/best-chatgpt-prompt-for-icebreakers.html): Get icebreakers that don't suck for meetings and workshops.
+- [Sales Cold Call Script](https://snipprompts.com/prompts/best-chatgpt-prompt-for-sales-cold-call.html): Write cold call scripts that book meetings.
+- [Slide Deck](https://snipprompts.com/prompts/best-chatgpt-prompt-for-slide-deck.html): Structure a slide deck that holds attention and moves the room.
+- [Nonprofit Donation Appeal](https://snipprompts.com/prompts/best-chatgpt-prompt-for-nonprofit-appeal.html): Write donation appeals that move people to give.
+
+## Career
+
+- [Writing a Cover Letter](https://snipprompts.com/prompts/best-chatgpt-prompt-for-writing-a-cover-letter.html): Land more interviews with a tailored, professional cover letter in seconds.
+- [Writing a Resume](https://snipprompts.com/prompts/best-chatgpt-prompt-for-writing-a-resume.html): Turn your experience into a clean, ATS-friendly resume that gets noticed.
+- [LinkedIn Profile](https://snipprompts.com/prompts/best-chatgpt-prompt-for-linkedin-profile.html): Optimize your headline, summary, and experience to attract recruiters.
+- [Job Interview Prep](https://snipprompts.com/prompts/best-chatgpt-prompt-for-job-interview-prep.html): Practice questions, STAR answers, and company research for any role.
+- [Resignation Letter](https://snipprompts.com/prompts/best-chatgpt-prompt-for-resignation-letter.html): Write a professional resignation letter that protects your reputation.
+- [Performance Review](https://snipprompts.com/prompts/best-chatgpt-prompt-for-performance-review.html): Write a self-review that captures impact, or review your report clearly.
+- [Resume Bullets](https://snipprompts.com/prompts/best-chatgpt-prompt-for-resume-bullets.html): Turn boring duties into resume bullets with numbers and impact.
+- [Networking Email](https://snipprompts.com/prompts/best-chatgpt-prompt-for-networking-email.html): Write cold networking emails that get responses.
+- [Professional Bio](https://snipprompts.com/prompts/best-chatgpt-prompt-for-slide-bio.html): Write a professional bio in 3 lengths for any use.
+
+## Education
+
+- [Studying](https://snipprompts.com/prompts/best-chatgpt-prompt-for-studying.html): Turn any subject into flashcards, study guides, and practice tests.
+- [Essay Writing](https://snipprompts.com/prompts/best-chatgpt-prompt-for-essay-writing.html): Get well-structured essays with strong thesis and supporting arguments.
+- [Learning a Language](https://snipprompts.com/prompts/best-chatgpt-prompt-for-learning-a-language.html): Practice conversations and build vocabulary with a free AI language tutor.
+- [Book Summaries](https://snipprompts.com/prompts/best-chatgpt-prompt-for-book-summary.html): Get the key ideas and takeaways from any book in minutes.
+- [Lesson Plans](https://snipprompts.com/prompts/best-chatgpt-prompt-for-lesson-plans.html): Generate detailed, standards-aligned lesson plans for any grade and subject.
+- [Research Papers](https://snipprompts.com/prompts/best-chatgpt-prompt-for-research-paper.html): Plan, outline, and structure a research paper with academic polish.
+- [Creative Writing](https://snipprompts.com/prompts/best-chatgpt-prompt-for-creative-writing.html): Use AI as a creative writing partner for stories, characters, and plots.
+- [Book Writing](https://snipprompts.com/prompts/best-chatgpt-prompt-for-book-writing.html): Outline a novel, develop characters, and write chapters with AI as a partner.
+- [Homeschooling](https://snipprompts.com/prompts/best-chatgpt-prompt-for-homeschooling.html): Plan a homeschool curriculum or tackle a tough subject.
+- [Personal Statement](https://snipprompts.com/prompts/best-chatgpt-prompt-for-personal-statement.html): Write a college or grad school personal statement that stands out.
+- [Scholarship Essay](https://snipprompts.com/prompts/best-chatgpt-prompt-for-scholarship-essay.html): Write scholarship essays that win — with story and specific details.
+- [Medical School Application](https://snipprompts.com/prompts/best-chatgpt-prompt-for-medical-school-admission.html): Craft a med school application with personal statement and secondaries.
+- [Law School Application](https://snipprompts.com/prompts/best-chatgpt-prompt-for-law-school-admission.html): Write a law school personal statement, diversity statement, and addenda.
+- [MBA Application](https://snipprompts.com/prompts/best-chatgpt-prompt-for-mba-application.html): Write MBA application essays that win at top programs.
+- [Writing a Poem](https://snipprompts.com/prompts/best-chatgpt-prompt-for-poem.html): Write a poem for any occasion with image, rhythm, and voice.
+- [Song Lyrics](https://snipprompts.com/prompts/best-chatgpt-prompt-for-song-lyrics.html): Write song lyrics with hook and emotional arc for any genre.
+- [Children's Book](https://snipprompts.com/prompts/best-chatgpt-prompt-for-children-book.html): Draft a children's book with premise, arc, and page breakdown.
+- [Short Story](https://snipprompts.com/prompts/best-chatgpt-prompt-for-short-story.html): Draft a short story with strong structure in under 5,000 words.
+- [Debate Argument](https://snipprompts.com/prompts/best-chatgpt-prompt-for-debate-argument.html): Build a debate argument with evidence and rebuttals.
+- [Book Club Questions](https://snipprompts.com/prompts/best-chatgpt-prompt-for-book-club-questions.html): Generate book club discussion questions that go deep.
+
+## Finance
+
+- [Budgeting](https://snipprompts.com/prompts/best-chatgpt-prompt-for-budgeting.html): A realistic monthly budget with savings goals tailored to your income.
+- [Car Buying](https://snipprompts.com/prompts/best-chatgpt-prompt-for-car-buying.html): Pick the right car, negotiate the best price, and avoid dealer tricks.
+- [Debt Payoff Plan](https://snipprompts.com/prompts/best-chatgpt-prompt-for-debt-payoff.html): Get out of debt faster with a personalized avalanche or snowball plan.
+- [Investing for Beginners](https://snipprompts.com/prompts/best-chatgpt-prompt-for-investing-beginners.html): Get the basics of investing — index funds, IRAs, and starting with a few hundred dollars.
+- [Saving Money](https://snipprompts.com/prompts/best-chatgpt-prompt-for-saving-money.html): Find hundreds of dollars of savings in your current budget.
+- [Tax Prep](https://snipprompts.com/prompts/best-chatgpt-prompt-for-tax-prep.html): Organize for tax season, understand deductions, and decide DIY or CPA.
+- [Stock Analysis](https://snipprompts.com/prompts/best-chatgpt-prompt-for-stock-analysis.html): Analyze a stock's fundamentals, competition, and risks.
+- [Retirement Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-retirement-planning.html): Build a retirement roadmap with savings targets and projections.
+- [Credit Score](https://snipprompts.com/prompts/best-chatgpt-prompt-for-credit-score.html): Get a specific plan to raise your credit score.
+
+## Lifestyle
+
+- [Meal Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-meal-planning.html): Get a full week of meals with grocery lists based on your diet and budget.
+- [Recipes](https://snipprompts.com/prompts/best-chatgpt-prompt-for-recipes.html): Get recipes customized to what's in your fridge and your dietary needs.
+- [Workout Plan](https://snipprompts.com/prompts/best-chatgpt-prompt-for-workout-plan.html): Get a custom gym or home routine based on your goals and schedule.
+- [Travel Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-travel-planning.html): Get a complete day-by-day travel itinerary with activities and budget.
+- [Dating Profile](https://snipprompts.com/prompts/best-chatgpt-prompt-for-dating-profile.html): Write a dating profile that sounds like you and gets more matches.
+- [Gift Ideas](https://snipprompts.com/prompts/best-chatgpt-prompt-for-gift-ideas.html): Personalized gift ideas for any person, budget, and occasion.
+- [Birthday Messages](https://snipprompts.com/prompts/best-chatgpt-prompt-for-birthday-message.html): Thoughtful, personal birthday messages for anyone in your life.
+- [Wedding Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-wedding-planning.html): A detailed checklist, vendor questions, and timeline for your big day.
+- [Wedding Speech](https://snipprompts.com/prompts/best-chatgpt-prompt-for-wedding-speech.html): Write a memorable best man, maid of honor, or parent wedding speech.
+- [Pet Training](https://snipprompts.com/prompts/best-chatgpt-prompt-for-pet-training.html): A step-by-step training plan for your dog or cat based on their behavior.
+- [Thank You Notes](https://snipprompts.com/prompts/best-chatgpt-prompt-for-thank-you-note.html): Write thoughtful thank you notes for any occasion.
+- [Apology Letter](https://snipprompts.com/prompts/best-chatgpt-prompt-for-apology-letter.html): Write a sincere apology that takes responsibility and repairs relationships.
+- [Gardening](https://snipprompts.com/prompts/best-chatgpt-prompt-for-gardening.html): Get a custom gardening plan for your climate, space, and experience level.
+- [Skincare Routine](https://snipprompts.com/prompts/best-chatgpt-prompt-for-skincare-routine.html): Get a skincare routine tailored to your skin type and concerns.
+- [Home Improvement](https://snipprompts.com/prompts/best-chatgpt-prompt-for-home-improvement.html): Plan DIY projects and decide when to hire a pro.
+- [Movie Recommendations](https://snipprompts.com/prompts/best-chatgpt-prompt-for-movie-recommendations.html): Get movie recommendations based on your taste and current mood.
+- [Book Recommendations](https://snipprompts.com/prompts/best-chatgpt-prompt-for-book-recommendations.html): Get book recommendations that match your taste and reading goals.
+- [Weight Loss Plan](https://snipprompts.com/prompts/best-chatgpt-prompt-for-weight-loss.html): Get a realistic, science-based weight loss plan with calories and workouts.
+- [Running Training Plan](https://snipprompts.com/prompts/best-chatgpt-prompt-for-running-training-plan.html): Get a custom plan for 5K, 10K, half marathon, or marathon.
+- [Sleep Better](https://snipprompts.com/prompts/best-chatgpt-prompt-for-sleep-better.html): Diagnose why you're sleeping badly and get a step-by-step plan to fix it.
+- [Morning Routine](https://snipprompts.com/prompts/best-chatgpt-prompt-for-morning-routine.html): Design a morning routine you'll actually keep based on your schedule.
+- [Decluttering](https://snipprompts.com/prompts/best-chatgpt-prompt-for-decluttering.html): Declutter your home room-by-room with a realistic plan.
+- [Road Trip Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-road-trip-planning.html): Plan a road trip with routes, stops, and daily timing.
+- [Toddler Activities](https://snipprompts.com/prompts/best-chatgpt-prompt-for-toddler-activities.html): Age-appropriate activities that keep your toddler engaged.
+- [Eulogy](https://snipprompts.com/prompts/best-chatgpt-prompt-for-eulogy.html): Write a heartfelt, honest eulogy that honors someone's real life.
+- [Event Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-event-planning.html): Plan any event with timeline, checklist, and vendor questions.
+- [Hiking Route Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-hiking-route.html): Plan a hiking trip with gear, water, and bailout plans.
+- [Camping Trip Planning](https://snipprompts.com/prompts/best-chatgpt-prompt-for-camping-trip.html): Plan a camping trip with gear, meals, and activities.
+- [Sunday Meal Prep](https://snipprompts.com/prompts/best-chatgpt-prompt-for-meal-prep-sunday.html): Plan a 2-3 hour Sunday meal prep with shopping list and timing.
+- [Any Speech](https://snipprompts.com/prompts/best-chatgpt-prompt-for-speech.html): Write any speech with hook, story, and memorable close.
+- [D&D Campaign](https://snipprompts.com/prompts/best-chatgpt-prompt-for-dnd-campaign.html): Design a D&D campaign arc with world, villains, and plot hooks.
+- [Escape Room Design](https://snipprompts.com/prompts/best-chatgpt-prompt-for-escape-room.html): Design an escape room with puzzles, themes, and flow.
+- [Trivia Questions](https://snipprompts.com/prompts/best-chatgpt-prompt-for-trivia-questions.html): Write trivia questions with balanced difficulty for any event.
+- [Roast Speech](https://snipprompts.com/prompts/best-chatgpt-prompt-for-roast.html): Write a roast that gets real laughs without crossing lines.
+
+## Marketing
+
+- [Social Media Captions](https://snipprompts.com/prompts/best-chatgpt-prompt-for-social-media-captions.html): Scroll-stopping captions for Instagram, LinkedIn, and Twitter.
+- [Instagram Bio](https://snipprompts.com/prompts/best-chatgpt-prompt-for-instagram-bio.html): Write an Instagram bio that tells people who you are and makes them follow.
+- [Writing a Blog Post](https://snipprompts.com/prompts/best-chatgpt-prompt-for-writing-a-blog-post.html): SEO-optimized blog posts with headlines, structure, and keywords.
+- [YouTube Scripts](https://snipprompts.com/prompts/best-chatgpt-prompt-for-youtube-scripts.html): Write video scripts with hooks that keep viewers watching until the end.
+- [Podcast Scripts](https://snipprompts.com/prompts/best-chatgpt-prompt-for-podcast-script.html): Compelling intros, story-driven structure, and CTAs that grow your show.
+- [Email Marketing](https://snipprompts.com/prompts/best-chatgpt-prompt-for-email-marketing.html): High-converting email campaigns — newsletters, launches, and sequences.
+- [Copywriting](https://snipprompts.com/prompts/best-chatgpt-prompt-for-copywriting.html): Write sales copy that converts — landing pages, ads, and headlines.
+- [SEO](https://snipprompts.com/prompts/best-chatgpt-prompt-for-seo.html): Keyword research, content gaps, and optimization to outrank competitors.
+- [Content Ideas](https://snipprompts.com/prompts/best-chatgpt-prompt-for-content-ideas.html): Generate a month of content ideas tailored to your niche and audience.
+- [Press Release](https://snipprompts.com/prompts/best-chatgpt-prompt-for-press-release.html): Write press releases that journalists actually read and cover.
+- [LinkedIn Posts](https://snipprompts.com/prompts/best-chatgpt-prompt-for-linkedin-posts.html): Write LinkedIn posts that get engagement without sounding like an influencer.
+- [Twitter Threads](https://snipprompts.com/prompts/best-chatgpt-prompt-for-twitter-threads.html): Write X/Twitter threads with hooks and pacing that keep people reading.
+- [TikTok Scripts](https://snipprompts.com/prompts/best-chatgpt-prompt-for-tiktok-scripts.html): Write TikTok scripts with hooks that grab attention in 2 seconds.
+- [Newsletter Writing](https://snipprompts.com/prompts/best-chatgpt-prompt-for-newsletter.html): Write newsletters people actually open — for Substack or any list.
+- [Webinar Script](https://snipprompts.com/prompts/best-chatgpt-prompt-for-webinar-script.html): Write a webinar script that holds attention and sells.
+- [YouTube Thumbnail Ideas](https://snipprompts.com/prompts/best-chatgpt-prompt-for-youtube-thumbnails.html): Generate YouTube thumbnail concepts that get clicks.
+- [Brand Voice Guide](https://snipprompts.com/prompts/best-chatgpt-prompt-for-brand-voice.html): Define your brand voice with clear rules and examples.
+- [Customer Case Study](https://snipprompts.com/prompts/best-chatgpt-prompt-for-case-study.html): Write customer case studies that close deals.
+- [White Paper](https://snipprompts.com/prompts/best-chatgpt-prompt-for-white-paper.html): Write B2B white papers that establish authority.
+- [SaaS Landing Page](https://snipprompts.com/prompts/best-chatgpt-prompt-for-saas-landing-page.html): Write SaaS landing page copy that converts.
+- [Product Launch Plan](https://snipprompts.com/prompts/best-chatgpt-prompt-for-product-launch.html): Plan a product launch with channels, assets, and metrics.
+- [Customer Persona](https://snipprompts.com/prompts/best-chatgpt-prompt-for-customer-persona.html): Build a detailed customer persona from interviews.
+- [Landing Page Audit](https://snipprompts.com/prompts/best-chatgpt-prompt-for-landing-page-audit.html): Audit your landing page for conversion-killing mistakes.
+- [Instagram Story Ideas](https://snipprompts.com/prompts/best-chatgpt-prompt-for-instagram-story-ideas.html): Get a week of Instagram Story content ideas.
+- [Retention / Winback Emails](https://snipprompts.com/prompts/best-chatgpt-prompt-for-retention-email.html): Win back churned customers with smart sequences.
+
+## Productivity
+
+- [Summarizing Articles](https://snipprompts.com/prompts/best-chatgpt-prompt-for-summarizing-articles.html): Get key takeaways from any article or document in seconds.
+- [Journaling](https://snipprompts.com/prompts/best-chatgpt-prompt-for-journaling.html): Get thoughtful journaling prompts for self-reflection and growth.
+- [Goal Setting](https://snipprompts.com/prompts/best-chatgpt-prompt-for-goal-setting.html): Set goals you'll actually achieve with clear metrics and weekly plans.
+- [Building a Habit](https://snipprompts.com/prompts/best-chatgpt-prompt-for-habit-building.html): Build a habit that actually sticks using proven behavior change methods.
+- [Meditation Scripts](https://snipprompts.com/prompts/best-chatgpt-prompt-for-meditation-script.html): Get custom guided meditation scripts for sleep, stress, or focus.
+
+## Tech
+
+- [Coding](https://snipprompts.com/prompts/best-chatgpt-prompt-for-coding.html): Write, debug, and understand code in any programming language.
+- [Python Code](https://snipprompts.com/prompts/best-chatgpt-prompt-for-python-code.html): Write, debug, and understand Python scripts for automation and analysis.
+- [SQL Queries](https://snipprompts.com/prompts/best-chatgpt-prompt-for-sql-queries.html): Write, debug, and optimize SQL queries for any database.
+- [Data Analysis](https://snipprompts.com/prompts/best-chatgpt-prompt-for-data-analysis.html): Turn messy data into clear insights, charts, and actionable takeaways.
+- [Excel Formulas](https://snipprompts.com/prompts/best-chatgpt-prompt-for-excel-formulas.html): Describe what you need in plain English, get the exact Excel formula.
+- [Photography Tips](https://snipprompts.com/prompts/best-chatgpt-prompt-for-photography-tips.html): Level up your photos with specific, practical advice for your camera.
