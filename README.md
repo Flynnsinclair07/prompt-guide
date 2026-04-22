@@ -19,7 +19,7 @@ Programmatic SEO affiliate site — 134 "best ChatGPT prompt for [X]" pages acro
 
 ## Daily tracking
 
-**Google Sheet**: _paste URL here after creating the sheet_
+**Google Sheet**: https://docs.google.com/spreadsheets/d/1EVB7aO54xTPfZBe9BO7FmU1d5E7wd3xvGaPFAy-t2ak/edit
 
 Create the sheet at [sheets.new](https://sheets.new) with these exact column headers (copy from `tracking/daily-metrics-template.csv`):
 
