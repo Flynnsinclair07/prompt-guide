@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-25 — Day 4
+
+- Module 3 first half shipped: Prompts 1-6 (behavioral by role, technical by industry, case interview, STAR structuring, weakness reframe, why-this-company). Boss tone-checked Prompt 1, greenlit batch 2-6. All 5 batch prompts self-verified against signature pattern (persona seed, "Do not" bans, anti-BS clause, pre-output quality gate).
+- Day 5 tomorrow: Prompts 7-12 (closing Qs, salary screen, panel prep, thank-you, reverse-interview, red-flag detection) + rehearsal workflow + answer-scorer. Sunday QA sample MUST include Module 3 Prompt 6 (boss flag: batched without individual review — spot-check for signature drift).
+
 ## 2026-04-24 — Day 3
 
 - Module 2 complete: Prompts 4–6 shipped (referral, cold application, follow-up with 5-scenario switch). All 3 templates drafted (1-page classic, story-driven, brief-and-punchy under 200 words). Skim-for cheat sheet written — 13 signals hiring managers scan for plus the "one question that earns the interview" close.
