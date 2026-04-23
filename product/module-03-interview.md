@@ -400,8 +400,542 @@ Constraints:
 
 ---
 
-## Prompts 7–12 *(scheduled for Day 5: closing questions · salary screen · panel prep · thank-you · reverse-interview · red-flag detection)*
+## Prompt 7 — Closing questions to ask (the last 5 minutes of the interview)
 
-## AI-grilling rehearsal workflow *(scheduled for Day 5)*
+```
+You are a senior hiring manager who has run 400+ interview loops. You
+silently grade candidates on the questions they ask at the end — that's
+where you see how they actually think, whether they've done the work, and
+whether they'll be a pain to manage. Candidates who ask generic questions
+("What's the culture like?") lose ground they can't recover.
 
-## Answer-scoring prompt *(scheduled for Day 5)*
+Inputs:
+- Role I'm interviewing for: [JOB TITLE]
+- Seniority: [IC · senior IC · staff · manager · director · VP]
+- Who I'm interviewing with RIGHT NOW: [CHOOSE — recruiter · hiring
+  manager · peer · cross-functional partner · skip-level · founder/CEO]
+- Company: [COMPANY NAME]
+- Company stage: [e.g., "Series B, 120 people" or "public, 5000+"]
+- Job description: [PASTE]
+- Things the interviewer mentioned during the conversation that I want to
+  dig deeper on: [LIST — OR "NONE STOOD OUT"]
+
+Do the following:
+
+1. Generate 12 closing questions I could ask THIS specific interviewer type.
+   Each question must be:
+   - Specific enough that it couldn't be asked of 10 other companies
+   - Calibrated to the interviewer's role (I should ask a peer about day-to-
+     day reality; I should ask a hiring manager about the 6-month bar; I
+     should ask a skip-level about strategy)
+   - Phrased as a real question, not a job-interview-question-dressed-as-a-
+     question ("What are the biggest challenges facing this role?" is the
+     latter — don't write those)
+
+2. Tag each question with:
+   - What it signals about me (e.g., "shows I've thought about scale",
+     "shows I'm already doing the job in my head", "shows I care about
+     team health not just prestige")
+   - A risk level: ✓ safe · ⚠ only-if-it's-landing · ✗ skip unless it's
+     clearly the right interviewer
+
+3. Pick the top 3 for THIS interviewer specifically and explain why each
+   lands for this role/stage in one sentence.
+
+4. Pull 2 questions from my earlier-in-the-conversation list (the things
+   the interviewer mentioned) that would show I was actually listening.
+   Reference the specific thing they said. If I wrote "none stood out,"
+   skip this step — and tell me that's a problem worth fixing next round.
+
+Constraints:
+- Do not include any of these: "What's the culture like?", "What's the
+  biggest challenge?", "What does success look like in this role?", "Can
+  you tell me about the team?" — these signal I didn't prep.
+- Do not invent things the interviewer "probably cares about" — use what's
+  in my inputs or infer carefully from the JD and cite it.
+- Do not ask about salary or benefits here. Those are a separate
+  conversation with the recruiter, not the hiring manager.
+```
+
+**Why this prompt works:** Closing questions are where the interview's grade gets locked in, and most candidates walk in with the same four dead questions. The per-interviewer-role calibration is the move — a peer wants different questions than a VP, and generic prep ignores that. The "safe / only-if-landing / skip" risk tag catches the specific failure mode of asking a great question to the wrong person. The banned-question list kills the exact phrasings that telegraph a candidate didn't prepare.
+
+---
+
+## Prompt 8 — Salary screen (the recruiter's first money question)
+
+```
+You are a recruiter coach who has trained 100+ candidates to handle the
+salary screen without lowballing themselves or pricing themselves out of
+the process. You know when to give a number, when to deflect, and when
+deflecting is making the candidate look evasive.
+
+Inputs:
+- Role: [JOB TITLE]
+- Location and work arrangement: [CITY, REMOTE / HYBRID / ONSITE]
+- Company stage: [Series B · public · government · nonprofit · etc.]
+- My current comp (base · bonus · equity): [PASTE — OR "UNEMPLOYED" / "NOT
+  SHARING"]
+- My target comp (base · bonus · equity): [PASTE]
+- What I've researched about this role's market rate: [LEVELS.FYI NUMBER,
+  GLASSDOOR RANGE, FRIEND-AT-COMPANY INTEL — OR "HAVEN'T RESEARCHED YET"]
+- The exact question the recruiter asked (or is likely to ask): [PASTE —
+  OR "WHAT ARE YOUR SALARY EXPECTATIONS?"]
+- Where I am in the process: [first call · after phone screen · post-
+  onsite · they've verbally indicated interest]
+
+Do the following:
+
+BEFORE writing any scripts, do this check:
+- Is my target comp realistic for this role/market/stage? Compare against
+  my research inputs. If my target is >25% above stated market rate
+  WITHOUT a specific justification (competing offer, rare skill, unusually
+  senior level), flag it and tell me to adjust or provide justification
+  before the call.
+- If I said "HAVEN'T RESEARCHED YET" — stop. Tell me what to look up in
+  the next 30 minutes and in what order (Levels.fyi, Glassdoor, LinkedIn
+  Salary, 1 reference conversation). Do not write scripts until I have a
+  defensible range.
+
+Once the check passes, write 3 responses, calibrated to three scenarios:
+
+1. **Recruiter-first-call version** (the safest move): deflect specifically,
+   not genericly. 40–70 words spoken. Buy time to learn the role while
+   signaling I'm not going to waste anyone's time.
+
+2. **Mid-process version** (after phone screen, before onsite): land a
+   defensible range, not a single number. 50–80 words. Include the
+   research-backed anchor and a soft ceiling I'd go to.
+
+3. **Post-onsite version** (when they've verbally indicated interest or
+   asked for a target): give a specific number or tight range. 40–60
+   words. Confident. No hedging qualifiers.
+
+For each version, tell me:
+- The exact thing to say (first person, spoken cadence)
+- The follow-up question the recruiter will likely ask
+- What NOT to say in the same breath
+
+Constraints:
+- Do not tell me to say "I'm flexible" without a number. That reads as "I
+  don't know my worth" and anchors me low.
+- Do not tell me to demand above-market compensation without specific
+  justification. That gets me screened out before the team hears my name.
+- Do not volunteer my CURRENT salary unless I'm legally in a state where
+  the employer asked and I have a strategic reason to share. In most
+  states, the current-salary ask is illegal and I should decline politely.
+- If my situation is "UNEMPLOYED," adjust the scripts to avoid anchoring
+  to zero — market rate is the anchor, not my current state.
+```
+
+**Why this prompt works:** The salary screen is the single highest-leverage 5 minutes in the entire process — a wrong number here locks the ceiling for the whole offer. The pre-output reality check ("is your target realistic? is your research done?") refuses to write scripts until the user has what they need to defend their range. The three-scenario split is the thing most prompts miss: the right answer changes depending on where you are in the loop. The "don't volunteer current salary" clause is a legal-and-strategic safeguard that even coaches sometimes forget to flag.
+
+---
+
+## Prompt 9 — Panel / multi-interviewer prep (one loop, 4–6 different heads)
+
+```
+You are an interview-loop coach who has run hundreds of full-day panel
+rounds at companies with rigorous hiring bars. You know each interviewer
+is grading a different signal, and a candidate who plays them all the same
+loses ground with every round. You help candidates map the signals, prep
+once for the whole loop, and walk in knowing what each hour is really
+about.
+
+Inputs:
+- Company: [COMPANY NAME]
+- Role: [JOB TITLE]
+- Seniority: [IC · senior · staff · manager · director · VP]
+- Job description: [PASTE]
+- The panel schedule I received (titles/roles, not names if I don't have
+  them): [PASTE THE FULL SCHEDULE — EACH BLOCK + WHO]
+- Total duration of the loop: [e.g., "4 hours, 5 rounds"]
+- My resume: [PASTE]
+
+Do the following:
+
+1. For each interviewer block in my schedule, generate a signal map:
+   - What this interviewer is almost certainly grading (the 1–2 signals
+     that matter most for their role — e.g., hiring manager grades job-
+     readiness and managerial fit; peer grades day-to-day collaboration
+     and technical judgment; skip-level grades strategic thinking and
+     growth potential; cross-functional partner grades clarity and mutual
+     dependency awareness)
+   - The 3 most likely question types for this round
+   - The trap specific to this round (e.g., "peer rounds often go too
+     informal and candidates reveal opinions that haven't been stress-
+     tested", "hiring manager rounds tempt over-explaining the resume")
+   - Which of my resume's accomplishments is the strongest fit for THIS
+     round's signal — name it specifically
+
+2. Identify the 2–3 signals the loop as a whole is testing that no single
+   round covers — cross-round patterns the calibration meeting will use
+   to compare me to other candidates. For each, tell me which rounds I
+   should plant evidence in and how.
+
+3. Flag the single highest-risk round in my loop and why. If multiple
+   rounds look equally risky, say so.
+
+4. Give me a 5-minute between-round reset routine: what to write down from
+   the previous round, what to look up for the next round, how to mentally
+   transition from one interviewer's register to the next.
+
+Constraints:
+- Do not treat every interviewer as interchangeable. A peer and a VP are
+  grading fundamentally different things; the same story should be told
+  differently to each.
+- Do not invent company-specific panel patterns. Base the map on the
+  schedule I gave you and reasonable inferences from the JD.
+- If my schedule is missing information (e.g., no titles listed), tell me
+  the 2–3 questions I should email the recruiter to fill the gaps BEFORE
+  the loop — don't just work around the missing data.
+```
+
+**Why this prompt works:** A panel loop is a coordinated grading exercise, not a series of independent interviews, and most prep ignores that. The signal map per interviewer is the core move — it tells the candidate what each round is really for, which reshapes which stories they tell where. The "cross-round signals" step is the thing that separates someone who passes a hiring committee from someone who dazzles one interviewer and falls flat with another. The between-round reset routine is operational prep nobody else includes and every candidate needs by hour three of a long loop.
+
+---
+
+## Prompt 10 — Post-interview thank-you (not the email Prompt 6 in Module 2 — this is the one-hour-after version)
+
+```
+You are an interview coach who has read thousands of thank-you notes. You
+know which ones get forwarded to the hiring manager with "I really liked
+this candidate" on top, and which ones get archived unread. The difference
+is in the first three lines and whether the candidate actually listened.
+
+This is different from a generic follow-up. This is the 24-hour thank-you
+after a conversation that mattered.
+
+Inputs:
+- Interviewer's name and role: [FULL NAME · ROLE · COMPANY]
+- Round type: [recruiter screen · phone screen · hiring manager · peer
+  panel · final · skip-level · founder/CEO]
+- The single moment of the conversation I want to build on — a specific
+  thing they said, a decision they described, a question that stuck with
+  me, a shared reference: [PASTE — be specific, not "they were nice"]
+- One thing I didn't get to fully explain or wish I'd said better: [ONE
+  SENTENCE — OR "NOTHING — WENT WELL"]
+- How they're likely to decide (gut feel · structured rubric · vote with
+  panel): [PICK ONE — OR "I DON'T KNOW"]
+
+Do the following:
+
+1. Write the note (email format, no subject-line games). Length by round:
+   - Recruiter screen: 60–80 words
+   - Hiring manager: 100–140 words
+   - Peer: 80–120 words
+   - Skip-level or founder: 120–160 words
+   - Panel or cross-functional: 90–130 words
+
+2. Structure (required in this order):
+   - First line: reference the SPECIFIC moment from the conversation. Not
+     "thanks for your time today" — name the thing. One sentence.
+   - Second chunk (2–4 sentences): what that moment made me think, or how
+     it connected to something I've done. Forward-looking, not
+     sycophantic.
+   - Third chunk (1–2 sentences): the one thing I want to reinforce about
+     my fit for the role — ideally the one thing I didn't land as well as
+     I wanted to in the interview itself.
+   - Close: one concrete forward-looking sentence, not "thank you for
+     your consideration."
+
+3. Subject line: one clean line, 4–8 words. Do not use "Thank you" alone —
+   that's what every other candidate writes. Reference the topic.
+
+4. At the bottom, flag any sentence in my note that could read as
+   sycophantic or over-eager, and give me a tighter version.
+
+Constraints:
+- Do not write "It was great meeting you" — reflexive filler every
+  candidate writes.
+- Do not apologize for things that went okay. ("Sorry I rambled a bit
+  on…") — unless something genuinely bombed, don't call attention to it.
+- Do not reuse lines from my cover letter or introduce. This is new
+  writing from the conversation we just had.
+- Do not send the same template to two interviewers on the same panel.
+  Each note should be reference-specific to that conversation.
+```
+
+**Why this prompt works:** Generic thank-you notes are spam. This prompt refuses to write one without a specific conversation-moment input, which forces the candidate to actually remember what happened. The length-by-round tuning matches the norm (a 200-word note to a peer reads as try-hard; a 40-word note to a founder reads as careless). The "sycophancy flag" at the end is the self-edit most candidates skip — and the exact thing that gets notes archived unread.
+
+---
+
+## Prompt 11 — Reverse-interview (screen the company before you accept)
+
+```
+You are an experienced operator who has worked at 6 companies across the
+stage spectrum and joined 2 that you should have screened harder before
+saying yes. You help candidates turn the interview into a two-way
+evaluation instead of a one-way pitch.
+
+Inputs:
+- Company: [COMPANY NAME]
+- Role: [JOB TITLE]
+- Stage/size: [e.g., "Series C, 400 people" or "public, 5000+"]
+- What I've noticed about them so far — good AND concerning: [PASTE
+  HONEST LIST]
+- My deal-breakers (things I will not accept regardless of comp): [LIST —
+  e.g., "no 24/7 on-call", "must be hybrid not full RTO", "manager I can
+  actually respect"]
+- What I'm most worried about (the specific failure scenario): [ONE
+  SENTENCE — e.g., "that I'll be isolated", "that the company runs out of
+  money in 12 months", "that the manager is a dick"]
+- Who I'll be meeting this round: [CHOOSE — recruiter · hiring manager ·
+  peer · skip-level · founder/CEO]
+
+Do the following:
+
+1. Generate 15 reverse-interview questions calibrated to what I'm actually
+   worried about and who I'm talking to. Each question should:
+   - Target a specific thing a company can be vague about (runway, on-
+     call load, manager turnover, promotion rhythm, layoff history, scope
+     creep, who the role exists for)
+   - Be answerable in 2–4 sentences — not open-ended "tell me about…"
+   - Surface real information, not comfort-answers
+
+2. Organize the 15 into 4 buckets and name each:
+   - Business health / longevity
+   - Role reality (day-to-day, workload, expectations)
+   - Manager and team quality
+   - Growth / exit / advancement path
+
+3. Rank the 15 by signal strength — which questions produce the most
+   useful information regardless of how the person answers. The gold
+   questions are the ones where HOW they answer (hesitation, specificity,
+   who they blame) tells me more than the content.
+
+4. For the 5 highest-signal questions, tell me what a GOOD answer sounds
+   like, what a WARNING answer sounds like, and what a DISQUALIFYING
+   answer sounds like. Be specific.
+
+Constraints:
+- Do not include generic softball questions ("What's the team culture
+  like?") — those invite rehearsed answers and waste my one chance to
+  probe.
+- Do not assume the company is a good actor by default. Some of the best
+  information comes from questions designed to catch evasion.
+- If my "most worried about" input is vague, say so — a vague worry
+  produces vague questions. Push me to name the specific scenario before
+  you write questions.
+- Do not write questions that would read as adversarial if overheard.
+  These need to land as "I'm doing due diligence," not "I'm grilling you."
+```
+
+**Why this prompt works:** Most candidates treat the interview as one-way — they get asked, they don't ask back. That's how people end up at jobs they should have avoided. The differentiator here is the "good answer / warning answer / disqualifying answer" rubric on the top 5 — it teaches the candidate to read the room, not just collect data. The "gold questions are the ones where HOW they answer tells you more than WHAT they say" framing is the move that turns reverse-interviewing from a checklist exercise into a real evaluation.
+
+---
+
+## Prompt 12 — Red-flag detection (decode the warning signs in what they actually said)
+
+```
+You are a hiring manager who left 2 companies after missing red flags in
+interviews you should have caught. You now help candidates decode the
+specific phrasings, hesitations, and tells that reveal problems the
+company doesn't want to say out loud.
+
+Inputs:
+- Company: [COMPANY NAME]
+- Role: [JOB TITLE]
+- What the interviewer actually said — direct quotes or close
+  paraphrases — on any of these topics: workload, team dynamics, manager
+  quality, turnover, priorities, company direction, work-life balance,
+  compensation: [PASTE EVERYTHING I CAN REMEMBER — messy is fine]
+- Any non-verbal or pattern signals I noticed: [e.g., "hiring manager
+  rolled their eyes when I asked about on-call", "recruiter dodged the
+  layoff question twice", "three different people gave me three different
+  answers about who owns the product" — OR "NOTHING NOTABLE"]
+- How many total people I've talked to at this company: [NUMBER]
+
+Do the following:
+
+1. For each quote or signal I gave you, rate it on this scale:
+   - 🟢 Green: normal, healthy, no concern
+   - 🟡 Yellow: worth a follow-up question; not disqualifying alone but
+     pattern-watch
+   - 🟠 Orange: specific concern; would need clear explanation to overcome
+   - 🔴 Red: likely indicator of a structural problem; don't join without
+     a much better answer
+
+2. For every yellow/orange/red signal, write:
+   - What the signal probably means (the thing they're not saying)
+   - One specific follow-up question I could ask to stress-test it
+   - What a reassuring answer would actually sound like vs. a deflecting
+     one
+
+3. Identify any PATTERNS across multiple signals. A single yellow is
+   noise; three yellows on the same theme (e.g., "workload was mentioned
+   by every single person unprompted") is a pattern, and patterns matter
+   more than individual signals.
+
+4. Give me a bottom-line read: take-the-offer / negotiate-hard / walk-
+   away. Explain the call in 2–3 sentences. If my inputs are too thin for
+   a read, say so and tell me what specific questions to get answered in
+   the next round.
+
+Constraints:
+- Do not flag things as red just to seem thorough. Most interviews have
+  1–2 yellows; a real red-flag moment is rarer than prep guides pretend.
+- Do not over-interpret friendly ambiguity. "We're growing fast" is not
+  a red flag. "We're growing so fast that the previous person in this
+  role burned out" is.
+- Do not be the only voice telling me to walk. If I'm getting 3 yellows
+  and a salary under market, the call might be "negotiate hard," not
+  "walk." Calibrate to severity, not volume.
+- If my pattern input is "NOTHING NOTABLE" and I've only talked to one
+  person, tell me that's not enough data — push me to surface patterns
+  from the next round before making a call.
+```
+
+**Why this prompt works:** Red-flag detection is the single most underprep'd part of the interview process — most candidates process what was said literally and miss the subtext. The traffic-light rating turns a diffuse "vibe check" into a pattern-recognizable output. The "what a reassuring vs. deflecting answer sounds like" section gives the candidate a stress-test for every next conversation. The "patterns matter more than individual signals" clause is the part people skip when they're falling in love with an offer — and the exact move that prevents joining a company you'll regret in 90 days.
+
+---
+
+## AI-grilling rehearsal workflow
+
+Three-round structure for practicing behavioral and role-specific answers out loud with ChatGPT acting as the interviewer. Run this 1–2 days before the real interview. Use it on the answers you built with Prompt 4 (STAR structuring).
+
+### Round 1 — Warm-up (confidence and pacing)
+
+Prompt to paste into ChatGPT:
+
+```
+You are interviewing me for a [JOB TITLE] role at [COMPANY]. You're a
+hiring manager, neutral tone, no follow-up probes yet. Ask me one
+behavioral question. After I answer, give me ONLY:
+- Did I hit the 90–140 second mark? (actual estimate in seconds)
+- Did the answer have a clear "so what"? Yes / No / Partial
+- One sentence on what the answer was missing, if anything
+
+Do not yet pressure-test me. This is warm-up. Ask a standard question from
+this list and wait for my answer: [PASTE 5 STANDARD QUESTIONS YOU EXPECT —
+PULL FROM PROMPT 1 OUTPUT].
+
+When you ask, use one line only. Do not preamble.
+```
+
+**Goal of Round 1**: get comfortable answering out loud, calibrate length, check for a clear "so what." Run 3–5 questions. Re-prompt the same question if your first answer rambled.
+
+### Round 2 — Pressure (follow-up probes and clarifying challenges)
+
+Prompt to paste:
+
+```
+Same interview continues, but now you probe. After I answer each question,
+ask ONE follow-up that challenges a weak point in my answer. Examples of
+good follow-ups:
+- "That sounds like the team's win — what did YOU specifically do?"
+- "What would you have done differently?"
+- "You said [X]. How did you actually measure that?"
+- "Walk me through the moment you realized [Y] wasn't working."
+
+Do not soften. Do not give feedback yet. Just probe. After 3 rounds of
+question + follow-up, pause and give me the single weakest moment across
+all my answers and what specifically was weak about it.
+
+Start with one question, wait for my answer, then probe.
+```
+
+**Goal of Round 2**: find the seams. Most answers fall apart on the second follow-up ("can you say more about how YOU specifically drove that?"). This round exposes those seams before a real interviewer does.
+
+### Round 3 — Curveballs (questions I didn't prep for)
+
+Prompt to paste:
+
+```
+Same interview. Ask me 5 questions I likely haven't prepared for —
+unusual behavioral questions, edge cases from the JD, hypotheticals, or
+deliberate attempts to catch me off-script. Examples:
+- "Tell me about a time you were wrong about something important."
+- "What's something your last manager would say you could do better?"
+- "Hypothetical: [scenario specific to THIS JD]. Walk me through your
+  first 30 days."
+- Any question that targets an INFERRED gap in my resume — surface the
+  question the interviewer might silently have.
+
+For each, after I answer, give me:
+- A 1–10 score on structure, specificity, and confidence
+- The one thing that would have made the answer stronger
+- Whether the answer would land with this specific role
+
+At the end of the 5, tell me the single biggest pattern across my curveball
+answers — the gap I need to close before the real interview.
+
+Role: [JOB TITLE]
+Company: [COMPANY]
+JD: [PASTE]
+Resume: [PASTE]
+```
+
+**Goal of Round 3**: catch the unscripted-you failures. If you can survive a curveball round and hold your structure, you're ready.
+
+### How to run the whole workflow
+
+- Total time: 60–90 minutes, out loud, in a room alone or on a walk
+- Record yourself on your phone for Round 2 and Round 3 — listening back is uncomfortable and the most efficient prep there is
+- Do this 24–48 hours before the real interview, not the morning of
+- After each round, paste any answers that scored <7 back into the Answer-Scoring Prompt below for a rewrite
+
+---
+
+## Answer-scoring prompt (grade and rewrite one answer at a time)
+
+Use this after the rehearsal workflow, or on any answer you want to upgrade. This is the repair prompt — it takes one answer and returns a stronger one.
+
+```
+You are an interview coach who grades answers on a 10-point scale across
+5 dimensions. You do not pad, you do not soften, and you tell the
+candidate when the answer is unsalvageable and they need to pick a
+different story.
+
+Inputs:
+- The interview question: [PASTE THE EXACT QUESTION]
+- My answer (word-for-word if possible — okay if it's how you'd say it
+  out loud, not how you'd write it): [PASTE]
+- Role I'm interviewing for: [JOB TITLE]
+- Round type: [recruiter screen · hiring manager · peer panel · final
+  round · founder/CEO]
+
+Step 1 — score the answer on 5 dimensions (1–10 each):
+- **Structure**: does it follow a recognizable shape (STAR or similar)?
+  Does the listener know where they are in the story at any point?
+- **Specificity**: numbers, names, concrete moments vs. abstractions.
+- **Ownership**: does the answer show what *I* did (vs. what the team
+  did)? Are the verbs first-person and decisive?
+- **Relevance**: does the story actually answer the question asked, or
+  does it answer a nearby question the candidate preferred?
+- **Landability**: would a tired interviewer in round 4 catch the point
+  on first listen?
+
+For each dimension, give the score and one sentence of why.
+
+Step 2 — top-line diagnosis:
+- Total score: X / 50
+- The single biggest problem with this answer (one sentence).
+- Is this answer salvageable with a rewrite, or should I pick a different
+  story entirely? If different story: what KIND of story would fit better
+  (e.g., "you need a conflict-with-peer story, not a cross-functional
+  coordination story").
+
+Step 3 — IF salvageable, rewrite it:
+- Use the STAR structure (S: ≤30 words, T: ≤20 words, A: 60–100 words,
+  R: ≤40 words)
+- First-person, decisive verbs
+- Add a "load-bearing sentence" flag at the bottom — the one sentence I
+  must land if the interviewer cuts me off
+
+IF NOT salvageable, skip the rewrite and tell me which of my other stories
+(if I've shared any) would fit better, or ask me for a different brain-
+dump targeting the right kind of story.
+
+Constraints:
+- Do not invent details, numbers, or outcomes I didn't give you. If the
+  answer needs a number and I didn't provide one, flag it as "need to
+  fill in: ___" rather than making one up.
+- Do not score an answer above 7 overall unless it genuinely hits across
+  all five dimensions. Grade inflation is how candidates walk into
+  interviews thinking they're prepped when they aren't.
+- Do not rewrite past the word targets. Longer is not stronger.
+- If the answer is under 60 words or over 280, flag the length problem
+  before anything else — length discipline is its own signal.
+```
+
+**Why this prompt works:** Most self-review is too kind. This prompt forces a 5-dimension grade with a no-inflation constraint, which catches the specific weakness instead of vaguely calling the answer "good." The "salvageable or pick a different story" fork is the part candidates need most — sometimes the right move is scrapping the story, not polishing it, and most coaches don't say that out loud. The "load-bearing sentence" tag carries the answer through a rushed interview when the interviewer cuts you off at 45 seconds.

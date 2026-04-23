@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-26 — Day 5
+
+- Module 3 complete: Prompts 7-12 shipped (closing Qs, salary screen, panel prep, post-interview thank-you, reverse-interview, red-flag detection) plus AI-grilling rehearsal workflow (3-round: warm-up / pressure / curveballs) and Answer-scoring prompt (5-dimension grade, no-inflation, salvageable-or-scrap fork). Boss greenlit rehearsal + scorer after individual review — called both "top-tier" and rehearsal workflow "best pure-workflow move in the bundle so far."
+- V2 backlog additions: (1) Module 2 Prompt 5 "research signal" → "specific thing you noticed" simplification for less-technical buyers, (2) Rehearsal Round 1 end-marker ambiguity ("end Round 1 and prompt me to move to Round 2"). Do not fix now — Week 3-4 polish pass. Pinterest Pin 5 (Debt Payoff → finance board) still owed, user action.
+
 ## 2026-04-25 — Day 4
 
 - Module 3 first half shipped: Prompts 1-6 (behavioral by role, technical by industry, case interview, STAR structuring, weakness reframe, why-this-company). Boss tone-checked Prompt 1, greenlit batch 2-6. All 5 batch prompts self-verified against signature pattern (persona seed, "Do not" bans, anti-BS clause, pre-output quality gate).
