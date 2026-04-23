@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-23 — Day 2
+
+- Module 1 complete: 3 before/after worked examples shipped (entry-level grad → marketing coordinator, teacher → APM switcher, director → VP eng). Each includes full before resume, prompt used, polished after, and "what changed (big four)" commentary.
+- Module 2 kicked off: `module-02-cover-letter.md` created with Prompts 1–3 (hook-first opener, mirror-the-JD, industry-switcher). Prompts 4–6 + templates + skim-for cheat sheet scheduled for Day 3. Pinterest Pin 2 (Cover Letter) still owed — user action.
+
 ## 2026-04-22 — Day 1
 
 - Kicked off Week 1. Built 8 Resume prompts in `module-01-resume.md` with "why this works" commentary on each. All tested on ChatGPT free tier.

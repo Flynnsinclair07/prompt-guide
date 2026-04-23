@@ -258,4 +258,341 @@ Run through this for every resume before you submit.
 
 ## Before/after examples
 
-*(Scheduled for day 2 of build — 3 examples: entry-level · mid-career switcher · senior)*
+Three worked examples — entry-level, mid-career switcher, and senior. Each shows the original draft, the exact prompt run, and the polished output. Use these to calibrate what "good" looks like before you run the prompts on your own material.
+
+---
+
+### Example 1 — Entry-level (recent grad → Marketing Coordinator)
+
+**Candidate**: Maya Chen, BA Marketing (2025), one internship + two campus jobs. Applying to Marketing Coordinator at a B2B SaaS company.
+
+**Job description (excerpt)**:
+> Marketing Coordinator — support demand-gen team on email campaigns, landing pages, and HubSpot workflows. Track campaign performance in GA4. Collaborate with content and sales ops. Skills: HubSpot, GA4, Figma, A/B testing, copy editing.
+
+**BEFORE** (original draft — weak):
+
+```
+MAYA CHEN
+maya.chen@email.com · (555) 123-4567
+
+OBJECTIVE
+Recent graduate looking for a marketing role at a growing company where I can
+apply my skills and learn from experienced professionals.
+
+EDUCATION
+University of State, BA Marketing, 2025
+
+EXPERIENCE
+
+Marketing Intern, LocalCo — Summer 2024
+- Responsible for social media posts
+- Helped with email campaigns
+- Assisted the marketing team with various projects
+- Worked on graphic design tasks
+
+Campus Tour Guide, University of State — 2023–2025
+- Gave tours to prospective students
+- Represented the university at events
+- Worked with a team
+
+Barista, Campus Coffee — 2022–2024
+- Served customers
+- Handled cash register
+- Cleaned the store
+
+SKILLS
+Microsoft Office, social media, teamwork, communication
+```
+
+**Prompt run** — Prompt 2 (rewrite) + Prompt 4 (keyword injection), back to back.
+
+**AFTER** (polished output):
+
+```
+MAYA CHEN
+maya.chen@email.com · (555) 123-4567 · Austin, TX · linkedin.com/in/mayachen
+
+SUMMARY
+Marketing graduate with hands-on experience running email campaigns, HubSpot
+workflows, and GA4 reporting during a B2B SaaS internship. Combines demand-gen
+fundamentals with copy editing and Figma design. Seeking Marketing Coordinator
+role to own campaign execution end-to-end.
+
+EXPERIENCE
+
+Marketing Intern — LocalCo (B2B SaaS, 40 employees)                Summer 2024
+- Built and shipped 6 email campaigns in HubSpot, averaging 28% open rate (vs.
+  18% team baseline) and driving 47 MQLs over the internship
+- Designed 4 landing pages in Figma and HubSpot; A/B tested headline variants,
+  lifting conversion from 3.1% to 4.8% on the top-performing page
+- Tracked campaign performance in GA4 and built a weekly dashboard the demand-
+  gen team adopted as their standing report
+- Edited and shipped 22 blog posts, cutting average review-to-publish time from
+  6 days to 2 by tightening the copy-edit checklist
+
+Campus Tour Guide — University of State                            2023–2025
+- Led 3–5 group tours per week for prospective students and families (~200
+  total), consistently rated 4.8/5 on post-tour surveys
+- Trained 4 incoming guides on the 90-minute tour script and Q&A protocols
+
+Barista — Campus Coffee                                            2022–2024
+- Processed ~120 transactions per shift during peak hours while maintaining
+  accurate cash drawer with zero shortages over 18 months
+
+EDUCATION
+University of State — BA Marketing, 2025 (GPA 3.7)
+Relevant coursework: Digital Marketing, Consumer Behavior, Marketing Analytics
+
+SKILLS
+HubSpot · GA4 · Figma · A/B testing · Email marketing · Landing page copy ·
+Campaign reporting · Excel · Copy editing
+```
+
+**What changed (the big four)**:
+
+1. **Objective → Summary**: Objective sections date the resume and focus on what the candidate wants. Summary focuses on what the employer gets — and packs keywords from the JD.
+2. **Quantified the intern role**: The original said "helped with email campaigns." The prompt asked Maya for the numbers she already knew (open rate, MQL count) and used them. This is the single biggest upgrade.
+3. **Cut the filler verbs**: "Responsible for", "helped with", "assisted", "worked on" — all replaced with "Built", "Designed", "Tracked", "Led", "Trained".
+4. **Skills section aligned to the JD**: The JD asked for HubSpot, GA4, Figma, A/B testing, copy editing — all now present in both the experience bullets *and* the skills list. The original had none of them.
+
+---
+
+### Example 2 — Mid-career switcher (teacher → Product Manager)
+
+**Candidate**: Derek Olusanya, 8 years high-school math teacher + AP Computer Science, also runs an EdTech side project. Applying for Associate Product Manager at a consumer EdTech company.
+
+**Job description (excerpt)**:
+> Associate Product Manager, EdTech — partner with eng + design to ship features for K–12 learning product. Write specs, run user interviews, prioritize roadmap. We love candidates with classroom experience. Skills: user research, roadmap prioritization, data literacy, cross-functional communication.
+
+**BEFORE** (original draft — reads like a teacher, not a PM):
+
+```
+DEREK OLUSANYA
+derek.o@email.com · (555) 987-6543
+
+EDUCATION
+M.Ed, Curriculum & Instruction, State University, 2018
+BS, Mathematics, State University, 2015
+Teaching Credential, Single Subject Math, 2016
+
+TEACHING EXPERIENCE
+
+Math Teacher — Roosevelt High School                              2017–Present
+- Teach Algebra I, Algebra II, and AP Computer Science
+- Responsible for curriculum planning and lesson preparation
+- Manage a classroom of 35 students
+- Grade assignments and provide feedback
+- Communicate with parents and administration
+- Participated in department curriculum committee
+- Ran after-school coding club
+
+Math Teacher — Jefferson Middle School                            2016–2017
+- Taught 7th and 8th grade math
+- Developed lesson plans aligned with state standards
+
+Student Teacher — Lincoln High                                    Spring 2016
+- Assisted lead teacher in Algebra I classroom
+
+SIDE PROJECT
+Built a flashcard app called MathFlash for my students
+
+HOBBIES
+Chess, running, woodworking
+```
+
+**Prompt run** — Prompt 6 (career-switcher angle), then Prompt 7 (executive summary) to generate 5 summary options.
+
+**AFTER** (polished output):
+
+```
+DEREK OLUSANYA
+derek.o@email.com · (555) 987-6543 · Oakland, CA · linkedin.com/in/derekolusanya
+github.com/derek-o/mathflash
+
+SUMMARY
+Former high-school math and CS teacher moving into product, with 8 years of
+daily user research with the exact audience EdTech products serve: 14–18 year
+old learners and their teachers. Shipped a self-built study app (MathFlash,
+1,200 active users) from idea to production. Built cross-functional fluency
+between pedagogy, data, and engineering — the core job of an EdTech APM.
+
+PRODUCT & CROSS-FUNCTIONAL EXPERIENCE
+
+MathFlash — Founder / Solo Product Manager                        2022–Present
+- Conceived, spec'd, and shipped a flashcard study app for Algebra I students
+  after identifying a gap in retention tooling in my own classroom
+- Ran 40+ user interviews with students and 12 with other math teachers to
+  prioritize the v1 feature set; killed 3 planned features based on feedback
+- Grew to 1,200 weekly-active users across 9 schools in the Bay Area without
+  paid acquisition; retention at week 4 is 38%
+- Wrote product specs, coordinated with a contract React Native developer, and
+  ran weekly sprint reviews for 14 months
+- Pulled funnel data from Mixpanel weekly to prioritize the backlog; shipped
+  15 features in year 1 based on usage data, not gut calls
+
+Math & CS Teacher — Roosevelt High School                         2017–Present
+- Deliver curriculum to ~150 students per year across Algebra I, Algebra II,
+  and AP Computer Science; consistently rated top-3 teacher in student surveys
+- Redesigned the AP CS curriculum in year 3, lifting AP exam pass rate from
+  54% to 81% over two cohorts — effectively a roadmap prioritization exercise
+  with measurable outcomes
+- Ran classroom-scale A/B tests on two teaching methods (2018 and 2020); wrote
+  both up for the department curriculum committee
+- Founded and ran after-school coding club (25 students/semester), a direct
+  feedback loop for what EdTech features teens actually use
+
+EARLIER
+Math Teacher, Jefferson Middle School (2016–2017) · Student Teacher, Lincoln
+High (Spring 2016)
+
+EDUCATION
+M.Ed, Curriculum & Instruction — State University, 2018
+BS Mathematics — State University, 2015
+
+SKILLS
+User research · Roadmap prioritization · Product specs · Mixpanel · SQL (basic)
+· Figma · A/B testing · Cross-functional communication · K–12 curriculum design
+
+GAPS I'M CLOSING (next 8 weeks)
+- Completing Reforge's Product Strategy course (June cohort)
+- Shipping v2 of MathFlash with in-app experimentation framework
+```
+
+**What changed (the big four)**:
+
+1. **Reframed the job title mental model**: Original led with "Math Teacher." The polished version re-centers around "cross-functional experience" and surfaces the side project first — because *that* is the PM evidence. The teaching role is still there but framed in PM language ("roadmap prioritization exercise with measurable outcomes").
+2. **MathFlash promoted from "hobby" to flagship experience**: It's the strongest PM evidence in his whole background. Burying it at the bottom was malpractice. Now it opens the experience section.
+3. **Teaching bullets re-worded in PM vocabulary**: "Managed a classroom" became "deliver curriculum to ~150 students/year" and the AP CS redesign became a "roadmap prioritization exercise with measurable outcomes." Same work, different frame.
+4. **Gaps closing section at the bottom**: The career-switcher prompt generated concrete 8-week actions. Including this turns a potential objection ("but he's a teacher") into a signal of self-awareness and drive.
+
+---
+
+### Example 3 — Senior / Executive (bloated 2-page → sharp 1-page VP Eng)
+
+**Candidate**: Priya Raghavan, 16 years in software, currently Director of Engineering at a 400-person company. Applying for VP of Engineering at a Series B SaaS company.
+
+**Job description (excerpt)**:
+> VP Engineering — own the engineering org (currently 35, scaling to 60). Partner with CEO and CPO on product-engineering strategy. Scale infra and hiring. Report to CEO. Looking for operators who've scaled orgs through Series B → C. Skills: engineering leadership, org design, hiring, infra scaling, executive communication.
+
+**BEFORE** (original draft — bloated, two pages, dated framing):
+
+```
+PRIYA RAGHAVAN
+priya.r@email.com · (555) 222-3333
+
+OBJECTIVE
+Seasoned engineering leader with 16 years of experience seeking a VP of
+Engineering role at a high-growth technology company where I can leverage
+my skills in leadership, software architecture, and team building.
+
+PROFESSIONAL EXPERIENCE
+
+Director of Engineering — BigCo Inc.                               2020–Present
+- Responsible for leading a large engineering organization
+- Manage multiple engineering teams across the product
+- Work with product management to define technical strategy
+- Hire and mentor engineers
+- Drive architectural decisions
+- Participate in executive leadership meetings
+- Have led initiatives to modernize our technology stack
+- Was involved in scaling the team from 15 to 35 engineers over 4 years
+- Have implemented various process improvements to increase velocity
+- Handled on-call rotation and incident response processes
+
+Senior Engineering Manager — MidCo                                 2016–2020
+- Managed two engineering teams of 6–8 engineers each
+- Delivered major product initiatives including platform rewrite
+- Hired and grew engineers
+- Worked on architecture and code reviews
+- Participated in company-wide engineering initiatives
+
+Engineering Manager — StartupCo                                    2013–2016
+- Managed a team of engineers
+- Was promoted from Senior Engineer role
+- Led technical design and implementation of core product features
+- Mentored team members and contributed to the hiring process
+
+Senior Software Engineer — StartupCo                               2011–2013
+- Was a senior engineer working on the platform team
+- Worked on backend systems in Python and Go
+- Participated in on-call rotation
+
+Software Engineer — FirstCo                                        2008–2011
+- Started career as a software engineer working on web applications
+- Contributed to the codebase using Java and JavaScript
+
+EDUCATION
+MS Computer Science, Stanford University, 2008
+BS Computer Science, University of California, Berkeley, 2006
+
+SKILLS AND TECHNOLOGIES
+Leadership, Management, Team Building, Mentoring, Agile, Scrum, Java, Python,
+Go, JavaScript, React, Node.js, AWS, Kubernetes, Docker, PostgreSQL, MongoDB,
+Redis, Microservices, REST APIs, GraphQL, CI/CD, Git
+
+CERTIFICATIONS
+AWS Certified Solutions Architect
+
+PUBLICATIONS
+Blog post on engineering leadership on Medium, 2022
+```
+
+**Prompt run** — Prompt 7 (5 summary options, chose "Results-first"), then Prompt 2 (full rewrite), then a final pass with Prompt 3 on the two weakest bullets.
+
+**AFTER** (polished output — 1 page):
+
+```
+PRIYA RAGHAVAN
+priya.r@email.com · (555) 222-3333 · San Francisco, CA · linkedin.com/in/priyar
+
+Engineering leader who has scaled two orgs through Series B → C. Took BigCo's
+engineering org from 15 to 35, cut p95 latency 62%, and shipped the platform
+migration that unlocked a $12M ARR enterprise tier. Known for partnering tightly
+with CEO/CPO to align eng capacity with product strategy.
+
+LEADERSHIP EXPERIENCE
+
+Director of Engineering — BigCo Inc. ($80M ARR SaaS)               2020–Present
+- Scaled engineering from 15 to 35 across 5 teams (platform, product, data,
+  infra, security); reshaped org design twice to match product bets
+- Led platform migration to Kubernetes + multi-region AWS in 9 months; cut p95
+  API latency 62% and enabled the $12M ARR enterprise tier that launched 2023
+- Hired 24 engineers including 4 EMs and 2 staff+; retention at 94% over the
+  last 24 months in a market where peer companies averaged 78%
+- Partner weekly with CEO and CPO to set the 6-month engineering roadmap;
+  own quarterly board updates on engineering health and hiring
+- Rebuilt the on-call + incident-response program: reduced Sev-1s from 11/year
+  to 2, mean time to resolve from 4h to 38 minutes
+
+Senior Engineering Manager — MidCo                                 2016–2020
+- Managed two teams (6 + 8 engineers) through the 18-month platform rewrite
+  that replaced a monolith consuming 40% of eng bandwidth on maintenance
+- Grew and promoted 5 engineers to senior, 2 to staff; ran hiring loops that
+  closed 18 hires over 3 years at a 71% offer-accept rate
+
+Engineering Manager, then Senior Software Engineer — StartupCo    2011–2016
+- Promoted from IC to EM at 18 months; built the 7-person platform team that
+  owned billing, auth, and the public API through Series A → B
+- Prior IC work: backend platform in Python + Go, on-call lead for payments
+
+EARLIER
+Software Engineer, FirstCo (2008–2011) — Java/JavaScript, web platform
+
+EDUCATION
+MS Computer Science — Stanford, 2008 · BS CS — UC Berkeley, 2006
+
+SELECTED SKILLS
+Org design · Scaling through Series B → C · Executive communication · Hiring
+(ICs through staff+) · Infra scaling (AWS, Kubernetes) · Incident response
+```
+
+**What changed (the big four)**:
+
+1. **Cut from 2 pages to 1**: Senior resumes over 1 page are rarely read top-to-bottom. The polished version drops the SKILLS-AND-TECHNOLOGIES wall (15 items reduced to 6 that actually matter for a VP role), merges two stints at StartupCo into one line, and drops the Medium post + AWS cert (not load-bearing at VP level).
+2. **Summary leads with numbers**: Original opened with "Seasoned engineering leader with 16 years of experience." Polished opens with two specific outcomes ("15 → 35 headcount, 62% latency cut") and one strategic outcome ("$12M ARR enterprise tier"). At the VP level, the summary is the resume — recruiters and CEOs decide in 10 seconds.
+3. **Every bullet now has an outcome, not an activity**: "Responsible for leading a large engineering organization" → "Scaled engineering from 15 to 35 across 5 teams; reshaped org design twice to match product bets." The action is still there — plus the outcome and the context.
+4. **Tuned to the JD's exact language**: JD asked for "scaled orgs through Series B → C" → that exact phrase is now in the summary. JD asked for "executive communication" → it's in the skills line. JD asked for "partner with CEO and CPO" → it's a bullet under Director role. ATS keyword alignment and human-readable alignment are the same move at this level.
+
+---
+
+**How to use these examples**: Pick the one closest to your stage, read the BEFORE and AFTER side-by-side, then scroll back to the prompt it used and run it on your own material. The point isn't to copy the finished output — it's to calibrate what the gap between a draft and a shipped resume looks like before you run the prompts blind.
