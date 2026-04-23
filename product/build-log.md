@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-24 — Day 3
+
+- Module 2 complete: Prompts 4–6 shipped (referral, cold application, follow-up with 5-scenario switch). All 3 templates drafted (1-page classic, story-driven, brief-and-punchy under 200 words). Skim-for cheat sheet written — 13 signals hiring managers scan for plus the "one question that earns the interview" close.
+- On track for Day 4 — Module 3 interview prep (first 6 of 12 prompts). Pinterest Pin 3 still owed — user action.
+
 ## 2026-04-23 — Day 2
 
 - Module 1 complete: 3 before/after worked examples shipped (entry-level grad → marketing coordinator, teacher → APM switcher, director → VP eng). Each includes full before resume, prompt used, polished after, and "what changed (big four)" commentary.
