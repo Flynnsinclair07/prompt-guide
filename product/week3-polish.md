@@ -84,6 +84,8 @@ Same approach as #3. Prompts needing persona seed:
 
 Audit every M1 and M2 prompt for missing pre-output quality gates. M3 has a gate on every prompt; M1 and M2 mostly don't.
 
+**Template update (boss, 2026-04-23)**: use **Module 4** gate style as the template, not M3. M4 gates are more surgical — they ask specific clarifying questions and refuse to proceed until inputs pass, rather than running generic "have you thought about this?" checks. Example of M4 gate style: M4 P1's "if I listed soft skills, flag them and ask me to replace with searchable hard skills. Do not generate a headline using non-searchable terms."
+
 **Approach**: for each prompt, identify the single biggest "bad input → bad output" failure mode, and insert a pre-generation check that refuses to proceed until the user fixes the input.
 
 **Examples of gates to add**:
@@ -109,6 +111,8 @@ Audit every M1 and M2 prompt for missing pre-output quality gates. M3 has a gate
 
 **Recommendation for boss review**: Path C preserves most content without losing depth, and buyers who notice the overlap will see it's intentional rather than redundant.
 
+**Execution rule (boss, 2026-04-23)**: do NOT apply Path C (or A or B) until boss greenlights the specific execution. On May 7, paste the full text of M2 P6 and M3 P10 side-by-side in this file along with the proposed cross-reference wording. Wait for boss approval before modifying either prompt.
+
 ---
 
 ## Post-launch v2 backlog (NOT for May 7)
@@ -118,6 +122,30 @@ These items were flagged but reclassified to post-launch:
 - M2 P5: "research signal" terminology → "specific thing you noticed" for less-technical buyers
 - Rehearsal Round 1: add explicit end-marker ("end Round 1 and prompt me to move to Round 2")
 - M3 P8, P9: commentary tightening (4 sentences → 3)
+
+---
+
+---
+
+## Signature pattern reference (for backfill voice consistency)
+
+### Primary signature (all modules should hit this)
+1. **Persona seed** — "You are a [role] who has [specific credential]"
+2. **Pre-output quality gate** — refuses to generate until inputs pass (M4 style)
+3. **"Do not" bans** — specific banned phrases, openers, and failure modes
+4. **Anti-BS clause** — flag missing data, refuse to invent
+
+### Secondary signature pattern (emerged across M3 + M4, boss-identified 2026-04-23)
+
+**Structure: Pre-output gate → Output → Post-output behavior rules**
+
+The post-output section does real work. Examples:
+- M3 P8 salary screen: "what NOT to say in the same breath"
+- M4 P6 recruiter cold-DM: "what NOT to do in the next 48 hours after sending"
+- M4 P7 recommendation request: "what to do if they don't reply within 10 days"
+- M4 P8 post-connection follow-up: "what to do if they don't reply within 2 weeks"
+
+**Rule**: use this pattern in any prompt where a "what happens after the output is sent" dimension exists. Module 5 (negotiation) is especially high-leverage for this — counter-offer, exploding offer response, PTO ask all have major post-output reality.
 
 ---
 

@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-23 — Day 3 (Module 5 Batch 1 — flagship module)
+
+- Module 5 Batch 1 shipped: 5 prompts + 3 scripts. Prompts: market-rate research (source-authority by field), offer evaluation (component scorecard + top-3 levers), counter-offer scripting (flagship, with BATNA 2-sentence teach embedded in pre-output gate), multiple-offer leverage (4-situation branching + bluff-check with 3-question test), exploding offer response (artificial-vs-real diagnosis). Scripts: email counter, phone 30-sec opener (2 versions), "we don't have budget" rebuttal (with component flex by stage).
+- Every prompt and script hits primary + secondary signature (post-output behavior rules = "what to do 24 hours after the ask"). All Tom guardrails met: spoken-cadence scripts, teach-before-ask on BATNA, specific sources per field on comp research, Option-B-calibrated on any legal-adjacent claims. Week 3 polish file also updated with M4-is-new-template rule + secondary-signature pattern documented. Batch flagged ready for boss QA; Batch 2 pending greenlight.
+
 ## 2026-04-23 — Day 3 (Module 4 LinkedIn complete)
 
 - Module 4 shipped in full: Prompt 1 (headline, boss tone-checked and greenlit as the floor for Module 4), Prompts 2-8 batched (About, experience bullets, skills keywording, engagement-seed posts, recruiter cold-DM, recommendation-request, post-connection follow-up), 14-item optimization checklist, weekly content pack with 10 post types. All self-verified against signature pattern (persona seed + "Do not" bans + anti-BS clause + pre-output quality gate). LinkedIn-specific domain moves added: 210-char hook truncation rule, 300-char connection-note vs InMail split, top-3 skills pinning mechanic, real-tone-reference input (not adjectives), 48-hour post-connection window.
