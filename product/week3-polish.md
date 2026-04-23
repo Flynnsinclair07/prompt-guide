@@ -122,6 +122,8 @@ These items were flagged but reclassified to post-launch:
 - M2 P5: "research signal" terminology → "specific thing you noticed" for less-technical buyers
 - Rehearsal Round 1: add explicit end-marker ("end Round 1 and prompt me to move to Round 2")
 - M3 P8, P9: commentary tightening (4 sentences → 3)
+- **M5 P2 strike/409A imprecision** (boss flagged 2026-04-23): current text in Hidden Traps reads "a low-strike grant at a company with low recent 409A valuation is worth much less than a high-strike grant at a company trending up" — imprecise, could mislead. Replace with boss's suggested rewrite:
+  > "Equity value depends on the gap between your strike price and the company's expected future FMV. A grant with a huge notional value can be worth little if the company isn't growing; a smaller grant at a rapidly-appreciating company can be worth far more. Ask for the company's last 409A valuation and think about growth trajectory before pricing equity in your head."
 
 ---
 
