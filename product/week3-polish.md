@@ -124,6 +124,9 @@ These items were flagged but reclassified to post-launch:
 - M3 P8, P9: commentary tightening (4 sentences → 3)
 - **M5 P2 strike/409A imprecision** (boss flagged 2026-04-23): current text in Hidden Traps reads "a low-strike grant at a company with low recent 409A valuation is worth much less than a high-strike grant at a company trending up" — imprecise, could mislead. Replace with boss's suggested rewrite:
   > "Equity value depends on the gap between your strike price and the company's expected future FMV. A grant with a huge notional value can be worth little if the company isn't growing; a smaller grant at a rapidly-appreciating company can be worth far more. Ask for the company's last 409A valuation and think about growth trajectory before pricing equity in your head."
+- **M5 Script 2 Version B pushback fallback** (boss flagged 2026-04-23): if the recruiter refuses the turnaround ("we really need a number from you first"), there's no current fallback. Add one-line fallback:
+  > "Totally understand. Based on market data for [ROLE] at [STAGE], the range that works for me on base is [$X–$Y] — curious where that lands for you."
+- **M5 Script 3 "Traditional/corporate" category ambiguity** (boss flagged 2026-04-23): the "Traditional / corporate" bucket in the component-flex-by-stage breakdown is vague. Sharpen the definition in post-launch pass — likely means "Fortune 500 or public outside tech." Confirm and rename precisely.
 
 ---
 

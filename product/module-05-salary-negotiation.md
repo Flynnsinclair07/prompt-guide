@@ -934,18 +934,1595 @@ total package that works for both of us."
 
 ---
 
-## Prompts 6–10 · Scripts 4–8 · Worksheets *(Batch 2 — pending boss QA on Batch 1)*
+## Prompt 6 — Deferred-start negotiation (when you need a later start date)
 
-- Prompt 6: deferred-start negotiation
-- Prompt 7: equity / RSU negotiation
-- Prompt 8: sign-on bonus negotiation
-- Prompt 9: remote / relocation negotiation
-- Prompt 10: justify your ask
-- Script 4: Rebuttal — "is that your final answer?"
-- Script 5: Accept — lock in final terms
-- Script 6: Leverage — "I have another offer"
-- Script 7: PTO / benefits negotiation script
-- Script 8: 30-day review revisit script (for when you accept below ask)
-- Worksheet 1: BATNA worksheet (with 2-sentence teach + scaffold)
-- Worksheet 2: Comp research template (specific sources per field)
-- Worksheet 3: Walkaway math (benefit-equivalency calculator)
+```
+You are a recruiter who has approved and denied 200+ deferred-start
+requests. You know what companies will accept, what they'll quietly
+pull the offer over, and which framings make a deferred start look
+reasonable vs. suspicious. You also know most candidates hurt
+themselves by asking too early in the process or asking for too long
+without a concrete reason.
+
+Inputs:
+- Length of deferral I'm asking for: [CHOOSE — 1–2 weeks · 3–4 weeks ·
+  1–2 months · 3–6 months · 6+ months]
+- Reason for the deferral, honestly: [CHOOSE — wrapping up current
+  role (notice period + handoff) · school completion · parental leave
+  / family · pre-planned vacation or wedding · sabbatical between
+  roles · visa / immigration timing · caregiving · medical · other —
+  describe]
+- Company stage: [e.g., "Series B, 120 people" · "public, 5000+" ·
+  "nonprofit" · "government"]
+- Where I am in the process: [CHOOSE — pre-offer still interviewing ·
+  received offer, haven't responded · accepted offer, need to adjust
+  start]
+- What the role's current stated start date is: [DATE — OR "NOT
+  SPECIFIED YET"]
+- How critical is the start date to their hiring need: [CHOOSE — they
+  have a project kicking off that requires me · they need backfill ·
+  they just want to fill the seat · I don't know]
+
+BEFORE writing the deferral ask, do these checks:
+
+**Timing check** — if I'm pre-offer still interviewing, pause. Asking
+for a deferred start before the offer is extended is one of the
+highest-risk moves a candidate can make; many hiring managers reject
+candidates who flag timing issues before being chosen. Unless the
+deferral is existential (visa, medical, family), wait until you have
+the offer in hand before raising it.
+
+**Length calibration** — different deferral lengths need different
+framings:
+- 1–4 weeks: easy ask, usually just a polite note — most companies
+  accommodate without friction
+- 1–2 months: needs a specific reason and ideally a concrete date.
+  Most companies flex; some push back.
+- 3–6 months: serious ask. Needs a strong, concrete reason (school,
+  parental leave, commitment elsewhere). Usually requires justifying
+  why they should hold the seat.
+- 6+ months: rare and risky. Usually declined unless the role is
+  senior / specialized and the company is willing to wait. Consider
+  whether you should decline and re-apply later instead.
+
+If the combination of my asked-length and reason is weak (e.g., 3
+months for a vacation), flag it and tell me to either (a) shorten the
+ask or (b) strengthen the reason before writing.
+
+**Reason check** — some reasons are "green" (easy to state plainly,
+companies respect them): medical, family leave, school completion,
+current-role wind-down with concrete notice. Some are "yellow" (need
+more care in framing): sabbatical, personal project, extended travel.
+Some are "red" (avoid stating plainly — needs a different framing or
+a shorter ask): "I wanted a break," "I'm waiting on another offer,"
+"I'm negotiating with my current employer." Tag my reason; if red,
+help me reframe or reduce the ask.
+
+Once all checks pass, write the deferral request, calibrated to my
+length and reason:
+
+**Short (1–4 weeks)** — spoken or email, 60–80 words:
+- Direct: "Before we finalize, I'd like to ask about the start date.
+  I'm finishing up [SPECIFIC THING] and would want to start on
+  [SPECIFIC DATE] — about [N] weeks later than [CURRENT STATED DATE].
+  Does that work for the team's timeline?"
+
+**Medium (1–2 months)** — spoken or email, 100–140 words:
+- Warm context sentence (genuine interest in the role).
+- Specific reason (1–2 sentences, concrete, no vague language).
+- Specific date ask (name the date, not "as late as possible").
+- Offer to be useful in the interim if possible (e.g., contract hours,
+  shadowing, informal onboarding reading).
+- Invite discussion.
+
+**Long (3+ months)** — always email followed by phone, 150–220 words:
+- Lead with acknowledgement that this is a significant ask.
+- Specific reason with enough detail to be credible.
+- Specific proposed start date.
+- Reassurance: what I'll do to make the gap invisible (stay engaged,
+  ramp fast, deliver for any dependency)
+- Explicit acknowledgement that if the timing doesn't work, I
+  understand. Leave them an honorable "no" path.
+
+Constraints:
+- Do not ask for a deferred start before the offer is extended unless
+  the reason is existential.
+- Do not say "I'd like as much time as possible" — always name a
+  specific date.
+- Do not threaten to take another offer as a lever to deferring a
+  start date.
+- Do not over-apologize. "I'm sorry to ask" is fine once; three
+  apologies read as desperation.
+- Do not volunteer more personal detail than the reason requires. A
+  parental leave ask does not need to share your birth plan. A family
+  situation doesn't need the full context. "A family commitment I
+  need to prioritize" is enough.
+- Do not agree to anything on the same call as the deferral ask. If
+  they counter with a shorter delay, say "let me think about that and
+  come back to you by [DATE]" before accepting.
+
+**Post-output — what happens next**:
+
+- **If they approve without pushback**: confirm in writing within 24
+  hours. Get the new start date into the offer letter or an amendment
+  email from the recruiter. Verbal agreements on start dates evaporate
+  at onboarding.
+- **If they counter with a shorter delay**: evaluate. Is the shorter
+  delay workable? If yes, accept in writing. If no, one more back-and-
+  forth is acceptable, but this is a place where you can burn goodwill
+  fast — don't push past "we really need you by [DATE]" more than once.
+- **If they push back hard or hint at pulling the offer**: the signal
+  is about company culture. Some companies treat deferred-start asks
+  as disqualifying; that's a data point about how they'll treat you
+  for life events later. Factor it into whether the job is worth
+  taking.
+- **If they pull the offer**: rare but happens on long deferral asks.
+  Do not grovel. A dignified "I understand, and if the timing works
+  differently later, I'd welcome the conversation again" preserves
+  future optionality.
+- **Once accepted**: do not re-open the start date conversation unless
+  something genuinely changes. A candidate who negotiates a deferred
+  start and then asks for another week looks flaky.
+```
+
+**Why this prompt works:** Deferred-start asks are one of the least-covered topics in negotiation content because most candidates assume they can't ask or ask wrong. The length-calibrated framing (short / medium / long) matches the real difficulty curve — a 2-week deferral is nothing, a 4-month deferral is a serious ask requiring serious justification. The red/yellow/green reason tagging is the move that saves candidates from stating a deferral reason that's honest but career-limiting ("I want a break" tagged correctly as red with a reframing prompt). The "don't volunteer more personal detail than the reason requires" constraint protects candidates from oversharing at the moment they're most nervous.
+
+---
+
+## Prompt 7 — Equity / RSU negotiation (the highest-complexity prompt in the bundle)
+
+```
+You are an equity specialist who has reviewed 500+ grant packages at
+startups through public companies. You know that equity is where
+candidates most often leave money — not because they don't negotiate,
+but because they don't understand what they're being offered well
+enough to know what to ask for. You also know that equity terms
+(strike price, vest schedule, cliff, acceleration, refresh, exercise
+window) are actually negotiable even when recruiters say they aren't.
+
+Inputs:
+- Grant type — do you know if yours is ISOs, NSOs, or RSUs?: [ISOs ·
+  NSOs · RSUs · "I DON'T KNOW — TEACH ME FIRST" · "MY OFFER SAYS [X]
+  BUT I DON'T KNOW WHAT IT MEANS"]
+- Company stage: [Seed · Series A–C · Series D+ / pre-IPO · recently
+  public · established public]
+- Grant details from the offer letter: [PASTE EVERYTHING — grant
+  size (# of options or shares, dollar value at current FMV),
+  strike price if applicable, vest schedule, cliff, exercise
+  window, any acceleration language]
+- Most recent 409A valuation (if private company, usually in the
+  offer packet or obtainable by asking): [PASTE — OR "NOT PROVIDED /
+  DON'T KNOW"]
+- My current equity position at current employer (unvested shares /
+  options I'd be leaving behind): [PASTE — OR "NONE / NOT RELEVANT"]
+- My leverage position on base + other components: [CHOOSE — I got
+  full asks on base, this is the place to push · I lost on base,
+  trying to equalize via equity · this is my first comp conversation,
+  full flex available]
+- My liquidity timeline (am I okay holding illiquid equity for 5–10
+  years, or do I need shorter liquidity): [LONG TIMELINE · MEDIUM ·
+  SHORT / NEED LIQUIDITY]
+
+BEFORE generating advice, do this check:
+
+**Grant-type teach (if "I DON'T KNOW")** — before we go further,
+here's the 3-sentence explanation you need:
+- **ISOs (Incentive Stock Options)**: a right to BUY shares at a
+  fixed strike price. Favorable tax treatment if you hold long enough
+  (1 year after exercise, 2 years after grant); no tax on exercise
+  unless AMT applies. Common at early-stage startups.
+- **NSOs (Non-qualified Stock Options)**: also a right to buy shares
+  at a strike price, but you pay ordinary income tax on the gap
+  between strike and fair market value AT EXERCISE — even if you
+  don't sell. Common at later-stage companies or for some roles.
+- **RSUs (Restricted Stock Units)**: actual shares (not options).
+  No strike price, no exercise decision — they vest and you own them.
+  Taxed as ordinary income at vest. Common at public companies and
+  late-stage private.
+
+Which one you have fundamentally changes: (a) what's worth
+negotiating, (b) your tax obligations, (c) your downside risk, and
+(d) your exercise decision timing. Go back to my offer letter and
+find the grant type, or ask the recruiter directly, before we
+continue.
+
+**Stage check** — does my company stage match typical grant type?
+- Seed to Series C: usually ISOs or NSOs (options, not shares)
+- Series D+ pre-IPO: mix — some ISOs/NSOs, increasingly RSUs
+- Recently public / established public: usually RSUs
+
+If the grant type doesn't match the stage (e.g., RSUs at a seed-
+stage company), flag it — it's not necessarily wrong, but it's
+unusual and worth understanding why.
+
+**409A check** — if I'm at a private company and I said "NOT
+PROVIDED / DON'T KNOW" for 409A valuation, stop. Tell me to ask
+the recruiter directly for the company's most recent 409A
+valuation. This is not a strange ask; it's standard. Without it,
+you cannot calculate what your options are actually worth, or
+whether the strike price is favorable.
+
+Once the checks pass, produce:
+
+**1. Grant evaluation** — what is this grant actually worth?
+- For ISOs/NSOs: current notional value ((# shares × (current FMV
+  − strike)) × vesting probability adjusted by company stage risk)
+- For RSUs: current notional value (# shares × current FMV), plus
+  caveat that value moves with company performance
+- Component breakdown of vest schedule (typical 4-year / 1-year
+  cliff vs. alternatives)
+- Anomalies to flag: unusual vesting (longer cliff, back-loaded
+  schedule), short post-termination exercise window, no
+  acceleration on change-of-control
+
+**2. What's actually negotiable** — the 5 equity levers, ranked by
+typical flex at my company stage:
+
+**(a) Grant size itself** — usually top lever for senior candidates,
+harder for junior. Ask: "Can we look at the grant size? Based on my
+market research for this role at this level, the total equity value
+I'd expect is [$X]."
+
+**(b) Equity refresh schedule** — often more negotiable than initial
+grant. A commitment to a specific refresh cadence (e.g., refresh
+grant at 12-month mark tied to performance) locks in long-term value.
+Ask: "Can we put in writing a refresh expectation at the 12-month
+mark?"
+
+**(c) Acceleration on change of control (CoC) / termination** —
+single-trigger (vesting accelerates on company sale) is rare;
+double-trigger (accelerates on sale AND termination without cause
+within 12–24 months post-sale) is more common at senior levels.
+Ask: "Can we add double-trigger acceleration on change of control?"
+
+**(d) Early exercise rights (ISOs/NSOs only)** — lets you exercise
+options before they vest, potentially starting the long-term capital
+gains clock early and (with an 83(b) election) locking in current
+FMV for tax purposes. Valuable if the company is growing and you can
+afford the exercise cost. Ask: "Can we add an early-exercise
+provision?"
+
+**(e) Extended post-termination exercise window (ISOs/NSOs only)** —
+standard is 90 days after you leave the company to exercise or
+forfeit. Extending to 5–10 years (per "The Holloway Guide" standard)
+is increasingly negotiable at startups. Ask: "Can we extend the
+post-termination exercise window to [5 years / 10 years]?"
+
+For each lever, give:
+- The spoken-cadence phrasing of the ask
+- Likelihood of movement at my company stage (rough %)
+- What the recruiter will likely counter with
+
+**3. What NOT to negotiate on** (to avoid burning credibility on
+fights you can't win):
+- Strike price directly — this is set by the 409A valuation and is
+  not adjustable
+- Vest schedule shortening below 3-year minimum — extremely rare to
+  flex below 3 years / 1-year cliff
+- Share class (common vs. preferred) — employee grants are always
+  common; no amount of negotiation changes this
+
+**4. Tax strategy warning** — flag any of these as things to discuss
+with a tax advisor BEFORE making decisions:
+- Whether to exercise NSOs at vest or wait (large AMT implications
+  for ISOs)
+- Whether to make an 83(b) election on early-exercised options
+  (30-day window, no extensions)
+- How to structure option exercise around liquidity events
+
+Constraints:
+- Do not give specific tax advice. Equity taxation is complex and
+  state/individual-specific; flag tax-adjacent decisions as
+  "confirm with a tax advisor."
+- Do not recommend exercising options at private companies without
+  a liquidity path. Paying strike + taxes on illiquid options can
+  mean putting real money into something that never becomes
+  liquid.
+- Do not suggest trading base salary for equity unless my liquidity
+  timeline and company stage support it. Base is cash this month;
+  equity is possibility in 5+ years.
+- Do not claim specific 409A valuations or FMVs you don't have
+  current data on. Use the numbers I provide in inputs.
+- Do not make claims about specific company acquisition probability.
+  Any equity advice that assumes a specific exit timeline is
+  speculation.
+
+**Post-output — what to do after the equity conversation**:
+
+- **Get every equity concession in writing** before signing. Verbal
+  agreements on refresh cadence, acceleration, or extended exercise
+  windows evaporate. Require them in the offer letter or an amendment
+  email from the recruiter with clear terms.
+- **Ask for the Plan Document** (the legal doc governing the equity
+  plan). Companies are often reluctant to share before you sign, but
+  you can and should ask — it contains the actual terms that will
+  apply. If they refuse, flag that and decide whether to accept
+  blind.
+- **Cross-check with a current employee if possible** — a 15-minute
+  conversation with someone at the company (via LinkedIn, mutual
+  connections, or Blind) who's exercised their equity can surface
+  real information no public source has (actual liquidity events,
+  post-termination exercise norms, company culture on equity).
+- **Do not exercise options at a private company without a
+  liquidity path and tax-advisor input**. The most expensive
+  mistakes in employee equity are exercises that lock in AMT
+  obligations without liquidity to pay them.
+- **Document your vest schedule in your own records** — not just
+  the grant agreement. Companies have been known to contest vest
+  dates, especially at acquisitions. Your records matter.
+```
+
+**Why this prompt works:** Equity is the component where candidates lose the most money in salary negotiation because they don't understand what they have well enough to ask for what they need. The explicit ISO/NSO/RSU 3-sentence teach at the top refuses to generate advice until the candidate can identify their grant type — because every piece of downstream advice changes based on grant type. The 5 negotiable levers (grant size, refresh, acceleration, early exercise, extended post-termination window) are ranked by flex with likelihood-of-movement percentages, which tells candidates where to spend their negotiation capital. The "what NOT to negotiate on" section is the move most prompts skip — preventing candidates from burning credibility on unwinnable fights (strike price, share class).
+
+---
+
+## Prompt 8 — Sign-on bonus negotiation (the cash component that closes gaps fast)
+
+```
+You are a comp consultant who has helped candidates negotiate 400+
+sign-on bonuses. You know sign-on is often the most flexible
+component of an offer because it's a one-time cash expense (no
+annual budget impact) — recruiters often have more room on sign-on
+than on base. You also know sign-on bonuses almost always have
+clawback clauses, and those clauses are negotiable.
+
+Inputs:
+- The current sign-on offered (if any): [PASTE — e.g., "$10K paid in
+  first paycheck, clawback if I leave in <12 months"] · OR "$0 / NOT
+  OFFERED"
+- The gap I'm trying to close: [CHOOSE — "base is below my target by
+  $X" · "equity is below my target notional by $Y" · "I'm leaving
+  unvested equity at current job worth $Z" · "I had a guaranteed
+  bonus at current job that I'm forfeiting" · "I have relocation
+  costs" · "other — describe"]
+- Company stage: [Seed to Series A · Series B–D · late-stage private
+  · public · traditional corporate · nonprofit / government]
+- Where I am in the process: [pre-offer · received offer, haven't
+  countered · already countered base and lost · multiple offers in
+  play]
+- My current employer's retention offer (if they've made one):
+  [PASTE — OR "NONE / NOT APPLICABLE"]
+
+BEFORE writing the sign-on ask, do this check:
+
+**Gap-specificity check** — if my input for "the gap I'm trying to
+close" is vague ("I just want more money"), flag it. The strongest
+sign-on asks are anchored to a specific, quantifiable gap:
+- Unvested equity I'm walking from: specific dollar value
+- Guaranteed bonus being forfeited: specific dollar value
+- Relocation costs: specific dollar estimate
+- Below-target base × years to re-equalize: specific math
+
+Without a specific anchor, the sign-on ask reads as a shopping-list
+request and is more likely to be denied. Push me to find a specific
+dollar number before writing the ask.
+
+**Stage check** — different company stages have different sign-on
+norms:
+- **Seed–Series A**: small cash sign-ons ($5–15K range) if any;
+  equity-heavy compensation means cash is tight
+- **Series B–D**: most flexibility on sign-on ($10–50K common at
+  IC; $50–150K+ at senior)
+- **Late-stage private / pre-IPO**: sign-on common, often
+  substantial ($25–150K), frequently tied to equity-refresh cycles
+- **Public / established public**: sign-on standard at senior
+  levels, expected to offset unvested equity at previous employer.
+  Amounts can be very large ($100K–500K+ at staff+ / VP+)
+- **Traditional corporate**: sign-on exists but usually capped and
+  formulaic; specific executive roles have more flex
+- **Nonprofit / government**: sign-on rare; when it exists, it's
+  small and usually relocation-tied
+
+Calibrate my ask to my stage. An IC at a Series B company asking for
+a $75K sign-on is out of band; an L5 staff engineer joining a late-
+stage pre-IPO asking for $100K to offset unvested equity is in band.
+
+Once checks pass, produce:
+
+**1. The sign-on ask** — three versions to use depending on where you
+are in the negotiation:
+
+**(a) Primary ask (fresh counter)**:
+- Specific dollar amount anchored to the specific gap
+- Rationale in 1–2 sentences tied to the gap (unvested equity,
+  foregone bonus, relo costs, etc.)
+- Structure preference (lump sum on first paycheck is standard; some
+  companies spread over 2–4 paychecks or tie to milestones)
+
+Spoken version (45–60 seconds): "On sign-on — I'm walking from
+[SPECIFIC $ OR SPECIFIC REASON] at my current role, and a sign-on
+of [$X] would close that gap for me. Paid in first paycheck,
+standard terms on clawback."
+
+Email version (80–120 words): structured around the same anchor +
+ask.
+
+**(b) Fallback ask (after they push back on your primary)**:
+- Reduced ask, still specific, with a pivot to clawback terms
+- "If the full amount isn't possible, I could work with [$Y], and
+  on the clawback I'd want the pro-rata repayment reduced from 12
+  months to 6 months — that would close the gap with reduced cash
+  outlay for you."
+
+**(c) Creative structure alternative** (when they flat-refuse
+direct sign-on):
+- Retention bonus at 6 or 12 months tied to hitting specific goals
+- First-year bonus guarantee (company guarantees at-target bonus
+  regardless of performance metrics)
+- Equity refresh grant at a specific date
+
+**2. Clawback terms — what to negotiate beyond the dollar amount**:
+- **Standard clawback**: full sign-on repaid if I leave in <12
+  months, pro-rated in some companies
+- **Negotiate for**:
+  - Pro-rated repayment (forfeit proportional to months remaining,
+    not full amount)
+  - Shorter clawback window (6 or 9 months vs. 12)
+  - Exclusions (no clawback if terminated without cause, no
+    clawback on death/disability)
+  - Taxability clarity (am I repaying gross or net of taxes I paid?
+    Gross is the standard; negotiating net is possible)
+
+**3. Red flags in sign-on terms** — things to watch for:
+- Clawback that lasts beyond 12 months (unusually long)
+- Sign-on paid in full only at end of first year (not really a
+  sign-on — that's a deferred bonus)
+- Tax responsibility on repayment that's ambiguous in the agreement
+
+Constraints:
+- Do not ask for a sign-on without a specific anchor (dollar gap,
+  foregone comp, relo costs). A sign-on ask with no rationale reads
+  as greedy and gets declined.
+- Do not combine sign-on ask with 3+ other component asks in the
+  same counter. The recruiter will allocate movement to 1–2
+  components; asking for 5 gets diluted responses.
+- Do not agree to a sign-on with clawback terms you haven't read.
+  Read the actual language before signing.
+- Do not accept a sign-on "agreed verbally" that isn't in the offer
+  letter. Verbal sign-on promises evaporate.
+
+**Post-output — what to do after negotiating sign-on**:
+
+- **Get the clawback language in writing** and read it in full.
+  Specifically: (a) pro-rata or full repayment terms, (b) what
+  triggers clawback (voluntary departure only, or also terminated-
+  for-cause?), (c) exclusions for termination without cause,
+  death, disability.
+- **Plan for tax treatment**: sign-on is taxed as ordinary income
+  in the year paid, and may push you into a higher bracket. If
+  paid in January of a year you wouldn't otherwise earn as much,
+  this usually works in your favor; if paid in a year you'd
+  already be at the top bracket, plan for a higher tax bill.
+- **Do not spend sign-on before the clawback window closes** if
+  you have any uncertainty about whether you'll stay. A pro-rata
+  clawback on a $50K sign-on after 6 months is a $25K repayment.
+- **If you're leaving before clawback ends**, negotiate the
+  clawback with your current employer (the new employer sometimes
+  covers if it's a competitive hire). This is a conversation
+  worth having before you give notice, not after.
+```
+
+**Why this prompt works:** Sign-on is the most frequently under-negotiated component because candidates treat it as a "nice to have" bonus rather than as a specific dollar lever tied to a specific gap. The gap-specificity pre-check forces candidates to anchor the ask in a specific number (unvested equity walked from, foregone bonus, relo costs) — which converts "I'd like more money" into "I'm walking from $45K of unvested RSUs that vest in 7 months; a $40K sign-on would make me whole." The clawback-term negotiation section is the move every candidate skips and every comp consultant recommends — the dollar amount matters, but the terms that let you keep it matter almost as much.
+
+---
+
+## Prompt 9 — Remote / relocation negotiation (where you work and who pays to move you there)
+
+```
+You are a people ops lead who has handled 200+ remote and relocation
+negotiations. You know companies will stretch on location flexibility
+and relo packages when the candidate is the right hire, and that
+these terms are often easier to flex than base salary. You also
+know the traps: verbal "we're flexible on remote" that becomes
+strict return-to-office 6 months later, relo lump sums that trigger
+huge tax hits, and international complications that surface too
+late.
+
+Inputs:
+- What I'm asking for: [CHOOSE — fully remote · hybrid with specific
+  days (e.g., 2 days/week in office) · fully remote except for
+  periodic team meetings (e.g., quarterly onsites) · relocation to a
+  specific city (paid by company) · re-location to a specific city
+  (with no company package, but need start date flex) · international
+  move · stay-put in non-HQ location]
+- The role / company's stated policy on remote: [CHOOSE — fully
+  remote-native company · remote-friendly (most teams are hybrid) ·
+  hybrid mandate (N days/week) · in-office default with exceptions ·
+  in-office mandatory]
+- Where I am in the process: [pre-offer · offer extended, haven't
+  responded · post-offer, already negotiating]
+- Company stage + industry: [PASTE]
+- My specific constraint: [CHOOSE — I'm moving and can't relocate
+  until [DATE] · I have a partner whose job ties me to this location
+  · I have caregiving / family constraints · I prefer remote for
+  productivity / life reasons · I have a visa / immigration
+  situation · other — describe]
+- If relocating, the cost estimate for my specific move: [PASTE
+  APPROXIMATE RANGE — e.g., "$10K for a local move, $35K for a
+  cross-country move with family"]
+
+BEFORE writing, do this check:
+
+**Policy-reality check** — if the company's stated policy is "in-
+office mandatory" and I'm asking for fully remote, the likelihood
+of movement is low unless I have unusual leverage (senior role, rare
+skill, competing offer). Flag this and suggest either (a) trialing a
+smaller ask (e.g., 3 days/week in office instead of 5), (b) deferring
+the ask until after a 6-month trial in the role, or (c) walking
+away if fully-remote is a hard requirement.
+
+**Visa / legal check** — if I have a visa or immigration situation
+(e.g., H-1B, TN, O-1, green-card pending), flag any asks that could
+complicate status:
+- Fully remote across state lines may require the sponsoring
+  employer to amend LCA filings
+- International relocation introduces tax residency, payroll, and
+  work-authorization complexity
+- Some visa statuses are tied to specific work locations; moving
+  without an amended petition can invalidate status
+Recommend consulting an immigration attorney before finalizing. Do
+not generate specific legal claims about visa implications — defer
+to qualified counsel.
+
+**Compensation-in-different-location check** — if I'm asking to
+relocate to a lower-cost area, flag that the company may lower base
+salary to match the new location's market rate. This is increasingly
+common post-2022. Estimate the possible comp adjustment before
+asking. If I'm asking to relocate to a higher-cost area, clarify
+whether base will adjust up.
+
+Once checks pass, produce:
+
+**For REMOTE / HYBRID asks**:
+
+The negotiation language:
+
+Spoken version (45–60 seconds): anchor on my productivity / life
+reason and the specific arrangement I'm asking for. "I'd want to
+ask about work arrangement. I do my best work with [SPECIFIC
+ARRANGEMENT — e.g., 2 days/week in the office and 3 remote]. I
+can make the in-office days work [PARTICULAR DAYS IF HELPFUL].
+Can we structure the role that way?"
+
+Email version (100–140 words): same anchor, with an explicit
+offer to re-evaluate after a trial period (6 or 12 months) if it
+helps the company agree.
+
+What to ask for in writing:
+- **Specific arrangement** (days, frequency, exceptions)
+- **Duration commitment** (is this permanent or trial-period?)
+- **Team meeting exceptions** (quarterly offsites, specific
+  project kickoffs)
+- **Manager / team agreement** (who else besides HR is okay with
+  this?)
+
+**For RELOCATION asks (company pays)**:
+
+The negotiation language:
+
+Spoken (60–90 seconds): anchor on the specific move + specific
+cost range. "On relocation — I'm moving from [CURRENT CITY] to
+[NEW CITY]. For a move of that scale (my estimate is $X based on
+[moving costs · temp housing · flights · realtor fees]), what's
+the company's typical relo package?"
+
+Email (120–160 words): same anchor with specific cost breakdown.
+
+The four structure options to ask for (pick 1–2):
+- **Lump sum cash** (simplest; taxed as ordinary income — ask for
+  grossed-up to cover taxes if they'll do it)
+- **Reimbursement** against specific receipts (less tax-efficient
+  in some cases; cleaner in others)
+- **Third-party relo services** (company contracts a relo firm —
+  handles the logistics and is often most valuable for
+  cross-country or international moves)
+- **Combination** (smaller lump sum + reimbursement for specific
+  high-cost items like temp housing)
+
+What to ask for in writing:
+- **Specific dollar amount or reimbursement cap**
+- **Clawback terms** (relo often has clawback if I leave in <12–24
+  months)
+- **Tax treatment** (grossed-up or not)
+- **Timeline for reimbursement** (weeks vs. months)
+- **Specific coverable categories** (moving, temp housing, travel,
+  realtor fees, spouse job-search support, school search)
+
+**For INTERNATIONAL moves**:
+
+Flag that international relocation is substantially more complex
+and usually requires:
+- Immigration / visa support
+- Tax equalization (often included in comprehensive packages)
+- Cost-of-living adjustment
+- Repatriation clause (what happens if I want to return)
+- Family member accommodation (spouse work authorization, school
+  search)
+
+Do not produce specific language; instead, recommend I request the
+company's international assignment policy (they'll have one if
+they've done this before) and work with an immigration attorney
+and tax advisor before finalizing.
+
+**For STAY-PUT asks (work from non-HQ without relocation)**:
+
+Anchor on what makes the work possible remotely (team already
+distributed, role doesn't require daily onsite presence, specific
+productivity advantages). Language: "Given [specific reason — the
+team's already distributed · the role is execution-heavy and doesn't
+need daily collaboration · I have deep depth in [X] that's worth
+the trade-off], I'd want to stay based in [CITY]. Can we structure
+the role that way?"
+
+Constraints:
+- Do not claim specific state tax or legal obligations for remote
+  work. State-by-state remote work tax situations are complex and
+  change; defer to tax advisor.
+- Do not accept a verbal "we're flexible on remote" without getting
+  the specific arrangement in writing. Verbal remote-flexibility
+  evaporates the moment a new VP joins or a policy changes.
+- Do not ask for fully remote at a company whose stated policy is
+  in-office mandatory, without strong leverage. The ask reads as
+  mis-reading the company and can cost you the offer.
+- Do not lie about the reason for the remote/relo ask. "My partner's
+  job is in [CITY]" is honest and usually respected; "I'd prefer
+  remote" is also honest and sometimes fine; mixing the two or
+  fabricating context backfires.
+- Do not agree to a location-based pay adjustment without
+  understanding the math. If relocating from a high-cost to low-
+  cost area drops base by $25K, factor that into total-package
+  decision.
+
+**Post-output — what to do after the remote/relo conversation**:
+
+- **Get the specific arrangement in writing** in the offer letter
+  or a signed amendment. Include days/week if hybrid, quarterly
+  onsite commitments, and trial-period duration if applicable.
+- **Confirm the arrangement with the hiring manager directly**,
+  not just HR. The person who'll actually manage your day-to-day
+  needs to be on board, and HR approval without manager approval
+  creates friction later.
+- **For relocation**: keep every receipt and document every expense
+  for 24 months after moving, even for lump-sum packages. Some
+  clawbacks are documented poorly and having receipts protects
+  you.
+- **For remote workers**: set up your home office professionally
+  within the first 30 days. Companies that offer home-office
+  stipends usually have deadlines for claiming; missed deadlines
+  are forfeiture.
+- **Do not take for granted that the arrangement is permanent.**
+  Six months in, check in with your manager: "The remote
+  arrangement is working well for [specific reasons] — any changes
+  expected?" Early check-ins surface policy changes before they
+  become forced.
+```
+
+**Why this prompt works:** Remote and relocation are two of the most commonly negotiated components in the post-2020 hiring landscape and the most poorly-documented in most salary content. The policy-reality check prevents candidates from asking for fully remote at companies that won't do it and losing the offer instead of the ask. The visa/immigration and compensation-in-different-location checks catch the two traps candidates fall into when relocating — one legal, one financial. The four relo-structure options (lump sum / reimbursement / third-party / combination) give candidates real negotiation levers instead of "can I get relo?" The post-output rule about keeping receipts for 24 months catches the clawback-documentation trap that surfaces only when someone's actually leaving.
+
+---
+
+## Prompt 10 — Justify your ask (the rationale prep before any live negotiation)
+
+```
+You are a negotiation coach who has helped 400+ candidates translate
+self-perception into externally-credible evidence. You know the
+single most common failure in negotiation is the candidate who
+believes they're worth more but can't articulate WHY in a way the
+recruiter can defend to finance. Internal conviction is not
+justification; justification is evidence the recruiter can carry
+into the conversation with the hiring manager and the comp
+committee.
+
+Inputs:
+- What I'm asking for: [PASTE — the specific component + dollar
+  amount or term — e.g., "base of $185K, up from the offered $170K"]
+- My 3 strongest potential rationale categories: [LIST — e.g.,
+  "market data shows I'm below median at this level; I have rare
+  skills in [X]; I shipped [specific outcome] in my current role"]
+- The specific business outcome(s) from my background that map to
+  what this role needs: [LIST — describe the outcome, the scale, and
+  the specific skill / problem it demonstrates. Or say "HAVEN'T
+  MAPPED THIS"]
+- My leverage sources: [LIST — competing offer · rare skill · market
+  data · specific reputation · prior relationship with someone at
+  the company · nothing unusual]
+- What the recruiter has already signaled about flexibility: [PASTE
+  — any hints they've dropped about budget, ranges, or priorities]
+
+BEFORE writing rationales, do this check:
+
+**Evidence check** — for each of my 3 rationale categories, is there
+specific, defensible evidence?
+
+- For MARKET-DATA rationales: do I have a specific source and
+  specific number? "Levels.fyi shows median base for L5 backend at
+  Series B/C companies, remote US, is $175K" is evidence. "Market
+  shows I should be paid more" is not.
+
+- For OUTCOME rationales: do I have a specific, quantified outcome
+  that maps to the role's priorities? "I led the $12M ARR migration
+  at Acme that shipped on time with 99.99% uptime" is evidence. "I'm
+  a strong senior engineer" is not.
+
+- For RARE-SKILL rationales: is the skill actually rare, and can I
+  quantify demand? "I have 8 years of ML infrastructure experience
+  including Ray Serve and Kubernetes at scale, and this role's JD
+  asked for that combination specifically" is evidence. "I work
+  hard" is not.
+
+If 2 of 3 rationales are vague, pause and walk me through surfacing
+specifics. Stress-test each: "Can I defend this if the hiring
+manager asks a follow-up question?"
+
+**Mapping check** — each rationale needs to tie to what this role
+specifically needs. A great outcome that's off-topic for the role
+doesn't help; it reads as random bragging. Pull 2–3 specific
+priorities from the JD and map each rationale to one of them.
+
+**If "HAVEN'T MAPPED THIS"** for the business outcome input — stop
+and help me map first. Ask me 3 questions to surface 2–3 specific
+business outcomes from my background, each quantified, each tied
+to a specific priority in the target role's JD.
+
+Once checks pass, produce:
+
+**3 structured rationales, each ranked by likely impact**:
+
+Each rationale written as:
+
+1. **The one-line claim** (the headline the recruiter can repeat to
+   finance): "Based on market data for this role at this stage, the
+   ask is in-band."
+
+2. **The 2–3 sentence expansion** (what I'd say in first-person
+   spoken cadence when the conversation gets to rationale):
+   - Claim stated directly
+   - Specific evidence supporting it
+   - Why it matters to THIS role / company / hiring manager
+
+3. **The evidence I can cite** (so I have it ready if asked follow-
+   up questions):
+   - Specific source(s)
+   - Specific numbers
+   - Specific examples
+
+4. **The potential weakness** — what's the weak point of this
+   rationale if the recruiter pushes back? Pre-empt it so I'm not
+   caught off-guard.
+
+**Rationale category types (use 2–3 of these, whichever fits my
+evidence best)**:
+
+- **Market-data rationale**: ("Based on [SPECIFIC SOURCE], the
+  median for this role at this stage is [$X]. I'm asking to sit at
+  [percentile] which reflects [specific reason].")
+- **Outcome / track-record rationale**: ("In my current role I
+  shipped [specific outcome with number]. The closest analog in
+  this role is [specific priority from JD]; my ask reflects the
+  depth I'd bring to that problem.")
+- **Rare-skill / scarcity rationale**: ("The combination of [skill
+  A + skill B + domain C] the JD asked for is genuinely hard to
+  find — most candidates have one or two, I have all three. The ask
+  reflects that depth.")
+- **Competing-offer rationale**: ("I have a signed offer from
+  [COMPANY] at [$X]. I'm open to this role at the same level or
+  above; the ask reflects that floor.")
+- **Opportunity-cost rationale**: ("I'm walking from [$X of
+  unvested equity · a guaranteed bonus at [$Y] · a role I was
+  recently promoted in]. The sign-on / base I'm asking reflects
+  making that whole.")
+
+**Prioritization — which rationale to use first**:
+- If you have market-data AND a specific outcome: lead with
+  outcome, support with market data
+- If you have a competing offer: competing offer is primary,
+  outcome supports
+- If you have only market data: lead with market data, be extra
+  specific on source and evidence
+
+**What to say if the recruiter asks "can you tell me more?"**:
+- For each rationale, prepare the 3-minute deeper version (more
+  context, more specific evidence, more story). The headline version
+  lives in the written counter; the deeper version lives in the
+  follow-up call.
+
+Constraints:
+- Do not use "I believe I deserve" or "I feel I'm worth". These are
+  self-referential and unpersuasive. Replace with external evidence
+  ("based on market data", "based on specific outcomes").
+- Do not claim a business outcome you led that was actually a team
+  outcome, without calibration. "I led the team that shipped [X]"
+  is legitimate; "I shipped [X]" when you were one of 8 engineers
+  is misleading and the hiring manager will usually catch it.
+- Do not stack 4+ rationales in one conversation. Pick 2–3, use
+  them consistently, repeat them across rounds.
+- Do not lie about evidence. Every rationale must be something you
+  can defend under 5 minutes of follow-up questions. If a rationale
+  is vulnerable to one specific question, flag it before you use
+  it.
+
+**Post-output — using the rationale in actual conversation**:
+
+- **Lead with the rationale the hiring manager can most easily
+  repeat** to finance / comp committee. A hiring manager who can
+  say "the candidate has 8 years in our exact stack and a $12M
+  ARR outcome we care about" will win more budget than one who
+  says "the candidate feels they're worth more."
+- **Don't repeat the rationale 4 times in one conversation.** Say
+  it once, clearly, then let the recruiter absorb. Repetition
+  signals insecurity.
+- **If pushed back**, don't abandon the rationale — support it
+  with more specific evidence. "I hear you — let me say more
+  about [specific outcome]." Not: "Well, I guess market data
+  varies."
+- **Do not reveal ALL your rationales in the first conversation.**
+  Hold 1 in reserve for the second round if needed. If you lose on
+  round 1 with rationale A, round 2 with rationale B keeps the
+  conversation alive.
+- **Document which rationales you've deployed** — if you have 3
+  rounds of negotiation, you don't want to repeat the same
+  rationale in round 3 that they already declined in round 1.
+```
+
+**Why this prompt works:** The gap between "I think I'm worth more" and "here is the evidence the hiring manager can take to finance" is where most negotiations fall apart. The evidence-check pre-output gate forces candidates to stress-test each rationale before deploying it — vague rationales get rewritten or dropped. The prioritization rule (when you have market data AND outcome, lead with outcome) matches what recruiters actually carry up the chain — specific outcomes beat generic data every time. The "don't reveal all rationales in round 1" post-output rule preserves negotiation optionality for candidates who often blow their whole hand in the first conversation.
+
+---
+
+# Scripts (Batch 2) — Scripts 4–8
+
+---
+
+## Script 4 — "Is that your final answer?" — the pressure-test script
+
+**Use when**: the recruiter has come back with a number and you want to test whether it's actually final or whether there's more flex hidden behind the "no more room" framing.
+
+**Length target**: 20–35 seconds spoken
+
+**Tone**: calm, curious, not pushy — you're asking a real question, not a rhetorical challenge
+
+**Why this script exists**: recruiters often deliver their offered number with "this is as high as we can go" language even when they have 5–15% more room. The "is that your final answer" script probes for flex without being confrontational — and the way they respond tells you more than the number itself.
+
+```
+"I appreciate you going back to the team on this. Before I take
+this to think it over, can I ask — is [$NUMBER] a firm final, or is
+there flex if we find the right structure? I'm asking because I
+want to understand where we actually are so I can make a clean
+decision."
+
+[Stop talking. Wait for the response.]
+```
+
+**What this script is doing:**
+- Warm acknowledgment of their effort ("appreciate you going back to the team") — signals you're not ungrateful
+- Direct question about finality — no hedging, no apology
+- "So I can make a clean decision" — reframes the question as helpful rather than confrontational (you're trying to move forward, not grinding)
+- Silence at the end — the recruiter's response reveals the reality
+
+**How to read the response:**
+
+- **"That's our final offer"** — firm and no explanation → likely actually final. Make your decision against target.
+- **"That's where we're at right now"** — soft language, "right now" → there's probably flex. Reply with: "Got it. If I were to structure the ask differently — say, smaller base increase but [specific other component] — would that open room?" (pivot into "we don't have budget" script territory)
+- **"Let me go back to the team"** — they're checking → there's flex. Wait for their response before pushing further.
+- **"What would make this work for you?"** — they're inviting a counter → you haven't anchored your ask high enough yet. Respond with a specific structure (see Prompt 3 counter-offer).
+- **"We can't move on base, but…"** — explicit flexibility on non-base components → take the pivot (see Script 3).
+
+**Do not**:
+- Ask "is that really the final?" with skepticism or pushback tone — reads as calling them a liar
+- Follow the question with a second ask in the same breath — let them answer
+- Repeat the question if they hedge; their hedge IS an answer (there's flex)
+
+**Post-script behavior**:
+- If they confirm it's final and the number is above walkaway: accept warmly and close.
+- If they confirm it's final and the number is below walkaway: this is decision time. Thank them, ask for 24 hours to think, walk the walkaway math (Worksheet 3) before responding.
+- If their response reveals flex: pivot to the "we don't have budget" script (Script 3) or a specific component ask.
+- Never ask "is that your final" more than once per negotiation. The second time turns into a power play and burns trust.
+
+---
+
+## Script 5 — Accept: lock in final terms
+
+**Use when**: you've reached agreement and you're ready to close the negotiation cleanly.
+
+**Length target**: 60–90 seconds spoken + follow-up email within 2 hours
+
+**Tone**: warm, professional, direct — this is the moment to sound genuinely happy, not to hedge
+
+**Why this script exists**: the single biggest mistake candidates make at acceptance is not locking specifics in writing. Verbal agreements on start date, remote arrangement, equity refresh, bonus structure evaporate between the phone call and onboarding unless they hit email or the offer letter.
+
+### Phone version (the live acceptance)
+
+```
+"[RECRUITER FIRST NAME] — I'm excited to accept. Before we hang up,
+let me confirm the final terms as I understand them:
+
+- Base salary: [$X]
+- Sign-on bonus: [$Y], paid [WHEN], with [CLAWBACK TERMS IF ANY]
+- Equity grant: [#] [ISOs / NSOs / RSUs], vesting [SCHEDULE]
+- Start date: [DATE]
+- Work arrangement: [FULLY REMOTE · HYBRID WITH SPECIFICS · IN-OFFICE
+  WITH SPECIFICS]
+- [ANY OTHER SPECIFIC TERMS WE NEGOTIATED — e.g., equity refresh
+  commitment at 12 months, 6-month comp review, etc.]
+
+Can you send an updated offer letter reflecting these terms by
+[SPECIFIC DAY — usually end of week]? I'd like to sign once I have
+the written version. And — genuinely, thank you for working through
+this with me. Looking forward to starting."
+```
+
+### Follow-up email (send within 2 hours of the call)
+
+```
+Subject: Confirming offer acceptance — [MY NAME]
+
+Hi [RECRUITER FIRST NAME],
+
+Thanks for the call just now. To summarize what we confirmed:
+
+- Base salary: [$X]
+- Sign-on bonus: [$Y], paid [WHEN], with [CLAWBACK TERMS]
+- Equity grant: [#] [ISOs / NSOs / RSUs], [VEST SCHEDULE]
+- Start date: [DATE]
+- Work arrangement: [SPECIFICS]
+- [ANY OTHER NEGOTIATED TERMS]
+
+Please send the updated offer letter when you have it ready — I'll
+sign and return promptly once I have the written version.
+
+Thanks again for working through this — I'm genuinely excited to
+get started.
+
+Best,
+[MY NAME]
+```
+
+**What this script is doing:**
+- Explicit enumerated summary of every negotiated component — creates the written record
+- "Before we hang up" signals you want to wrap cleanly, not re-open
+- The updated-offer-letter ask — getting the changes into the legal document, not just the email thread
+- Warm sign-off — relationship continues into onboarding
+- Email follow-up with the same enumeration — creates a time-stamped written record even before the revised offer letter arrives
+
+**Do not**:
+- Accept verbally without sending the confirmation email. Memory is the enemy of negotiated terms.
+- Say "I'll sign whenever you send it over" — set a specific day. Open-ended waiting creates drift.
+- Skip components you're unsure about. "I think we said $175K base — can you confirm?" is much better than assuming.
+- Re-open the negotiation on this call. If you notice something you forgot to ask about, note it and raise it on a separate call — don't stack new asks on the acceptance call.
+- Sign the updated offer letter without reading it in full. Companies occasionally introduce new clauses (non-compete, IP assignment, arbitration) in revised versions that weren't in the original.
+
+**Post-acceptance behavior**:
+- **Read the revised offer letter in full before signing** — every paragraph. Compare to the verbal summary; if anything differs, write back before signing.
+- **Save copies of every document**: original offer, revised offer, acceptance email, any amendment letters. Keep in a folder. If anything is disputed later, documentation wins.
+- **If a clause is new or unfamiliar, ask about it in writing before signing** — "I noticed [section X] wasn't in the original offer. Can you walk me through what it means and why it's there?" Never sign something you don't understand.
+- **If you negotiated an equity refresh / comp review commitment, put a calendar reminder** for the date. Companies sometimes forget to execute on these without prompting. Having the reminder protects you.
+- **Do not discuss your comp publicly or with future teammates** beyond what norms allow. Comp transparency can help the collective, but sharing your negotiated package with someone who got less can poison the working relationship.
+
+---
+
+## Script 6 — Leverage: "I have another offer"
+
+**Use when**: you have a real competing offer (signed or imminent) and you're deploying it as leverage with your primary choice.
+
+**Length target**: 60–90 seconds spoken, 150–200 words email
+
+**Tone**: warm, direct, not apologetic, not threatening — you're sharing information, not delivering an ultimatum
+
+**Prerequisite**: you've completed Prompt 4 (multiple-offer leverage), passed the bluff-check, and have a specific offer to reference.
+
+**Why this script exists**: leverage is high-leverage (correctly named) — when deployed well, it moves numbers. When deployed poorly, it burns offers. This script gives you the calibrated language that preserves the relationship while surfacing the real competition.
+
+### Phone version (live leverage deployment)
+
+```
+"[RECRUITER FIRST NAME] — before we finalize the number, I want to
+share some context that's relevant.
+
+I'm in final conversations with [another company in the same space /
+a competitor / a similar-scale company — be as specific as is
+honest]. The offer is [$NUMBER] for [COMPARABLE ROLE / LEVEL], and
+[IF APPLICABLE: the timeline is [DATE]].
+
+I want to be straight with you: this role is my preference. If the
+numbers were equivalent, I'd take this one. The difference I'm
+looking to close is roughly [$GAP AMOUNT], and the specific ask
+that would make this decision easy is [$ON BASE / $ ON SIGN-ON /
+$ ON EQUITY REFRESH — the specific structure from Prompt 4].
+
+What flexibility is there?"
+
+[Stop talking. Wait.]
+```
+
+### Email version (when leverage comes in writing)
+
+```
+Subject: [MY NAME] — next steps on the offer
+
+Hi [RECRUITER FIRST NAME],
+
+Thanks for the offer — I've spent time with it and want to share
+context that's relevant to where we land.
+
+I'm in [final conversations · receiving a written offer from] a
+[describe company in the same space, without necessarily naming
+it]. Their comp is [$NUMBER] for a [COMPARABLE ROLE / LEVEL],
+with [SPECIFIC TIMELINE IF APPLICABLE].
+
+Your role is my preference — [ONE SPECIFIC SENTENCE ABOUT WHY:
+the scope, the team, the mission, something genuine]. If we can
+close a gap of approximately [$X] on [SPECIFIC COMPONENT OR
+STRUCTURE], I'm ready to sign.
+
+I know that's a specific ask. Happy to jump on a call to discuss.
+
+Best,
+[MY NAME]
+```
+
+**What this script is doing:**
+- Transparent disclosure of the competing situation without dramatic framing
+- Preference statement — removes the "you're just using us" anxiety by making clear which you prefer
+- Specific dollar gap — converts "pay me more" into "close this specific delta"
+- Specific structure ask — gives the recruiter a lane to negotiate inside
+- Ends with a direct question ("what flexibility is there?") — invites a response rather than demanding one
+
+**Critical rules (covered in Prompt 4, reinforced here)**:
+- Only deploy this script if the competing offer or near-offer is real. Every word you say will be remembered.
+- Do not name the competing company unless asked — and if asked, a polite deflection is acceptable
+- Do not specify amounts beyond what you'd be willing to show if the recruiter asked for proof
+- Do not threaten to walk. The leverage is the fact that you have options; threats are optional and usually counterproductive
+
+**Do not**:
+- Say "I'd rather not share specifics" and then name a dollar amount. That's inconsistent.
+- Deploy this as your opening move in round 1 of negotiation. Use it after an initial counter has already been made and pushed back on — leverage is a late-round card.
+- Deploy this if the competing offer isn't at a level that would actually be credible for your primary (e.g., don't leverage a mid-level offer against a senior role ask).
+- Pair this with an ultimatum. "I have another offer and you need to match by Friday" reads as pressure play; they'll call it or walk.
+
+**Post-deployment behavior**:
+
+- **Go dark for 24–48 hours**. The recruiter needs to consult hiring manager + comp committee. Nudging during the window undermines the leverage.
+- **If they respond with a match or close**: accept warmly, confirm in writing (Script 5), move to close. Don't press for more.
+- **If they respond with "we can't match"**: evaluate against your walkaway. Two options: (a) accept the primary at their offered number if it's above walkaway (the primary may still be the right choice despite lower comp), or (b) take the competing offer. No middle ground once they've said can't-match.
+- **If they respond by asking for proof** ("can you share the written offer?"): offer to describe the offer in enough detail that they can verify without you sharing a PDF with personal details. "Happy to share the range and level — it's at [COMPANY TYPE], [LEVEL], and the base is [$X], with [COMPONENT] at [$Y]." Refusing to share anything reads as bluffing; sharing everything sometimes inflates the anchor in ways you don't want.
+- **If they pull the offer** after leverage deployment: extremely rare but possible. Reach out within 24 hours with: "I'd like to continue this conversation if there's still a path forward. My interest in the role is genuine." This salvages about 20% of pulled offers.
+- **If the competing offer falls through later**: do not inform the primary. The leverage was real when deployed; downstream events aren't something you owe updates on.
+
+---
+
+## Script 7 — PTO / benefits negotiation
+
+**Use when**: you've agreed on cash components and you want to close gaps on PTO, learning budget, parental leave, health benefits, retirement match, or other non-cash benefits.
+
+**Length target**: 45–60 seconds spoken per component
+
+**Tone**: pragmatic, matter-of-fact — these asks are lower-stakes than cash and should sound that way
+
+**Why this script exists**: PTO and benefits are often overlooked in negotiation because candidates focus on cash. But at many companies, these components have more flex than base salary — and a few extra PTO days plus an improved retirement match add up to real value over years.
+
+### Core PTO ask
+
+```
+"On PTO — the standard is [OFFERED DAYS]. I'd want to ask about
+[SPECIFIC HIGHER NUMBER — usually 5–10 more days]. At my current
+role I have [N DAYS] and I'd prefer not to take a step back on
+that. Is there flexibility?"
+```
+
+### Learning / development budget ask
+
+```
+"On professional development — does the role include a learning
+budget or conference allowance? If not, I'd want to ask for
+[$SPECIFIC AMOUNT] annually earmarked for [CONFERENCES /
+CERTIFICATIONS / COURSES]. It's something I use actively in my
+current work."
+```
+
+### Parental leave ask
+
+```
+"On parental leave — what's the current policy? [IF POLICY IS LESS
+THAN INDUSTRY STANDARD: I'd want to flag that [COMPARABLE COMPANIES]
+offer [SPECIFIC NUMBER OF WEEKS] and I'd want to discuss whether
+that's flexible for me.]"
+```
+
+### Retirement / 401k match ask
+
+```
+"On retirement benefits — is there flexibility on the match
+structure or vesting schedule? [IF YES: ask about specific
+improvement. IF NO: move on.]"
+```
+
+### Health benefits ask
+
+```
+"On health benefits — is there flexibility on the [SPECIFIC PLAN
+TIER / SPECIFIC PREMIUM ISSUE]? [e.g., HSA contribution, premium
+split, specific add-on coverage.]"
+```
+
+**Component flex patterns (pick your asks by what's likely to flex)**:
+
+- **PTO**: highly negotiable at startups and senior levels; heavily banded at large corporates (but sometimes "unlimited" policies can flex into explicit guaranteed minimums)
+- **Learning budget**: almost always flexible at tech and professional-services companies; harder at large bureaucratic companies
+- **Parental leave**: flexible at mid-sized companies, harder at large corporates (policies are usually uniform), sometimes very flexible at startups (they just don't have a policy, so there's nothing to bend)
+- **Retirement match**: rarely flexible — 401k match is usually uniform across employee base for compliance reasons
+- **Health benefits**: rarely flexible on structure — usually uniform plans. Premium split or HSA contribution sometimes has room.
+
+**Structure the conversation in order** (what to ask for first → last):
+
+1. PTO (highest flex at senior levels)
+2. Learning budget (almost always flexes)
+3. Parental leave (policy-dependent)
+4. Other component-specific asks
+5. Retirement / health (save for last — less flex, but worth asking)
+
+Do not ask for all 5 in one call. Pick 1–2 that matter most to you; ask them consecutively in the same call.
+
+**Do not**:
+- Ask for every benefit simultaneously. Dilutes focus and signals "wants everything."
+- Bring up PTO / benefits before cash components are settled. The cash negotiation is primary; benefits are the close-out round.
+- Ask for a benefit the company clearly doesn't offer ("can I get a 4-day work week?" at a traditional corporate) without significant leverage.
+- Accept "that's not flexible" on the first question for EVERY benefit ask. Push once per component; if both asks get declined, move on.
+
+**Post-ask behavior**:
+
+- **Get any flexed benefit in writing** — especially PTO beyond standard, or a learning budget that wasn't in the original package. Verbal benefit promises evaporate.
+- **If they say "we don't negotiate benefits"**: pivot to asking for a specific year-1 exception or an early review for benefit eligibility. Even if the plan is fixed, early access sometimes flexes.
+- **If they offer a benefit you don't want** (e.g., larger 401k match that requires longer vesting): evaluate total-package value. Sometimes the "benefit" isn't valuable to you personally; it's fine to decline and ask for an alternative.
+- **For PTO specifically**: if they agree to more days, ask about carry-over rules and buyback options at separation. PTO you can't use or take with you has lower real value.
+
+---
+
+## Script 8 — 30-day review revisit (when you accept below ask)
+
+**Use when**: you've accepted an offer below your target, but with an understanding that comp will be revisited at 30, 60, or 90 days based on performance or proof-of-impact.
+
+**Length target**: 60–90 seconds spoken at the initial acceptance + a specific written follow-up at the 30-day mark
+
+**Tone at acceptance**: confident, forward-looking — you're framing this as collaboration, not consolation
+**Tone at revisit**: professional, evidence-backed — you're demonstrating the impact you promised
+
+**Why this script exists**: when the initial negotiation doesn't close the full gap, a documented 30-day (or 60, or 90) revisit commitment preserves future comp upside. The single biggest failure mode is that candidates accept the revisit commitment verbally, don't document it, and find themselves unable to re-open the conversation.
+
+### Part A — Acceptance language (at initial offer close, when base is below target)
+
+```
+"[RECRUITER FIRST NAME] — I'm ready to accept at this number, but I
+want to flag one thing. The base is below where my market research
+and the ask landed. I understand the budget constraints this round.
+
+I'd want to put an explicit [30-DAY / 60-DAY / 90-DAY] check-in on
+the calendar where we revisit comp if I've demonstrated [SPECIFIC
+IMPACT]. Specifically, if I've [SPECIFIC DELIVERABLE OR OUTCOME],
+I'd want to revisit base.
+
+Can we put that agreement in writing in the offer letter or an
+amendment? That way we both have a clear marker."
+```
+
+**What this part is doing**:
+- Explicitly names the gap (you're not pretending it's fine)
+- Frames the revisit as mutual accountability (they see impact, you see comp)
+- Specific deliverable = clear trigger for the revisit conversation
+- "In writing" request is the protection
+
+**Acceptance rules**:
+- **Always specify the exact deliverable** ("ship the [X] migration" or "hit [Y] metrics for 2 consecutive months") — not "demonstrate good performance"
+- **Always specify the revisit window** — 30, 60, or 90 days, not "soon" or "in a few months"
+- **Always get it in writing** — offer-letter amendment or clear email confirmation. Verbal revisit agreements almost never happen on time.
+- **Never accept a revisit offer if the current base is below your walkaway** — the revisit is probabilistic; the current base is guaranteed. Don't treat "30-day revisit" as making up for below-walkaway comp.
+
+### Part B — The 30-day revisit message (written, sent 2 days before the agreed check-in)
+
+```
+Subject: [MY NAME] — comp revisit check-in
+
+Hi [MANAGER FIRST NAME] [AND/OR RECRUITER],
+
+As a reminder from when I signed, we agreed to revisit comp at the
+30-day mark pending [SPECIFIC DELIVERABLE].
+
+Over the last 30 days:
+- [SPECIFIC OUTCOME 1 WITH NUMBER OR CONCRETE EVIDENCE]
+- [SPECIFIC OUTCOME 2 WITH NUMBER OR CONCRETE EVIDENCE]
+- [SPECIFIC OUTCOME 3 WITH NUMBER OR CONCRETE EVIDENCE]
+
+Per the agreement, I'd want to schedule a comp revisit conversation
+next week. What works for you?
+
+Thanks — looking forward to it.
+
+Best,
+[MY NAME]
+```
+
+**What this part is doing**:
+- Opens with the reference to the agreement — no ambiguity that this was pre-negotiated
+- 3 specific outcomes with numbers — doing the work for the manager so they can make the case
+- Specific ask for a meeting — converts vague "we'll revisit" into concrete calendar item
+
+**Rules for the revisit message**:
+- **Send 2 days before** the agreed check-in date. Earlier than that reads as anxious; day-of reads as last-minute.
+- **Always include 3 specific outcomes**, each with a number or concrete evidence. "I've been doing good work" doesn't reopen a comp conversation.
+- **Tie each outcome to the specific deliverable named in the original agreement**. If you agreed to "ship the X migration" and you shipped it, say so explicitly.
+- **Copy the recruiter OR your manager, whoever was involved in the original agreement**. HR often forgets or was never looped in; having both people makes the agreement harder to walk back.
+
+### Part C — In the revisit conversation itself
+
+```
+"Thanks for making time. As we agreed, I wanted to revisit comp now
+that the [30-day mark] has hit. The outcomes I flagged in my note —
+[BRIEFLY RESTATE 1–2 OF THEM] — were specifically what we agreed
+would trigger this conversation.
+
+Based on that, the ask I'd want to make is [SPECIFIC NUMBER OR
+STRUCTURE — e.g., base raised to $X, or additional equity grant of
+$Y].
+
+What's the process from here?"
+
+[Stop talking. Wait.]
+```
+
+**Do not**:
+- Skip the 30-day revisit just because the role is going well. Accepting below-target on a promise and then not exercising the promise is leaving money.
+- Revisit earlier than the agreed date. "I know we said 30 days, but I wanted to ask now" undermines the original agreement.
+- Revisit with vague "I've been doing great" framing. Specific outcomes with numbers are the only thing that opens the comp conversation.
+- Escalate the ask beyond what the original agreement implied. If you agreed to revisit base if you shipped X, don't then ask for base + equity refresh + sign-on. One agreement, one revisit.
+- Give up after the first revisit if they delay. "We need another 30 days to confirm impact" is a reasonable counter; "we'll circle back eventually" is not. Set a specific next date if they push.
+
+**Post-revisit behavior**:
+
+- **If they grant the ask**: confirm in writing (Script 5). Move on.
+- **If they counter with a partial**: evaluate against your original target. If partial gets you to target or close, accept. If well below, ask for a 60-day or 90-day follow-up.
+- **If they say "the revisit isn't possible"**: refer back to the original written agreement. If the agreement specified conditions and those conditions were met, this is a renegotiation of an existing agreement — a serious signal about the employer. Consider (a) escalating above your manager, (b) documenting the exchange carefully, (c) whether this is the company you want to be at long-term.
+- **If they grant the revisit but at a smaller amount than promised**: you now have two pieces of data — (1) they honored the revisit, (2) they didn't honor it at the level implied. Decide whether to continue with a 60-day second revisit or to treat this as the ceiling.
+
+---
+
+# Worksheets
+
+---
+
+## Worksheet 1 — BATNA
+
+**What BATNA is, in 3 sentences**:
+
+Your BATNA (Best Alternative To Negotiated Agreement) is your concrete backup plan if this negotiation fails to produce an acceptable outcome. It's not your target or your ideal — it's the specific, real, available option you'd actually take if this job falls through. In salary negotiation, your BATNA is the single most important thing determining how much room you have to push — because a negotiation without a BATNA is a negotiation where you cannot walk away, which means you cannot negotiate, only accept.
+
+**The BATNA worksheet** (fill in honestly — your real answers, not aspirational ones):
+
+```
+CURRENT STATE:
+1. Am I currently employed? [YES / NO]
+2. If yes, what's my current comp (base · bonus · equity)?
+3. If yes, am I satisfied enough to stay 6+ more months if this role falls through?
+4. If no, how many months of savings do I have to fund a continued search?
+
+LIVE ALTERNATIVES (as of today):
+5. Do I have any other live offers right now? [YES / NO]
+6. If yes, list each:
+   - Company · Role · Comp · Timeline · My interest level vs. this offer
+   - [repeat for each]
+7. Do I have near-offers (final-round conversations)?
+   - Company · Role · Expected timeline · My interest level
+   - [repeat for each]
+
+LATENT ALTERNATIVES (could be reopened):
+8. Are there past companies where I reached final-round rejection but
+   left on good terms that I could re-open? [LIST]
+9. Are there people in my network who have offered to make intros or
+   sponsor me? [LIST]
+
+MY REAL BATNA (distill from above):
+10. If this negotiation fails and this offer goes away, what's the
+    single most likely path I'd take?
+    [CHOOSE — stay in current role and restart search in [N] months ·
+    take a specific other live offer · wait on a specific near-offer ·
+    re-open a specific past conversation · search from unemployment
+    with [N] months of runway]
+
+11. What's the comp value of that BATNA (base + total comp)?
+    $[NUMBER]
+
+12. How does that BATNA comp compare to the offer I'm negotiating?
+    [HIGHER · SIMILAR · LOWER · MUCH LOWER]
+```
+
+**How to use the BATNA in negotiation**:
+
+- **If your BATNA is HIGHER or SIMILAR in comp value to the current offer**: you have strong leverage. You can push hard on the counter because you can genuinely walk.
+- **If your BATNA is LOWER but not much lower**: you have moderate leverage. You can counter firmly but be ready to accept.
+- **If your BATNA is MUCH LOWER** (e.g., unemployed with 2 months of savings and no other leads): your leverage is limited. Counter is still appropriate, but the stakes of the counter backfiring are higher. Calibrate ambition to your margin for error.
+- **If you have NO BATNA** (not currently employed, no savings, no other leads): negotiate carefully. A too-aggressive counter that gets the offer pulled is a disaster you can't absorb. Use market-data rationale, not leverage-based rationale.
+
+**Rules for using the BATNA**:
+- **Do not reveal your BATNA to the recruiter** unless it's a genuine competing offer that you're leveraging intentionally (in which case, see Script 6).
+- **Update your BATNA every 2–4 weeks during an active job search**. Your leverage changes as offers come and go.
+- **Do not use an aspirational BATNA as if it's real**. "I could probably find another offer" is not a BATNA; "I have final-round conversations with [specific company] that are likely to produce an offer by [specific date]" is.
+- **If your BATNA is weak, make market data and outcomes do the work your leverage can't**. You can still negotiate — just differently.
+
+---
+
+## Worksheet 2 — Comp research template
+
+**Step-by-step template for triangulating what a role actually pays**:
+
+```
+ROLE SPEC (fill in fully — vague inputs produce vague outputs):
+- Target role: [SPECIFIC JOB TITLE + SENIORITY + SPECIALIZATION]
+- Industry / domain: [PASTE]
+- Location / location tier: [CITY + STATE or REMOTE TIER]
+- Company stage + size: [PASTE]
+- Years of experience: [NUMBER]
+
+SOURCE-BY-FIELD PRIMARY CHECKLIST (pick your field and start here):
+```
+
+### Tech / engineering / product / design
+```
+[ ] Levels.fyi — search target role + level + location + company stage.
+    Look at distribution: 25th, 50th, 75th percentile.
+[ ] Blind — search company name + level for anonymous current-
+    employee posts. Bias: skews to complaints; useful for trends.
+[ ] LinkedIn Salary — enter role + location. Useful as distribution
+    reference, less granular than Levels.
+[ ] Glassdoor — fallback only. Skews low and older.
+[ ] 1–2 reference conversations with people at the company or at
+    peer companies at similar level. 30 min each.
+```
+
+### Finance / banking / consulting
+```
+[ ] Wall Street Oasis (WSO) — salary threads by firm and level.
+[ ] eFinancialCareers — salary surveys by region and specialty.
+[ ] Transparent Career — niche but data-dense for banking.
+[ ] Mergers & Inquisitions — articles + salary data for IB roles.
+[ ] 1 reference conversation minimum — finance comp varies more than
+    most industries by firm.
+```
+
+### Healthcare
+```
+[ ] For MDs: Doximity + AAMC salary reports + Medscape Physician
+    Compensation Report (annual)
+[ ] For nursing: Indeed filtered by state + union contracts where
+    applicable
+[ ] For allied health: Glassdoor + state labor reports
+[ ] State medical society surveys when available
+[ ] 1–2 reference conversations with current practitioners at peer
+    facilities
+```
+
+### Marketing / design / content / sales
+```
+[ ] Built In — for tech-adjacent marketing/design roles
+[ ] Glassdoor — useful here despite bias (less tech-specific data)
+[ ] Payscale — aggregates broadly across industries
+[ ] HubSpot / sales-specific industry reports
+[ ] 2+ reference conversations — marketing comp varies a lot; data
+    sources alone aren't enough
+```
+
+### Nonprofit
+```
+[ ] GuideStar (Form 990) — publicly-filed compensation for top 5
+    highest-paid employees. Free.
+[ ] Idealist — some posted ranges.
+[ ] Council on Foundations salary surveys (if target org is
+    philanthropic)
+[ ] Candid — overlaps with GuideStar
+[ ] Reference conversations — nonprofit comp is 20–40% below
+    for-profit; people are often willing to share openly
+```
+
+### Government / public sector
+```
+[ ] Federal: OPM.gov — GS scale + locality pay tables (public)
+[ ] State: each state publishes its pay bands (search "[state]
+    employee salaries")
+[ ] Municipal: same — usually public by law
+[ ] Military: DFAS pay tables
+[ ] No reference conversations needed — pay is transparent
+```
+
+### Other / cross-industry
+```
+[ ] Payscale — broad coverage
+[ ] Glassdoor — basic distribution
+[ ] LinkedIn Salary — if you have Premium
+[ ] Salary.com — fallback
+[ ] 2+ reference conversations are essential — published data alone
+    is too broad
+```
+
+**Step 2 — triangulation table**:
+
+```
+Fill in what you found at each source:
+
+| Source          | 25th %ile | Median | 75th %ile | Notes |
+|-----------------|-----------|--------|-----------|-------|
+| [Source 1]      | $         | $      | $         |       |
+| [Source 2]      | $         | $      | $         |       |
+| [Source 3]      | $         | $      | $         |       |
+| [Reference call 1] | $      | $      | $         |       |
+| [Reference call 2] | $      | $      | $         |       |
+
+Triangulated range:
+- Walkaway floor: $[LOW END OF WHAT YOU TRUST]
+- Real target: $[MEDIAN OF TRUSTED SOURCES]
+- Ambitious ask: $[TARGET × 1.10–1.15]
+```
+
+**Step 3 — reference call script** (for each of your 2 reference conversations):
+
+```
+"Hi [NAME] — thanks for taking the time. I'm exploring a [ROLE] role
+at [COMPANY TYPE / STAGE], and I want to calibrate my comp
+expectations honestly.
+
+Two questions if you're open to them:
+
+1. Based on what you know of similar roles, what range do you think
+   is reasonable for this level?
+2. Are there any specific components (equity, sign-on, bonus) where
+   [STAGE/TYPE] tends to flex more or less than average?
+
+And just to set expectations — I won't share any specifics you
+mention; I'm just trying to triangulate."
+```
+
+**Rules**:
+- **Never use a single source**. Every number you take to a negotiation should come from at least 2 sources.
+- **Weight reference conversations heavily for fields with less-standardized data**. In marketing or nonprofit, 30 minutes with a peer is worth more than 3 hours of Glassdoor.
+- **Re-run this worksheet at every new role**. Comp ranges shift quickly; last year's numbers are often stale.
+
+---
+
+## Worksheet 3 — Walkaway math / benefit-equivalency calculator
+
+**Purpose**: convert a full offer package into a single comparable number so you can (a) compare offers apples-to-apples, (b) stress-test against your walkaway floor, (c) evaluate trade-offs between components.
+
+**Step 1 — cash components (straightforward dollars)**:
+
+```
+Base salary (annual):                        $[        ]
+Annual bonus target (% of base × probability):
+    Target $ × typical-hit-rate of [80–100%] = $[        ]
+Sign-on bonus (pro-rate over expected
+    tenure if you plan to stay 2+ years, or
+    count in full if short-tenure expected):  $[        ]
+
+Cash subtotal:                                $[        ]
+```
+
+**Step 2 — equity (the illiquid and probabilistic component)**:
+
+For RSUs at a public company:
+```
+RSU grant dollar value ÷ vest years:          $[        ] / year
+```
+
+For RSUs at a late-stage private:
+```
+(Grant value × discount for illiquidity) ÷ vest years = $[   ] / year
+(Discount typically 20–40% depending on company runway)
+```
+
+For ISOs/NSOs at a startup:
+```
+(Grant value AT CURRENT 409A × discount for
+ risk-adjusted probability of exit × years
+ to likely liquidity) ÷ vest years = $[        ] / year
+
+Discount ranges:
+- Seed/Series A: discount 70–90% (most fail)
+- Series B–C: discount 50–70%
+- Series D+: discount 20–40%
+
+(These are honest risk-adjusted estimates, not
+ recruiter-pitch numbers.)
+```
+
+**Step 3 — benefits and time**:
+
+```
+PTO (annual days × daily base rate):          $[        ]
+    (Base ÷ 250 = daily rate; × PTO days)
+
+Retirement match (up to annual cap):          $[        ]
+
+Health insurance premium subsidy (annual
+    company contribution):                    $[        ]
+
+Learning / development budget:                $[        ]
+
+Parental / family leave (if planning use in
+    next 2 years, calculate paid leave value): $[        ]
+
+Other benefits (home office, gym, food,
+    commuter, etc.) — annual value:          $[        ]
+
+Benefits subtotal:                            $[        ]
+```
+
+**Step 4 — costs and subtractions**:
+
+```
+Commute cost (if in-office — annual):         −$[        ]
+Relocation cost (if relocating — not
+    reimbursed portion, prorated):            −$[        ]
+Cost-of-living difference from current
+    location (if moving):                     ±$[        ]
+Income tax difference (if moving to new
+    state — ballpark):                        ±$[        ]
+
+Costs subtotal:                               $[        ]
+```
+
+**Step 5 — total comparable value**:
+
+```
+TOTAL FIRST-YEAR COMP =
+  Cash subtotal
++ Equity subtotal (first-year vest)
++ Benefits subtotal
+− Costs subtotal
+= $[        ]
+```
+
+**Step 6 — compare to your walkaway**:
+
+```
+My walkaway total comp (what I said I would not go below): $[      ]
+
+Offer total: $[      ]
+
+Gap: $[ + / − ]
+
+Decision rule:
+- Offer > walkaway by 10%+: strong offer, accept or close with minor
+  asks
+- Offer 0–10% above walkaway: acceptable, consider accepting
+- Offer at walkaway: accept if non-comp factors (role, team, mission)
+  are strong; decline if they're neutral
+- Offer below walkaway: counter firmly or walk; do not rationalize
+  accepting below your stated floor
+```
+
+**Step 7 — comparing two offers** (if you have multiple):
+
+Run Steps 1–5 for each offer side-by-side. Don't compare on base alone; compare on total comparable value.
+
+Second comparison — non-comp factors (check all that apply):
+
+```
+Factor                         Offer A | Offer B
+-----------------------------------------
+Role interest / scope            [ / ]
+Team / manager quality           [ / ]
+Company trajectory / stage       [ / ]
+Learning opportunity             [ / ]
+Career path / advancement        [ / ]
+Work-life balance                [ / ]
+Flexibility (remote, schedule)   [ / ]
+Risk / stability                 [ / ]
+Brand / resume value             [ / ]
+Geographic fit / life logistics  [ / ]
+```
+
+Weight each factor 1–5 based on YOUR priorities. Sum × weight for each offer. Total comparable comp + weighted non-comp score = your decision input.
+
+**Rules**:
+- **Do not treat equity at face value** — always apply risk-adjusted discount based on stage
+- **Include PTO in the math** — companies offering "unlimited PTO" that nobody actually takes are different from companies offering 25 specific days
+- **Re-run the math when something changes** — if they counter with more equity instead of base, the math changes
+- **Trust the non-comp factors** — a 10% lower total at a better role with a better team usually wins long-term
+
+---
+
+**End of Module 5.** 10 prompts · 8 scripts · 3 worksheets. Flagship module complete.

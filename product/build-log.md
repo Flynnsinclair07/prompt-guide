@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-23 — Day 3 (Module 5 Batch 2 — flagship complete)
+
+- Module 5 Batch 2 shipped: 5 prompts + 5 scripts + 3 worksheets, per outline commit 98b3475 (no invented scope). Prompts: deferred-start (length-calibrated with red/yellow/green reason tagging), equity/RSU (highest-complexity — 3-sentence ISO/NSO/RSU teach embedded as pre-output gate, 5 equity levers ranked by flex, tax strategy flags), sign-on bonus (gap-specificity check, stage-patterned asks, clawback term negotiation), remote/relocation (visa/immigration safeguards, 4-relo-structure options), justify your ask (evidence check + mapping check, 5 rationale categories ranked by impact).
+- Scripts: "is that your final answer?" pressure-test (with response-reading guide), accept-and-lock-terms (phone + email with enumerated components), "I have another offer" leverage, PTO/benefits (5 component asks with stage-patterned flex), 30-day review revisit (3-part: acceptance language + written follow-up + revisit conversation). Worksheets: BATNA (3-sentence teach + full scaffold + how-to-use rules), comp research template (source-by-field primary checklists + triangulation table + reference call script), walkaway math / benefit-equivalency calculator (7-step comparable-value math + multi-offer comparison). All Tom guardrails met: M5-level rigor on equity/RSU (ISO/NSO/RSU teach before generation), Option-B calibration on all legal claims, source-specific guidance throughout. Two additional v2 nits logged from Batch 1 QA (Script 2B fallback, Script 3 traditional/corporate definition). Batch 2 flagged ready for boss QA.
+
 ## 2026-04-23 — Day 3 (Module 5 Batch 1 — flagship module)
 
 - Module 5 Batch 1 shipped: 5 prompts + 3 scripts. Prompts: market-rate research (source-authority by field), offer evaluation (component scorecard + top-3 levers), counter-offer scripting (flagship, with BATNA 2-sentence teach embedded in pre-output gate), multiple-offer leverage (4-situation branching + bluff-check with 3-question test), exploding offer response (artificial-vs-real diagnosis). Scripts: email counter, phone 30-sec opener (2 versions), "we don't have budget" rebuttal (with component flex by stage).
