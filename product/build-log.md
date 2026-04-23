@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-23 — Day 2 (actual calendar — plan Days 1-5 all shipped 2026-04-22)
+
+- Polish pass on Modules 1-3 complete: no broken items, all placeholders consistent (`[SPACED CAPS]` throughout, zero `[JOB_TITLE]` drift), no typos. Signature drift flagged — Week 3 must-ship per boss: persona-seed backfill on 11 prompts (M1 P3-P8, M2 P1, P3-P6), pre-output quality-gate backfill on M1+M2, M3 P10/M2 P6 thank-you consolidation decision.
+- Week 1 QA sample committed at product/qa-samples/week1-sample.md (M1 P1, M2 P2, M2 P6, M3 P6, M3 P8, M3 P12, Answer-Scoring workflow — 6 prompts + 1 workflow). Flagged ready for Thursday Apr 24 boss review. Standing down until QA verdict — no Module 4 work, no scope creep per brief.
+
 ## 2026-04-26 — Day 5
 
 - Module 3 complete: Prompts 7-12 shipped (closing Qs, salary screen, panel prep, post-interview thank-you, reverse-interview, red-flag detection) plus AI-grilling rehearsal workflow (3-round: warm-up / pressure / curveballs) and Answer-scoring prompt (5-dimension grade, no-inflation, salvageable-or-scrap fork). Boss greenlit rehearsal + scorer after individual review — called both "top-tier" and rehearsal workflow "best pure-workflow move in the bundle so far."
