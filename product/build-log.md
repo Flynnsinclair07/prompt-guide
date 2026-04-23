@@ -4,6 +4,11 @@ Daily standup notes during the Apr 21 → May 10 build. 2 lines/day minimum.
 
 ---
 
+## 2026-04-23 — Day 2 (late standup: boss QA verdict received)
+
+- Boss QA verdict: GREENLIGHT on all 7 artifacts. Week 1 content ships as-is. Two new must-fix items added to Week 3 polish backlog: (1) M3 P8 salary law claim → revise to boss's "Option B" wording — AWAITING EXACT TEXT FROM BOSS before execution, (2) M3 P12 emoji rendering test in PDF export — swap 🟢🟡🟠🔴 to text tags if broken.
+- Week 3 polish day budget bumped: ~2 hours → ~3 hours. Module 4 (LinkedIn Profile) starts Thursday Apr 24 afternoon — 8 prompts + optimization checklist + weekly content pack. Scope lock in effect: no M1/M2/M3 edits, no polish items during Module 4 build.
+
 ## 2026-04-23 — Day 2 (actual calendar — plan Days 1-5 all shipped 2026-04-22)
 
 - Polish pass on Modules 1-3 complete: no broken items, all placeholders consistent (`[SPACED CAPS]` throughout, zero `[JOB_TITLE]` drift), no typos. Signature drift flagged — Week 3 must-ship per boss: persona-seed backfill on 11 prompts (M1 P3-P8, M2 P1, P3-P6), pre-output quality-gate backfill on M1+M2, M3 P10/M2 P6 thank-you consolidation decision.
