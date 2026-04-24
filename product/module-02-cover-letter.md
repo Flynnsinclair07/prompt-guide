@@ -265,6 +265,8 @@ letter makes for me. If you can't name one, rewrite before delivering.
 
 ## Prompt 6 — Follow-up (after applying · after the interview)
 
+> **Note on Scenarios B and C**: if you're writing a thank-you after an interview that actually mattered, use **Module 3 Prompt 10** instead — it calibrates by round type (recruiter screen through founder/CEO) and includes a sycophancy self-edit this prompt doesn't. Use Scenarios A, D, E here for application nudges, check-ins, and ghosted closes — those have no Module 3 equivalent.
+
 ```
 I need to write a follow-up message. Help me choose which scenario this is
 and draft the right one.

@@ -596,7 +596,9 @@ Constraints:
 
 ---
 
-## Prompt 10 — Post-interview thank-you (not the email Prompt 6 in Module 2 — this is the one-hour-after version)
+## Prompt 10 — Post-interview thank-you (the 24-hour note after a conversation that mattered)
+
+> **Use this, not Module 2 Prompt 6 Scenarios B/C**, when you're writing a thank-you after an actual interview. This prompt calibrates by round type and includes a sycophancy self-edit. Module 2 Prompt 6 covers the other three follow-up scenarios (application nudge, 7–14 day check-in, ghosted close).
 
 ```
 You are an interview coach who has read thousands of thank-you notes. You
