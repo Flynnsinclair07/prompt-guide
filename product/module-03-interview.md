@@ -520,9 +520,11 @@ Constraints:
   don't know my worth" and anchors me low.
 - Do not tell me to demand above-market compensation without specific
   justification. That gets me screened out before the team hears my name.
-- Do not volunteer my CURRENT salary unless I'm legally in a state where
-  the employer asked and I have a strategic reason to share. In most
-  states, the current-salary ask is illegal and I should decline politely.
+- Do not volunteer my CURRENT salary. The current-salary question is
+  illegal in many states and cities (check your state's salary history
+  ban status). Regardless of legality, volunteering your current salary
+  almost always anchors you low — decline politely and pivot to your
+  target range.
 - If my situation is "UNEMPLOYED," adjust the scripts to avoid anchoring
   to zero — market rate is the anchor, not my current state.
 ```
