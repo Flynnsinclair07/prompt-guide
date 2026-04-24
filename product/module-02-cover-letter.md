@@ -16,6 +16,8 @@ Cover letters are dead in some industries (most software engineering roles), ali
 ## Prompt 1 — Hook-first opener (the anti-template)
 
 ```
+You are a cover letter coach who has critiqued 3,000+ first paragraphs. You know the three-second "archive or keep reading" decision hiring managers make on the opening line, and that the gap between a generic opener and a read-worthy one is almost always a specific research signal, not better phrasing.
+
 Write the first paragraph of a cover letter for a [JOB TITLE] role at [COMPANY].
 
 The opener must NOT:
@@ -39,10 +41,12 @@ Inputs:
 - Something specific they did recently that I noticed: [URL OR DESCRIPTION]
 - One thing I've done that's directly relevant: [ONE SENTENCE]
 
-Generate 3 distinct opener options — each different in angle and tone. For
-each, write one line below it naming which hiring manager personality it
-would land best with (e.g., "numbers-driven VP", "craft-obsessed founder",
-"pragmatic ops lead").
+BEFORE writing openers, do these checks:
+- If "what they do / their bet" is generic ("SaaS company", "fintech startup", "helps businesses scale"), flag it and ask me to name the specific bet — who they serve, what problem they solve, who they compete against. Generic company framing produces generic openers and kills the whole prompt.
+- If "something specific they did recently that I noticed" is weak, hedged ("they had a product launch recently"), or left blank, refuse to proceed until I paste a URL, a specific product decision, a metric, or a named reference. The research-signal input is the anchor for the entire opener — without it, the "10+ minutes of research" requirement is imagined, not demonstrated.
+- If "one thing I've done that's directly relevant" is generic ("I have experience in marketing", "I'm passionate about product"), pause and ask me 2 follow-up questions to surface a specific project, outcome, or decision that maps to the company's specific bet. Without specificity here, the opener's landing sentence has nothing to connect to.
+
+Once the checks pass, generate 3 distinct opener options — each different in angle and tone. For each, write one line below it naming which hiring manager personality it would land best with (e.g., "numbers-driven VP", "craft-obsessed founder", "pragmatic ops lead").
 ```
 
 **Why this prompt works:** The banned-phrase list is the whole point. ChatGPT's default cover letter opener is a template nobody reads. Forcing it away from the defaults — and onto a concrete moment or research signal — makes the first 5 seconds worth reading. The "3 options tuned to different reader personas" step saves you from the wrong-register problem (e.g., a witty opener sent to a numbers-driven VP).
@@ -98,12 +102,30 @@ After the body, list:
 ## Prompt 3 — Industry-switcher version (addressing the elephant directly)
 
 ```
+You are a cover letter coach who has written 600+ industry-switcher letters across every pivot type (teaching → PM, finance → startup, clinical → UX, military → corporate). You know the hiring manager's real question on a switcher letter is "is this person serious about the pivot or hedging?" — and candidates who hide the switch always lose that question.
+
 I'm applying for a [TARGET JOB TITLE] role at [COMPANY], switching from
 [CURRENT INDUSTRY / ROLE] to [TARGET INDUSTRY]. My resume shows the switch
 isn't a natural fit on paper, so the cover letter has to do the positioning
 work.
 
-Write a full one-page cover letter (300–380 words) that does the following:
+Inputs:
+- Current field: [e.g., classroom teaching, clinical nursing, investment
+  banking, restaurant management]
+- Target field: [e.g., product management, UX research, data analytics]
+- Target role JD: [PASTE]
+- My resume: [PASTE]
+- Any side projects, self-study, or community involvement pointing toward
+  the new field: [LIST — OR WRITE "NONE YET" IF HONEST]
+- The single strongest transferable outcome from my current work: [ONE
+  SENTENCE WITH A NUMBER IF POSSIBLE]
+
+BEFORE writing, do these checks:
+- If "the single strongest transferable outcome" is generic or missing a number (e.g., "led a team well", "improved processes"), flag it and ask me for the scale/result. Body paragraph 1 mechanically breaks without a concrete outcome — the "why I'm credible" pivot has nothing to land on.
+- If "side projects, self-study, or community involvement" is "NONE YET", do not accept it at face value. Ask me 3 surfacing questions (courses started, books/podcasts, communities joined, freelance attempts, posts written, conversations with people in the target field). If after surfacing there's still nothing, substitute body paragraph 2 with the "what I'm doing in the next 60 days" plan — do not invent activity.
+- Surface the pivot objection before writing. Ask me: given my specific pivot (current → target), what does the target hiring manager most likely worry about? (e.g., teaching → PM: "can they handle ambiguity?"; finance → startup: "can they operate without process?"). Without surfacing, the Constraints' "address the likely concern directly" move fires blind.
+
+Once the checks pass, write a full one-page cover letter (300–380 words) structured as:
 
 1. Opening (45–75 words): lead with ONE specific observation about [COMPANY]
    or [TARGET INDUSTRY] that reveals I've done real homework — not a generic
@@ -125,17 +147,6 @@ Write a full one-page cover letter (300–380 words) that does the following:
    into in the first conversation. No "thank you for your consideration"
    autopilot.
 
-Inputs:
-- Current field: [e.g., classroom teaching, clinical nursing, investment
-  banking, restaurant management]
-- Target field: [e.g., product management, UX research, data analytics]
-- Target role JD: [PASTE]
-- My resume: [PASTE]
-- Any side projects, self-study, or community involvement pointing toward
-  the new field: [LIST — OR WRITE "NONE YET" IF HONEST]
-- The single strongest transferable outcome from my current work: [ONE
-  SENTENCE WITH A NUMBER IF POSSIBLE]
-
 Constraints:
 - Do not apologize, hedge, or use the word "transition" (overused)
 - Do not invent experience or credentials I didn't provide
@@ -154,6 +165,8 @@ manager and the specific sentence in the letter that answered each.
 ## Prompt 4 — Referral version (someone warm-introduced you)
 
 ```
+You are a referral cover letter specialist who has written 400+ referral letters. You know the two common failure modes — overselling the relationship (which embarrasses the referrer and lands back on them) and leaning on the name so hard the letter has no substance — and you calibrate tone to the actual relationship, not the candidate's wishful thinking.
+
 Someone I know is referring me internally for a [JOB TITLE] role at [COMPANY].
 Write a cover letter that uses the referral without burning the referrer's
 goodwill or making me sound like I'm trading on their name instead of my own
@@ -171,7 +184,12 @@ Inputs:
 - Job description: [PASTE]
 - My resume: [PASTE]
 
-Write a full one-page cover letter (280–350 words) structured as:
+BEFORE writing, do these checks:
+- If "how strongly they can vouch" is option 3 (barely knows me) but my relationship description elsewhere reads warm ("we've worked together a lot", "close colleague"), pause and ask me to confirm which is accurate. The "cap at 3 mentions" rule is meaningless if the underlying relationship strength is miscalibrated, and overselling a weak referral is the exact failure mode that burns the referrer.
+- If referrer's exact words = "THEY DIDN'T SAY ANYTHING SPECIFIC", confirm that the letter will not use any invented endorsement language ("highly recommended", "thinks I'd be perfect", "vouched for me"). Operate on the name-drop alone — no hallucinated attribution.
+- If the JD is missing or paraphrased, refuse. Body paragraph 1 pivots onto the JD's top-2 requirements; without the full JD, the pivot defaults to generic and the letter collapses back onto the referral, which is exactly the failure mode this prompt prevents.
+
+Once the checks pass, write a full one-page cover letter (280–350 words) structured as:
 
 1. Opener (40–60 words): name the referrer in the FIRST sentence with the
    right degree of warmth. Do not oversell the relationship. If they barely
@@ -210,6 +228,8 @@ Hard rules:
 ## Prompt 5 — Cold application (no referral, no recruiter, no insider)
 
 ```
+You are a cold-outreach cover letter coach who has reviewed 1,500+ cold letters. You know cold applications die for one reason: no thesis. The letter either makes a single best argument a reader can name, or it's a list of qualifications that gets archived unread.
+
 I'm applying cold to a [JOB TITLE] role at [COMPANY] — no referral, no prior
 relationship, no recruiter reaching out. My cover letter has to do 100% of
 the positioning work.
@@ -226,7 +246,12 @@ Inputs:
 - The single most relevant thing from my background for this role: [ONE
   SENTENCE WITH A NUMBER OR OUTCOME]
 
-Write a cold cover letter (300–380 words, one page) structured as:
+BEFORE writing, do these checks:
+- If "why I specifically want THIS company" is company-interchangeable ("they're doing great work", "I admire the mission", "they're a leader in the space"), refuse to proceed until I name something only this company offers — a specific bet, a founder decision, a product angle no competitor has. This is the thesis test enforced upstream, not at delivery.
+- If "one specific thing I noticed in research" is homepage-level (tagline, recent press-release repeat, "their values"), flag and ask me to go one click deeper — a changelog post, an eng blog, a podcast appearance, a hiring-spike pattern, a Glassdoor trend, a customer case study. Research that's one click deep doesn't clear the "10+ minutes" bar the letter asserts.
+- If "single most relevant thing from my background" lacks a number or concrete outcome, flag and ask for the scale/result before writing. Body paragraph 1 has to carry the interview-winning fit case; generic input here produces generic body.
+
+Once the checks pass, write a cold cover letter (300–380 words, one page) structured as:
 
 1. Opener (50–75 words): start with the specific research signal, not a
    generic "I'm excited to apply" line. Show you understand what the company
@@ -268,6 +293,8 @@ letter makes for me. If you can't name one, rewrite before delivering.
 > **Note on Scenarios B and C**: if you're writing a thank-you after an interview that actually mattered, use **Module 3 Prompt 10** instead — it calibrates by round type (recruiter screen through founder/CEO) and includes a sycophancy self-edit this prompt doesn't. Use Scenarios A, D, E here for application nudges, check-ins, and ghosted closes — those have no Module 3 equivalent.
 
 ```
+You are a follow-up message specialist who has written 5,000+ post-application and post-interview notes. You know the single thing that separates "grateful and moving on" from "anxious pest" is specificity — a specific moment, a specific date, a specific next step. Templates are the failure mode.
+
 I need to write a follow-up message. Help me choose which scenario this is
 and draft the right one.
 
@@ -293,7 +320,12 @@ Fill these in so the message is specific, not generic:
   [ONE SENTENCE, OR "NONE"]
 - If A, D, or E: the last touchpoint date and what happened: [ONE SENTENCE]
 
-Write the message (email format, no cover-letter formality) following these
+BEFORE writing, do these checks:
+- If I picked Scenario B or C, per the cross-reference note above this prompt, redirect me to Module 3 Prompt 10 instead. Do not write a weaker thank-you from this prompt — M3 P10 calibrates by round type and includes a sycophancy self-edit this prompt doesn't.
+- If I picked Scenario A or D but left "last touchpoint date and what happened" blank or vague, refuse to proceed until I fill it. The timing (5–10 business days for A, 7–14 days for D) is the load-bearing justification for sending; without it, the message has no anchor and reads as random pinging.
+- If I picked Scenario E (ghosted), ask me to confirm whether I've already sent a previous "final" message. If yes, hard refuse — the universal rule is "never send two 'final' messages." A second dignified close is just anxious.
+
+Once the checks pass, write the message (email format, no cover-letter formality) following these
 rules for the chosen scenario:
 
 Length targets:
