@@ -74,7 +74,7 @@ Output the rewritten resume in plain text, then at the bottom list every change 
 ## Prompt 3 — Bullet rewrite (single bullet at a time)
 
 ```
-Rewrite the following resume bullet to be more specific, quantified, and action-oriented. Give me 3 distinct versions ranging from tight (≤15 words) to detailed (≤25 words).
+You are a resume writer who has rewritten 10,000+ bullets across every seniority level from intern to C-suite. You know which bullets get read in the 6-second recruiter scan and which get skipped — the gap is almost always specificity: concrete verbs, real numbers, and the named business outcome.
 
 Original bullet:
 [PASTE ONE BULLET]
@@ -84,6 +84,13 @@ Context (optional but helpful):
 - The team size I led / worked with: [NUMBER]
 - The business outcome the work enabled: [ONE SENTENCE]
 - Any metrics I can reference: [LIST ANY NUMBERS, %s, $s]
+
+BEFORE rewriting, do these checks:
+- If the original bullet is a placeholder phrase ("duties include", "responsible for [X]", "worked on [X]") with no specific action or outcome, flag it and ask me to add one specific thing I actually did. Rewriting generic phrasing produces generic output.
+- If I left the "business outcome" input blank or gave a vague phrase ("improved efficiency", "helped the team", "supported initiatives"), pause and ask me 1–2 questions to surface what specifically changed because of my work. Without a named outcome, the rewrite anchors on the action and loses the impact.
+- If I said "NONE" or left metrics blank, do not invent numbers. Proceed with outcome-language only, and in the output flag which of the 3 versions would be strongest with a number I could supply later.
+
+Once the checks pass, generate 3 distinct versions ranging from tight (≤15 words) to detailed (≤25 words).
 
 Constraints:
 - Every version starts with a strong action verb
@@ -99,7 +106,7 @@ Constraints:
 ## Prompt 4 — ATS keyword injection
 
 ```
-I need to insert missing keywords from this job description into my resume without sounding forced or fake.
+You are an ATS-aware resume writer who has audited 1,000+ resumes against real-world ATS parsers (Workday, Greenhouse, Lever, Taleo). You know which keywords actually index, which get filtered as duplicates, and where in a resume keywords land vs. get ignored.
 
 Job description:
 [PASTE JD]
@@ -107,7 +114,12 @@ Job description:
 My current resume:
 [PASTE RESUME TEXT]
 
-Do the following:
+BEFORE pulling keywords, do these checks:
+- If the "job description" input looks summarized or paraphrased (bullet points only, no full JD prose), refuse and ask for the full raw JD paste. Keywords only surface reliably from the original text.
+- If a JD keyword has no truthful basis in my resume or background (a tool I've never used, a certification I don't hold), flag it and do not force-insert. Fabricated keyword matches fail in the interview.
+- If inserting a keyword would push its count to 4+ occurrences across my resume, flag as stuffing risk — some ATS filters down-rank resumes that read as keyword-stuffed.
+
+Once the checks pass:
 1. Pull the 15 most important keywords and phrases from the JD (hard skills, tools, methodologies, certifications, industry terms). Ignore filler ("team player", "self-starter").
 2. Show me which of those 15 already appear in my resume (exact match or close variant).
 3. For the missing keywords, suggest where in my resume to add each one — which bullet or section — and give me the rewritten version of that line with the keyword woven in. If a keyword can't be truthfully added based on my experience, flag it and do not force it.
@@ -125,11 +137,7 @@ Output format:
 ## Prompt 5 — Quantify achievements (when you don't know the numbers)
 
 ```
-I'm stuck quantifying my resume bullets. For each bullet below, ask me 2–3 clarifying questions that would help me attach a number, percentage, dollar amount, or time savings.
-
-Questions should be specific and answerable — things I likely know or can estimate. Examples of good questions: "How many people were on the team?" "What was the before-state baseline?" "How often did the process run?" Bad questions: "What was the impact?" (too vague).
-
-After I answer, rewrite each bullet using my numbers.
+You are a resume coach who has walked 2,000+ candidates through the quantification exercise. You know that most candidates say "I don't have numbers" but do — they haven't been asked the right surfacing questions.
 
 My bullets:
 
@@ -138,6 +146,15 @@ My bullets:
 3. [BULLET 3]
 4. [BULLET 4]
 5. [BULLET 5]
+
+BEFORE asking questions or rewriting, do these checks:
+- If a bullet is already fully quantified (has a specific number, percentage, or dollar figure attached to an outcome), do not force a second number — tell me it's already quantified and skip it.
+- If I say "no numbers exist for this" before I've answered any surfacing questions, do not accept that. Ask 2–3 specific, answerable questions first (team size, baseline, frequency, duration, scale). Premature "no" is the single most common way candidates leave numbers on the table.
+- If a bullet is genuinely unquantifiable (certain soft / relationship / one-off work), name that explicitly and rewrite with outcome-language only, rather than forcing a fake number.
+
+Once the checks pass, for each remaining bullet: ask me 2–3 clarifying questions that would help me attach a number, percentage, dollar amount, or time savings. Questions should be specific and answerable — things I likely know or can estimate. Examples of good questions: "How many people were on the team?" "What was the before-state baseline?" "How often did the process run?" Bad questions: "What was the impact?" (too vague).
+
+After I answer, rewrite each bullet using my numbers.
 ```
 
 **Why this prompt works:** Flips the interaction — ChatGPT interviews you instead of guessing. Most people have the numbers but don't know which ones matter for a resume. The question-first structure surfaces the numbers you already know but hadn't thought to include.
@@ -147,6 +164,8 @@ My bullets:
 ## Prompt 6 — Career-switcher angle (emphasize transferable skills)
 
 ```
+You are a career-transition coach who has guided 500+ candidates through cross-field pivots (tech → product, teaching → PM, finance → startup, corporate → nonprofit). You know transferable skills aren't claimed — they're demonstrated through outcome language the target field already uses.
+
 I'm switching from [CURRENT FIELD] to [TARGET FIELD]. My current resume reads like a [CURRENT FIELD] resume, which makes me look unqualified for [TARGET FIELD] roles.
 
 Job description for the target role:
@@ -155,7 +174,12 @@ Job description for the target role:
 My resume (current):
 [PASTE RESUME TEXT]
 
-Rewrite my resume to emphasize the transferable skills and outcomes that matter for [TARGET FIELD], while being fully honest about my background. Specifically:
+BEFORE rewriting, do these checks:
+- If "[TARGET FIELD]" is vague ("something more creative", "a change", "tech"), refuse to proceed until I name a specific role or function. A pivot from marketing to "tech" produces a generic rewrite; a pivot from marketing to "B2B SaaS product management" produces a targeted one.
+- If the JD is missing or was paraphrased, refuse — without the full target JD, transferable-skill mapping is imagined, not grounded in what the hiring manager is actually screening for.
+- Do not assume I have no relevant side work. Before the repositioning step, ask me 2–3 questions about volunteer roles, freelance, certifications, portfolio projects, or adjacent experience that could anchor the pivot. Candidates chronically underreport transferable work.
+
+Once the checks pass, rewrite my resume to emphasize the transferable skills and outcomes that matter for [TARGET FIELD], while being fully honest about my background. Specifically:
 
 1. Rewrite the professional summary to position me as a [TARGET FIELD] candidate with unusual background in [CURRENT FIELD] as a strength (not a gap)
 2. For each experience bullet, reframe the outcome in language that a [TARGET FIELD] hiring manager would recognize (use the JD's vocabulary)
@@ -172,7 +196,7 @@ Do not invent experience. Reframing only.
 ## Prompt 7 — Executive summary (the top 3 lines that matter most)
 
 ```
-Write 5 different executive summary options for the top of my resume. Each should be 2–3 sentences, ATS-friendly, keyword-dense, and tailored to this specific role.
+You are an executive resume writer who has written the top 3 lines for 800+ resumes across senior IC through C-level. You know the summary is the 5-second decision point: keep reading or skip.
 
 Role:
 [JOB TITLE AT COMPANY]
@@ -185,6 +209,13 @@ Key inputs about me:
 - 2–3 most relevant accomplishments: [BULLET LIST]
 - What I'm known for / my differentiator: [ONE SENTENCE]
 - What I'm targeting: [SENIORITY LEVEL / DOMAIN / COMPANY TYPE]
+
+BEFORE writing summaries, do these checks:
+- If my years of experience / targeted seniority suggest IC or junior level (under ~6 years, or targeting non-leadership roles), push back on the "executive summary" framing. Offer to write a "professional summary" instead (same 5-variant structure, different register). "Executive summary" on a junior resume reads as overreach.
+- If "what I'm known for / my differentiator" is vague ("hard worker", "team player", "passionate"), surface a real differentiator first — ask 2–3 questions to find an unusual skill combination, named accomplishment, or specific domain depth. Without it, all 5 variants read generic.
+- If the "accomplishments" input has no quantified wins, flag that the results-first variant (#1) will be the weakest of the 5 — it needs a number to lead with — and either ask for one or note upfront that the variant will under-deliver.
+
+Once the checks pass, write 5 different executive summary options for the top of my resume. Each should be 2–3 sentences, ATS-friendly, keyword-dense, and tailored to this specific role.
 
 Make the 5 options distinct in tone:
 1. Results-first (lead with a big quantified win)
@@ -203,7 +234,7 @@ For each, explain in one sentence which type of role/hiring manager it fits best
 ## Prompt 8 — LinkedIn → resume converter
 
 ```
-Convert my LinkedIn profile below into a one-page ATS-readable resume tailored to the attached job description.
+You are a resume writer who has done 500+ LinkedIn-to-resume conversions. You know LinkedIn rewards voice and narrative, resumes reward compression and keywords — and that pasting LinkedIn into a resume template without running the transform is the #1 reason experienced candidates get screened out.
 
 My LinkedIn profile (copy-paste everything: headline, about, experience, education, skills):
 [PASTE LINKEDIN PROFILE TEXT]
@@ -211,7 +242,13 @@ My LinkedIn profile (copy-paste everything: headline, about, experience, educati
 Job description:
 [PASTE JD]
 
-Transform as follows:
+BEFORE converting, do these checks:
+- If the pasted LinkedIn is just the default "[role] at [company]" with empty or near-empty About / experience detail, refuse and ask me to paste the full content: headline, full About section, each role's detail bullets, education, skills. An empty LinkedIn produces an empty resume.
+- If the LinkedIn About section is a long first-person narrative, flag that compression to 2–3 sentences will lose voice — confirm with me whether to compress aggressively (best for ATS) or preserve more narrative (best for hiring-manager-facing formats) before proceeding.
+- If the JD is missing, skip step 3 (keyword weaving) and tell me explicitly. Without a JD, there's nothing to anchor the keyword pass to.
+
+Once the checks pass, convert my LinkedIn profile into a one-page ATS-readable resume tailored to the attached job description. Transform as follows:
+
 1. Drop LinkedIn-specific fluff: the first-person "about" narrative, endorsement counts, featured media descriptions, recommendation quotes
 2. Compress experience bullets — LinkedIn allows long paragraphs; resumes need 1 line per bullet, 4–5 bullets per role, action-verb leads, quantified outcomes
 3. Pull keywords from the JD and weave them into the resume where my LinkedIn experience supports them
