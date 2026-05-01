@@ -30,24 +30,38 @@ variables:
   sansfont: "TeX Gyre Heros"
   monofont: "Menlo"
   monofontoptions: "Scale=0.85"
-  ## Code block styling
+  ## Code block styling — Eisvogel listings options for breakable code blocks
   listings-disable-line-numbers: true
   listings-no-page-break: true
   ## Glyph fallback for dingbats (✓ ✗) — TeX Gyre Heros covers arrows/Latin
   ## but lacks U+2713 / U+2717. Arial Unicode MS has both; route just those
   ## characters through it while keeping body in TeX Gyre Heros.
+  ## Code-block line-wrapping — Pandoc emits raw \begin{verbatim} for un-
+  ## tagged fenced code (no language hint), and verbatim cannot wrap. Switch
+  ## to listings package globally so all code blocks (tagged or not) get
+  ## breaklines + breakatwhitespace=false + columns=fullflexible.
   header-includes: |
     \usepackage{newunicodechar}
     \newfontfamily{\symbolfont}{Arial Unicode MS}
     \newunicodechar{✓}{{\symbolfont ✓}}
     \newunicodechar{✗}{{\symbolfont ✗}}
+    \lstset{
+      basicstyle=\ttfamily\small,
+      breaklines=true,
+      breakatwhitespace=true,
+      breakindent=0pt,
+      columns=fullflexible,
+      keepspaces=true,
+      showstringspaces=false,
+      postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space}
+    }
 
 ## Pandoc options
 toc: true
 toc-depth: 2
 number-sections: false
 highlight-style: tango
-listings: false
+listings: true
 standalone: true
 
 ## Metadata
