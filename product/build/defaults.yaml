@@ -43,8 +43,13 @@ variables:
   header-includes: |
     \usepackage{newunicodechar}
     \newfontfamily{\symbolfont}{Arial Unicode MS}
+    \newfontfamily{\emojifont}{Apple Color Emoji}[Renderer=HarfBuzz]
     \newunicodechar{✓}{{\symbolfont ✓}}
     \newunicodechar{✗}{{\symbolfont ✗}}
+    \newunicodechar{🟢}{{\emojifont 🟢}}
+    \newunicodechar{🟡}{{\emojifont 🟡}}
+    \newunicodechar{🟠}{{\emojifont 🟠}}
+    \newunicodechar{🔴}{{\emojifont 🔴}}
     \lstset{
       basicstyle=\ttfamily\small,
       breaklines=true,
