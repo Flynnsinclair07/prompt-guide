@@ -1,0 +1,4 @@
+## Build artifacts — output PDFs are not committed.
+## Source of truth lives in product/*.md; PDFs regenerate from build.sh.
+output/
+*.pdf

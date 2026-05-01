@@ -1,0 +1,58 @@
+## Pandoc defaults — Job Hunter's Bundle PDF build
+## Used by build.sh; do not invoke pandoc directly.
+
+from: markdown
+to: pdf
+pdf-engine: lualatex
+template: eisvogel.latex
+
+## Eisvogel + typography
+variables:
+  titlepage: true
+  titlepage-color: "1a1a1a"
+  titlepage-text-color: "ffffff"
+  titlepage-rule-color: "ffffff"
+  titlepage-rule-height: 2
+  toc-own-page: true
+  book: true
+  classoption:
+    - oneside
+  geometry:
+    - top=2.2cm
+    - bottom=2.2cm
+    - left=2.2cm
+    - right=2.2cm
+  fontsize: 11pt
+  linestretch: 1.15
+  ## TeX Gyre Heros = Helvetica metrics + full Unicode (arrows, checks, symbols).
+  ## Ships with MacTeX. Avoids the Helvetica Neue missing-glyph issue.
+  mainfont: "TeX Gyre Heros"
+  sansfont: "TeX Gyre Heros"
+  monofont: "Menlo"
+  monofontoptions: "Scale=0.85"
+  ## Code block styling
+  listings-disable-line-numbers: true
+  listings-no-page-break: true
+  ## Glyph fallback for dingbats (✓ ✗) — TeX Gyre Heros covers arrows/Latin
+  ## but lacks U+2713 / U+2717. Arial Unicode MS has both; route just those
+  ## characters through it while keeping body in TeX Gyre Heros.
+  header-includes: |
+    \usepackage{newunicodechar}
+    \newfontfamily{\symbolfont}{Arial Unicode MS}
+    \newunicodechar{✓}{{\symbolfont ✓}}
+    \newunicodechar{✗}{{\symbolfont ✗}}
+
+## Pandoc options
+toc: true
+toc-depth: 2
+number-sections: false
+highlight-style: tango
+listings: false
+standalone: true
+
+## Metadata
+metadata:
+  title: "The Job Hunter's Bundle"
+  subtitle: "44 Prompts · 8 Negotiation Scripts · 3 Worksheets"
+  author: "Flynn Sinclair"
+  lang: en-US
