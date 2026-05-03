@@ -14,7 +14,10 @@ variables:
   titlepage-rule-color: "ffffff"
   titlepage-rule-height: 2
   toc-own-page: true
-  book: true
+  ## book: true — REMOVED. The book class forces section starts on recto
+  ## (odd) pages, leaving 25 blank verso pages in a 141-page bundle even
+  ## with classoption: oneside (Eisvogel ignores the override). This is
+  ## a single document, not a multi-chapter book, so report class is fine.
   classoption:
     - oneside
   geometry:
@@ -32,7 +35,11 @@ variables:
   monofontoptions: "Scale=0.85"
   ## Code block styling — Eisvogel listings options for breakable code blocks
   listings-disable-line-numbers: true
-  listings-no-page-break: true
+  ## listings-no-page-break: true — REMOVED. This wraps every lstlisting in
+  ## a minipage (can't span pages), so any code block that doesn't fit on
+  ## the current page gets pushed entirely to the next, leaving 25 blank
+  ## verso-style pages in the bundle. Allow code blocks to break across
+  ## pages — listings handles continuation cleanly with breaklines=true.
   ## Glyph fallback for dingbats (✓ ✗) — TeX Gyre Heros covers arrows/Latin
   ## but lacks U+2713 / U+2717. Arial Unicode MS has both; route just those
   ## characters through it while keeping body in TeX Gyre Heros.
@@ -50,23 +57,20 @@ variables:
     \newunicodechar{🟡}{{\emojifont 🟡}}
     \newunicodechar{🟠}{{\emojifont 🟠}}
     \newunicodechar{🔴}{{\emojifont 🔴}}
-    \lstset{
-      basicstyle=\ttfamily\small,
-      breaklines=true,
-      breakatwhitespace=true,
-      breakindent=0pt,
-      columns=fullflexible,
-      keepspaces=true,
-      showstringspaces=false,
-      postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space}
-    }
+    \usepackage{fvextra}
+    \DefineVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=false,breakautoindent=true,fontsize=\small,frame=single,framesep=2mm,xleftmargin=4pt,formatcom=\color{black}}
+    %% Drop listings entirely: its Unicode handling positions en-dash before
+    %% adjacent digits ("2–3" → "–23") regardless of literate config. fancyvrb's
+    %% Verbatim env handles UTF-8 cleanly via lualatex and supports breaklines
+    %% for the original wrap fix. Pandoc emits raw \begin{verbatim} for
+    %% untagged fenced code, which we redefine here to use fancyvrb's Verbatim.
 
 ## Pandoc options
 toc: true
 toc-depth: 2
 number-sections: false
 highlight-style: tango
-listings: true
+listings: false
 standalone: true
 
 ## Metadata
