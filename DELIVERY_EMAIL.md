@@ -38,75 +38,75 @@ Why: assumes the buyer is action-oriented (most are — they just chose to spend
 ```
 hey,
 
-it's here. the PDF is in your gumroad library — the download
+It's here. The PDF is in your Gumroad library — the download
 button at the bottom of this email takes you straight to it,
-or open gumroad.com/library if you ever lose the email.
+or open gumroad.com/library if you ever lose this email.
 
-what you just bought:
+What you just bought:
 
-- 44 copy-paste chatgpt prompts across resume, cover letter,
-  interview, linkedin, and salary negotiation
+- 44 copy-paste ChatGPT prompts across resume, cover letter,
+  interview, LinkedIn, and salary negotiation
 - 8 negotiation scripts (the "we don't have budget" rebuttal,
-  the "i have another offer" leverage script, the accept-and-
+  the "I have another offer" leverage script, the accept-and-
   lock-terms close, more)
 - 3 worksheets — BATNA, comp research template, walkaway math
 - 3 before/after worked resumes (entry-level grad, mid-career
   switcher, senior IC)
-- 14-item linkedin optimization checklist + weekly content pack
-- bonus: a notion workspace mirroring the whole bundle, with
+- 14-item LinkedIn optimization checklist + weekly content pack
+- Bonus: a Notion workspace mirroring the whole bundle, with
   one-click copy on every prompt — duplicate it to your own
   workspace here: NOTION_DUPLICATION_URL
 
-three things before you dive in.
+Three things before you dive in.
 
-1. start with module 5 if you have an offer in hand right now.
-   salary negotiation is the fastest dollar-per-hour any prompt
-   in here will save you. one counter you wouldn't have written
-   on your own pays back what you spent a hundred times. the
+1. Start with Module 5 if you have an offer in hand right now.
+   Salary negotiation is the fastest dollar-per-hour any prompt
+   in here will save you. One counter you wouldn't have written
+   on your own pays back what you spent a hundred times. The
    rest of the bundle will still be here next week.
 
-2. don't run the prompts on a blank slate.
-   every prompt assumes you'll paste your actual resume, the
-   actual JD, your actual offer numbers. without that context
-   you get generic chatgpt output. the prompts are sharp; you
+2. Don't run the prompts on a blank slate.
+   Every prompt assumes you'll paste your actual resume, the
+   actual JD, your actual offer numbers. Without that context
+   you get generic ChatGPT output. The prompts are sharp; you
    have to feed them.
 
-3. open the BATNA worksheet (module 5) before you run any of
-   the negotiation prompts. prompts 6-10 in module 5 assume you
-   already know your walkaway number. the worksheet takes 15
+3. Open the BATNA worksheet (Module 5) before you run any of
+   the negotiation prompts. Prompts 6–10 in Module 5 assume you
+   already know your walkaway number. The worksheet takes 15
    minutes and is the difference between countering with
    confidence and bluffing yourself into a pulled offer.
 
-what's coming next:
+What's coming next:
 
-in about 5 days i'll email you one extra prompt that didn't
+In about 5 days I'll email you one extra prompt that didn't
 make the final cut for length reasons — the "is this offer
-below market?" comp triangulator. still useful, you get it
+below market?" comp triangulator. Still useful, you get it
 free for buying.
 
-after that, only when there's something worth saying. probably
-one email a month at most. you can unsubscribe any time and
+After that, only when there's something worth saying. Probably
+one email a month at most. You can unsubscribe any time and
 still keep the bundle.
 
-one ask: hit reply and tell me what role and level you're
-hunting for. doesn't have to be long — "senior PM, switching
-out of healthcare" is plenty. i read every reply, and what
-people tell me changes what i write next.
+One ask: hit reply and tell me what role and level you're
+hunting for. Doesn't have to be long — "senior PM, switching
+out of healthcare" is plenty. I read every reply, and what
+people tell me changes what I write next.
 
-good luck out there.
+Good luck out there.
 
-— flynn
+— Flynn
 snipprompts.com
 
-p.s. the bundle gets free updates for 12 months. when chatgpt
+P.S. The bundle gets free updates for 12 months. When ChatGPT
 changes (it will), the prompts get rewritten and the same
-download link picks up the new version. no re-purchase, no
+download link picks up the new version. No re-purchase, no
 new email.
 ```
 
 **Notes on the body**:
 
-- **Notion link**: replace `NOTION_DUPLICATION_URL` (literal placeholder, also referenced in `GUMROAD_LISTING.md` Field 12). One find/replace before scheduling — same string in both files.
+- **Notion link**: replace `NOTION_DUPLICATION_URL` (literal placeholder appears twice in this file — HTML body and plain-text fallback). One find/replace before scheduling. `GUMROAD_LISTING.md` Field 12 now points back to this file as the source of truth, so the placeholder lives in one place only.
 - **Price not mentioned**: deliberate. They just paid. Saying "$39" or "$29" reminds them what they spent, which can trigger buyer's remorse. Saying "what you spent" abstracts it.
 - **No "thank you for your purchase"**: feels corporate. The whole email *is* the thank-you.
 - **One CTA, soft**: the reply ask. Download is automatic via Gumroad's button. Notion is bonus. Reply is the only thing being asked for, and it's the thing that builds the list-of-real-humans flywheel.
@@ -123,59 +123,59 @@ Functionally identical content, no markdown bullets, line-flow prose. Use this a
 ```
 hey,
 
-it's here. the PDF is in your gumroad library. the download button at
+It's here. The PDF is in your Gumroad library. The download button at
 the bottom of this email takes you straight to it, or open
-gumroad.com/library if you ever lose the email.
+gumroad.com/library if you ever lose this email.
 
-what you just bought: 44 copy-paste chatgpt prompts across resume,
-cover letter, interview, linkedin, and salary negotiation. 8 negotiation
-scripts (the "we don't have budget" rebuttal, the "i have another
+What you just bought: 44 copy-paste ChatGPT prompts across resume,
+cover letter, interview, LinkedIn, and salary negotiation. 8 negotiation
+scripts (the "we don't have budget" rebuttal, the "I have another
 offer" leverage script, the accept-and-lock-terms close, and more). 3
-worksheets — BATNA, comp research template, walkaway math. 3 before /
+worksheets — BATNA, comp research template, walkaway math. 3 before/
 after worked resumes (entry-level grad, mid-career switcher, senior
-IC). a 14-item linkedin optimization checklist plus a weekly content
-pack. and a bonus notion workspace mirroring the whole bundle with
+IC). A 14-item LinkedIn optimization checklist plus a weekly content
+pack. And a bonus Notion workspace mirroring the whole bundle with
 one-click copy on every prompt: NOTION_DUPLICATION_URL
 
-three things before you dive in.
+Three things before you dive in.
 
-first, start with module 5 if you have an offer in hand right now.
-salary negotiation is the fastest dollar-per-hour any prompt in here
-will save you. one counter you wouldn't have written on your own pays
-back what you spent a hundred times. the rest of the bundle will still
+First, start with Module 5 if you have an offer in hand right now.
+Salary negotiation is the fastest dollar-per-hour any prompt in here
+will save you. One counter you wouldn't have written on your own pays
+back what you spent a hundred times. The rest of the bundle will still
 be here next week.
 
-second, don't run the prompts on a blank slate. every prompt assumes
+Second, don't run the prompts on a blank slate. Every prompt assumes
 you'll paste your actual resume, the actual JD, your actual offer
-numbers. without that context you get generic chatgpt output. the
+numbers. Without that context you get generic ChatGPT output. The
 prompts are sharp; you have to feed them.
 
-third, open the BATNA worksheet (module 5) before you run any of the
-negotiation prompts. prompts 6 through 10 in module 5 assume you
-already know your walkaway number. the worksheet takes 15 minutes and
+Third, open the BATNA worksheet (Module 5) before you run any of the
+negotiation prompts. Prompts 6 through 10 in Module 5 assume you
+already know your walkaway number. The worksheet takes 15 minutes and
 is the difference between countering with confidence and bluffing
 yourself into a pulled offer.
 
-what's coming next: in about 5 days i'll email you one extra prompt
+What's coming next: in about 5 days I'll email you one extra prompt
 that didn't make the final cut for length reasons — the "is this offer
-below market?" comp triangulator. still useful, you get it free for
-buying. after that, only when there's something worth saying. probably
-one email a month at most. you can unsubscribe any time and still keep
+below market?" comp triangulator. Still useful, you get it free for
+buying. After that, only when there's something worth saying. Probably
+one email a month at most. You can unsubscribe any time and still keep
 the bundle.
 
-one ask: hit reply and tell me what role and level you're hunting for.
-doesn't have to be long — "senior PM, switching out of healthcare" is
-plenty. i read every reply, and what people tell me changes what i
+One ask: hit reply and tell me what role and level you're hunting for.
+Doesn't have to be long — "senior PM, switching out of healthcare" is
+plenty. I read every reply, and what people tell me changes what I
 write next.
 
-good luck out there.
+Good luck out there.
 
-— flynn
+— Flynn
 snipprompts.com
 
-p.s. the bundle gets free updates for 12 months. when chatgpt changes
+P.S. The bundle gets free updates for 12 months. When ChatGPT changes
 (it will), the prompts get rewritten and the same download link picks
-up the new version. no re-purchase, no new email.
+up the new version. No re-purchase, no new email.
 ```
 
 ---
@@ -239,11 +239,43 @@ ConvertKit form UID for the snipprompts.com lead-magnet (the existing list, not 
 
 ## Voice / craft notes (for your reference, don't paste)
 
-- "hey," lowercase. matches the rest of the site voice and disarms the "is this an automated email?" instinct.
-- no "thank you for your purchase". feels transactional. the value of the bundle is the thank-you.
-- the three numbered tips lead with imperatives ("start with", "don't run", "open the worksheet"). not aspirational, not "consider trying". commands.
-- "the prompts are sharp; you have to feed them" — most important sentence in the email. sets the right relationship between buyer and product. the prompts aren't magic; the buyer's effort is still the bottleneck. setting that expectation upfront prevents refund requests from buyers who expected one-click hiring.
-- the comp-prompt promise is concrete and small. "i'll email you one extra prompt in 5 days" is a specific, falsifiable promise. it builds trust. "i'll send you helpful content" is a vague promise nobody believes.
-- "good luck out there" — warmer than "good luck". signals you know they're in the trenches.
-- the PS does load-bearing work: it neutralizes the "do i have to buy this again next year?" objection without making the email about updates.
-- no emojis. no exclamation points. no "amazing" / "incredible" / "exclusive". the buyer just spent money — they don't need to be sold again.
+- Lowercase "hey," opener. The single voice signal — disarms the "is this automated?" instinct without going full all-lowercase prose (which would just make brand names like ChatGPT look like typos). Matches the EMAIL_SEQUENCE.md pre-launch emails so the buyer's experience reads as one writer.
+- No "thank you for your purchase". Feels transactional. The whole email IS the thank-you.
+- The three numbered tips lead with imperatives ("Start with", "Don't run", "Open the worksheet"). Not aspirational, not "consider trying" — commands.
+- "The prompts are sharp; you have to feed them" — most important sentence in the email. Sets the right relationship between buyer and product. The prompts aren't magic; the buyer's effort is still the bottleneck. Setting that expectation upfront prevents refund requests from buyers who expected one-click hiring.
+- The comp-prompt promise is concrete and small. "I'll email you one extra prompt in 5 days" is a specific, falsifiable promise. It builds trust. "I'll send you helpful content" is a vague promise nobody believes.
+- "Good luck out there" — warmer than "Good luck". Signals you know they're in the trenches.
+- The P.S. does load-bearing work: it neutralizes the "do I have to buy this again next year?" objection without making the email about updates.
+- No emojis. No exclamation points. No "amazing" / "incredible" / "exclusive". The buyer just spent money — they don't need to be sold again.
+
+---
+
+<!--
+[Editor's note — editorial pass, May 3, 2026]
+
+Substantive change: the original draft used full-lowercase prose throughout the body
+("it's here. the PDF is in your gumroad library...") as a deliberate voice signal.
+Changed to lowercase "hey," opener + sentence case body for two reasons:
+
+1. Brand-name correctness. ChatGPT, Notion, LinkedIn, Gumroad, Flynn, BATNA, "I" all
+   need proper casing. With them lowercase, they read like typos, not voice — which
+   undermines the warm-but-professional positioning of a paid product.
+2. Consistency with EMAIL_SEQUENCE.md. The pre-launch emails use sentence case body
+   with a lowercase "hey," opener. After purchase, the buyer is reading the same
+   writer's voice — drift between the two would feel weird. The "hey," signal is
+   preserved; the rest of the prose now matches.
+
+The voice / craft notes were also updated to reflect the new style — content is
+unchanged, just sentence case.
+
+Left alone deliberately:
+- The body content. Every line is doing a specific job (download mechanic →
+  what-you-bought recap → 3 imperative tips → 5-day comp-prompt promise → reply ask
+  → P.S. for update objection). No filler to cut.
+- The 3 subject lines (A/B/C) and the A/B/C decision rationale.
+- The Gumroad-vs-ConvertKit setup paths (Option A simpler, Option B better).
+- The "the prompts are sharp; you have to feed them" line — keep it, it sets
+  expectations that prevent refund regret.
+- The comp-prompt promise (5 days). Still concrete, still falsifiable, still good.
+-->
+

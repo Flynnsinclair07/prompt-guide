@@ -62,7 +62,7 @@ Most job-hunting advice treats every step as a separate problem. Resume here. Co
 
 This bundle treats it as one workflow. Resume to offer letter — 5 modules, 44 copy-paste ChatGPT prompts, 8 negotiation scripts, and the worksheets you'd otherwise pay a coach $300 to walk you through.
 
-Built around the prompts that already get used thousands of times a month at snipprompts.com — but expanded 2–3× with worked examples, "why this prompt works" commentary, and the salary-negotiation playbook nobody puts online for free.
+Built from the five career prompts on snipprompts.com — expanded 2–3× with worked examples, "why this prompt works" commentary, and the salary-negotiation playbook nobody puts online for free.
 
 
 ## What's inside
@@ -85,9 +85,9 @@ Built around the prompts that already get used thousands of times a month at sni
 
 ## Format
 
-**Primary**: a single polished PDF (~141 pages) with hyperlinked TOC, code-styled prompt callouts, print-ready letter size. Open it in Preview, Acrobat, your e-reader — works everywhere.
+**Primary**: a 119-page PDF with a hyperlinked table of contents and every prompt in its own code-styled callout. Reads on Mac, PC, iPad, Kindle, anything.
 
-**Bonus workspace**: an interactive Notion template with one-click copy on every prompt, for power users who prefer a navigable workspace.
+**Bonus workspace**: an interactive Notion template with one-click copy on every prompt, for anyone who prefers a navigable workspace over a PDF.
 
 
 ## Who this is for
@@ -140,7 +140,7 @@ This isn't a tool — it's a workflow. Works alongside any of them.
 
 ## About the author
 
-Flynn Sinclair runs snipprompts.com — 134 free, tested AI prompts used to write resumes, cover letters, interview answers, sales pitches, and more. The bundle is the deep version of the five career prompts that get the most traffic.
+Flynn Sinclair runs snipprompts.com — 134 free, tested AI prompts for resumes, cover letters, interview answers, sales pitches, and more. The bundle is the deep version of the five career prompts on the site, plus everything that didn't fit on a free page.
 ```
 
 ---
@@ -213,35 +213,11 @@ Create a Gumroad discount code:
 
 ## Field 12 — Receipt / post-purchase email
 
-Goes in Gumroad → Product → Workflows → Receipt email. Paste verbatim:
+Source of truth: **[DELIVERY_EMAIL.md](DELIVERY_EMAIL.md)** (subject, body, plain-text fallback, Gumroad vs. ConvertKit setup paths).
 
-**Subject**:
-```
-Your Job Hunter's AI Bundle is ready
-```
+Path inside Gumroad: → Product → Workflows → Receipt email. Paste the subject and body from DELIVERY_EMAIL.md verbatim, then replace the `NOTION_DUPLICATION_URL` placeholder with the live duplicate-template URL from Notion (Share → Publish → "Allow duplicate as template" → copy URL).
 
-**Body** (Gumroad supports basic HTML / markdown — paste this and it renders cleanly):
-```
-Hey,
-
-Your bundle is ready. The PDF is attached to this email — you can start using it right now.
-
-For power users: there's also an interactive Notion workspace with one-click copy on every prompt:
-[Access the Notion bundle →](NOTION_DUPLICATION_URL)
-
-Three things before you dive in:
-
-1. **Start with Module 5 if you have an offer in hand.** Salary negotiation is the fastest dollar-per-hour any of these prompts will save you.
-
-2. **The prompts work best when you give ChatGPT (or Claude, or Gemini) your actual resume / JD first.** Don't run them on a blank slate.
-
-3. **I'll email once or twice when I add new prompts.** No spam.
-
-Good luck,
-Flynn — snipprompts.com
-```
-
-→ Replace `NOTION_DUPLICATION_URL` with the public duplicate-this-template URL when the Notion workspace is finalized. (One-line task — Notion → Share → Publish → "Allow duplicate as template" → copy URL.)
+DELIVERY_EMAIL.md also documents an Option B that routes the receipt through ConvertKit instead — better deliverability into Gmail's Primary tab. Decide which option to use before listing day; don't run both.
 
 ---
 
@@ -267,7 +243,7 @@ This way buyers don't get the lead-magnet welcome email — they get the receipt
 (Listed so nothing falls through the cracks. None of these are pasteable copy — they're button-clicks.)
 
 1. Connect Gumroad payouts (Stripe, if not already done).
-2. Toggle product status from **Unpublished → Published** at 9am ET on May 17 (not earlier — keep listing URL warm but un-indexed).
+2. Toggle product status from **Unpublished → Published** at 9 AM ET on May 17. Keep it unpublished until then so early visitors don't land on a $39 listing before subscribers get the $29 link.
 3. Confirm the discount code `LAUNCH` is active.
 4. Send launch-day email (copy in `EMAIL_SEQUENCE.md`).
 5. Post Pinterest launch pins (copy in `PINTEREST_PINS.md`).
@@ -294,3 +270,40 @@ Already defined in outline §8. Don't action now — but Gumroad listing should 
 - **Tier 3**: Full Career Stack — $89 (Gumroad "bundle" feature, links Tier 1 + Tier 2)
 
 When Tier 2 ships, create the Tier 3 bundle in Gumroad → Products → Bundle. No copy work needed at that point — just the bundle page title and a one-line description.
+
+---
+
+<!--
+[Editor's note — editorial pass, May 3, 2026]
+
+Substantive changes from the original draft. Revert any of these if you disagree.
+
+1. Field 5 description: dropped "thousands of times a month at snipprompts.com" — the
+   site is in pre-traffic phase per README.md ("until 100+ monthly organic visitors"),
+   so the claim was false. Replaced with "Built from the five career prompts on
+   snipprompts.com" — accurate, matches the funnel logic.
+2. Field 5 description, Format section: corrected "~141 pages" → "119-page" (verified
+   via pdfinfo on the rebuilt PDF). Dropped "print-ready letter size" — the build is
+   A4 (defaults.yaml uses lualatex's default). For a digital-first product, A4 is fine;
+   the listing shouldn't claim a paper size that isn't true. Logged in PDF_QA_REPORT.md
+   if you ever want to switch to Letter for v1.1.
+3. Field 5, About the author: tightened to remove "the five career prompts that get the
+   most traffic" — same pre-traffic problem. Now just "the five career prompts on the
+   site, plus everything that didn't fit on a free page" — claim-free, true.
+4. Field 12 (receipt email): replaced the embedded body with a pointer to
+   DELIVERY_EMAIL.md, which is the new source of truth and handles "Hey," vs. "hey,"
+   voice consistency, plus the Gumroad-vs-ConvertKit delivery decision. Eliminates the
+   stale duplicate that would otherwise drift.
+5. Listing-day step #2: clarified the "warm but un-indexed" advice. The original
+   wording didn't make sense (an unpublished listing has no URL to keep warm); the new
+   wording explains the actual reason — protect the discount window for subscribers.
+
+Left alone deliberately:
+- Module 5 prompt order in the Field 5 list. The PDF orders them market-rate research
+  → offer evaluation, but the listing leads with offer evaluation as a marketing
+  choice (the most relatable starting point for a buyer who has an offer in hand).
+  Marketing copy doesn't need to mirror PDF order.
+- "Less than 15 minutes with a resume coach" anchor. Strong line; keep.
+- Tier 2 / Tier 3 upsell architecture. Q3 problem.
+-->
+

@@ -29,7 +29,7 @@ free ChatGPT prompt
 ```
 ✓ Quantified, not vague
 ✓ Mirrors the JD keywords
-✓ Past senior engineer tested
+✓ Hiring-manager tested
 ```
 **Outbound link**: `https://snipprompts.com/prompts/best-chatgpt-prompt-for-resume-bullets.html`
 
@@ -42,7 +42,7 @@ The free ChatGPT prompt that turns weak resume bullets into quantified, ATS-frie
 
 **Alt text**:
 ```
-Navy graphic with the headline "Resume bullets that don't suck" in cream. Three benefits listed: quantified not vague, mirrors the JD keywords, senior-engineer tested. Free ChatGPT prompt for resume bullets.
+Navy graphic with the headline "Resume bullets that don't suck" in cream. Three benefits listed: quantified not vague, mirrors the JD keywords, hiring-manager tested. Free ChatGPT prompt for resume bullets.
 ```
 
 **Suggested post date**: May 4
@@ -251,7 +251,7 @@ free ChatGPT prompt
 ```
 ✓ Under 300 characters
 ✓ Specific, not begging
-✓ Works on InMail too
+✓ No InMail needed
 ```
 **Outbound link**: `https://snipprompts.com/prompts/best-chatgpt-prompt-for-linkedin-profile.html`
 
@@ -264,7 +264,7 @@ free ChatGPT prompt
 
 **Alt text**:
 ```
-Navy graphic with the headline "Recruiter DM that gets a reply" in cream. Three benefits listed: under 300 characters, specific not begging, works on InMail too. Free ChatGPT prompt for LinkedIn outreach.
+Navy graphic with the headline "Recruiter DM that gets a reply" in cream. Three benefits listed: under 300 characters, specific not begging, no InMail needed. Free ChatGPT prompt for LinkedIn outreach.
 ```
 
 **Suggested post date**: May 11
@@ -431,3 +431,36 @@ Navy graphic with the headline "Live now, $29 launch week only" in cream. Sub-li
 - "Free" in headline only on free-prompt pins (6–12). Bundle pins (13–15) lead with the price as the anchor, not "free."
 - Benefits are 3 lines, ≤4 words each. The existing pins (`generate_pins.py:18-25`) do this — match it.
 - No emojis in pin headlines or descriptions. Hashtags only at the end of descriptions.
+
+---
+
+<!--
+[Editor's note — editorial pass, May 3, 2026]
+
+Substantive changes from the original draft. Revert any of these if you disagree.
+
+1. Pin 6 benefit: "Past senior engineer tested" → "Hiring-manager tested". The original
+   was a typo (probably "Past hiring-manager tested" with a fat-finger). Picked
+   "Hiring-manager tested" because (a) it's universally relatable to job seekers
+   regardless of role, where "senior engineer tested" only resonates with engineering
+   buyers, and (b) it matches the Pinterest description which says "tested by senior
+   engineers and hiring managers".
+2. Pin 12 benefit: "Works on InMail too" → "No InMail needed". The original implied
+   the prompt ALSO works on the paid InMail feature, but the actual selling point is
+   the opposite — the prompt fits inside a 300-char free-LinkedIn connection-request
+   note, no InMail required. The new wording matches the Pinterest description and
+   the actual capability.
+
+Left alone deliberately:
+- The 10-pin drip schedule (May 4 → 17). Cadence is right; the May 10 skip
+  (Mother's Day) is a smart call.
+- Pin 13 "Subscribers get $29" framing. The launch discount IS list-only pre-May 17
+  (the Gumroad listing isn't published until launch morning), so the framing is
+  accurate, AND the friction it creates ("must subscribe to get the deal") is the
+  intended funnel mechanism. Don't soften.
+- Pin 14's "The free internet has one negotiation prompt" hook. Bold but accurate
+  (snipprompts.com has exactly one negotiation prompt; the bundle has 10 + 8 scripts
+  + 3 worksheets). Keep.
+- Existing pin aesthetic spec (1000×1500, navy/forest, cream text). Brand-locked.
+-->
+

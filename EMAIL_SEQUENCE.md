@@ -33,7 +33,7 @@ You don't need to do anything. Just want you on the list early.
 ### Body
 
 ```
-Hey,
+hey,
 
 Quick note. On May 17 I'm launching a paid product called The Job Hunter's AI Bundle — five modules, 44 ChatGPT prompts, plus the salary-negotiation scripts I haven't put on the site for free.
 
@@ -47,7 +47,7 @@ You don't have to do anything right now. I'll send three more emails over the ne
 
 If you'd rather skip these and stay only on the free-prompts list, the unsubscribe link is at the bottom — no hard feelings, you'll keep getting the prompt-guide updates.
 
-One ask: if you're between jobs right now, hit reply and tell me what part of the search is grinding you down. The bundle's already written but I'll write a free post about whatever the most common answer is.
+One ask: if any part of the job search is grinding you down right now, hit reply and tell me what. The bundle's already written but I'll write a free post on whatever the most common answer is.
 
 Talk soon,
 Flynn
@@ -83,7 +83,7 @@ One prompt. Use it next time someone says it to you. 5 days to launch.
 ### Body
 
 ```
-Hey,
+hey,
 
 Five days to launch. Here's one of the prompts from the bundle's salary-negotiation module so you can see the rigor before you decide whether to buy.
 
@@ -154,7 +154,7 @@ Tomorrow: the full bundle, and what's actually in it
 ### Body
 
 ```
-Hey,
+hey,
 
 The Job Hunter's AI Bundle goes live tomorrow morning at 9 AM Eastern.
 
@@ -183,7 +183,7 @@ Refund policy: 14 days, no questions, Gumroad handles it.
 
 What it's not: a one-click resume generator. A Teal / Rezi competitor. A get-hired-while-you-sleep promise. It's a workflow — you still have to do the job hunt.
 
-What it is: the deep version of the five career prompts that get the most traffic on snipprompts.com, expanded with the scripts and worksheets I'd use myself.
+What it is: the deep version of the five career prompts on snipprompts.com, expanded with the scripts and worksheets I'd use myself if I were running my own search today.
 
 Tomorrow at 9 AM Eastern, I'll send the link with your $29 launch price built in.
 
@@ -225,7 +225,7 @@ The Job Hunter's AI Bundle is live. Here's the discounted link.
 ### Body
 
 ```
-Hey,
+hey,
 
 The Job Hunter's AI Bundle is live.
 
@@ -246,7 +246,7 @@ What you get:
 
 12 months of free updates. 14-day no-questions refund.
 
-Anchor: this is less than 15 minutes with a resume coach. One salary counter you wouldn't have written on your own pays for it 100×.
+Less than 15 minutes with a resume coach. One salary counter you wouldn't have written on your own pays for the bundle 100×.
 
 If the link breaks, just hit reply — I'll fix it.
 
@@ -284,14 +284,14 @@ Tuesday 9 AM ET the price reverts to $39. Quick reminder, no spam.
 ### Body
 
 ```
-Hey,
+hey,
 
 Quick reminder. The Job Hunter's AI Bundle launch discount ends tomorrow (Tuesday) 9 AM Eastern.
 
 After that it's $39, no code. Right now it's $29:
 [GUMROAD_URL]
 
-If you've been on the fence: the only modules with no free version anywhere on the site are Modules 4 (LinkedIn outreach prompts) and 5 (salary negotiation, the flagship — 10 prompts, 8 scripts, 3 worksheets). Those two alone are worth the $29.
+If you've been on the fence: Module 4 (LinkedIn outreach — recruiter cold-DM, recommendation request, post-connection follow-up) and Module 5 (the negotiation playbook — 10 prompts, 8 scripts, 3 worksheets) are entirely net-new. Nothing on snipprompts.com touches this depth. Those two modules alone are worth the $29.
 
 Same 14-day refund. If you buy and don't find at least one prompt that pays for the bundle in the first hour, refund yourself, no email needed.
 
@@ -329,3 +329,38 @@ Flynn
 - Specific numbers everywhere. "$29" beats "discounted." "Tuesday 9 AM Eastern" beats "soon."
 - The "hit reply" CTA is in Email 1 only. Saturating it cheapens it.
 - Don't use "exclusive," "amazing," or "game-changing." Ever.
+
+---
+
+<!--
+[Editor's note — editorial pass, May 3, 2026]
+
+Substantive changes from the original draft. Revert any of these if you disagree.
+
+1. "Hey," → "hey," in all 5 email bodies. The voice notes (above) already mandated
+   lowercase but the bodies were sentence case — fixed the inconsistency. Now matches
+   DELIVERY_EMAIL.md so the buyer experience reads as one writer.
+2. Email 1: broadened "if you're between jobs right now" to "if any part of the job
+   search is grinding you down right now". The original gated the reply CTA on a
+   subset (between jobs) when the bigger pool — passive subscribers thinking about
+   moving — is also valid testimonial / objection-mapping fodder.
+3. Email 4: dropped the "Anchor:" prefix on the closing line. That word leaked the
+   marketing internals to the reader (anchoring is what we're doing TO them, not
+   something we should narrate). Body of the line stayed the same — it's a strong
+   anchor — just removed the meta-language.
+4. Email 5: tightened the Module 4/5 claim. The original said "the only modules with
+   no free version anywhere on the site" but snipprompts.com has free Resume,
+   Cover Letter, Interview Prep, LinkedIn Profile, AND Negotiation prompts — so
+   "no free version" was technically false. The new wording calls out specific net-
+   new content (LinkedIn outreach prompts; full negotiation playbook depth) without
+   overclaiming.
+
+Left alone deliberately:
+- Email 3's "What it's not / what it is" closer. Strong; keep.
+- Email 4 P.S. about forwarding to friends. Adds a small amount of complexity but
+  the "per-buyer not per-account" line is the kind of specific thing that earns trust.
+- The 4-email schedule (May 3 / 12 / 16 / 17). Pacing is right.
+- Subject line for Email 1 ("Heads up — I'm launching something on May 17"). It's
+  conversational, signals importance without selling. Keep.
+-->
+
