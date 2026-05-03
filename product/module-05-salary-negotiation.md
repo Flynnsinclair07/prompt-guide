@@ -1,9 +1,6 @@
 # Module 5 — Salary Negotiation
 
-**FLAGSHIP MODULE**
-
-**Target on completion**: 10 prompts · 8 scripts · 3 worksheets (BATNA · Comp research · Walkaway math)
-**This commit — Batch 1**: 5 prompts + 3 scripts (for boss QA before Batch 2)
+**10 prompts · 8 scripts · 3 worksheets (BATNA · Comp research · Walkaway math)**
 All prompts tested on ChatGPT free tier (GPT-4o-mini / GPT-4o).
 
 ---
@@ -727,212 +724,6 @@ Constraints:
 ```
 
 **Why this prompt works:** The single most expensive moment in a salary negotiation is the exploding-offer panic decision — candidates say yes to avoid losing the offer, then discover they left $20K+ on the table. The 4-input artificial-vs-real diagnosis gives the candidate a framework for reading the situation before responding, which is the move that separates candidates who handle pressure from candidates who collapse under it. The "ask directly whether the timeline is from the hiring manager or the recruiting process" line is one of the sharpest moves in the module — it often exposes artificial pressure instantly. The post-output rules address the full tree of downstream outcomes instead of stopping at "here's what to say."
-
----
-
-# Scripts
-
-*These are copy-paste-and-adapt spoken or written templates. They're shorter than the prompts — designed to be used in-the-moment when a specific situation hits. Fill in the bracketed inputs and run.*
-
----
-
-## Script 1 — Email: decline the first offer politely and counter
-
-**Use when**: the offer came by email and you want to counter in writing.
-
-**Length target**: 120–180 words
-
-**Tone**: warm, direct, no apology, no weakeners
-
-**Send timing**: 24–48 hours after receiving the offer (not same day, not a week later)
-
-```
-Subject: [My name] — offer response
-
-Hi [RECRUITER FIRST NAME],
-
-Thank you for sending the offer for the [JOB TITLE] role — I've had
-a chance to review it carefully, and I remain genuinely excited about
-the opportunity to join [COMPANY]. [ONE SPECIFIC SENTENCE ABOUT WHY:
-a product decision, a team member, the mission, the scope].
-
-Before finalizing, I'd like to discuss a few components of the package.
-Based on my market research for this role at this level and my track
-record on [ONE SPECIFIC LEVERAGE POINT — e.g., "leading the
-$12M ARR migration at Acme" or "8 years in compliance for fintech"],
-I'd be able to accept an offer at:
-
-1. Base salary of $[AMBITIOUS ASK — typically 10–15% above target]
-2. [SECOND COMPONENT — e.g., sign-on of $[X], or equity refresh at
-   12-month mark, or an additional [N] days of PTO]
-3. [OPTIONAL THIRD COMPONENT — only if it's genuinely load-bearing]
-
-I'm happy to jump on a call to walk through any of this, and I want
-to be honest: the role and team are my preference, and I'd like to
-find a path forward together.
-
-Looking forward to continuing the conversation.
-
-Best,
-[MY NAME]
-```
-
-**What this script is doing (so you can adapt it):**
-- Subject line is identifying, not dramatic (not "Offer Negotiation" — that's formal and creates tension)
-- Opens with genuine specific interest (not "I am writing to…")
-- Transitions to the counter with no apology and no hedge
-- Numbers the asks (1–3 max, never more)
-- Grounds the ask in market research + one specific leverage point
-- Closes with an invitation, not a demand
-- Sign-off is warm, not begging
-
-**Do not**:
-- Write "I was hoping for…" — weakener
-- Apologize for the counter
-- List more than 3 asks (dilutes focus)
-- Reveal your walkaway number
-- Offer to split your own difference before they push back
-
-**Post-send behavior (critical)**:
-- Wait **at least 24 business hours** for a response. Do not nudge.
-- If they come back with a partial improvement, evaluate against your target, not against the original offer.
-- If they come back with a flat no, pivot to the "we don't have budget" rebuttal script.
-- Do not send a second counter email before hearing a reply to the first. Exactly one counter round is expected; two is begging.
-
----
-
-## Script 2 — Phone: 30-second opener for salary discussion
-
-**Use when**: the recruiter has called (or is about to) and salary is likely to come up live.
-
-**Length target**: 30 seconds spoken (~75–100 words)
-
-**Tone**: warm, curious, firm under the warmth
-
-**When to use which version**: there are two versions below — one when YOU initiate the salary conversation, one when THEY bring up salary first.
-
-### Version A — You initiate (when they've offered and you're calling back)
-
-```
-"Hey [RECRUITER FIRST NAME], thanks for sending over the offer.
-First — I want to say I'm genuinely excited about [SPECIFIC THING:
-the role · the team · the mission]. That part is clear for me.
-
-I've had a chance to review the package carefully, and there are a
-couple of components I'd like to talk through. I want to be direct
-so we can use this call well: based on market data for this role
-at this level and [ONE SENTENCE OF LEVERAGE], the ask I'd make is
-[$NUMBER / SPECIFIC COMPONENT AT SPECIFIC VALUE].
-
-I'd love to hear your read."
-
-[STOP TALKING. Wait. Do not fill silence.]
-```
-
-### Version B — They bring up salary on the phone (before an offer)
-
-```
-"Good question. Before I give you a number, can I ask — do you
-have a sense of the range that's budgeted for this role at your
-company, at this level?"
-
-[Wait for their response. Most recruiters will either give you a
-range or deflect. Either way you now have better information.]
-
-"Got it — based on that, and market data I've looked at for [ROLE]
-at [STAGE/SIZE], the range that works for me on base is [$X–$Y]."
-
-[Stop talking. Wait.]
-```
-
-**What these scripts are doing:**
-- Opening with specific genuine interest before any comp talk (anchors the conversation in fit)
-- Version A: stating the ask directly, no hedge, grounded in data + leverage
-- Version B: asking for the recruiter's range first (they usually know it) before committing to a number
-- Ending with silence — the most important move in phone salary conversations
-
-**Do not**:
-- Ask "what are you thinking of offering?" without first warming the call (reads as transactional)
-- Give a single number (always give a range on first comp disclosure)
-- Talk past the ask. After you state the number, say nothing. The first person to speak after the comp number usually loses leverage.
-- Apologize for the ask
-- Use the word "hopefully" ("I was hopefully thinking around…")
-
-**Post-call behavior**:
-- **Write down everything the recruiter said about comp, immediately after the call.** Recruiters often verbally agree to things that don't make the letter; memory fades in 24 hours.
-- **Follow up with a 1-line email** within 2 hours: "Thanks for the call — to summarize what we discussed on comp: [SPECIFIC RECAP]. Let me know if I got anything wrong." This creates a written record.
-- **Do not re-negotiate on the same call they verbally agreed**. If they said "yes, we can do $X," the call is done. Say thank you, confirm next steps, and hang up. Pushing further on the same call is how candidates turn a yes into a re-traded no.
-
----
-
-## Script 3 — Rebuttal: "We don't have budget"
-
-**Use when**: you've made a counter and the recruiter pushes back with "we don't have budget" / "I can't go higher" / "that's the max for this role."
-
-**Length target**: 45–70 seconds spoken
-
-**Tone**: calm, understanding, pivots to creative structure without backing down on total value
-
-**Why this script exists**: "we don't have budget" is the single most common pushback in salary negotiation. It's sometimes true (budgets are real), often partially true (base is capped but other components flex), and occasionally pressure tactic. This script handles all three.
-
-```
-"That makes sense — base salary is often the least flexible piece,
-especially at [STAGE/SIZE]. So let me ask a different question:
-
-Given that base is where it is, can we look at the other
-components? Specifically:
-
-[CHOOSE 1–2 OF THESE TO ASK ABOUT, IN ORDER OF FLEX AT YOUR
-COMPANY STAGE]:
-
-- **Sign-on bonus** — 'Is there room on the sign-on? A [$X] sign-on
-  would help close the gap for me this year.'
-- **Equity refresh** — 'Can we talk about the equity refresh
-  schedule? A commitment to an equity refresh at the 12-month mark
-  would make the total-comp math work.'
-- **Start date flexibility** — 'If base is locked, could we look at
-  a start date of [DATE], so I can wrap up [ONE THING] cleanly?'
-- **PTO** — 'Could we add [N] additional PTO days?'
-- **Promotion / review timing** — 'Could we commit to a comp review
-  at the [6-month / 12-month] mark, with a specific target if I hit
-  [MILESTONE]?'
-- **Remote / location flexibility** — 'Could the role be structured
-  as [FULLY REMOTE / HYBRID WITH X DAYS] instead?'
-- **Benefits** — 'What's flexible on [learning budget · home office
-  stipend · parental leave]?'
-
-I'm open to creative structure — what I care about is finding a
-total package that works for both of us."
-```
-
-**What this script is doing:**
-- First line acknowledges the constraint without arguing (arguing "you must have budget somewhere" burns trust)
-- Pivots to components that typically have more flex than base
-- Asks specifically rather than "can you do more somewhere?" (vague asks get vague answers)
-- Closes with "creative structure" framing — gives the recruiter permission to be inventive
-- "Total package that works for both of us" signals partnership, not adversary
-
-**Component flex, by company stage** (so you can pick which 1–2 to ask about):
-
-- **Early-stage startup (Seed – Series A)**: equity has the most flex (they have more of it than cash), sign-on often possible as retention grant instead, base is the tightest.
-- **Growth-stage (Series B – D)**: sign-on is most flexible, equity refresh clarity is high-leverage, base bands are real but sometimes flex for rare skills.
-- **Late-stage private / public**: sign-on and equity refresh have most flex; base is tightly banded. PTO, learning budget, and promotion timing also negotiable.
-- **Traditional / corporate**: base is heavily banded; PTO, title, and level sometimes flex; promotion-review timing and written commitment to a comp review milestone are often available.
-- **Nonprofit / government**: base is fixed. Focus on title, responsibilities, PTO, remote flexibility, learning budget.
-
-**Do not**:
-- Argue that the company "must have budget." You don't know their spreadsheet; arguing burns trust.
-- Accept the "no" as final without pivoting. The recruiter expects a pivot.
-- List 4+ components in the pivot. 1–2 specific asks outperform a scattered list.
-- Say "well, what CAN you do?" — passive. State what you want instead.
-
-**Post-rebuttal behavior**:
-- If they come back with a yes on one component: accept and move to close. Do not try to stack additional asks on the same call.
-- If they come back with "let me check": thank them, give a specific timeline ("would end of week work?"), and wait. Don't nudge before then.
-- If they come back with another flat no: evaluate against your walkaway. If the total comp is above walkaway, consider accepting. If below walkaway, it's decision time — and the exploding-offer prompt's "decline with dignity" track applies even though this isn't exploding.
-- **Never use "we don't have budget" rebuttal twice in the same negotiation.** If they've said no to base AND to the pivot, pushing a third time is begging.
-
----
 
 ## Prompt 6 — Deferred-start negotiation (when you need a later start date)
 
@@ -1768,7 +1559,207 @@ Constraints:
 
 ---
 
-# Scripts (Batch 2) — Scripts 4–8
+# Scripts
+
+*These are copy-paste-and-adapt spoken or written templates. They're shorter than the prompts — designed to be used in-the-moment when a specific situation hits. Fill in the bracketed inputs and run.*
+
+---
+
+## Script 1 — Email: decline the first offer politely and counter
+
+**Use when**: the offer came by email and you want to counter in writing.
+
+**Length target**: 120–180 words
+
+**Tone**: warm, direct, no apology, no weakeners
+
+**Send timing**: 24–48 hours after receiving the offer (not same day, not a week later)
+
+```
+Subject: [My name] — offer response
+
+Hi [RECRUITER FIRST NAME],
+
+Thank you for sending the offer for the [JOB TITLE] role — I've had
+a chance to review it carefully, and I remain genuinely excited about
+the opportunity to join [COMPANY]. [ONE SPECIFIC SENTENCE ABOUT WHY:
+a product decision, a team member, the mission, the scope].
+
+Before finalizing, I'd like to discuss a few components of the package.
+Based on my market research for this role at this level and my track
+record on [ONE SPECIFIC LEVERAGE POINT — e.g., "leading the
+$12M ARR migration at Acme" or "8 years in compliance for fintech"],
+I'd be able to accept an offer at:
+
+1. Base salary of $[AMBITIOUS ASK — typically 10–15% above target]
+2. [SECOND COMPONENT — e.g., sign-on of $[X], or equity refresh at
+   12-month mark, or an additional [N] days of PTO]
+3. [OPTIONAL THIRD COMPONENT — only if it's genuinely load-bearing]
+
+I'm happy to jump on a call to walk through any of this, and I want
+to be honest: the role and team are my preference, and I'd like to
+find a path forward together.
+
+Looking forward to continuing the conversation.
+
+Best,
+[MY NAME]
+```
+
+**What this script is doing (so you can adapt it):**
+- Subject line is identifying, not dramatic (not "Offer Negotiation" — that's formal and creates tension)
+- Opens with genuine specific interest (not "I am writing to…")
+- Transitions to the counter with no apology and no hedge
+- Numbers the asks (1–3 max, never more)
+- Grounds the ask in market research + one specific leverage point
+- Closes with an invitation, not a demand
+- Sign-off is warm, not begging
+
+**Do not**:
+- Write "I was hoping for…" — weakener
+- Apologize for the counter
+- List more than 3 asks (dilutes focus)
+- Reveal your walkaway number
+- Offer to split your own difference before they push back
+
+**Post-send behavior (critical)**:
+- Wait **at least 24 business hours** for a response. Do not nudge.
+- If they come back with a partial improvement, evaluate against your target, not against the original offer.
+- If they come back with a flat no, pivot to the "we don't have budget" rebuttal script.
+- Do not send a second counter email before hearing a reply to the first. Exactly one counter round is expected; two is begging.
+
+---
+
+## Script 2 — Phone: 30-second opener for salary discussion
+
+**Use when**: the recruiter has called (or is about to) and salary is likely to come up live.
+
+**Length target**: 30 seconds spoken (~75–100 words)
+
+**Tone**: warm, curious, firm under the warmth
+
+**When to use which version**: there are two versions below — one when YOU initiate the salary conversation, one when THEY bring up salary first.
+
+### Version A — You initiate (when they've offered and you're calling back)
+
+```
+"Hey [RECRUITER FIRST NAME], thanks for sending over the offer.
+First — I want to say I'm genuinely excited about [SPECIFIC THING:
+the role · the team · the mission]. That part is clear for me.
+
+I've had a chance to review the package carefully, and there are a
+couple of components I'd like to talk through. I want to be direct
+so we can use this call well: based on market data for this role
+at this level and [ONE SENTENCE OF LEVERAGE], the ask I'd make is
+[$NUMBER / SPECIFIC COMPONENT AT SPECIFIC VALUE].
+
+I'd love to hear your read."
+
+[STOP TALKING. Wait. Do not fill silence.]
+```
+
+### Version B — They bring up salary on the phone (before an offer)
+
+```
+"Good question. Before I give you a number, can I ask — do you
+have a sense of the range that's budgeted for this role at your
+company, at this level?"
+
+[Wait for their response. Most recruiters will either give you a
+range or deflect. Either way you now have better information.]
+
+"Got it — based on that, and market data I've looked at for [ROLE]
+at [STAGE/SIZE], the range that works for me on base is [$X–$Y]."
+
+[Stop talking. Wait.]
+```
+
+**What these scripts are doing:**
+- Opening with specific genuine interest before any comp talk (anchors the conversation in fit)
+- Version A: stating the ask directly, no hedge, grounded in data + leverage
+- Version B: asking for the recruiter's range first (they usually know it) before committing to a number
+- Ending with silence — the most important move in phone salary conversations
+
+**Do not**:
+- Ask "what are you thinking of offering?" without first warming the call (reads as transactional)
+- Give a single number (always give a range on first comp disclosure)
+- Talk past the ask. After you state the number, say nothing. The first person to speak after the comp number usually loses leverage.
+- Apologize for the ask
+- Use the word "hopefully" ("I was hopefully thinking around…")
+
+**Post-call behavior**:
+- **Write down everything the recruiter said about comp, immediately after the call.** Recruiters often verbally agree to things that don't make the letter; memory fades in 24 hours.
+- **Follow up with a 1-line email** within 2 hours: "Thanks for the call — to summarize what we discussed on comp: [SPECIFIC RECAP]. Let me know if I got anything wrong." This creates a written record.
+- **Do not re-negotiate on the same call they verbally agreed**. If they said "yes, we can do $X," the call is done. Say thank you, confirm next steps, and hang up. Pushing further on the same call is how candidates turn a yes into a re-traded no.
+
+---
+
+## Script 3 — Rebuttal: "We don't have budget"
+
+**Use when**: you've made a counter and the recruiter pushes back with "we don't have budget" / "I can't go higher" / "that's the max for this role."
+
+**Length target**: 45–70 seconds spoken
+
+**Tone**: calm, understanding, pivots to creative structure without backing down on total value
+
+**Why this script exists**: "we don't have budget" is the single most common pushback in salary negotiation. It's sometimes true (budgets are real), often partially true (base is capped but other components flex), and occasionally pressure tactic. This script handles all three.
+
+```
+"That makes sense — base salary is often the least flexible piece,
+especially at [STAGE/SIZE]. So let me ask a different question:
+
+Given that base is where it is, can we look at the other
+components? Specifically:
+
+[CHOOSE 1–2 OF THESE TO ASK ABOUT, IN ORDER OF FLEX AT YOUR
+COMPANY STAGE]:
+
+- **Sign-on bonus** — 'Is there room on the sign-on? A [$X] sign-on
+  would help close the gap for me this year.'
+- **Equity refresh** — 'Can we talk about the equity refresh
+  schedule? A commitment to an equity refresh at the 12-month mark
+  would make the total-comp math work.'
+- **Start date flexibility** — 'If base is locked, could we look at
+  a start date of [DATE], so I can wrap up [ONE THING] cleanly?'
+- **PTO** — 'Could we add [N] additional PTO days?'
+- **Promotion / review timing** — 'Could we commit to a comp review
+  at the [6-month / 12-month] mark, with a specific target if I hit
+  [MILESTONE]?'
+- **Remote / location flexibility** — 'Could the role be structured
+  as [FULLY REMOTE / HYBRID WITH X DAYS] instead?'
+- **Benefits** — 'What's flexible on [learning budget · home office
+  stipend · parental leave]?'
+
+I'm open to creative structure — what I care about is finding a
+total package that works for both of us."
+```
+
+**What this script is doing:**
+- First line acknowledges the constraint without arguing (arguing "you must have budget somewhere" burns trust)
+- Pivots to components that typically have more flex than base
+- Asks specifically rather than "can you do more somewhere?" (vague asks get vague answers)
+- Closes with "creative structure" framing — gives the recruiter permission to be inventive
+- "Total package that works for both of us" signals partnership, not adversary
+
+**Component flex, by company stage** (so you can pick which 1–2 to ask about):
+
+- **Early-stage startup (Seed – Series A)**: equity has the most flex (they have more of it than cash), sign-on often possible as retention grant instead, base is the tightest.
+- **Growth-stage (Series B – D)**: sign-on is most flexible, equity refresh clarity is high-leverage, base bands are real but sometimes flex for rare skills.
+- **Late-stage private / public**: sign-on and equity refresh have most flex; base is tightly banded. PTO, learning budget, and promotion timing also negotiable.
+- **Traditional / corporate**: base is heavily banded; PTO, title, and level sometimes flex; promotion-review timing and written commitment to a comp review milestone are often available.
+- **Nonprofit / government**: base is fixed. Focus on title, responsibilities, PTO, remote flexibility, learning budget.
+
+**Do not**:
+- Argue that the company "must have budget." You don't know their spreadsheet; arguing burns trust.
+- Accept the "no" as final without pivoting. The recruiter expects a pivot.
+- List 4+ components in the pivot. 1–2 specific asks outperform a scattered list.
+- Say "well, what CAN you do?" — passive. State what you want instead.
+
+**Post-rebuttal behavior**:
+- If they come back with a yes on one component: accept and move to close. Do not try to stack additional asks on the same call.
+- If they come back with "let me check": thank them, give a specific timeline ("would end of week work?"), and wait. Don't nudge before then.
+- If they come back with another flat no: evaluate against your walkaway. If the total comp is above walkaway, consider accepting. If below walkaway, it's decision time — and the exploding-offer prompt's "decline with dignity" track applies even though this isn't exploding.
+- **Never use "we don't have budget" rebuttal twice in the same negotiation.** If they've said no to base AND to the pivot, pushing a third time is begging.
 
 ---
 
