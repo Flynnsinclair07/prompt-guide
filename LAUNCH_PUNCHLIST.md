@@ -93,37 +93,27 @@ These can't run autonomously because they require login to your accounts or grap
 
 ---
 
-## 🔴 Genuine blockers / open questions (can't autonomously resolve)
+## 🟢 Open questions — Tom's calls (May 3)
 
-These are not paste-and-click; they need a decision or external lookup before launch.
+Tom triaged the open questions in the May 3 review. Resolutions below.
 
-### Q1 — Gumroad URL pattern (which storefront subdomain?)
-- `GUMROAD_LISTING.md` and `EMAIL_SEQUENCE.md` use `https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH` as the placeholder.
-- This assumes you've claimed the `snipprompts` Gumroad subdomain. If your storefront is `flynnsinclair.gumroad.com` (or anything else), find/replace across both files before scheduling Email 4 and posting Pin 15.
-- **5-second check**: log into Gumroad → top-right profile → "View profile" — the URL bar shows your storefront subdomain.
+### Q1 — Gumroad URL pattern → owner verifies pre-launch (~30 sec)
+Owner action: log into Gumroad → top-right profile → "View profile" — the URL bar shows the storefront subdomain. If it isn't `snipprompts.gumroad.com`, find/replace the placeholder across `GUMROAD_LISTING.md` and `EMAIL_SEQUENCE.md` before scheduling Email 4 and posting Pin 15.
 
-### Q2 — ConvertKit form endpoint (does the universal POST URL accept this UID?)
-- The homepage form posts to `https://app.convertkit.com/forms/d02eb77674/subscriptions` (universal endpoint). This works for ConvertKit's HTML-embed forms, but if form `d02eb77674` was set up as a "JavaScript embed only" type, the POST will 404.
-- **30-second test**: after merging to `main`, open snipprompts.com in an incognito window and submit the form with a real address you control. Either you get the ConvertKit thank-you page (good) or a 404 (need to swap the form for the JS embed snippet from ConvertKit's dashboard — same UID, different markup).
-- If the JS embed is needed, replace the entire `<form>` block in `index.html` with the `<script async data-uid="d02eb77674" src="...">` tag from ConvertKit's "HTML" tab.
+### Q2 — ConvertKit form endpoint → owner verifies post-merge ($0 test signup, ~30 sec)
+Owner action: after merging `launch-prep` to `main`, open snipprompts.com in an incognito window and submit the homepage form with a real address. If you land on ConvertKit's thank-you page, the universal POST endpoint works. If you hit a 404, swap the `<form>` block for the JS embed snippet from ConvertKit's dashboard (same form UID `d02eb77674`, different markup).
 
-### Q3 — PDF page size: A4 vs. Letter
-- `product/job-hunter-bundle-outline.md` Section 4 spec says "Print-ready (letter-size, readable margins)". Current build is **A4** (`product/build/defaults.yaml` doesn't override pandoc's lualatex default).
-- For a digital-first product this is fine — ~95% of buyers will read on screen and never print. If you want US Letter for the print-friendly minority, add `papersize: letter` to `defaults.yaml` under `variables:`.
-- **Recommendation**: leave it. Switching now means a full re-render and re-QA. Worth doing in a v1.1 update if buyers ask.
+### Q3 — PDF page size: A4 vs. Letter → ship A4
+Tom's call: digital-first product, US buyers rarely print AI prompts, not worth a regenerate. Letter variant logged in v1.1 backlog (`notion/05-changelog.md`); add if any buyer asks.
 
-### Q4 — Page count: 119 vs. "~141"
-- The launch context I was given said the PDF was ~141 pages. Actual build is **119 pages**. Diff is probably explained by the outline's TOC/welcome page/quick-reference card not yet being written (those are listed as "all new" in outline §3).
-- **Decide before launch**: is 119 pages the shipping number, or do those wrapper sections (welcome page, TOC, quick-reference card, module intros) still need writing?
-- The Gumroad description and launch-eve email both say "119-page PDF". If you write the wrapper content this week, update those two files before paste day (May 5–6 for Gumroad, May 16 for Email 3).
+### Q4 — Notion duplication URL → blocker, build before launch
+Owner action (May 4–6 window): build the Notion workspace by importing `notion/*.md`, set up duplicate-as-template, grab the URL. Then find/replace the `NOTION_DUPLICATION_URL` placeholder in `GUMROAD_LISTING.md` Field 12 and `DELIVERY_EMAIL.md` (HTML body + plain-text fallback — two replacements).
 
-### Q5 — Notion duplication URL placeholder
-- `NOTION_DUPLICATION_URL` is referenced in 2 files (`GUMROAD_LISTING.md` receipt email, `EMAIL_SEQUENCE.md` doesn't currently reference it but the post-purchase delivery email body in the outline does).
-- This isn't a blocker until the Notion workspace is built. Just noting so you don't ship the receipt email with the placeholder still in it.
+### Q5 — Day-5 comp-prompt promise → REMOVED from delivery email (May 3)
+Tom's call: the Day-5 post-launch window is the chaos window — funnel debugging if sales are slow, support if sales are good, neither leaves room to write a new prompt. Removed the promise from `DELIVERY_EMAIL.md` (HTML body, plain-text fallback, setup notes warning, voice/craft notes — four locations). Comp triangulator prompt logged in v1.1 backlog (`notion/05-changelog.md`); ship as a separate broadcast post-launch if-and-when, not as a launch-day commitment.
 
-### Q6 — Author identity on commits
-- This session's commits show committer `flynn sinclair <flynnsinclair07@flynns-MacBook-Air.local>`. That's a default-derived identity, not your configured git identity.
-- Run `git config --global user.email "..."` and `git config --global user.name "..."` once if you want a clean identity on these commits. (Optional — they're functional as-is.)
+### Q6 — Author identity on commits (deferred)
+Optional cosmetic fix; commits are functional as-is. Run `git config --global user.email/.name` whenever convenient.
 
 ---
 

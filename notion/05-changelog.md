@@ -36,8 +36,9 @@ This page tracks what changed and when. New prompts, prompt fixes, format change
 
 (Not promises — directional. Driven by what buyers actually ask for once the bundle is in their hands.)
 
-- **Comp triangulator prompt** — promised in the post-purchase email; ships ~5 days after launch as a free addition. Pulls Levels.fyi / Glassdoor / Blind / colleague data into one defensible number.
-- **Quick-reference card** (1-page index) — a 1-page printable mapping every prompt to its page and use case. The PDF currently ends with Module 5; a wrap-up page will help.
+- **Comp triangulator prompt** — pulls Levels.fyi / Glassdoor / Blind / colleague data into one defensible number. Stand-alone bonus prompt for the post-launch nurture.
+- **US Letter PDF variant** — current build is A4 (lualatex default). Most buyers read on screen, but a Letter variant for anyone who wants to print is a one-line change in `defaults.yaml` plus a re-render. Add when the first buyer asks.
+- **Quick-reference card** (1-page index) — a 1-page printable mapping every prompt to its page and use case. The PDF currently ends with Module 5; a wrap-up page would help.
 - **Welcome page + module intros** in the PDF — currently the PDF opens straight into Module 1. A 1-page welcome would set expectations better.
 
 ---

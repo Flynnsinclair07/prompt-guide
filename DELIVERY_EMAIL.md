@@ -77,21 +77,14 @@ Three things before you dive in.
    minutes and is the difference between countering with
    confidence and bluffing yourself into a pulled offer.
 
-What's coming next:
-
-In about 5 days I'll email you one extra prompt that didn't
-make the final cut for length reasons — the "is this offer
-below market?" comp triangulator. Still useful, you get it
-free for buying.
-
-After that, only when there's something worth saying. Probably
-one email a month at most. You can unsubscribe any time and
-still keep the bundle.
-
 One ask: hit reply and tell me what role and level you're
 hunting for. Doesn't have to be long — "senior PM, switching
 out of healthcare" is plenty. I read every reply, and what
 people tell me changes what I write next.
+
+I'll only email when there's something worth saying — probably
+once a month at most. You can unsubscribe any time and still
+keep the bundle.
 
 Good luck out there.
 
@@ -156,17 +149,13 @@ already know your walkaway number. The worksheet takes 15 minutes and
 is the difference between countering with confidence and bluffing
 yourself into a pulled offer.
 
-What's coming next: in about 5 days I'll email you one extra prompt
-that didn't make the final cut for length reasons — the "is this offer
-below market?" comp triangulator. Still useful, you get it free for
-buying. After that, only when there's something worth saying. Probably
-one email a month at most. You can unsubscribe any time and still keep
-the bundle.
-
 One ask: hit reply and tell me what role and level you're hunting for.
 Doesn't have to be long — "senior PM, switching out of healthcare" is
 plenty. I read every reply, and what people tell me changes what I
 write next.
+
+I'll only email when there's something worth saying — probably once a
+month at most. You can unsubscribe any time and still keep the bundle.
 
 Good luck out there.
 
@@ -229,8 +218,6 @@ Gumroad's ConvertKit integration tags every buyer with `bundle-buyer-2026-may` o
 
 **Don't include the `bundle-buyer-2026-may` segment in the launch-prep broadcast list** — buyers shouldn't get the launch-day pitch. This is already configured in `EMAIL_SEQUENCE.md` (every broadcast excludes the `bundle-buyer-*` tag). Sanity-check before scheduling.
 
-**The Day 5 follow-up email (the "comp triangulator" promise)** isn't drafted yet. The body of this email commits you to writing it within 5 days of launch. If you're not going to ship the comp prompt, edit the body to remove that paragraph before launch — don't ship a promise you won't keep.
-
 ### Form UID reference
 
 ConvertKit form UID for the snipprompts.com lead-magnet (the existing list, not buyers): `d02eb77674`. **Do not** trigger the welcome sequence off this form UID — it's the free-prompt list, not the buyer list. Buyer list uses tag `bundle-buyer-2026-may` (set up via Gumroad's CK integration on purchase).
@@ -243,7 +230,7 @@ ConvertKit form UID for the snipprompts.com lead-magnet (the existing list, not 
 - No "thank you for your purchase". Feels transactional. The whole email IS the thank-you.
 - The three numbered tips lead with imperatives ("Start with", "Don't run", "Open the worksheet"). Not aspirational, not "consider trying" — commands.
 - "The prompts are sharp; you have to feed them" — most important sentence in the email. Sets the right relationship between buyer and product. The prompts aren't magic; the buyer's effort is still the bottleneck. Setting that expectation upfront prevents refund requests from buyers who expected one-click hiring.
-- The comp-prompt promise is concrete and small. "I'll email you one extra prompt in 5 days" is a specific, falsifiable promise. It builds trust. "I'll send you helpful content" is a vague promise nobody believes.
+- The future-email line is deliberately vague ("only when there's something worth saying — probably once a month at most"). Keeps trust without committing to a specific deliverable in the launch chaos window. If a v1.1 email is later promised, do it from a fresh broadcast, not a launch-day commitment.
 - "Good luck out there" — warmer than "Good luck". Signals you know they're in the trenches.
 - The P.S. does load-bearing work: it neutralizes the "do I have to buy this again next year?" objection without making the email about updates.
 - No emojis. No exclamation points. No "amazing" / "incredible" / "exclusive". The buyer just spent money — they don't need to be sold again.
