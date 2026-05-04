@@ -52,6 +52,14 @@ gtag('config', 'G-1NQKX1S4E6');
   <a href="/" class="logo">PromptGuide</a>
   <a href="/categories.html">All Prompts</a>
 </nav>
+<!--
+  LAUNCH BANNER — replace href and copy on May 17, 2026 (launch day).
+  Before May 17: anchors to #email-capture so visitors join the list.
+  On May 17: replace href with the live Gumroad URL (e.g. https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH).
+-->
+<a class="launch-banner" href="#email-capture" data-replace-on-launch="gumroad-url">
+  <strong>The Job Hunter's AI Bundle</strong> launches May 17 — 44 ChatGPT prompts, 8 negotiation scripts, $29 launch week. <span class="launch-banner-cta">Get the discount link →</span>
+</a>
 <div class="hero">
   <h1>The Best AI Prompt for Anything</h1>
   <p>Free, tested prompts for ChatGPT &amp; Claude. Copy, paste, get results.</p>
@@ -59,6 +67,23 @@ gtag('config', 'G-1NQKX1S4E6');
     <input type="text" id="search" placeholder="Search 134 prompts..." oninput="filterCards(this.value)">
   </div>
 </div>
+<!--
+  EMAIL CAPTURE — ConvertKit form UID d02eb77674.
+  Posts directly to ConvertKit's form endpoint. After ConvertKit confirms the
+  subscription, it redirects to whatever success URL is configured on the form
+  in ConvertKit's dashboard (default: a "thanks, check your inbox" page).
+  If you have a JS embed snippet from ConvertKit you'd rather use, swap the
+  whole <form> below for that <script> tag — UID stays the same.
+-->
+<section id="email-capture" class="email-capture">
+  <h2>Get the launch discount</h2>
+  <p>Subscribers get the bundle for $29 instead of $39 on May 17. Plus the new prompt-of-the-week, no spam.</p>
+  <form action="https://app.convertkit.com/forms/d02eb77674/subscriptions" method="post" data-uid="d02eb77674">
+    <input type="email" name="email_address" placeholder="you@email.com" required aria-label="Email address">
+    <button type="submit">Send me the discount</button>
+  </form>
+  <p class="email-capture-fineprint">No spam. Unsubscribe anytime.</p>
+</section>
 <div class="card-grid" id="cardGrid">
   <a class="card" href="/prompts/best-chatgpt-prompt-for-writing-a-cover-letter.html">
     <span class="category-tag">Career</span>
