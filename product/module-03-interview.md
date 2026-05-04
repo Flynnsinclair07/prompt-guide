@@ -797,6 +797,8 @@ Constraints:
 
 Three-round structure for practicing behavioral and role-specific answers out loud with ChatGPT acting as the interviewer. Run this 1–2 days before the real interview. Use it on the answers you built with Prompt 4 (STAR structuring).
 
+**Important**: paste all three round prompts into the SAME ChatGPT chat session — Round 2 and Round 3 reference the "interview" the model is running, and starting fresh chats between rounds breaks the rehearsal arc.
+
 ### Round 1 — Warm-up (confidence and pacing)
 
 Prompt to paste into ChatGPT:

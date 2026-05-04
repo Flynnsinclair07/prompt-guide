@@ -297,6 +297,8 @@ Run through this for every resume before you submit.
 
 Three worked examples — entry-level, mid-career switcher, and senior. Each shows the original draft, the exact prompt run, and the polished output. Use these to calibrate what "good" looks like before you run the prompts on your own material.
 
+**One thing to know before reading the examples**: the metrics in each AFTER (open rates, retention numbers, ARR figures, latency cuts, MQL counts) are the candidate's real numbers. They came out when the prompt asked clarifying questions about scale, baseline, and outcomes — not from the model. The bundle's prompts surface what you already know; they refuse to invent. When you run these prompts on your own material, the AFTER you produce will be quantified to the same level only if you can answer the same kinds of questions. That's the work.
+
 ---
 
 ### Example 1 — Entry-level (recent grad → Marketing Coordinator)
