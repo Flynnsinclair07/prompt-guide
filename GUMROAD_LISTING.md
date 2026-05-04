@@ -58,9 +58,9 @@ job-hunters-ai-bundle
 ## Field 5 — Description (the long body — paste as-is, Gumroad supports markdown-ish formatting)
 
 ```
-Most job-hunting advice treats every step as a separate problem. Resume here. Cover letter there. Interview prep on Reddit. Salary negotiation… nowhere.
+Generic prompts produce generic output, and generic output gets archived unread. Most job-hunting prompt packs are exactly that — screenshots of one-line prompts you've already tried.
 
-This bundle treats it as one workflow. Resume to offer letter — 5 modules, 44 copy-paste ChatGPT prompts, 8 negotiation scripts, and the worksheets you'd otherwise pay a coach $300 to walk you through.
+The Job Hunter's Bundle is 5 modules, 44 prompts, 8 negotiation scripts, and 3 worksheets — built around the actual failure modes: vague inputs, invented metrics, recruiter-clichéd phrasing. Each prompt has a pre-output gate that refuses to proceed on weak inputs, a banned-phrase list that kills AI-tells, and post-output behavior rules for what to do after you send.
 
 Built from the five career prompts on snipprompts.com — expanded 2–3× with worked examples, "why this prompt works" commentary, and the salary-negotiation playbook nobody puts online for free.
 
@@ -79,7 +79,7 @@ Built from the five career prompts on snipprompts.com — expanded 2–3× with 
 **Module 4 — LinkedIn Profile**
 8 prompts (headline, About section, experience bullets, skills keywording, recruiter cold-DM, recommendation request, post-connection follow-up, more) · 14-item optimization checklist · weekly content prompt pack (10 post types).
 
-**Module 5 — Salary Negotiation** *(flagship — would be a $39 product on its own)*
+**Module 5 — Salary Negotiation** *(the deepest module — most prompt packs charge more for less)*
 10 prompts (offer evaluation, market-rate research, counter-offer scripting, multiple-offer leverage, equity / RSU, sign-on bonus, remote / relocation, exploding offer response, justify your ask, deferred-start) · 8 copy-paste scripts (decline-and-counter email, 30-second phone opener, "we don't have budget" rebuttal, "is that your final answer?" rebuttal, leverage script, accept-and-lock-terms, PTO / benefits, 30-day review revisit) · BATNA worksheet · comp research template · walkaway math calculator.
 
 
@@ -129,13 +129,13 @@ All three. Every module has prompts tuned for each stage.
 Both. PDF is the main format. Notion is a bonus workspace if you prefer one-click copy.
 
 **How do I get updates?**
-Same Gumroad download link. Any updates within 12 months appear automatically — no re-download needed. The Notion workspace updates live.
+Any updates I publish appear automatically in your Gumroad library. No re-download needed. The Notion workspace updates live.
 
 **What about Teal, Rezi, Huntr?**
 This isn't a tool — it's a workflow. Works alongside any of them.
 
 **Refund policy?**
-14 days, no questions. Gumroad handles it.
+30 days, no questions. Gumroad handles it.
 
 
 ## About the author
@@ -223,7 +223,7 @@ DELIVERY_EMAIL.md also documents an Option B that routes the receipt through Con
 
 ## Field 13 — Refund policy (Gumroad's "refunds" toggle)
 
-Set to **14 days, no questions asked**. Already in the FAQ above. Gumroad processes refunds automatically when toggled on; no manual step.
+Set to **30 days, no questions asked**. Already in the FAQ above. Gumroad processes refunds automatically when toggled on; no manual step.
 
 ---
 
@@ -305,5 +305,38 @@ Left alone deliberately:
   Marketing copy doesn't need to mirror PDF order.
 - "Less than 15 minutes with a resume coach" anchor. Strong line; keep.
 - Tier 2 / Tier 3 upsell architecture. Q3 problem.
+
+[Tom-QA pass — May 3, 2026]
+
+Four further fixes after Tom's line-by-line review:
+
+6. Field 5 description opener rewrote from workflow-completeness positioning ("Most
+   job-hunting advice treats every step as a separate problem...") to AI-specific
+   differentiation ("Generic prompts produce generic output... pre-output gates,
+   banned-phrase lists, post-output behavior rules"). Tom's call: workflow-completeness
+   is what every bundle claims; the AI-specific failure-mode framing is what's
+   actually different about this product. Verbatim text from Tom's draft.
+7. Field 13 + FAQ Q8 refund window: 14 days → 30 days. Industry standard for $39
+   digital products. Lower refund anxiety reads as confidence; refund-window-watchers
+   rarely follow through, so the conversion lift outweighs the marginal refund risk.
+   Cross-file propagation: same change applied to EMAIL_SEQUENCE.md (3 spots),
+   PINTEREST_PINS.md (3 spots — Pin 15 benefit, description, alt text), and
+   notion/05-changelog.md (1 spot). All "14 day" references in launch copy now read
+   "30 day". Interview-timing references (7–14 days for follow-up) in the Notion
+   prompt library left untouched — different domain.
+8. FAQ Q6 updates promise softened. Original committed to "any updates within 12
+   months appear automatically" — a falsifiable time commitment that breaks if v2
+   doesn't ship within the year. New wording: "Any updates I publish appear
+   automatically in your Gumroad library. No re-download needed. The Notion
+   workspace updates live." Drops the time floor, keeps the value claim. Note: the
+   parallel "12 months of free updates" claim still appears in DELIVERY_EMAIL.md P.S.,
+   EMAIL_SEQUENCE.md Email 4, PINTEREST_PINS.md Pin 15 — same falsifiability concern,
+   surfacing those for Tom's call when each file comes up in QA.
+9. Module 5 parenthetical: "(flagship — would be a $39 product on its own)" →
+   "(the deepest module — most prompt packs charge more for less)". Tom's call:
+   original framed Module 5 as worth $39 on its own, which is value-stack signaling
+   but also a self-set ceiling (buyer reads "Module 5 = $39, other 4 modules = free").
+   New wording maintains depth-signaling without explicit price-anchoring on a single
+   section.
 -->
 

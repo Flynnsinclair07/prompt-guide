@@ -13,7 +13,7 @@ This page tracks what changed and when. New prompts, prompt fixes, format change
 - 5 modules · 44 prompts · 8 negotiation scripts · 3 worksheets
 - 119-page PDF (hyperlinked TOC, code-styled prompt callouts)
 - Notion companion workspace (this thing) — searchable prompt library, fillable templates, job tracker, 7-day progress checklist
-- 14-day no-questions refund window via Gumroad
+- 30-day no-questions refund window via Gumroad
 - 12 months of free updates from purchase
 
 **Module breakdown:**

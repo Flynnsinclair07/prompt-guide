@@ -179,7 +179,7 @@ Tonight, the full inventory so you can decide whether it's for you:
 
 Format: a single 119-page PDF (works on Mac, PC, Kindle, iPad, anywhere) plus a bonus interactive Notion workspace with one-click copy.
 
-Refund policy: 14 days, no questions, Gumroad handles it.
+Refund policy: 30 days, no questions, Gumroad handles it.
 
 What it's not: a one-click resume generator. A Teal / Rezi competitor. A get-hired-while-you-sleep promise. It's a workflow — you still have to do the job hunt.
 
@@ -244,7 +244,7 @@ What you get:
 — 3-round AI-grilling interview rehearsal workflow
 — 119-page polished PDF + bonus Notion workspace
 
-12 months of free updates. 14-day no-questions refund.
+12 months of free updates. 30-day no-questions refund.
 
 Less than 15 minutes with a resume coach. One salary counter you wouldn't have written on your own pays for the bundle 100×.
 
@@ -293,7 +293,7 @@ After that it's $39, no code. Right now it's $29:
 
 If you've been on the fence: Module 4 (LinkedIn outreach — recruiter cold-DM, recommendation request, post-connection follow-up) and Module 5 (the negotiation playbook — 10 prompts, 8 scripts, 3 worksheets) are entirely net-new. Nothing on snipprompts.com touches this depth. Those two modules alone are worth the $29.
 
-Same 14-day refund. If you buy and don't find at least one prompt that pays for the bundle in the first hour, refund yourself, no email needed.
+Same 30-day refund. If you buy and don't find at least one prompt that pays for the bundle in the first hour, refund yourself, no email needed.
 
 Flynn
 [GUMROAD_URL]
