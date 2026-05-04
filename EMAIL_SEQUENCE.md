@@ -47,7 +47,7 @@ You don't have to do anything right now. I'll send three more emails over the ne
 
 If you'd rather skip these and stay only on the free-prompts list, the unsubscribe link is at the bottom — no hard feelings, you'll keep getting the prompt-guide updates.
 
-One ask: if any part of the job search is grinding you down right now, hit reply and tell me what. The bundle's already written but I'll write a free post on whatever the most common answer is.
+One ask: if you're between jobs right now, hit reply and tell me what part of the search is grinding you down. The bundle's already written but I'll write a free post about whatever the most common answer is.
 
 Talk soon,
 Flynn
@@ -340,10 +340,11 @@ Substantive changes from the original draft. Revert any of these if you disagree
 1. "Hey," → "hey," in all 5 email bodies. The voice notes (above) already mandated
    lowercase but the bodies were sentence case — fixed the inconsistency. Now matches
    DELIVERY_EMAIL.md so the buyer experience reads as one writer.
-2. Email 1: broadened "if you're between jobs right now" to "if any part of the job
-   search is grinding you down right now". The original gated the reply CTA on a
-   subset (between jobs) when the bigger pool — passive subscribers thinking about
-   moving — is also valid testimonial / objection-mapping fodder.
+2. Email 1: ~~broadened "if you're between jobs right now" to "if any part of the job
+   search is grinding you down right now"~~. **Reverted per Tom's QA review** — tighter
+   CTAs convert better on low-volume lists; "between jobs" is a more specific buyer
+   signal that filters for usable testimonial / objection-mapping fodder. Quality of
+   reply > quantity of replies. Original wording restored.
 3. Email 4: dropped the "Anchor:" prefix on the closing line. That word leaked the
    marketing internals to the reader (anchoring is what we're doing TO them, not
    something we should narrate). Body of the line stayed the same — it's a strong
