@@ -55,7 +55,7 @@ What you just bought:
 - 14-item LinkedIn optimization checklist + weekly content pack
 - Bonus: a Notion workspace mirroring the whole bundle, with
   one-click copy on every prompt — duplicate it to your own
-  workspace here: NOTION_DUPLICATION_URL
+  workspace here: https://learned-guilty-545.notion.site/The-Job-Hunter-s-AI-Bundle-35634cf5abb9800babe5c22b28888ccf
 
 Three things before you dive in.
 
@@ -128,7 +128,7 @@ worksheets — BATNA, comp research template, walkaway math. 3 before/
 after worked resumes (entry-level grad, mid-career switcher, senior
 IC). A 14-item LinkedIn optimization checklist plus a weekly content
 pack. And a bonus Notion workspace mirroring the whole bundle with
-one-click copy on every prompt: NOTION_DUPLICATION_URL
+one-click copy on every prompt: https://learned-guilty-545.notion.site/The-Job-Hunter-s-AI-Bundle-35634cf5abb9800babe5c22b28888ccf
 
 Three things before you dive in.
 
