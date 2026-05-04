@@ -1,6 +1,6 @@
 # Changelog
 
-Version history for The Job Hunter's AI Bundle. The bundle gets free updates for 12 months from purchase. When ChatGPT changes — model upgrades, new context windows, behavior shifts — the prompts get re-tested and rewritten as needed. The same Gumroad download link picks up the new version. No re-purchase, no new email.
+Version history for The Job Hunter's AI Bundle. Free updates pushed to your Gumroad library — no re-download needed. When ChatGPT changes — model upgrades, new context windows, behavior shifts — the prompts get re-tested and rewritten as needed. The same Gumroad download link picks up the new version.
 
 This page tracks what changed and when. New prompts, prompt fixes, format changes, and any v2 backlog items that get pulled forward. Older versions are archived (link at the bottom of each entry) in case you want the version you originally bought.
 
@@ -14,7 +14,7 @@ This page tracks what changed and when. New prompts, prompt fixes, format change
 - 119-page PDF (hyperlinked TOC, code-styled prompt callouts)
 - Notion companion workspace (this thing) — searchable prompt library, fillable templates, job tracker, 7-day progress checklist
 - 30-day no-questions refund window via Gumroad
-- 12 months of free updates from purchase
+- Free updates pushed to your Gumroad library — no re-download needed
 
 **Module breakdown:**
 

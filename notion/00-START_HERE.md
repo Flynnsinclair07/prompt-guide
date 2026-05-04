@@ -10,7 +10,7 @@ This is the Notion companion to The Job Hunter's AI Bundle. The PDF is the long-
 - **Templates** — 8 negotiation scripts, 3 worksheets (BATNA / comp research / walkaway math), 3 cover letter templates, plus checklists. Fillable.
 - **Job tracker** — a database to log every role you apply to. Pre-seeded with two examples so you see the shape.
 - **Progress checklist** — a 7-day plan that ties specific prompts to specific milestones.
-- **Changelog** — version history. The bundle gets free updates for 12 months.
+- **Changelog** — version history. Free updates pushed to your Gumroad library — no re-download needed.
 
 ## 15-minute quick-win path
 
