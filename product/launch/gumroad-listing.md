@@ -19,7 +19,9 @@ Resume, cover letter, interview, LinkedIn, salary negotiation. Built for ChatGPT
 $39
 ```
 
-## Description (paste into "Description" field — Gumroad supports basic HTML)
+## Description (paste into "Description" field)
+
+> **v1 launch action (verify May 7 during Gumroad delivery setup)**: the description below claims "delivered instantly to your inbox after purchase." If ConvertKit-automation route introduces delay, soften "instantly" to "delivered to your inbox after purchase." Truth > superlative.
 
 ```
 Generic prompts produce generic output, and generic output gets archived unread. The Job Hunter's Bundle is 44 prompts, 8 negotiation scripts, and 3 worksheets — covering resume, cover letter, interview prep, LinkedIn, and salary negotiation. Each prompt has a pre-output gate that refuses to proceed on vague inputs, a banned-phrase list that kills AI-tells, and post-output behavior rules for what to do after you send. Built for ChatGPT, Claude, or any model you use. Includes a companion Notion workspace with every script and worksheet as a ready-to-use template. PDF + Notion. $39.
@@ -44,7 +46,7 @@ Module 5 — Salary Negotiation (10 prompts + 8 scripts + 3 worksheets)
 Market-rate research · Offer evaluation · Counter-offer scripting · Multiple-offer leverage · Exploding offer response · Deferred-start · Equity/RSU · Sign-on bonus · Remote/relocation · Justify your ask · Email decline-and-counter · Phone 30-sec opener · "We don't have budget" rebuttal · Pressure-test final answer · Accept and lock terms · Leverage script · PTO/benefits · 30-day review revisit · BATNA worksheet · Comp research template · Walkaway math calculator
 
 Companion Notion workspace
-14 ready-to-use Notion pages — every script and worksheet as a template. Negotiation scripts as standalone copy-paste pages. Worksheets as interactive databases (BATNA fill-in, comp research with table view, walkaway math with formula fields).
+15 ready-to-use Notion pages — every script and worksheet as a template. Negotiation scripts as standalone copy-paste pages. Worksheets as interactive databases (BATNA fill-in, comp research with table view, walkaway math with formula fields).
 
 What this is NOT:
 - Not a course. No videos.
@@ -61,7 +63,7 @@ Format: PDF (119 pages) + Notion workspace link. Both delivered instantly to you
 Refund: 30-day no-questions. Email me, I refund.
 ```
 
-## FAQ (Gumroad supports an FAQ field — paste each Q and A separately)
+## FAQ
 
 **Q: Does this work with Claude / Gemini / [other AI]?**
 A: Yes. The prompts are model-agnostic — they're written for the failure modes of generative AI, not for one specific model's quirks. Tested most extensively on ChatGPT (GPT-4o-mini and GPT-4o, free tier) and Claude.
@@ -108,6 +110,8 @@ How to grab a screenshot in macOS Preview:
 
 ## Cover image (the thumbnail buyers see in their library)
 
+> **v1 launch action (May 5-6)**: budget 30-60 min in Canva for a designed cover with title + module count + colored background. Plain black tile won't compete in Gumroad's grid scan against other AI-prompt-bundle products.
+
 Recommend: same as Page 1 of the PDF (black title page). High contrast, brand-consistent, no extra design needed.
 
 ## Delivery email subject line
@@ -117,9 +121,9 @@ Your Job Hunter's Bundle is ready
 
 ## Delivery email body (Gumroad's "Welcome message" field)
 ```
-Thanks for picking up the Job Hunter's Bundle.
+hey,
 
-Two things in your library:
+Thanks for picking up the Job Hunter's Bundle. Two things in your library:
 
 1. job-hunters-bundle.pdf — 119 pages, all 44 prompts + 8 scripts + 3 worksheets. Read once, reference forever.
 
@@ -136,7 +140,7 @@ Most-used pages first:
 - M3 P10 (Post-interview thank-you) — every interview
 - M5 P3 (Counter-offer scripting) — every offer
 
-Refund window: 30 days, no questions. Reply to this email if you want one.
+Refund window: 30 days, no questions. Reply if you want one.
 
 — Flynn
 ```
