@@ -205,7 +205,7 @@ Gumroad's ConvertKit integration tags every buyer with `bundle-buyer-2026-may` o
 **Tradeoffs**:
 - ✓ Sends from your verified domain. Lands in Primary tab. ~30–40% better open rate than Gumroad's noreply.
 - ✓ Real A/B testing on subject lines (ConvertKit's built-in split test).
-- ✓ Sets up a multi-email post-purchase nurture sequence — Email 2 (Day 5) is the comp-prompt promised in the body; Email 3 (Day 14) is "how's the hunt going?" check-in; Email 4 (Day 30) is "any new modules to suggest?" feedback ask.
+- ✓ Optional foundation for a post-purchase nurture sequence — e.g. a "how's the hunt going?" check-in around Day 14, a "what should the next module cover?" feedback ask around Day 30. None of these are committed in the launch-day email; add them later from a fresh broadcast if and when there's content worth sending.
 - ✗ Requires the Gumroad → ConvertKit integration to be live and tested. If the integration silently fails, buyers get no welcome — monitor the first 5 sales manually.
 
 ### Whichever option you choose
@@ -257,12 +257,17 @@ unchanged, just sentence case.
 
 Left alone deliberately:
 - The body content. Every line is doing a specific job (download mechanic →
-  what-you-bought recap → 3 imperative tips → 5-day comp-prompt promise → reply ask
-  → P.S. for update objection). No filler to cut.
+  what-you-bought recap → 3 imperative tips → reply ask → future-email
+  expectations → P.S. for update objection). No filler to cut.
 - The 3 subject lines (A/B/C) and the A/B/C decision rationale.
 - The Gumroad-vs-ConvertKit setup paths (Option A simpler, Option B better).
 - The "the prompts are sharp; you have to feed them" line — keep it, it sets
   expectations that prevent refund regret.
-- The comp-prompt promise (5 days). Still concrete, still falsifiable, still good.
+
+Note: an earlier version of this file (and this editor's note) included a
+specific "in 5 days I'll email you one extra prompt" promise. Removed in
+follow-up commit per Tom's review — Day-5 post-launch is the chaos window;
+don't promise extra deliverables in the launch window. The comp triangulator
+prompt is now logged in v1.1 backlog (notion/05-changelog.md) instead.
 -->
 
