@@ -91,10 +91,10 @@ Good luck out there.
 — Flynn
 snipprompts.com
 
-P.S. The bundle gets free updates for 12 months. When ChatGPT
-changes (it will), the prompts get rewritten and the same
-download link picks up the new version. No re-purchase, no
-new email.
+P.S. Free updates pushed to your Gumroad library — no
+re-download needed. When ChatGPT changes (it will), the
+prompts get rewritten and the same download link picks up
+the new version.
 ```
 
 **Notes on the body**:
@@ -162,9 +162,9 @@ Good luck out there.
 — Flynn
 snipprompts.com
 
-P.S. The bundle gets free updates for 12 months. When ChatGPT changes
-(it will), the prompts get rewritten and the same download link picks
-up the new version. No re-purchase, no new email.
+P.S. Free updates pushed to your Gumroad library — no re-download
+needed. When ChatGPT changes (it will), the prompts get rewritten
+and the same download link picks up the new version.
 ```
 
 ---

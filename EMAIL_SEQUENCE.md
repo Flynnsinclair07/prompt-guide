@@ -244,7 +244,7 @@ What you get:
 — 3-round AI-grilling interview rehearsal workflow
 — 119-page polished PDF + bonus Notion workspace
 
-12 months of free updates. 30-day no-questions refund.
+Free updates pushed to your Gumroad library — no re-download needed. 30-day no-questions refund.
 
 Less than 15 minutes with a resume coach. One salary counter you wouldn't have written on your own pays for the bundle 100×.
 

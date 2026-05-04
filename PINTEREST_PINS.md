@@ -363,7 +363,7 @@ the Job Hunter's AI Bundle
 ```
 ✓ 119-page PDF + Notion
 ✓ 30-day refund, no questions
-✓ 12 months of free updates
+✓ Free updates, no re-download
 ```
 **Outbound link**: live Gumroad URL with `/LAUNCH` appended for auto-discount (e.g. `https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH`)
 
@@ -376,7 +376,7 @@ The Job Hunter's AI Bundle is live. 5 modules, 44 ChatGPT prompts, 8 negotiation
 
 **Alt text**:
 ```
-Navy graphic with the headline "Live now, $29 launch week only" in cream. Sub-line: the Job Hunter's AI Bundle. Three benefits listed: 119-page PDF plus Notion, 30-day refund no questions, 12 months of free updates.
+Navy graphic with the headline "Live now, $29 launch week only" in cream. Sub-line: the Job Hunter's AI Bundle. Three benefits listed: 119-page PDF plus Notion, 30-day refund no questions, free updates with no re-download.
 ```
 
 **Suggested post date**: May 17 (morning, after Email 4 sends)
