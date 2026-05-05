@@ -1,6 +1,6 @@
 # Buyer support email templates
 
-Copy-paste-ready responses for the 7 most likely buyer support emails in the first 24–72 hours after launch. Each is 1–3 sentences. Voice matches `DELIVERY_EMAIL.md` — lowercase `hey,` opener, sentence case body, properly cased proper nouns, signed `— Flynn`.
+Copy-paste-ready responses for the 8 most likely buyer support emails in the first 24–72 hours after launch (and beyond — Template 8 covers post-discount-window questions). Each is 1–3 sentences. Voice matches `DELIVERY_EMAIL.md` — lowercase `hey,` opener, sentence case body, properly cased proper nouns, signed `— Flynn`.
 
 Drop into your reply, edit the bracketed bits if any (most don't need editing), send. No subject line needed — your client will auto-prefix "Re: " on the buyer's original.
 
@@ -27,12 +27,16 @@ Refund processed — Gumroad will reverse the charge within 24 hours and you'll 
 ```
 hey,
 
-Three places it should be: (1) your Gumroad library at gumroad.com/library — there's a .txt file in the bundle download with the URL, (2) the receipt email I sent right after you bought (check your Gumroad library directly at gumroad.com → Library, or search your inbox for "Gumroad" or "bundle"), and (3) here it is directly: https://learned-guilty-545.notion.site/The-Job-Hunter-s-AI-Bundle-35634cf5abb9800babe5c22b28888ccf. Click "Duplicate" in the top-right when it loads to copy it into your own Notion.
+Two paths: check your Gumroad library directly (gumroad.com → Library), or search your inbox for "Gumroad" or "bundle". If neither surfaces it, here's the workspace URL directly:
+
+https://learned-guilty-545.notion.site/The-Job-Hunter-s-AI-Bundle-35634cf5abb9800babe5c22b28888ccf
+
+Click "Duplicate" in the top-right to copy it into your own Notion.
 
 — Flynn
 ```
 
-**Operational note**: the inline URL is the live duplication-template URL from the wired-in workspace. If the URL ever changes (rare — only if the workspace is recreated), update this template to match. Source of truth: `DELIVERY_EMAIL.md` line 58.
+**Operational note**: the inline URL is the live duplication-template URL from the wired-in workspace. If the URL ever changes (rare — only if the workspace is recreated), update this template to match. Source of truth: `DELIVERY_EMAIL.md` line 58. The URL sits on its own paragraph (not inline at the end of a sentence) so trailing punctuation can't be mis-parsed by edge-case email clients into the link itself, which would 404 the buyer's recovery path.
 
 ---
 
