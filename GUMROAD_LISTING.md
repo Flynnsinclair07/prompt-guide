@@ -23,7 +23,7 @@ The Job Hunter's AI Bundle
 job-hunters-ai-bundle
 ```
 
-→ Final URL: `gumroad.com/l/job-hunters-ai-bundle` (or your `flynnsinclair.gumroad.com/l/job-hunters-ai-bundle` storefront slug — pick whichever Gumroad's setup flow defaults you into; both are fine).
+→ Final URL: `snipprompts.gumroad.com/l/job-hunters-ai-bundle` (Gumroad also exposes the generic `gumroad.com/l/job-hunters-ai-bundle` — both work; lead with the branded one in marketing).
 
 ---
 
