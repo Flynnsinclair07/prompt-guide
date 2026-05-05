@@ -27,7 +27,7 @@ Refund processed — Gumroad will reverse the charge within 24 hours and you'll 
 ```
 hey,
 
-Three places it should be: (1) your Gumroad library at gumroad.com/library — there's a .txt file in the bundle download with the URL, (2) the welcome email I sent right after you bought (search subject "Job Hunter's AI Bundle is here"), and (3) here it is directly: https://learned-guilty-545.notion.site/The-Job-Hunter-s-AI-Bundle-35634cf5abb9800babe5c22b28888ccf. Click "Duplicate" in the top-right when it loads to copy it into your own Notion.
+Three places it should be: (1) your Gumroad library at gumroad.com/library — there's a .txt file in the bundle download with the URL, (2) the receipt email I sent right after you bought (check your Gumroad library directly at gumroad.com → Library, or search your inbox for "Gumroad" or "bundle"), and (3) here it is directly: https://learned-guilty-545.notion.site/The-Job-Hunter-s-AI-Bundle-35634cf5abb9800babe5c22b28888ccf. Click "Duplicate" in the top-right when it loads to copy it into your own Notion.
 
 — Flynn
 ```
@@ -106,9 +106,25 @@ Yes — buyers get all future versions free via the same Gumroad library link. N
 
 ---
 
+## 8. "The LAUNCH discount code didn't work"
+
+```
+hey,
+
+The LAUNCH code was a launch-window discount — it expired May 19, 2026, or after the first 100 buyers, whichever came first. The bundle is at full price now ($39).
+
+No active discount codes at the moment. Future updates and v2 will be free for buyers — just hold onto your Gumroad library.
+
+— Flynn
+```
+
+**Operational note**: send if buyer reports the code didn't work post-May 19 or after the cap hit. If they bought elsewhere thinking the discount applied, they're a refund candidate — process the refund and apologize for confusion.
+
+---
+
 ## Catalog grows from real questions
 
-Add a new section here whenever you reply to something that doesn't fit any of the 7 above. The format:
+Add a new section here whenever you reply to something that doesn't fit any of the 8 above. The format:
 
 ```
 ## N. "[Buyer's question, condensed]"
