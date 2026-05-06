@@ -383,6 +383,405 @@ Navy graphic with the headline "Live now, $29 launch week only" in cream. Sub-li
 
 ---
 
+# Pins 16–25 — post-launch evergreen drip (added 2026-05-06)
+
+The 10 pins above (6–15) cover the launch ramp + launch day. Pins 16–25 below are the post-launch evergreen set: they keep the board active, drive ongoing buys at $39, and address audience segments the launch ramp didn't reach (objection-style buyers who need their pain named first).
+
+Distribution per category (target rough balance across all 20 pins):
+- 5 module-themed (1 per module): Pins 6, 7, 8, 9, 10 ✓
+- 5 specific-prompt: Pins 11, 12, 16, 17, 18
+- 5 objection-handler: Pins 19, 20, 21, 22, 23
+- 5 brand/proof: Pins 13, 14, 15, 24, 25
+
+Voice and aesthetic match Pins 6–15 exactly. Same 1000×1500 navy/forest, cream Arial Black, accent bar, checkmark benefits. New pins drive to live Gumroad URL (post-May-17) instead of snipprompts.com prompt pages.
+
+---
+
+## Pin 16 — "Salary screen, answered"
+
+**Background**: navy `#1B2A4E`
+**Headline lines** (Arial Black, cream, all caps):
+```
+"WHAT'S YOUR
+EXPECTED SALARY?"
+ANSWERED.
+```
+**Sub-line**:
+```
+free ChatGPT prompt
+```
+**Benefits**:
+```
+✓ Range, not number
+✓ Anchors high
+✓ No premature commit
+```
+**Outbound link**: `https://snipprompts.com/prompts/best-chatgpt-prompt-for-job-interview-prep.html`
+
+**Pinterest description**:
+```
+The first money question recruiters ask wrecks half of all negotiations before the offer arrives. This free ChatGPT prompt gives you a calibrated range answer (not a single number) that anchors high without scaring them off. Works whether you have prior comp data or a multiple-offer leverage situation.
+
+#salarynegotiation #interviewtips #careeradvice #chatgpt #aiprompts #jobsearch #salarytalk #interviewprep
+```
+
+**Alt text**:
+```
+Navy pin: "What's your expected salary?" answered. Free ChatGPT prompt for the recruiter screen.
+```
+
+**Suggested post date**: May 18
+
+---
+
+## Pin 17 — "The weakness question without lying"
+
+**Background**: navy `#1B2A4E`
+**Headline lines**:
+```
+THE WEAKNESS QUESTION
+WITHOUT LYING
+```
+**Sub-line**:
+```
+free ChatGPT prompt
+```
+**Benefits**:
+```
+✓ Real weakness, real reframe
+✓ Specific, not generic
+✓ Owns growth, not flaw
+```
+**Outbound link**: `https://snipprompts.com/prompts/best-chatgpt-prompt-for-job-interview-prep.html`
+
+**Pinterest description**:
+```
+"What's your biggest weakness?" — the trap that catches both honest answers (penalized) and rehearsed ones ("perfectionism"). This free ChatGPT prompt structures a real weakness with a real growth arc, role-specific. No "I work too hard." No invented flaws. Save before your next behavioral round.
+
+#interviewtips #behavioralinterview #chatgpt #aiprompts #careeradvice #jobsearch #interviewprep #starmethod
+```
+
+**Alt text**:
+```
+Navy pin: "The weakness question without lying." Free ChatGPT prompt for behavioral interviews.
+```
+
+**Suggested post date**: May 20
+
+---
+
+## Pin 18 — "Questions that flip the interview"
+
+**Background**: navy `#1B2A4E`
+**Headline lines**:
+```
+QUESTIONS THAT
+FLIP THE INTERVIEW
+```
+**Sub-line**:
+```
+free ChatGPT prompt
+```
+**Benefits**:
+```
+✓ Surface red flags
+✓ Make the room respect you
+✓ Find culture fit fast
+```
+**Outbound link**: `https://snipprompts.com/prompts/best-chatgpt-prompt-for-job-interview-prep.html`
+
+**Pinterest description**:
+```
+The "any questions for us?" close decides more offers than the technical rounds. This free ChatGPT prompt generates 5–7 reverse-interview questions tailored to the role, the stage of process, and what you saw on Glassdoor. Surfaces culture red flags AND makes the room respect you. Save before your next final round.
+
+#interviewtips #careeradvice #chatgpt #aiprompts #jobsearch #interviewprep #careerchange #joboffer
+```
+
+**Alt text**:
+```
+Navy pin: "Questions that flip the interview." Free ChatGPT prompt for reverse-interview questions.
+```
+
+**Suggested post date**: May 26
+
+---
+
+## Pin 19 — "100 applications, zero callbacks?"
+
+**Background**: forest `#1F3D2E`
+**Headline lines**:
+```
+100 APPLICATIONS,
+ZERO CALLBACKS?
+```
+**Sub-line**:
+```
+the bundle · live now
+```
+**Benefits**:
+```
+✓ ATS-readable resumes
+✓ JD-keyword matched
+✓ Hiring-manager tested
+```
+**Outbound link**: live Gumroad URL (post-May-17)
+
+**Pinterest description**:
+```
+If you've sent 100+ applications and heard nothing, the resume isn't getting through ATS. The bundle has 8 resume prompts plus a 5-step ATS optimization checklist that does what paid scanners ($15–30/mo) do: pulls the JD's exact keywords, fixes formatting, beats the filter. One submission with the right resume beats 100 with the wrong one. $39, 30-day refund.
+
+#resumetips #ats #atsfriendly #jobsearch #careeradvice #applytips #resumetemplate #jobhunting
+```
+
+**Alt text**:
+```
+Forest pin: "100 applications, zero callbacks?" The Job Hunter's AI Bundle, $39, live now.
+```
+
+**Suggested post date**: May 22
+
+---
+
+## Pin 20 — "Recruiter ghosted after the screen?"
+
+**Background**: navy `#1B2A4E`
+**Headline lines**:
+```
+RECRUITER GHOSTED
+AFTER THE SCREEN?
+```
+**Sub-line**:
+```
+the bundle · live now
+```
+**Benefits**:
+```
+✓ Better salary screen
+✓ Sharper "why this company"
+✓ Closing questions that stick
+```
+**Outbound link**: live Gumroad URL
+
+**Pinterest description**:
+```
+If recruiters go silent after the first screen, you're being filtered out by the recruiter, not the hiring manager. The bundle's interview module has 12 prompts (salary screen, "why this company" research, closing questions, panel prep) tuned to keep you in the funnel past round 1. Plus the AI-grilling rehearsal workflow. $39, 30-day refund.
+
+#interviewtips #recruitertips #careeradvice #jobsearch #aiprompts #chatgpt #interviewprep #jobhunt
+```
+
+**Alt text**:
+```
+Navy pin: "Recruiter ghosted after the screen?" The Job Hunter's AI Bundle, $39, live now.
+```
+
+**Suggested post date**: May 24
+
+---
+
+## Pin 21 — "Got the offer, way under market"
+
+**Background**: forest `#1F3D2E`
+**Headline lines**:
+```
+GOT THE OFFER —
+WAY UNDER MARKET
+```
+**Sub-line**:
+```
+the bundle · live now
+```
+**Benefits**:
+```
+✓ Defensible counter-offer
+✓ BATNA + comp research
+✓ Walkaway math, not bluff
+```
+**Outbound link**: live Gumroad URL
+
+**Pinterest description**:
+```
+If the offer landed $20K below market, you have ~48 hours and one shot to counter without blowing it up. The bundle's negotiation module has 10 prompts (counter-offer scripting, multiple-offer leverage, "we don't have budget" rebuttal), 8 scripts, and the BATNA worksheet that decides what's bluff and what's real leverage. One counter pays back the bundle 100×. $39, 30-day refund.
+
+#salarynegotiation #careeradvice #jobsearch #moneytips #womenincareer #aiprompts #chatgpt #careerchange
+```
+
+**Alt text**:
+```
+Forest pin: "Got the offer, way under market." The Job Hunter's AI Bundle, $39, 30-day refund.
+```
+
+**Suggested post date**: May 28
+
+---
+
+## Pin 22 — "Tech layoffs hit your team?"
+
+**Background**: navy `#1B2A4E`
+**Headline lines**:
+```
+TECH LAYOFFS
+HIT YOUR TEAM?
+```
+**Sub-line**:
+```
+the bundle · live now
+```
+**Benefits**:
+```
+✓ Resume rebuilt in a day
+✓ LinkedIn recruiter-magnet
+✓ Negotiate offers above $120K
+```
+**Outbound link**: live Gumroad URL
+
+**Pinterest description**:
+```
+If your team got hit and you're back in the market, the playbook from your last search is 2–3 years stale. The bundle is built for the current ATS / LLM / recruiter-DM landscape: 5 modules, 44 prompts, 8 negotiation scripts. Module 5 alone — 10 prompts on offers above $120K — is what most senior ICs need next. $39, 30-day refund.
+
+#tech #techlayoffs #careeradvice #jobsearch #salarynegotiation #careerchange #aiprompts #chatgpt
+```
+
+**Alt text**:
+```
+Navy pin: "Tech layoffs hit your team?" The Job Hunter's AI Bundle, $39, senior IC market.
+```
+
+**Suggested post date**: May 30
+
+---
+
+## Pin 23 — "Switching industries scares you?"
+
+**Background**: navy `#1B2A4E`
+**Headline lines**:
+```
+SWITCHING INDUSTRIES
+SCARES YOU?
+```
+**Sub-line**:
+```
+the bundle · live now
+```
+**Benefits**:
+```
+✓ Career-switcher resume angle
+✓ Industry-switcher cover letter
+✓ Address the elephant directly
+```
+**Outbound link**: live Gumroad URL
+
+**Pinterest description**:
+```
+If you're switching industries and worried your resume won't translate, the bundle has prompts for exactly this: career-switcher resume angle (M1), industry-switcher cover letter (M2), and reverse-interview questions that surface whether the new industry actually wants what you bring. Stop hiding the pivot. Make the case for it. $39, 30-day refund.
+
+#careerchange #careerpivot #jobsearch #careeradvice #resumetips #coverletter #aiprompts #chatgpt
+```
+
+**Alt text**:
+```
+Navy pin: "Switching industries scares you?" The Job Hunter's AI Bundle, career-switcher prompts.
+```
+
+**Suggested post date**: June 1
+
+---
+
+## Pin 24 — "Prompts that refuse to invent"
+
+**Background**: navy `#1B2A4E`
+**Headline lines**:
+```
+PROMPTS THAT
+REFUSE TO INVENT
+```
+**Sub-line**:
+```
+the bundle · live now
+```
+**Benefits**:
+```
+✓ Pre-output gates
+✓ Banned-phrase lists
+✓ Real numbers only
+```
+**Outbound link**: live Gumroad URL
+
+**Pinterest description**:
+```
+Most AI prompt packs make ChatGPT confidently invent metrics, hallucinate companies, and cliché-spray the output. The Job Hunter's AI Bundle ships with refusal-to-invent gates baked into every prompt: weak inputs get refused, banned phrases get killed, post-output behavior rules tell you what to do after you send. 44 prompts that won't fake your numbers. $39, 30-day refund.
+
+#aiprompts #chatgpt #careeradvice #jobsearch #resumetips #salarynegotiation #aitools #productivity
+```
+
+**Alt text**:
+```
+Navy pin: "Prompts that refuse to invent." The Job Hunter's AI Bundle, refusal-to-invent gates.
+```
+
+**Suggested post date**: June 3
+
+---
+
+## Pin 25 — "44 prompts, 8 scripts, zero AI-tells"
+
+**Background**: forest `#1F3D2E`
+**Headline lines**:
+```
+44 PROMPTS,
+8 SCRIPTS,
+ZERO AI-TELLS
+```
+**Sub-line**:
+```
+the bundle · live now
+```
+**Benefits**:
+```
+✓ 5 modules, one workflow
+✓ 119-page PDF + Notion
+✓ 30-day refund window
+```
+**Outbound link**: live Gumroad URL
+
+**Pinterest description**:
+```
+Most prompt packs are screenshots of one-line prompts you've already tried. The Job Hunter's AI Bundle is 44 prompts, 8 negotiation scripts, 3 worksheets, 5 modules — built around the failure modes generic AI prompts ignore: vague inputs, invented metrics, recruiter-clichéd phrasing. 119-page PDF + Notion workspace. Resume to offer letter, one workflow. $39, 30-day refund.
+
+#aiprompts #chatgpt #jobsearch #careeradvice #resumetips #salarynegotiation #aitools #jobhunt
+```
+
+**Alt text**:
+```
+Forest pin: "44 prompts, 8 scripts, zero AI-tells." The Job Hunter's AI Bundle, $39, 30-day refund.
+```
+
+**Suggested post date**: June 5
+
+---
+
+## Posting cadence summary — Pins 16–25 (post-launch evergreen)
+
+| Date | Pin | Style | Drives to | Category |
+|---|---|---|---|---|
+| May 18 | Pin 16 — Salary screen | navy | snipprompts.com (free) | specific-prompt |
+| May 20 | Pin 17 — Weakness question | navy | snipprompts.com (free) | specific-prompt |
+| May 22 | Pin 19 — 100 applications | forest | live Gumroad | objection-handler |
+| May 24 | Pin 20 — Recruiter ghost | navy | live Gumroad | objection-handler |
+| May 26 | Pin 18 — Reverse-interview | navy | snipprompts.com (free) | specific-prompt |
+| May 28 | Pin 21 — Under-market offer | forest | live Gumroad | objection-handler |
+| May 30 | Pin 22 — Tech layoffs | navy | live Gumroad | objection-handler |
+| June 1 | Pin 23 — Industry switch | navy | live Gumroad | objection-handler |
+| June 3 | Pin 24 — Refuse to invent | navy | live Gumroad | brand/proof |
+| June 5 | Pin 25 — 44 prompts, zero AI-tells | forest | live Gumroad | brand/proof |
+
+**Why this order**: alternates specific-prompt (free, drives email signups) with objection-handler + brand/proof (paid, drives Gumroad). Keeps the funnel feeding both the email list and the bundle. The cadence is every 2 days for ~3 weeks — slow enough that Pinterest's algorithm doesn't flag burst-uploading, fast enough to maintain board momentum post-launch.
+
+**Color rotation**: 7 navy + 3 forest. Forest is reserved for negotiation-themed pins (consistent with Pins 10 and 14). Don't deviate.
+
+**For the designer (Meagan)**: Canva specs match Pins 6–15 exactly — 1000×1500, navy `#1B2A4E` or forest `#1F3D2E`, cream `#F5EBDD` text, Arial Black headlines, "free ChatGPT prompt" or "the bundle · live now" sub-line under cream accent bar, 3 checkmark benefits ≤4 words each. Reference `pins/pin-01-resume.png` for canonical look. The 10 new pins should be visually indistinguishable from the launch-week pins to a Pinterest scroller.
+
+---
+
 ## Posting cadence summary
 
 | Date | Pin | Style | Drives to |
