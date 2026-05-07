@@ -49,9 +49,9 @@ Two to start with, depending on where you are in the search:
 
 Both work on free ChatGPT, Claude, or Gemini. The prompts are written around ChatGPT's phrasing but they run the same on any modern model.
 
-Heads up: I'm shipping a paid bundle on May 17 — the deep versions of these five career prompts (resume, cover letter, interview, LinkedIn, salary negotiation), plus 8 negotiation scripts and 3 worksheets you can't find on the free side. Subscribers get $10 off launch week. More on that closer to the date.
+Heads up: I'm shipping a paid bundle on May 17 — the deep versions of these five career prompts (resume, cover letter, interview, LinkedIn, salary negotiation), plus 8 negotiation scripts and 3 worksheets you can't find on the free side. Subscribers get launch-week pricing: $29 instead of the $39 list. More on that closer to the date.
 
-One ask: hit reply and tell me what part of the search you're working on right now. Doesn't need to be long — "senior PM, switching out of healthcare" is plenty. I read every reply, and what you tell me changes what I write next.
+One ask: hit reply and tell me what part of the search you're working on right now. Doesn't need to be long — "senior PM, switching out of healthcare" is plenty. I read these myself, and what you tell me changes what I write next.
 
 Talk soon,
 Flynn
@@ -104,7 +104,7 @@ The fix is one line. Add this to any AI resume prompt you're running:
 
 "Do not invent achievements, companies, percentages, or metrics not present in my input. If the input doesn't have a number, leave it qualitative."
 
-That's it. Drops the hallucination rate to near-zero on any modern model. Forces the AI to ask you for clarifying numbers when it wants them — which is what you wanted in the first place.
+That's it. Significantly reduces hallucinations on any modern model. Forces the AI to ask you for clarifying numbers when it wants them — which is what you wanted in the first place.
 
 That's one rule. The Job Hunter's AI Bundle (May 17) bakes this kind of rule into all 44 prompts as pre-output gates and banned-phrase lists — the prompts refuse to proceed on weak inputs instead of fabricating to fill gaps. Five career modules, one workflow, resume to offer letter.
 
