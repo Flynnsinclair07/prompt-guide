@@ -12,7 +12,9 @@ How to use this file:
 
 ---
 
-## Email 1 — Announce (send: May 3, 2026, 9:00 AM ET)
+## Email 1 — Announce (send: May 3, 2026, 9:00 AM ET) — **DEPRECATED, DO NOT SEND**
+
+> **Status (May 7, 2026)**: skipped. Email 1's announce function is now covered by Welcome 1 in the live ConvertKit welcome sequence (commit `1cc3d23`); sending a 4-days-late announce on May 7+ would read as off-cadence to existing subs (n=1). Broadcast scheduling on May 7 starts at Email 2. This section retained for archival reference only — do not schedule.
 
 **Tag added on send**: `bundle-announced`
 **Segment**: existing subscribers, exclude any with `bundle-buyer-*` tag
