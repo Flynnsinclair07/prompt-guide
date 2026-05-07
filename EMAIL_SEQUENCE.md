@@ -160,7 +160,7 @@ hey,
 
 The Job Hunter's AI Bundle goes live tomorrow morning at 9 AM Eastern.
 
-Subscribers get $10 off — final price $29 instead of $39. I'll send the buy link at 9 AM.
+Subscribers get launch-week pricing: $29 instead of the $39 list. I'll send the buy link at 9 AM.
 
 Tonight, the full inventory so you can decide whether it's for you:
 
