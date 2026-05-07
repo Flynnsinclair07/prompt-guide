@@ -67,7 +67,7 @@ snipprompts.com
 ## Email 2 — Tease the salary module (send: May 12, 2026, 9:00 AM ET)
 
 **Tag added on send**: `bundle-teased`
-**Segment**: existing subscribers, exclude `bundle-buyer-*` and **exclude** anyone who unsubscribed from Email 1
+**Segment**: existing subscribers, exclude `welcome-active`, exclude `bundle-buyer-*`, **exclude** anyone who unsubscribed from Email 1
 **Goal**: deliver one *actually useful* prompt from Module 5 for free. Builds trust, demonstrates the bundle's depth, gives forwarders a reason to forward.
 
 ### Subject
@@ -138,7 +138,7 @@ Same as Email 1.
 ## Email 3 — Launch eve (send: May 16, 2026, 5:00 PM ET — Saturday evening)
 
 **Tag added on send**: `bundle-launch-eve`
-**Segment**: existing subscribers, exclude `bundle-buyer-*` and unsubscribers
+**Segment**: existing subscribers, exclude `welcome-active`, exclude `bundle-buyer-*`, exclude unsubscribers
 **Goal**: full inventory. People who want to think it through overnight get the spec sheet now, not at 9 AM Sunday when they're checking email half-awake.
 
 ### Subject
@@ -203,7 +203,7 @@ Same as Email 1.
 ## Email 4 — Launch day (send: May 17, 2026, 9:00 AM ET — Sunday morning)
 
 **Tag added on send**: `bundle-launch-day`
-**Segment**: existing subscribers, exclude `bundle-buyer-*` and unsubscribers
+**Segment**: existing subscribers, exclude `welcome-active`, exclude `bundle-buyer-*`, exclude unsubscribers
 **Goal**: drop the link, drop the price, get out of the way.
 
 **Pre-flight checklist** (do these before scheduling/sending):
@@ -269,7 +269,7 @@ Same as Email 1.
 **Only send if**: open rate on Email 4 was >40% AND fewer than 50 sales by Monday 5 PM. If sales are tracking above 50, the reminder annoys more than it converts — skip it.
 
 **Tag added on send**: `bundle-launch-reminder`
-**Segment**: existing subscribers, exclude `bundle-buyer-2026-may`, exclude unsubscribers, exclude anyone who didn't open Email 4 (don't waste a reminder on people who didn't see the announcement)
+**Segment**: existing subscribers, exclude `welcome-active`, exclude `bundle-buyer-2026-may`, exclude unsubscribers, exclude anyone who didn't open Email 4 (don't waste a reminder on people who didn't see the announcement)
 
 ### Subject
 
@@ -314,8 +314,11 @@ Flynn
    - `bundle-buyer-2026-may` (this one is added automatically by the Gumroad → ConvertKit integration on purchase — see `GUMROAD_LISTING.md` Field 14)
 
 2. **Segment exclusions** — for every broadcast, the exclusion segment is the same:
+   - Has tag `welcome-active` (don't collide with the pre-launch welcome flow — see `welcome-sequence.md`; subscribers exit `welcome-active` after Welcome 3 fires or May 14 cap)
    - Has tag `bundle-buyer-2026-may` (don't pitch buyers)
-   - Has tag `unsubscribed` (ConvertKit handles automatically)
+   - Has tag `unsubscribed` (Kit handles automatically)
+
+   **Recommended Kit setup (Path 3 — shared segment)**: build a single Subscribers → Segments entry called "Main launch broadcast audience" with all three exclusions baked in. Point Email 2, 3, 4, 5 at that segment. Reusable + avoids re-entering the exclusion list in Kit's filter UI for each broadcast (Kit's UI does not have a clean "exclude tag" toggle — building the segment once is the workaround).
 
 3. **Schedule all four** in ConvertKit on May 3 morning. Email 1 sends immediately, Emails 2/3/4 are pre-scheduled. Email 5 stays as a draft — only send if the trigger conditions above are met.
 

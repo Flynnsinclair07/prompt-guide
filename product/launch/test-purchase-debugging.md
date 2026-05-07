@@ -174,6 +174,43 @@ For owner's May 9 walkthrough (and again May 14 final dry-run, per `sprint-plan-
 
 ---
 
+## Failure mode 9 — Welcome sequence misfires (Welcome 1 doesn't arrive, tag not applied, exit doesn't fire on purchase)
+
+**Symptom**: signup at the snipprompts.com homepage form completes (Kit shows "subscriber added") but one of the welcome-flow expected behaviors fails:
+- (a) Welcome 1 email doesn't arrive within 5 minutes
+- (b) Subscriber isn't tagged `welcome-active` after signup
+- (c) Welcome 2 doesn't schedule for +3 days (still says "draft" in Kit)
+- (d) Welcome flow doesn't exit when subscriber later buys (the `bundle-buyer-2026-may` tag fires but the welcome subscriber stays in the active flow + gets Welcome 2 anyway)
+
+**Likely cause** (most → least common):
+1. **Sequence trigger misconfigured** — the Sequence in Kit is set to trigger on a different form than `d02eb77674`, OR the trigger toggle is off entirely.
+2. **Tag-on-entry not configured** — Sequence Settings → "When subscribers should be added" doesn't apply the `welcome-active` tag on entry.
+3. **Send-delay misset on Welcome 2** — typo'd as "3 hours" instead of "3 days," OR set to 0 and the email already fired.
+4. **Exit condition missing** — Sequence Settings → "When subscribers should be removed" doesn't include the `bundle-buyer-2026-may` tag-applied trigger.
+5. **Manual May 14 pause hasn't fired yet** — for tests AFTER May 14, owner was supposed to pause Welcome 2 + 3 in Kit (per `sprint-plan-may-4-17.md` May 14 cadence-collapse task). If owner forgot, Welcome 2 + 3 still send to late-pre-launch signups; flagged as a post-launch cleanup, not a test-purchase failure.
+
+**Fix**:
+1. **Verify the sequence trigger**: Kit → Sequences → "Welcome — pre-launch May 2026" → Settings → "When subscribers should be added" — confirm:
+   - Trigger: subscribed to form `Snipprompts homepage signup` (form UID `d02eb77674`)
+   - Add tag on entry: `welcome-active`
+2. **Verify tag-on-entry is firing**: Kit → Subscribers → search for the test email. Subscriber should have the `welcome-active` tag visible. If missing, the tag-on-entry rule is misconfigured (re-edit per step 1).
+3. **Verify Welcome 2 send delay**: Kit → Sequences → Welcome 2 → Edit → Send delay should read "3 days" (not 3 hours, 30 days, etc.). Pull up the queued send for your test subscriber — should show next-fire-at = signup + 72h.
+4. **Verify exit condition**: Sequence Settings → "When subscribers should be removed" — confirm `Tag is applied: bundle-buyer-2026-may` is in the list. To test: manually add the `bundle-buyer-2026-may` tag to your test subscriber, refresh the sequence view, confirm the subscriber drops out within 60 seconds.
+5. **If post-May-14 test**: confirm Welcome 2 + 3 are paused in Kit (status = Draft) per the cadence-collapse rule. If they're still active, pause them; the May 14 task in `sprint-plan-may-4-17.md` (line 70) explains why.
+
+**Test-purchase-specific welcome-flow walkthrough** (run during May 9 walkthrough, ~10 min addition):
+- (a) From an incognito window, sign up at the live snipprompts.com form with a fresh `+welcometest` alias.
+- (b) Confirm Welcome 1 lands in inbox within 5 minutes.
+- (c) Open Kit → Subscribers → search for the alias → confirm `welcome-active` tag is applied.
+- (d) Open Kit → Sequences → Welcome — pre-launch May 2026 → confirm the alias appears with Welcome 2 scheduled for +3 days.
+- (e) Manually apply the `bundle-buyer-2026-may` tag to the alias (simulating a purchase).
+- (f) Refresh the sequence view; confirm the alias is removed within 60 seconds.
+- (g) Once verified, remove the test subscriber + clean up the alias.
+
+**Severity**: 🟠 **can-launch-with** — welcome-flow failures don't block bundle purchases (the receipt email Option A/B is independent). But silent welcome-flow failures lose pre-launch list-warming value, and the cadence-collapse logic (May 14 pause) is owner-action-dependent — surface any test failure here so owner can fix before scheduling Email 2/3/4 in Kit.
+
+---
+
 ## What this debugging guide deliberately does NOT cover
 
 - **Stripe-specific dashboard issues** — those are Stripe's UI, not Gumroad's. If Stripe blocks payouts entirely (rare), escalate via Stripe Support directly; Gumroad's support can't fix Stripe's account holds.
@@ -193,6 +230,7 @@ For owner's May 9 walkthrough (and again May 14 final dry-run, per `sprint-plan-
 - [ ] Notion duplication URL works in incognito (test the duplicate flow without completing it) — Failure mode 5
 - [ ] Workflows → Receipt email subject matches `Your Job Hunter's AI Bundle is here` — Failure mode 6
 - [ ] LAUNCH discount config matches spec (UTC times, $10 off, product-specific, URL-parameter ON) — Failure mode 7
+- [ ] Kit Sequence "Welcome — pre-launch May 2026" trigger + tag-on-entry + exit conditions configured — Failure mode 9
 - [ ] `TEST100` discount code created (100% off, 1 use) for the actual test purchase — debugging-guide setup
 
 If any of these is unchecked, fix that first; don't run the test purchase against a known-broken config — the test won't tell you what you don't already know.
