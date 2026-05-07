@@ -67,6 +67,7 @@ Mother's Day. No Pinterest post (career content underperforms today per `PINTERE
 - [ ] **Walkthrough 2**: final dry-run. Create a 100% test discount in Gumroad. Buy the bundle yourself with the discount. Confirm the receipt email arrives within 60 seconds. Confirm the download links work. Confirm the ConvertKit `bundle-buyer-2026-may` tag fires automatically. Confirm Pinterest analytics for Pins 6–12 (which posts have traction; informs Pin 15 launch-day positioning). **90 min**.
 - [ ] Retry refund on May 7 test purchase ($39, Order ID `h_DQOFLyyDW80DhC_e0mrA==`) — first attempt failed due to balance hold; should now have cleared. Fall back to support@gumroad.com if still failing.
 - [ ] Refund May 14 walkthrough purchase (today's test) — should clear immediately since first sale already settled. Confirm refund flow works as documented in `support-templates.md` template 1.
+- [ ] **🟠 Pause Welcome 2 + 3 in Kit Sequence** (~3 min, owner-only) — per `welcome-sequence.md` cadence-collapse rule. Open Kit → Sequences → "Welcome — pre-launch May 2026" → click into Welcome 2 → toggle status from Published to Draft. Repeat for Welcome 3. Save. **Why**: prevents stale "$29 launch week" framing from sending after May 17 launch.
 
 ### May 15 (Thu) — 30 min
 - [ ] Pinterest: post Pin 14 (Salary playbook teaser, forest color). **10 min**.
