@@ -1,1 +1,22 @@
 .claude/settings.local.json
+
+# macOS noise
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.AppleDouble
+.LSOverride
+Icon?
+
+# editor / OS noise (defense in depth)
+*.swp
+*.swo
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# build artifacts (already gitignored locally per product/build/.gitignore but defense in depth)
+product/build/output/
