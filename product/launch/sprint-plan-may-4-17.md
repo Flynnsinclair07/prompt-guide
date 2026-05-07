@@ -32,6 +32,7 @@ Total estimated owner-time remaining through launch: **~13 hours over 13 days** 
 - [ ] Email 1 reply triage — every reply gets a one-line acknowledgement. **~20 min**.
 
 ### May 7 (Wed) — BUFFER + 10 min
+- [ ] **🔴 launch-critical** — fix ConvertKit form (~15 min, owner-only). Currently posting to deprecated endpoint, returns 404 (confirmed in May 7 test). Get embed snippet from app.kit.com → Grow → Landing pages & forms → form UID `d02eb77674` → Embed → HTML tab. Paste snippet to chat. Worker wires into `index.html`. Owner pushes. Re-test with fresh `+cktest2` alias. **Defer not past tonight** — every pre-launch day with broken form loses Pinterest-driven signups.
 - [ ] Pinterest: post Pin 9 (LinkedIn headline). **10 min**.
 - Catch up on any May 5–6 slip. No new heavy work scheduled. Optional: read GUMROAD_LISTING.md cold for any final tightening you want before May 16 publish.
 
