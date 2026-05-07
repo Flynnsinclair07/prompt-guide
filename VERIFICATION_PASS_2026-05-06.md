@@ -368,3 +368,167 @@ These are the actions blocking or improving v1.0 launch. Pre-launch (May 17) blo
 ---
 
 End of Post-Batch-3 Self-QA Pass.
+
+---
+
+## Post-May-7 verification pass
+
+**Date appended**: 2026-05-07 (later same day, after Tasks 11–14 commits land)
+**Scope**: re-run of the May 6 + Post-Batch-3 verification accounting for the 13 commits landed today. Today's churn covered Welcome sequence (3-email pre-launch nurture), Kit JS embed form fix (O3 launch-critical resolved), brand voice consolidation references, comp triangulator prompt draft (SF1 pull-forward), Pinterest profile audit (repo-side), multiple v1.1 backlog updates (NTH17 + SF12 + SF13 + SF14 all added), email broadcast pre-flight QA + LB1 fix, and sprint-plan May 14 cadence-collapse task.
+
+**Method**: targeted greps + cross-file integrity checks against Tom's 5 stated verification dimensions, plus deep checks on the new artifacts for internal consistency.
+
+**Verdict**: **3 cross-file gaps surfaced** (all 🟠 quality-degrades, none refund-risk). All factual claims, voice rules, banned phrases, URL correctness, and tagging conventions remain clean. The gaps are coordination drift between Welcome sequence + main launch broadcasts — owner needs to take action in Kit (not just the .md files) to close them before launch.
+
+---
+
+### ✅ Dimensions verified clean
+
+#### 1. Kit JS embed snippet replaced cleanly in `index.html`
+- Old form (`<form action="https://app.convertkit.com/forms/d02eb77674/subscriptions" method="post">...`) fully removed.
+- New embed: `<script async data-uid="d02eb77674" src="https://promptguide.kit.com/d02eb77674/index.js"></script>` at line 81.
+- Subdomain confirms migration: `promptguide.kit.com` (Kit's new branding, post-ConvertKit-rebrand).
+- No orphan `<form>` tag, no orphan submit button, no stale POST endpoint references in active code.
+
+#### 2. SF13 + SF14 backlog entries present + adjacent SF entries intact
+- `SF13 — Post-launch evergreen Welcome 3 rewrite` at v1.1-backlog.md:171
+- `SF14 — Incentive email voice + content drift` at v1.1-backlog.md:180
+- `SF12 — Day-2 post-purchase check-in email` (added Batch 2) still present
+- `NTH17 — Notion duplication URL buried mid-bullet in receipt email` (added Batch 2) still present
+
+The Should-fix tier now reads SF1 → SF14 sequentially; no gaps.
+
+#### 3. Stale `flynnsinclair07.github.io` URLs
+- Zero hits in any active buyer-facing or live-code surface (confirmed via grep across `*.md` + `*.html`).
+- All 4 hits are in DOCUMENTATION context (preflight QA, Pinterest audit, v1.1-backlog SF14 entry) — describing the historical bug or referencing it as the thing being checked. Not actually used.
+
+#### 4. Tagging conventions distribution
+- `bundle-buyer-2026-may` referenced across 8 files (EMAIL_SEQUENCE, DELIVERY_EMAIL, GUMROAD_LISTING, LAUNCH_PUNCHLIST, EDIT_LOG, welcome-sequence, onboarding-flow-audit, VERIFICATION_PASS) — well-distributed; the buyer-tag funnel is documented end-to-end.
+- `welcome-active` tag referenced ONLY in welcome-sequence.md — see Gap 1 below.
+
+#### 5. Factual checks (page count, refund window, launch date, prices, discount code)
+Re-ran the May 6 grep suite + sampled today's new files (welcome-sequence, comp-triangulator, pinterest-audit, email-broadcast-preflight-qa). All clean:
+- Page count "119" consistent in welcome sequence Welcome 3 implicit reference + comp triangulator examples
+- Refund "30-day" / "30 days" consistent (welcome 3 mentions launch-week pricing not refund)
+- Launch date "May 17, 2026" or "May 17" consistent across all new files
+- Discount code `LAUNCH` casing consistent (uppercase, often backticked)
+- Prices $29 launch / $39 list consistent (LB1 fix in commit `cf65328` resolved the last "$10 off" survivor in buyer-facing copy)
+
+---
+
+### 🔧 Gap 1 — `welcome-active` exclusion not propagated to EMAIL_SEQUENCE.md broadcast segments
+
+**Severity**: 🟠 quality-degrades. Real cross-file integration gap.
+
+`welcome-sequence.md` line 209 specifies:
+> Every broadcast in `EMAIL_SEQUENCE.md` (Emails 1–5) should add `exclude: tag = welcome-active` to its segment. This prevents subscribers from getting Welcome 2 the same day as Email 2 (May 12 collision risk).
+
+But `EMAIL_SEQUENCE.md`'s actual segment notes don't reference `welcome-active`:
+- Email 2 segment (line 70): excludes `bundle-buyer-*` + Email 1 unsubs
+- Email 3 segment (line 141): excludes `bundle-buyer-*` + unsubs
+- Email 4 segment (line 206): excludes `bundle-buyer-*` + unsubs
+- Email 5 segment (line 272): excludes `bundle-buyer-2026-may` + non-openers
+
+**Real-world impact**: a subscriber signing up May 11 starts the welcome flow, gets Welcome 1 immediately, Welcome 2 scheduled May 14. They're ALSO in the segment for Email 2 (May 12 broadcast) because that segment only excludes `bundle-buyer-*`. Subscriber gets Welcome 1 (May 11) + Email 2 (May 12) + Welcome 2 (May 14) within 4 days — collision Tom warned about in welcome-sequence.md but not actually applied.
+
+**Fix paths**:
+- (a) Edit EMAIL_SEQUENCE.md segments to document the `welcome-active` exclusion. Owner then sets the exclusion in Kit when scheduling. ~5 min .md edit + Kit-side action.
+- (b) Skip the .md edit, just remember to add the exclusion in Kit when scheduling. Brittle — depends on owner remembering at scheduling time, which is exactly the kind of thing this gap risks losing.
+
+**Recommended**: (a) — document the exclusion in EMAIL_SEQUENCE.md broadcast segments so the source-of-truth and the live Kit configuration agree. Owner triages.
+
+**Note**: this gap is now captured in v1.1-backlog as a mid-priority item. If owner wants it fixed pre-launch, ~5 min .md edit + Kit-side check at scheduling. If deferring to v1.1, schedule broadcasts with the exclusion regardless and update .md after.
+
+---
+
+### 🔧 Gap 2 — Welcome flow not covered by test-purchase-debugging walkthrough
+
+**Severity**: 🟠 quality-degrades. The May 9 walkthrough won't catch welcome-sequence misconfigurations.
+
+`test-purchase-debugging.md` covers 8 failure modes (Stripe / receipt email / PDF / Notion / discount / refund) and a pre-walkthrough checklist. It does NOT cover:
+- Welcome sequence trigger (does signing up at the snipprompts.com form fire Welcome 1?)
+- Welcome flow tagging (does the new subscriber get tagged `welcome-active`?)
+- Cadence-collapse logic (does Welcome 2 schedule for +3 days correctly?)
+- Exit-on-purchase logic (does the welcome flow exit when `bundle-buyer-2026-may` is added?)
+
+**Why this matters**: the welcome sequence is a new pre-launch deliverable (1cc3d23 + 7d701ce). It hasn't been tested end-to-end. The May 9 walkthrough is the natural place to test it, but the walkthrough doc doesn't include it.
+
+**Suggested fix** (deferrable, owner's call): add a "Failure mode 9 — Welcome sequence misfire" section to `test-purchase-debugging.md`, OR add a welcome-flow test step to the May 9 sprint-plan walkthrough task. Either path documents the test coverage.
+
+**Severity check**: this is 🟠 not 🔴 because the welcome flow's failure modes are recoverable — if Welcome 1 doesn't fire, owner sees zero engagement on the `welcome-active` tag in Kit and notices within 24h. Buyer impact is "subscriber gets the launch broadcast cold" rather than refund-driving.
+
+---
+
+### 🔧 Gap 3 — `index.html` HTML comment block is stale post-form-replacement
+
+**Severity**: 🟡 cosmetic. Owner-facing only, zero buyer impact.
+
+`index.html` lines 70–77 contain a comment block describing the OLD form approach:
+
+```html
+<!--
+  EMAIL CAPTURE — ConvertKit form UID d02eb77674.
+  Posts directly to ConvertKit's form endpoint. After ConvertKit confirms the
+  subscription, it redirects to whatever success URL is configured on the form
+  in ConvertKit's dashboard (default: a "thanks, check your inbox" page).
+  If you have a JS embed snippet from ConvertKit you'd rather use, swap the
+  whole <form> below for that <script> tag — UID stays the same.
+-->
+```
+
+The actual code below the comment is now the JS embed (`<script async data-uid="...">`). The comment's "swap the whole <form> below for that <script> tag" advice has already been applied — the comment is describing a state that no longer exists.
+
+**Fix path**: replace the comment with current-state documentation, e.g.:
+
+```html
+<!--
+  EMAIL CAPTURE — Kit JS embed (form UID d02eb77674).
+  The script loads Kit's hosted form on page render. UID stays stable across
+  Kit account changes; only the subdomain (promptguide.kit.com) would change
+  if the storefront is renamed. Post-ConvertKit→Kit rebrand: the old POST
+  endpoint pattern (app.convertkit.com/forms/.../subscriptions) returns 404
+  on JS-embed-only forms; do not revert.
+-->
+```
+
+**Severity**: 🟡 cosmetic. Future-owner re-reading the comment would briefly waste time figuring out which state is current. Owner can fix when convenient; not v1.1-blocking.
+
+---
+
+### Updated outstanding-actions table (consolidates with prior verification + self-QA)
+
+Items that need owner attention before launch, in priority order:
+
+| Priority | Action | Source | Time |
+|---|---|---|---|
+| ✅ resolved | Stripe Connect status (was test-purchase-debugging FM1) | sprint-plan | (verify done) |
+| ✅ resolved | ConvertKit form endpoint test → fix-form work landed (commit 02b4123) | v1.1-backlog O3 → resolved | n/a |
+| 🔴 pre-launch | LB1 fix on Email 3 — DONE in commit `cf65328` (Tom-QA pre-flight finding) | preflight QA report | ✅ resolved |
+| 🔴 pre-launch | `git restore .` to recover the deleted-files set in working tree | persistent across sessions | 30 sec |
+| 🔴 pre-launch | Live Notion workspace re-sync (O1) | v1.1-backlog | 5 min |
+| 🟠 pre-launch | Decide Option A vs B receipt-email delivery (per onboarding-audit 1a) | onboarding audit | 5 min |
+| 🟠 pre-launch | Verify Gumroad storefront subdomain (O2) | v1.1-backlog | 30 sec |
+| 🟠 pre-launch | Add `welcome-active` exclusion to EMAIL_SEQUENCE.md broadcast segments + apply in Kit (Gap 1 above) | this verification | 5 min .md + Kit |
+| 🟠 pre-launch | Pinterest profile live-side check per pinterest-profile-audit.md Section B | Pinterest audit | 30 min on May 11 |
+| 🟠 pre-launch | Schedule Email 2/3/4 in Kit with welcome-active exclusion | this verification | 15 min |
+| 🟡 pre-launch | Add welcome-flow test step to May 9 walkthrough (Gap 2 above) | this verification | 5 min .md edit |
+| 🟡 post-launch | Update index.html stale comment block (Gap 3 above) | this verification | 1 min |
+| 🟡 post-launch | Push the unpushed commits (currently 1+ since last push) | all batches | 10 sec |
+
+**Total pre-launch owner-time**: ~50 minutes of focused work, plus the May 9 + May 14 walkthroughs.
+
+---
+
+### Concerns I'd flag if signing off
+
+1. **The welcome-flow integration gap (Gap 1) is the one to actually act on.** It's not refund-risk but it's the kind of UX surprise that erodes list trust — subscribers getting 3 emails in 4 days during pre-launch is exactly the saturation `EMAIL_SEQUENCE.md` voice notes warned against. ~10 min total fix (.md + Kit). High-leverage relative to time.
+
+2. **Today's churn was substantial but the editorial discipline held.** 13 commits across 8 hours, multiple cross-file dependencies, no factual contradictions surfaced in this verification. The brand-voice.md doc is doing real work as the canonical reference — comp-triangulator-prompt.md was drafted against it and Tom's QA approved voice match without iteration. Repeatable signal.
+
+3. **The unpushed commit count keeps creeping**. As of this verification, the local-only commit count is whatever's accumulated since the last push the owner ran. Recommend a push at the next stable point (after Gap 1 fix, before Email 2/3/4 Kit scheduling).
+
+4. **Pre-launch surface area is now well-instrumented**: day-1 launch checklist + post-launch week 1 plan + test-purchase-debugging + email-broadcast-preflight QA + welcome sequence + Pinterest audit + brand voice canonical + v1.1-backlog with 14 entries. The ops doc set is denser than most indie creator launches I've seen documented. The risk now is execution, not preparation.
+
+---
+
+End of Post-May-7 verification pass.
