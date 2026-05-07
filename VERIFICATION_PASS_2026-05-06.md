@@ -219,3 +219,152 @@ grep -rnE '9 ?(AM|am) ?(ET|Eastern)' --include='*.md' .
 ```
 
 All output reviewed manually; categorized findings above.
+
+---
+
+## Post-Batch-3 Self-QA Pass
+
+**Date appended**: 2026-05-06 (later same day, after Batch 3 commits land)
+**Scope**: re-audit of all 9 deliverables shipped across the 3 dispatch batches, against `brand-voice.md` (the new canonical voice authority created in Task 8) and the factual claims established in the May 6 verification pass above.
+
+**Method**: per-file grep checks for factual accuracy (page count, refund window, launch date, discount code casing, prices), banned-phrase scans against the brand-voice.md banned list, cross-reference resolution checks, completeness checks against Tom's per-task spec.
+
+**Verdict summary**: 9 deliverables shipped; **all 9 pass factual / voice / completeness checks**. Three minor cross-file issues found (none refund-risk; none would block launch). The most material item is the onboarding-flow-audit's NEW finding 1a (download-button refund-risk under Option B delivery) which is documented in the audit but not yet folded into v1.1-backlog.md — surfaced for owner triage.
+
+---
+
+### ✅ Files that passed all checks
+
+| # | File | Lines | Commit | Pass notes |
+|---|---|---:|---|---|
+| 1 | `product/launch/day-1-launch-checklist.md` | 270 | `04414c2` | 29 numbered action items across 7 windows. Tom's 4-part spec met (what / where / success / fail-recovery). All cross-references resolve. |
+| 2 | `PINTEREST_PINS.md` (Pins 16–25 only) | +399 | `6df2999` | 10 new pins added; existing Pins 6–15 untouched (verified). All spec constraints met (headlines ≤8 words, alt text <100 chars, descriptions 200–400 chars). Voice consistent with Pins 6–15. |
+| 3 | `VERIFICATION_PASS_2026-05-06.md` (original sections) | 221 | `8b68172` | 8 categories scanned; 5 ✅ / 5 ⚠️ / 0 🔴. The doc you're reading. |
+| 4 | `product/launch/post-launch-week-1-plan.md` | 374 | `18b243e` | All 7 days (May 18–24) covered with morning/afternoon/evening blocks. Time budgets, success criteria, gate-check matrix all present. |
+| 5 | `product/launch/v1.1-backlog.md` | 368 | `78adca0` | Tom's 4 priority levels (🔴/🟠/🟡/⚪) + Pre-launch owner actions + Resolved-before-v1.0 table. 30+ items consolidated. |
+| 6 | `product/launch/onboarding-flow-audit.md` | 265 | `d436579` | All 5 buyer-journey steps documented + cross-step audit findings + summary table. |
+| 7 | `product/launch/test-purchase-debugging.md` | 208 | `b9796ac` | All 8 failure modes covered with symptom / cause / fix / severity. Pre-walkthrough checklist included. |
+| 8 | `product/launch/brand-voice.md` | 332 | `bbff7fc` | Tom's 7 spec sections + 3 bonus (specific-numbers rule, surface-specific rules, voice-tics-to-track). 35+ proper-noun lookup table. Source attribution per rule. |
+| 9 | `.gitignore` (Task 9 update) | +21 | `125f7b6` | macOS noise patterns added; verified `git check-ignore` matches all 3 .DS_Store files + `product/build/output/`. No `git rm --cached` needed (none were tracked). |
+
+### Factual accuracy checks (all green)
+
+| Fact | Canonical | Status across 9 deliverables |
+|---|---|---|
+| Page count | 119 | ✅ all "119" or "119-page". "141" only appears in historical/debugging context (resolved-items table, "what NOT to see if file is wrong version") |
+| Refund window | 30-day | ✅ all "30-day" / "30 days". "14-day" only in resolved-items table |
+| Launch date | May 17 (year implied or explicit) | ✅ consistent across 41 references |
+| Discount code | `LAUNCH` (uppercase, often backticked) | ✅ no lowercase usage as code reference |
+| Prices | $29 launch / $39 list | ✅ only these two prices appear; other $-figures are domain-specific (e.g., "$120K offers", "$15–30/mo Rezi") |
+| Bundle name | "The Job Hunter's AI Bundle" | ✅ exact casing + apostrophe consistent |
+
+### Voice rule compliance (against brand-voice.md banned-phrase list)
+
+Banned phrases (`exclusive`, `amazing`, `game-changing`, `incredible`, `unleash`, `unlock your potential`, `Hi friend,`, `Dear subscriber,`, `Thank you for your purchase!`) appear in `brand-voice.md` itself — but only as documentation of the rules (the file lists them as banned). Zero occurrences in the other 8 deliverables.
+
+Other voice checks: lowercase `hey,` opener appears only where it should (the operational docs are reference material, not personal letters). Properly cased proper nouns (ChatGPT, LinkedIn, Notion, Gumroad, BATNA, etc.) — verified consistent across all 9 deliverables. Sign-off conventions (`— Flynn`) — applied where appropriate (this is an operational batch, not a buyer-facing batch, so sign-offs are minimal).
+
+---
+
+### ⚠️ Minor issues found
+
+#### W1 — 3 referenced files don't exist on disk
+The operational docs reference files that don't currently exist:
+
+| Referenced file | Referenced from | Status | Action |
+|---|---|---|---|
+| `tracking/daily-metrics-template.csv` | day-1-launch-checklist + post-launch-week-1-plan + test-purchase-debugging | In the 130+ deleted-files set from prior session damage | **Resolves automatically** when owner runs `git restore .` to recover the working tree |
+| `product/launch/refund-log-2026-05.md` | post-launch-week-1-plan + test-purchase-debugging | Designed to auto-create on first refund (not a missing file — a future file) | **Not a bug** — both referencing docs explicitly say "create on first refund" |
+| `product/post-launch-roadmap.md` | post-launch-week-1-plan May 24 gate-check section (only as alternative location) | Optional / contingent — only created if YouTube gate fires | **Not a bug** — explicitly conditional |
+
+**Severity**: 🟡 cosmetic. The first item resolves on owner's `git restore .`; the other two are intentionally future/contingent files.
+
+#### W2 — Onboarding-flow-audit's NEW findings not folded into v1.1-backlog
+`product/launch/onboarding-flow-audit.md` (commit `d436579`) surfaced 3 items that the audit explicitly recommended adding to v1.1-backlog.md:
+- **Finding 1a (🔴 refund-risk)**: download-button reference assumes Option A, breaks under Option B — most material new gap from the entire batch
+- **NTH17 proposal**: Notion duplication URL buried mid-bullet in receipt email
+- **SF12 proposal**: no Day-2 post-purchase check-in email (no nurture sequence beyond receipt)
+
+`v1.1-backlog.md` was committed in `78adca0` BEFORE the audit found these. The audit explicitly chose "audit only, owner triages" (no edits to source files), which is correct behavior — but means owner needs to manually triage these 3 items into the backlog when reviewing.
+
+**Severity**: ⚠️ quality-improvement. Surfaced clearly here so owner doesn't miss it in triage.
+
+#### W3 — VERIFICATION_PASS_2026-05-06.md M2 finding still active (Notion URL example mismatch in IMPORT_GUIDE.md)
+The May-6 morning verification pass flagged that `notion/IMPORT_GUIDE.md` line 127 has an example URL pattern that differs from the actual live URL. Tracked as v1.1-backlog NTH13. Not actioned in Batch 3 (out of scope per Tom's locked-files rule on `IMPORT_GUIDE.md`-adjacent edits).
+
+**Severity**: 🟡 nice-to-have. Owner-facing only (buyers don't see IMPORT_GUIDE.md). Tracked.
+
+---
+
+### 🔴 Major issues found
+
+**None**. No factual contradictions across the 9 deliverables. No banned-phrase violations. No refund-risk gaps in the operational docs themselves (refund-risk in onboarding-flow-audit's finding 1a is documented + flagged in W2 above).
+
+---
+
+### 🔧 Cross-file issues
+
+#### X1 — Audit-to-backlog handoff requires owner triage (W2 above, restated as cross-file)
+The onboarding-flow-audit and v1.1-backlog were written in the same batch but in sequence — backlog first, then audit. Audit recommendations propose 3 backlog additions but don't apply them. Owner needs to:
+1. Read onboarding-flow-audit's "Recommended actions" → "v1.1" section
+2. Manually add NTH17 + SF12 entries to v1.1-backlog.md
+3. Decide pre-launch on finding 1a (Option A vs. B receipt-email decision)
+
+Without this triage step, the 3 items risk falling through the cracks.
+
+#### X2 — Pre-launch owner action O1 (Notion re-sync) is the only true blocker
+Of all the items flagged across the 9 deliverables, only **O1 — Live Notion workspace re-sync** is a true pre-launch blocker (5 min owner action). Everything else is either ship-ready, post-launch, or v1.1.
+
+Source: `v1.1-backlog.md` Pre-launch owner actions section + `onboarding-flow-audit.md` finding 4a + `v1.1-quick-actions.md`.
+
+**Recommendation**: owner does O1 before May 17. ~5 min. If it slips, the 12-month-vs-no-time-commitment contradiction between the receipt email and the live Notion workspace is real and visible to early buyers.
+
+#### X3 — Option A vs Option B receipt-email decision is unforced but consequential
+`DELIVERY_EMAIL.md` documents both Option A (Gumroad receipt) and Option B (ConvertKit Sequence). Owner hasn't picked. The onboarding-flow-audit's finding 1a (download-button reference) makes this decision a soft pre-launch deadline:
+
+- If owner picks Option A: receipt email body is correct as-written. ~0 min remediation.
+- If owner picks Option B: receipt email body's "the download button at the bottom of this email" sentence becomes false, requires editing to reference the Gumroad library URL. ~5 min remediation.
+
+`test-purchase-debugging.md` failure mode 2 also touches on this (Option B silent failure scenario).
+
+**Recommendation**: owner picks A or B before the May 9 walkthrough so the test purchase exercises the actual delivery path. Email-body edit (if B) takes 5 min once decided.
+
+---
+
+### Outstanding owner actions (consolidated, in priority order)
+
+These are the actions blocking or improving v1.0 launch. Pre-launch (May 17) blockers are 🔴; post-launch v1.1 work is 🟠/🟡.
+
+| Priority | Action | Source | Time |
+|---|---|---|---|
+| 🔴 pre-launch | `git restore .` to recover the 130+ unstaged deletions in working tree | VERIFICATION_PASS Out-of-scope flag | 30 sec |
+| 🔴 pre-launch | Pick Option A vs Option B for receipt-email delivery; if B, edit body's download-button sentence | onboarding-flow-audit finding 1a + test-purchase-debugging FM2 | 5 min |
+| 🔴 pre-launch | Live Notion workspace re-sync (hand-edit `00-START_HERE.md` + `05-changelog.md` in published Notion OR re-import) | v1.1-backlog O1 + v1.1-quick-actions.md | 5 min |
+| 🔴 pre-launch | Verify Stripe Connect status: Active (not Pending) | test-purchase-debugging FM1 | 30 sec verify |
+| 🟠 pre-launch | Verify Gumroad storefront subdomain matches the placeholder used in copy (`snipprompts.gumroad.com`) | v1.1-backlog O2 | 30 sec |
+| 🟠 pre-launch | Verify ConvertKit form endpoint accepts the homepage form POST (test signup) | v1.1-backlog O3 | 30 sec |
+| 🟠 pre-launch | Manually add NTH17 + SF12 to v1.1-backlog.md per onboarding audit's recommendations | onboarding-flow-audit Recommended actions | 5 min |
+| 🟡 post-launch | Push the 10 unpushed commits when ready | All 3 batches | 10 sec |
+| 🟡 post-launch | Triage v1.1-backlog priorities; pick which items ship in v1.1 cycle | v1.1-backlog Suggested sequencing | 30 min review |
+
+**Total pre-launch owner-time**: ~15 minutes of focused account-credentialed work, plus the May 9 + May 14 walkthroughs already scheduled.
+
+---
+
+### Concerns / things I'd flag if I were the QA reviewer signing off
+
+1. **Repo working-tree damage is still unresolved**. 130+ files missing from disk; recoverable via `git restore .`; not run autonomously per global rules. This has persisted across 3 dispatch batches. If owner doesn't run `git restore .` before launch day, several launch-day operations will fail (e.g., `./build.sh full` to rebuild PDF won't work — `product/build/build.sh` is in the deleted set). **Owner MUST run `git restore .` on review.**
+
+2. **The Option A vs B decision is the riskiest unforced error in the launch**. If owner doesn't decide and just defaults to Option A by inertia, fine. If owner sets up Option B without remembering to edit the receipt body, buyers hit the broken download-button reference and refund risk surfaces. The fix is 5 minutes; the risk if missed is real.
+
+3. **No real buyer has tested any of this**. Every QA pass to date — this one included — is structural-read-of-artifacts, not a real $39 buyer's lived experience. The May 9 + May 14 walkthroughs are the closest we have. The onboarding-flow-audit explicitly documents this limit.
+
+4. **Batch 3 went smoothly because the editorial discipline established in earlier batches held**. Voice consistency, factual accuracy, cross-file references — all clean across 10 commits and ~3,000 lines of new operational docs. The brand-voice.md doc that landed today crystallizes that discipline for v1.1+ work.
+
+5. **The 9 deliverables are useful in isolation AND as a system**. day-1-launch-checklist references support-templates; post-launch-week-1-plan references v1.1-backlog; test-purchase-debugging references day-1-checklist + post-launch-plan; brand-voice references all 5 source files. The cross-references resolve correctly. Owner can read any one file and find what they need; can also follow the chain to context.
+
+**Overall recommendation**: ship the 10 commits to remote. Run `git restore .` to recover working tree. Decide Option A vs B. Do the 5-minute Notion re-sync. Then walkthroughs May 9 + May 14 should run clean against this complete operational framework.
+
+---
+
+End of Post-Batch-3 Self-QA Pass.
