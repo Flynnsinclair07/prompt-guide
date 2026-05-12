@@ -91,6 +91,8 @@ Use templates from `product/launch/support-templates.md` first. Don't write fres
 
 ## Pinterest cadence
 
+**Pin numbering note**: Vladyslav delivered all 20 pins as a sequential set numbered 1-20. The cadence and pin references below use the original PINTEREST_PINS.md numbering (Pin 6 = "Resume bullets", Pin 15 = "Launch day", etc.). For uploads, the mapping is: old Pin 6 = his Pin 1, old Pin 7 = his Pin 2, ... old Pin 25 = his Pin 20 (i.e., subtract 5 from the old number).
+
 **Existing schedule** (per `PINTEREST_PINS.md` Pins 16–25 cadence table):
 - May 18 → Pin 16 (Salary screen)
 - May 20 → Pin 17 (Weakness question)
@@ -103,26 +105,30 @@ That's 4 new pins in week 1.
 
 **Daily Pinterest workflow** (~10 min on post-days, ~3 min on no-post days):
 
-| Day | New pin to post | Repin candidate (optional, owner's call) |
-|---|---|---|
-| May 18 | Pin 16 (Salary screen) | — |
-| May 19 | — (rest from launch week) | optional repin: highest-performing pin May 4–17 |
-| May 20 | Pin 17 (Weakness question) | — |
-| May 21 | — | optional repin |
-| May 22 | Pin 19 (100 applications) | — |
-| May 23 | — | optional repin |
-| May 24 | Pin 20 (Recruiter ghost) | — |
+| Day | New pin to post | Vlad's batch # | Repin candidate (optional, owner's call) |
+|---|---|---|---|
+| May 18 | Pin 16 (Salary screen) | Vlad's Pin 11 | — |
+| May 19 | — (rest from launch week) | — | optional repin: highest-performing pin May 4–17 |
+| May 20 | Pin 17 (Weakness question) | Vlad's Pin 12 | — |
+| May 21 | — | — | optional repin |
+| May 22 | Pin 19 (100 applications) | Vlad's Pin 14 | — |
+| May 23 | — | — | optional repin |
+| May 24 | Pin 20 (Recruiter ghost) | Vlad's Pin 15 | — |
 
 **Rule**: don't post 2 fresh pins same day. Pinterest's algorithm flags burst-uploading on small boards — costs you reach for ~24h after.
 
-**Production process per pin** (~10 min):
-1. Open `pins/pin-01-resume.png` in Canva → "Use as template"
-2. Swap headline, sub-line, benefits per the spec block in `PINTEREST_PINS.md`
-3. Export PNG, 1000×1500, "Best" quality
-4. Upload directly to Pinterest (don't use Canva's share-to-Pinterest)
-5. Paste description + alt text from spec block
-6. Set destination link
-7. Schedule for next morning at 7am ET (Pinterest reach peaks 7–9am ET on weekdays)
+**Upload process per pin (~5 min)**:
+
+1. Download the pin PNG from Vladyslav's Canva delivery (link `https://canva.link/tmere40u4scun43` contains all 20 finished pins as a downloadable set)
+2. Open Pinterest → AI Prompts for Job Seekers board → Create Pin
+3. Upload the PNG
+4. Paste title from `PINTEREST_PINS.md` (the headline of the relevant pin spec)
+5. Paste description block from `PINTEREST_PINS.md` (includes hashtags)
+6. Paste alt text from `PINTEREST_PINS.md`
+7. Set destination link from the pin's spec
+8. Schedule for next morning at 7am ET (Pinterest reach peaks 7–9am ET on weekdays)
+
+The 20 pins are pre-built — no Canva work needed. Each pin in Vladyslav's batch corresponds to a pin spec in `PINTEREST_PINS.md` (see FIX 2 below for the numbering map).
 
 ---
 
@@ -182,8 +188,17 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Open `tracking/daily-metrics-template.csv`, add May 18 row.
 
 **Afternoon (~1pm ET, 10 min)**:
-- [ ] Production: build Pin 16 (Salary screen) in Canva per spec. Upload directly to Pinterest, schedule for tomorrow 7am ET.
+- [ ] Production: upload Vladyslav's Pin 11 PNG (the "Salary screen" pin in his batch — was Pin 16 in old PINTEREST_PINS.md numbering). Upload directly to Pinterest, schedule for tomorrow 7am ET.
 - [ ] Glance at Pin 15 analytics (24h post-launch) — impressions, saves, outbound clicks.
+
+**Mid-afternoon (~3pm ET, 5–15 min — manual buyer tagging before Email 5)**:
+- [ ] Export sales from Gumroad → Sales → filter by The Job Hunter's AI Bundle → Export CSV.
+- [ ] Open the CSV, copy the email column.
+- [ ] In Kit → Subscribers → Bulk add subscribers (or import CSV with tag column). Apply tag `bundle-buyer-2026-may` to every buyer email.
+- [ ] Verify the tag is applied (search for one of the buyer emails in Kit, confirm the tag).
+- [ ] This must happen BEFORE Email 5 publishes — Email 5's `pre-launch-subscribers` segment relies on this tag to manually exclude buyers (Kit free tier blocks Gumroad's auto-tagging integration). Time scales with sale count: 5 min for <10 sales, 15 min for 50+ sales.
+
+**Why manual**: see `day-1-launch-checklist.md` Section 26a and `v1.1-backlog.md` (notes on Kit free tier limitations). Once buyers are tagged, the Email 5 broadcast's `pre-launch-subscribers` segment correctly excludes them.
 
 **5pm ET — Email 5 decision (15 min)**:
 - [ ] Pull Email 4 stats from ConvertKit: open rate, click rate, unsubscribe count.
@@ -214,7 +229,7 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Capture overnight sales count.
 
 **Afternoon (~1pm ET, 10 min)**:
-- [ ] Build Pin 17 (Weakness question) in Canva. Upload + schedule for May 20 7am ET.
+- [ ] Upload Vladyslav's Pin 12 PNG (the "Weakness question" pin — was Pin 17). Upload + schedule for May 20 7am ET.
 - [ ] Reply to support emails.
 
 **Evening (~6pm ET, 20 min — LAUNCH discount post-mortem)**:
@@ -256,7 +271,7 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Capture sales (day 4).
 
 **Afternoon (~1pm ET, 15 min)**:
-- [ ] Build Pin 19 (100 applications, forest color) in Canva. Upload + schedule for May 22 7am ET.
+- [ ] Upload Vladyslav's Pin 14 PNG (the "100 applications" pin — was Pin 19). Upload + schedule for May 22 7am ET.
 - [ ] Reply to support emails.
 
 **Evening (~6pm ET, 10 min)**:
@@ -297,7 +312,7 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Capture overnight sales.
 
 **Afternoon (~2pm ET, 15 min)**:
-- [ ] Build Pin 20 (Recruiter ghost) in Canva. Upload + schedule for May 24 7am ET.
+- [ ] Upload Vladyslav's Pin 15 PNG (the "Recruiter ghost" pin — was Pin 20). Upload + schedule for May 24 7am ET.
 
 **Evening (~6pm ET, 5 min)**:
 - [ ] Quick metrics capture. Don't overthink it on a Saturday.

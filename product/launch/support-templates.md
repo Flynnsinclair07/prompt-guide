@@ -126,6 +126,20 @@ No active discount codes at the moment. Future updates and v2 will be free for b
 
 ---
 
+## 9. "I just bought this — why am I getting reminder emails?"
+
+```
+hey,
+
+My fault — you bought the bundle and shouldn't have gotten that. I tag buyers manually post-launch and missed adding you to the exclusion list. Removing you now from any further launch broadcasts. Thanks for the heads-up.
+
+— Flynn
+```
+
+**Operational note**: this fires if a buyer was missed in the Monday May 18 manual tag pass (Kit free tier blocks Gumroad-app integration, so buyer-tagging is manual via Gumroad CSV → Kit bulk-add — see `day-1-launch-checklist.md` Section 26a). Add their email to Kit's `bundle-buyer-2026-may` tag immediately after sending, then check if they're enrolled in any active broadcast queues and remove them. Apologize cleanly — the buyer's right to be annoyed; don't over-explain the integration limitation.
+
+---
+
 ## Catalog grows from real questions
 
 Add a new section here whenever you reply to something that doesn't fit any of the 8 above. The format:

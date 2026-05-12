@@ -6,6 +6,8 @@ Every item has four parts: **what** to do, **where** to do it (URL or app), **su
 
 All times are **ET** unless noted. Owner is in MDT (UTC−6); add 2 hours for ET.
 
+**Buyer-tagging is manual, not automated.** Kit free tier blocks Gumroad app integration. On Monday May 18 ~3 PM MT, export Gumroad sales CSV and bulk-add `bundle-buyer-2026-may` tag in Kit before publishing Email 5.
+
 > Print this page or pin it as a Notion page in your workspace. Don't try to navigate it on a phone during the launch window.
 
 ---
@@ -13,16 +15,22 @@ All times are **ET** unless noted. Owner is in MDT (UTC−6); add 2 hours for ET
 ## Pre-launch — Saturday May 16 evening (8–10pm ET / 6–8pm MDT)
 
 ### 1. Final pre-flight check on Gumroad listing
-- **What**: open the draft Gumroad listing, walk every field 1–14 against `GUMROAD_LISTING.md`. Confirm cover image, files (`job-hunters-bundle.pdf` + `job-hunters-bundle-notion-link.txt`), tags, categories, refund policy (30-day), receipt-email body, ConvertKit integration toggled on.
+- **What**: open the draft Gumroad listing, verify each field against current state — title `The Job Hunter's AI Bundle`, price $39, refund 30-day no questions, files (`job-hunters-bundle.pdf` 119 pages + `job-hunters-bundle-notion-link.txt`), discount code `LAUNCH` configured but toggled OFF, Notion duplication URL `https://learned-guilty-545.notion.site/The-Job-Hunter-s-AI-Bundle-35634cf5abb9800babe5c22b28888ccf` resolves.
 - **Where**: gumroad.com → Products → Job Hunter's AI Bundle (draft) → Edit
-- **Success**: every field matches the spec doc; no `[NOTION_DUPLICATION_URL]` or other placeholder text survives anywhere.
-- **Fail-recovery**: any placeholder still present → fix it now, not at 8:55am tomorrow. Any field unsure about → `GUMROAD_LISTING.md` is source of truth, copy verbatim.
+- **Success**: every field matches; no `[NOTION_DUPLICATION_URL]` or other placeholder text survives anywhere.
+- **Fail-recovery**: any placeholder still present → fix it now, not at 8:55am tomorrow.
+
+### 1.5. Verify Vladyslav deliverables are uploaded to Gumroad
+- **What**: horizontal 1280×720 bundle cover image uploaded, square 600×600 thumbnail uploaded, 60-second demo video uploaded as preview image (if recorded), 3 PDF page screenshot previews still present. Verify all 20 Pinterest pins from his batch are uploaded to the AI Prompts for Job Seekers board with proper descriptions and destination URLs from `PINTEREST_PINS.md`.
+- **Where**: Gumroad → Products → Job Hunter's AI Bundle → Edit (cover/thumbnail/preview); Pinterest → AI Prompts for Job Seekers board.
+- **Success**: all assets present on Gumroad; all 20 pins live on Pinterest with correct descriptions + URLs.
+- **Fail-recovery**: missing asset → upload now from Vladyslav's delivery folder. Pin description wrong → edit inline on Pinterest.
 
 ### 2. Verify the discount code is created (but OFF)
-- **What**: confirm `LAUNCH` discount code exists, $10 off, limited to first 100 uses or expires May 19 23:59 UTC, currently **toggled OFF**.
+- **What**: confirm `LAUNCH` discount code exists, $10 off, 100 use cap OR May 19 9 AM ET (= May 19 6 AM PDT in Gumroad's timezone) expiration, currently **toggled OFF**.
 - **Where**: Gumroad → Discounts → LAUNCH
 - **Success**: code shows in list, status = inactive/disabled.
-- **Fail-recovery**: doesn't exist → create per `GUMROAD_LISTING.md` Field 11. Already active → toggle OFF (you don't want early discount leaks before public launch).
+- **Fail-recovery**: doesn't exist → create it now ($10 off, 100 use cap or May 19 9 AM ET expiration). Already active → toggle OFF (you don't want early discount leaks before public launch).
 
 ### 3. Verify ConvertKit Email 4 is queued with real Gumroad URL
 - **What**: open the Email 4 broadcast, confirm body has the live Gumroad URL with `/LAUNCH` appended (auto-applies discount). No `[GUMROAD_URL]` placeholder remaining.
@@ -66,21 +74,21 @@ Pre-load tabs in a dedicated browser window so you're not searching for URLs at 
   - Gumroad → Sales (will populate after launch)
   - ConvertKit → Broadcasts → Email 4 (verify scheduled)
   - ConvertKit → Subscribers (watch for buyer-tag fires)
-  - Pinterest → AI Prompts for Job Seekers board (ready to upload Pin 15)
+  - Pinterest → AI Prompts for Job Seekers board (ready to upload launch-day pin)
   - Pinterest → Analytics → Overview
   - Inbox tab (Gmail/whatever) on `bundle-buyer-2026-may` filter, plus general inbox
   - `product/launch/support-templates.md` open in your editor
   - `product/launch/sprint-plan-may-4-17.md` if you want context on prior days
 
 ### 9. Test purchase flow with $0 discount (7:30–8am ET)
-- **What**: use a Gumroad 100% test discount code on yourself (you may have created one for May 14 walkthrough — if so, re-use; otherwise create a fresh `TEST100` code, 100% off, 1 use). Buy the bundle. Verify receipt email arrives, download links work, ConvertKit `bundle-buyer-2026-may` tag fires within 60 seconds.
+- **What**: use a Gumroad 100% test discount code on yourself (you may have created one for May 14 walkthrough — if so, re-use; otherwise create a fresh `TEST100` code, 100% off, 1 use). Buy the bundle. Verify receipt email lands, both files (PDF + Notion link) download cleanly. NOTE: ConvertKit buyer-tag automation is not wired (Kit free tier blocks the integration) — manual tagging happens Monday May 18 via Gumroad CSV export, see new section 26.
 - **Where**: Gumroad listing URL (still draft — accessible to you logged in even if not published) → checkout with test code.
-- **Success**: receipt email lands in your inbox, both files download cleanly, ConvertKit shows the buyer tag on your test subscriber.
-- **Fail-recovery**: receipt email doesn't arrive → check Gumroad → Workflows → Receipt email is enabled. Files don't download → check Field 8 file uploads. Tag doesn't fire → check Gumroad → Settings → Integrations → ConvertKit, reauth if needed.
+- **Success**: receipt email lands in your inbox, both files download cleanly.
+- **Fail-recovery**: receipt email doesn't arrive → check Gumroad → Workflows → Receipt email is enabled. Files don't download → check Field 8 file uploads.
 - **Then**: refund the test purchase via Gumroad → Sales → Refund. Disable the `TEST100` code so it can't be reused.
 
-### 10. Post Pin 15 to Pinterest (8–8:30am ET) — schedule ahead, don't post live
-- **What**: schedule (NOT publish-now) Pin 15 (Launch Day) to post at 9:01am ET. Pinterest's scheduler is reliable; scheduling avoids the risk of a 9:00am-sharp scramble.
+### 10. Post launch-day pin to Pinterest (8–8:30am ET) — schedule ahead, don't post live
+- **What**: schedule (NOT publish-now) the launch-day pin from Vladyslav's batch — the navy pin titled 'LIVE NOW / $29 LAUNCH WEEK ONLY' (Pin 10 in his delivery, was Pin 15 in old PINTEREST_PINS.md numbering) — to post at 9:01am ET. Pinterest's scheduler is reliable; scheduling avoids the risk of a 9:00am-sharp scramble.
 - **Where**: Pinterest → AI Prompts for Job Seekers board → "Create Pin" → Schedule.
 - **Success**: pin shows in scheduled-pins queue, scheduled time = 9:01am ET, link points to live Gumroad URL with `/LAUNCH`.
 - **Fail-recovery**: scheduling broken → set a phone alarm for 9:01am, post manually then.
@@ -113,16 +121,16 @@ The actual launch moment. Execute in this exact order. **~3 minutes total.**
 - **What**: enable the LAUNCH discount code.
 - **Where**: Gumroad → Discounts → LAUNCH → toggle to active.
 - **Success**: discount code shows as active. Test in incognito: visit `[live-url]/LAUNCH` — price shows $29.
-- **Fail-recovery**: discount won't activate → re-create it from scratch (Gumroad sometimes silently breaks discount codes; faster to re-create than debug). Update Email 4 + Pin 15 if URL changed.
+- **Fail-recovery**: discount won't activate → re-create it from scratch (Gumroad sometimes silently breaks discount codes; faster to re-create than debug). Update Email 4 + launch-day pin if URL changed.
 
-### 15. 9:01:00 — Verify Email 4 sent + Pin 15 published
-- **What**: check ConvertKit broadcast status (should show "sent" within 60 seconds of 9:00). Check Pinterest scheduled pins (Pin 15 should have moved from scheduled to live).
-- **Where**: ConvertKit → Broadcasts → Email 4 (status). Pinterest → AI Prompts for Job Seekers board (Pin 15 visible).
+### 15. 9:01:00 — Verify Email 4 sent + launch-day pin published
+- **What**: check ConvertKit broadcast status (should show "sent" within 60 seconds of 9:00). Check Pinterest scheduled pins (launch-day pin should have moved from scheduled to live).
+- **Where**: ConvertKit → Broadcasts → Email 4 (status). Pinterest → AI Prompts for Job Seekers board (launch-day pin visible).
 - **Success**: both showing "sent/live".
-- **Fail-recovery**: Email 4 didn't send → trigger manually via "Send now". Pin 15 didn't post → upload manually now.
+- **Fail-recovery**: Email 4 didn't send → trigger manually via "Send now". Launch-day pin didn't post → upload manually now.
 
 ### 16. 9:02:00 — Tag Gumroad listing for SEO/discovery
-- **What**: add tags + category to the listing per `GUMROAD_LISTING.md` Fields 9 + 10. Tags: `chatgpt, ai prompts, job search, resume, cover letter, interview prep, linkedin, salary negotiation, career, career change`. Primary category: Self Improvement → Career.
+- **What**: add tags + category to the listing. Tags: `chatgpt, ai prompts, job search, resume, cover letter, interview prep, linkedin, salary negotiation, career, career change`. Primary category: Self Improvement → Career.
 - **Where**: Gumroad → Products → Job Hunter's AI Bundle → Edit → Tags + Category.
 - **Success**: listing shows up under those Gumroad category browse pages within ~10 minutes.
 - **Fail-recovery**: tag limit hit → drop low-priority ones (`career change`, `linkedin` are first to cut; keep `chatgpt`, `salary negotiation`, `resume`, `ai prompts`, `career`).
@@ -134,7 +142,7 @@ The actual launch moment. Execute in this exact order. **~3 minutes total.**
 ### 17. Watch for the first sale (9:00–9:30am ET)
 - **What**: keep Gumroad → Sales tab open. The first sale typically lands within 15 minutes of Email 4 hitting inboxes.
 - **Where**: Gumroad → Sales (auto-refreshes).
-- **Success**: first sale visible. ConvertKit shows first `bundle-buyer-2026-may` tag fire.
+- **Success**: first sale visible in Gumroad.
 - **Fail-recovery**: no sale by 9:30 → not necessarily a problem. Sunday-morning audiences read at different times. Worry threshold: nothing by 11am.
 
 ### 18. Reply triage (rolling, every 10 min)
@@ -143,9 +151,9 @@ The actual launch moment. Execute in this exact order. **~3 minutes total.**
 - **Success**: every reply goes out within 30 minutes of receipt during the launch window.
 - **Fail-recovery**: high volume → batch in 15-min cycles, not real-time. Quality over speed.
 
-### 19. Check Pinterest impressions on Pin 15 (9:30am ET)
-- **What**: scan the Pin 15 stats — early impressions / saves / outbound clicks.
-- **Where**: Pinterest → Analytics → Pin 15.
+### 19. Check Pinterest impressions on launch-day pin (9:30am ET)
+- **What**: scan the launch-day pin stats — early impressions / saves / outbound clicks.
+- **Where**: Pinterest → Analytics → launch-day pin.
 - **Success**: at least some impressions registering by 9:30 (the launch board has a small audience but it'll show some movement).
 - **Fail-recovery**: zero impressions after 30 min → re-share the pin or post a duplicate. Pinterest sometimes shadowbans new pins for the first 24h on small boards.
 
@@ -194,6 +202,12 @@ The actual launch moment. Execute in this exact order. **~3 minutes total.**
 - **Success**: numbers captured for the May 17 row of your tracking spreadsheet (`tracking/daily-metrics-template.csv`).
 - **Fail-recovery**: tracking spreadsheet missing or broken → just note in any text file. Don't lose the data point because the tool isn't perfect.
 
+### 26a. Manual buyer tagging (Monday May 18, ~3 PM MT, before Email 5 decision)
+- **What**: Export sales from Gumroad → Sales → Filter by The Job Hunter's AI Bundle → Export CSV. Open the CSV, copy the email column. In Kit → Subscribers → Bulk add subscribers (or import CSV with tag column). Apply tag `bundle-buyer-2026-may` to every buyer email. This must happen BEFORE Email 5 publishes — Email 5's `pre-launch-subscribers` segment relies on this tag to exclude buyers manually (Kit can't auto-exclude tags at broadcast level). Time: 5-15 min depending on sale count.
+- **Where**: Gumroad → Sales → Export CSV; Kit → Subscribers → Bulk add / Import.
+- **Success**: every buyer email shows `bundle-buyer-2026-may` tag in Kit before Email 5 sends.
+- **Fail-recovery**: CSV export fails → pull buyer emails manually from Gumroad Sales view. Kit bulk-add errors → import via CSV with a tag column instead.
+
 ### 26. Decide on Email 5 (24h reminder, May 18 5pm ET)
 - **What**: per `EMAIL_SEQUENCE.md` Email 5 conditions: only send if open rate on Email 4 >40% AND fewer than 50 sales by Monday 5pm ET. As of 6pm Sunday, eyeball whether you're tracking toward those conditions. If clearly above 50 sales already, plan to skip Email 5 (the reminder hurts more than it helps when the launch is going well).
 - **Where**: ConvertKit → Broadcasts → Email 5 (currently draft).
@@ -221,8 +235,8 @@ The actual launch moment. Execute in this exact order. **~3 minutes total.**
   - Email 4 open rate (ConvertKit → stats)
   - Email 4 click-through rate (ConvertKit → stats)
   - Email 4 unsubscribe count (ConvertKit → stats)
-  - Pinterest impressions on Pin 15 (Pinterest → Analytics)
-  - Pinterest outbound clicks on Pin 15 (Pinterest → Analytics)
+  - Pinterest impressions on launch-day pin (Pinterest → Analytics)
+  - Pinterest outbound clicks on launch-day pin (Pinterest → Analytics)
   - Notion workspace duplications (Notion → Share → analytics, if available)
   - Support emails received + replied (rough count)
 - **Where**: a single text file or row in `tracking/daily-metrics-template.csv`.
