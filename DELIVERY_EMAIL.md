@@ -99,7 +99,7 @@ the new version.
 
 **Notes on the body**:
 
-- **Notion link**: replace `NOTION_DUPLICATION_URL` (literal placeholder appears twice in this file — HTML body and plain-text fallback). One find/replace before scheduling. `GUMROAD_LISTING.md` Field 12 now points back to this file as the source of truth, so the placeholder lives in one place only.
+- **Notion link**: live URL is inlined twice in this file (HTML body line 58 + plain-text fallback line 131). No placeholder remaining. If the Notion workspace is ever rebuilt and the duplication URL changes, update both occurrences here + `support-templates.md` line 32.
 - **Price not mentioned**: deliberate. They just paid. Saying "$39" or "$29" reminds them what they spent, which can trigger buyer's remorse. Saying "what you spent" abstracts it.
 - **No "thank you for your purchase"**: feels corporate. The whole email *is* the thank-you.
 - **One CTA, soft**: the reply ask. Download is automatic via Gumroad's button. Notion is bonus. Reply is the only thing being asked for, and it's the thing that builds the list-of-real-humans flywheel.
@@ -187,9 +187,11 @@ Gumroad sends the receipt automatically the moment a sale completes. You can cus
 - ✗ Sends from `noreply@customers.gumroad.com`. Gmail often files this in **Promotions**, not Primary. Lower open rate than a domain email.
 - ✗ A/B testing subject lines requires manually toggling the receipt template. Not a real test.
 
-### Option B — ConvertKit sequence triggered by purchase tag (30 min, recommended)
+### Option B — ConvertKit sequence triggered by purchase tag (BLOCKED for v1 launch — Kit free tier)
 
-Gumroad's ConvertKit integration tags every buyer with `bundle-buyer-2026-may` on purchase (per `GUMROAD_LISTING.md` Field 14). A ConvertKit Sequence triggered by that tag fires the moment the tag is applied — practically simultaneous with Gumroad's receipt.
+> ⚠️ **NOT VIABLE FOR v1.0 LAUNCH**: per handoff Decision 1 (Path B), Kit free tier blocks the Gumroad app integration. Buyer-tagging is **manual on Mon May 18** via Gumroad CSV → Kit bulk-add, not automatic at purchase. A sequence triggered by tag would fire 1+ days late, breaking the post-purchase experience. **Use Option A.** Re-evaluate Option B post-launch once Kit Pro is purchased (~$29/mo, weigh against actual buyer volume).
+
+Gumroad's ConvertKit integration *would* tag every buyer with `bundle-buyer-2026-may` on purchase — but only with Kit Pro. A ConvertKit Sequence triggered by that tag fires the moment the tag is applied — practically simultaneous with Gumroad's receipt. *Reference only; don't ship.*
 
 1. **Disable** Gumroad's receipt body (leave the auto-receipt for the download link, but blank out the custom message — buyers shouldn't get this email twice).
 2. ConvertKit → **Sequences** → New sequence: name it `Bundle Buyer — Day 0 Welcome`.
@@ -208,15 +210,11 @@ Gumroad's ConvertKit integration tags every buyer with `bundle-buyer-2026-may` o
 - ✓ Optional foundation for a post-purchase nurture sequence — e.g. a "how's the hunt going?" check-in around Day 14, a "what should the next module cover?" feedback ask around Day 30. None of these are committed in the launch-day email; add them later from a fresh broadcast if and when there's content worth sending.
 - ✗ Requires the Gumroad → ConvertKit integration to be live and tested. If the integration silently fails, buyers get no welcome — monitor the first 5 sales manually.
 
-### Whichever option you choose
+### Whichever option you choose (i.e., Option A for v1.0)
 
-**Replace these placeholders before going live**:
+**All placeholders already resolved** — Notion duplication URL is inlined twice in this file. No find/replace needed before going live.
 
-| Placeholder | Replace with | Lives in |
-|---|---|---|
-| `NOTION_DUPLICATION_URL` | Notion → Share → Publish → "Allow duplicate as template" → copy URL | This file (2 places: HTML body + plain-text body) |
-
-**Don't include the `bundle-buyer-2026-may` segment in the launch-prep broadcast list** — buyers shouldn't get the launch-day pitch. This is already configured in `EMAIL_SEQUENCE.md` (every broadcast excludes the `bundle-buyer-*` tag). Sanity-check before scheduling.
+**Don't include the `bundle-buyer-2026-may` segment in the launch-prep broadcast list** — buyers shouldn't get the launch-day pitch. This is already configured in `EMAIL_SEQUENCE.md` (every broadcast excludes the `bundle-buyer-*` tag). Sanity-check before scheduling. The tag itself is applied **manually on Mon May 18** per handoff Decision 1, not automatically.
 
 ### Form UID reference
 
@@ -268,6 +266,7 @@ Note: an earlier version of this file (and this editor's note) included a
 specific "in 5 days I'll email you one extra prompt" promise. Removed in
 follow-up commit per Tom's review — Day-5 post-launch is the chaos window;
 don't promise extra deliverables in the launch window. The comp triangulator
-prompt is now logged in v1.1 backlog (notion/05-changelog.md) instead.
+prompt is now logged in `product/launch/v1.1-backlog.md` (SF1) as the internal
+backlog item, with a buyer-facing reference in `notion/05-changelog.md`.
 -->
 

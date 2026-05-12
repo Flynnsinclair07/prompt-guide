@@ -35,7 +35,7 @@ For owner's May 9 walkthrough (and again May 14 final dry-run, per `sprint-plan-
 **Fix**:
 1. **Check Promotions / spam** — Gmail's Promotions tab is the #1 cause. Search inbox + all-mail for "Gumroad" or "bundle" — if found in Promotions, mark "Move to Primary."
 2. **Verify Gumroad sent the email**: Gumroad → Sales → click the test sale → scroll to "Email status." If shows "Sent" — it's a delivery issue (your end). If shows "Pending" or "Failed" — Gumroad's end.
-3. **If Option B (ConvertKit)**: ConvertKit → Subscribers → search for the test email. If subscriber doesn't exist with `bundle-buyer-2026-may` tag, the integration silently failed. Re-auth in Gumroad → Settings → Integrations → ConvertKit → reconnect.
+3. **Option B (ConvertKit) is BLOCKED for v1.0** — Kit free tier blocks the Gumroad integration per handoff Decision 1; this step does not apply. If post-launch you upgrade to Kit Pro: ConvertKit → Subscribers → search for the test email; if missing the `bundle-buyer-2026-may` tag, re-auth in Gumroad → Settings → Integrations → ConvertKit → reconnect.
 4. **If receipt email toggle is off**: Gumroad → Products → Job Hunter's AI Bundle → Workflows tab → Receipt email — verify "Send to buyers" is ON.
 5. **Test from a different inbox**: if your primary inbox is Gmail, also test from a Yahoo / iCloud / Outlook address. If the email arrives there but not Gmail, you have a Gmail-specific deliverability problem — log it for Option B switch (the Day-2 fix).
 
@@ -129,8 +129,8 @@ For owner's May 9 walkthrough (and again May 14 final dry-run, per `sprint-plan-
 **Symptom**: at 9 AM ET on May 17, you toggle `LAUNCH` to active in Gumroad → Discounts. Test the URL `[your-storefront]/l/job-hunters-ai-bundle/LAUNCH` in incognito — price still shows $39 (not $29). OR the discount activates but the code limits don't match the spec.
 
 **Likely cause** (most → least common):
-1. **Time zone confusion** — Gumroad uses UTC for discount-window dates. May 19 23:59 UTC is May 19 7:59 PM ET (not midnight ET). Easy to set the wrong end-time.
-2. **Code is product-specific but typo'd as universal** (or vice versa) — Gumroad has two scopes: applies to specific product, or to all products in account.
+1. **Time zone confusion** — Gumroad displays discount windows in UTC. The actual LAUNCH config is May 17 9 AM ET → May 19 9 AM ET, which Gumroad shows as **2026-05-17 13:00 UTC → 2026-05-19 13:00 UTC** (EDT is UTC−4). Anchor on the UTC values when reading Gumroad's UI; an end-time like "23:59 UTC" would be 7:59 PM ET — wrong, watch for it.
+2. **Code scope misconfigured** — Gumroad has two scopes: applies to specific product, or to all products in account. For v1.0, LAUNCH is set to "all products" — fine because the bundle is the only paid product. If you add a second paid product before May 19 9 AM ET, switch LAUNCH to product-specific so it doesn't leak.
 3. **URL pattern wrong** — `/LAUNCH` URL trick only works on certain Gumroad URL formats. If your storefront URL is different from `gumroad.com/l/...`, the URL pattern may not auto-apply.
 4. **Code requires manual entry** — if "Apply via URL" isn't toggled, buyers must paste the code at checkout instead of getting auto-applied.
 
@@ -215,7 +215,7 @@ For owner's May 9 walkthrough (and again May 14 final dry-run, per `sprint-plan-
 
 - **Stripe-specific dashboard issues** — those are Stripe's UI, not Gumroad's. If Stripe blocks payouts entirely (rare), escalate via Stripe Support directly; Gumroad's support can't fix Stripe's account holds.
 - **Gumroad outages** — if Gumroad itself is down (status.gumroad.com), nothing in this guide helps. Wait it out, communicate via Pinterest pin description or Twitter.
-- **Email deliverability tuning** (SPF/DKIM/DMARC) — too deep for a debugging guide. If Option A's noreply consistently lands in spam, switch to Option B (ConvertKit) which uses your verified domain.
+- **Email deliverability tuning** (SPF/DKIM/DMARC) — too deep for a debugging guide. If Option A's noreply consistently lands in spam, the v1.1 fix is Kit Pro upgrade ($29/mo) which unlocks the Gumroad → ConvertKit auto-tag integration (Option B). Pre-launch with free tier, monitor manually and route buyers to Promotions-rescue if needed (see `support-templates.md` Template 2).
 - **Notion API automation** — owner doesn't need this for v1. If post-launch you want to programmatically update the Notion workspace, that's a v1.1 question.
 
 ---
