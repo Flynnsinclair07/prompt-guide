@@ -6,7 +6,7 @@
 
 How to use this file:
 1. Each section maps to one ConvertKit broadcast. Subject + preview + body are paste-ready.
-2. The `[GUMROAD_URL]` placeholder appears in Email 4 only. Replace with the live Gumroad URL before scheduling. Everything else has no placeholders.
+2. The `[GUMROAD_URL]` placeholder appeared in Email 4 + Email 5 — both replaced 2026-05-12 with `https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH` (the `/LAUNCH` suffix auto-applies the discount). Markdown is source-of-truth; the Kit drafts still need the manual swap.
 3. Recommended segment for all four: subscribers with the `lead-magnet` or `homepage-signup` tag (i.e. the existing list — exclude `bundle-buyer-2026-may` so buyers don't get launch-day pitches).
 4. Time-zone: schedule for **9:00 AM Eastern (US)** unless noted. Tested send window for this audience.
 
@@ -232,7 +232,7 @@ hey,
 The Job Hunter's AI Bundle is live.
 
 Your link (price already discounted, no code to remember):
-[GUMROAD_URL]
+https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH
 
 $29 instead of $39. Discount runs 48 hours — Tuesday May 19 at 9 AM Eastern, the price reverts to $39 and the code goes off.
 
@@ -253,7 +253,7 @@ Less than 15 minutes with a resume coach. One salary counter you wouldn't have w
 If the link breaks, just hit reply — I'll fix it.
 
 Flynn
-[GUMROAD_URL]
+https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH
 
 P.S. If you've been forwarding the snipprompts.com prompts to friends who are job-hunting, this is the one to forward today. The launch discount is per-buyer, not per-account — your friends get $29 too if they use the same link before Tuesday.
 ```
@@ -291,14 +291,14 @@ hey,
 Quick reminder. The Job Hunter's AI Bundle launch discount ends tomorrow (Tuesday) 9 AM Eastern.
 
 After that it's $39, no code. Right now it's $29:
-[GUMROAD_URL]
+https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH
 
 If you've been on the fence: Module 4 (LinkedIn outreach — recruiter cold-DM, recommendation request, post-connection follow-up) and Module 5 (the negotiation playbook — 10 prompts, 8 scripts, 3 worksheets) are entirely net-new. Nothing on snipprompts.com touches this depth. Those two modules alone are worth the $29.
 
 Same 30-day refund. If you buy and don't find at least one prompt that pays for the bundle in the first hour, refund yourself, no email needed.
 
 Flynn
-[GUMROAD_URL]
+https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH
 ```
 
 ---

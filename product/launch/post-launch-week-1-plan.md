@@ -186,6 +186,7 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Scan inbox for overnight support emails, reply with templates (most likely: PDF-won't-open, Notion-link-missing). Target: clear inbox by 10am.
 - [ ] Gumroad → Sales: capture overnight sales count.
 - [ ] Open `tracking/daily-metrics-template.csv`, add May 18 row.
+- [ ] **Carry-over from launch prep**: refund the May 7 test purchase ($39, order `h_DQOFLyyDW80DhC_e0mrA==`). Couldn't process pre-launch — Gumroad balance was $0. Once Day 1 sales settle, balance covers it. Gumroad → Sales → find order → Refund.
 
 **Afternoon (~1pm ET, 10 min)**:
 - [ ] Production: upload Vladyslav's Pin 11 PNG (the "Salary screen" pin in his batch — was Pin 16 in old PINTEREST_PINS.md numbering). Upload directly to Pinterest, schedule for tomorrow 7am ET.
@@ -204,7 +205,7 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Pull Email 4 stats from ConvertKit: open rate, click rate, unsubscribe count.
 - [ ] Pull Gumroad sales count.
 - [ ] Decide: send Email 5 or skip per the rules above.
-  - If sending: replace `[GUMROAD_URL]` in body with `https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH`, schedule for 5:30pm ET (next 30 min).
+  - If sending: confirm body URL is `https://snipprompts.gumroad.com/l/job-hunters-ai-bundle/LAUNCH` (already swapped 2026-05-12 — no placeholder should remain), then schedule for 5:30pm ET (next 30 min).
   - If skipping: mark Email 5 in ConvertKit as "do not send".
 - [ ] Note decision + reasoning in tracking spreadsheet's notes column.
 
@@ -222,8 +223,8 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 **Time budget**: ~50 min.
 
 **Morning (~9am ET, 20 min)**:
-- [ ] **At 9am ET sharp**: verify the LAUNCH discount has expired automatically (per the Field 11 cap of May 19 23:59 UTC, which is May 19 7:59pm ET — wait, that's later in the day. Earlier expiration would be the 100-use cap if hit). Check Gumroad → Discounts → LAUNCH to see if it's still active or capped.
-- [ ] If still active and 100-use cap not reached: leave it; lets the cap or the Tuesday-end timer fire naturally.
+- [ ] **At 9am ET sharp**: verify the LAUNCH discount has expired automatically. The configured window is May 17 6 AM PDT → May 19 6 AM PDT (= May 19 9 AM ET), so the timer fires exactly at 9 AM ET today. Earlier expiration only happens if the 100-use cap was hit before now. Check Gumroad → Discounts → LAUNCH to confirm status = inactive/capped.
+- [ ] If still active at 9:01 AM ET: manually toggle it off in Gumroad. Don't wait — every minute it stays on is a $10 leak.
 - [ ] Pin 16 (Salary screen) goes live — verify it's posted, glance at first 90 minutes of impressions.
 - [ ] Process overnight support emails.
 - [ ] Capture overnight sales count.
@@ -237,7 +238,7 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Verify product listing now shows $39 (not $29) for new visitors. Test in incognito.
 - [ ] Capture day's metrics. Note any unusual patterns.
 
-**Success criteria**: LAUNCH discount cleanly off (or capped). Listing shows $39. Pin 17 scheduled.
+**Success criteria**: LAUNCH discount cleanly off (timer-fired at 9 AM ET, or capped earlier). Listing shows $39 in incognito. Pin 17 scheduled.
 
 ---
 

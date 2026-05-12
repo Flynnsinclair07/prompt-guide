@@ -143,6 +143,19 @@ footer {
   font-size: 13px;
   border-top: 1px solid #1a1a1a;
 }
+.cta {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #6c63ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+.cta:hover {
+  background: #5850e0;
+}
 /* Index page */
 .hero {
   text-align: center;

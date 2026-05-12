@@ -46,35 +46,35 @@ Total estimated owner-time remaining through launch: **~13 hours over 13 days** 
 - [ ] Pinterest: post Pin 11 (ATS check). **10 min**.
 - [ ] Log any issues found; queue fixes for May 13 buffer or before May 14 walkthrough.
 
-### May 10 (Sat) — REST
+### May 10 (Sun) — REST
 Mother's Day. No Pinterest post (career content underperforms today per `PINTEREST_PINS.md` cadence note). No support tasks. Email 1 reply triage skipped if low volume.
 
-### May 11 (Sun) — 30 min
+### May 11 (Mon) — 30 min
 - [ ] Pinterest: post Pin 12 (Recruiter DM). **10 min**.
 - [ ] ConvertKit: prep Email 3 (May 16 Launch Eve). Verify body, schedule, segment exclusions. **15 min**.
 - [ ] Confirm `bundle-buyer-2026-may` segment exclusion is wired on Emails 3, 4, 5. **5 min**.
 
-### May 12 (Mon) — 60 min — Email 2 sends today
+### May 12 (Tue) — 60 min — Email 2 sends today
 - ✉️ **Email 2** (Tease — "we don't have budget" rebuttal) sends automatically at 9:00 AM ET.
 - [ ] Monitor for replies; reply to high-signal ones with the support-templates voice. **~30 min**.
 - [ ] ConvertKit: verify Email 4 (May 17 Launch) is queued. Confirm `[GUMROAD_URL]` placeholder is still flagged (gets replaced May 15). **10 min**.
 
-### May 13 (Tue) — BUFFER + 10 min
+### May 13 (Wed) — BUFFER + 10 min
 - [ ] Pinterest: post Pin 13 (Bundle teaser, workflow). **10 min**.
 - Catch up. If walkthrough 1 surfaced any issues, this is the day to fix them before walkthrough 2.
 
-### May 14 (Wed) — WALKTHROUGH 2 (~90 min)
-- [ ] **Walkthrough 2**: final dry-run. Create a 100% test discount in Gumroad. Buy the bundle yourself with the discount. Confirm the receipt email arrives within 60 seconds. Confirm the download links work. Confirm the ConvertKit `bundle-buyer-2026-may` tag fires automatically. Confirm Pinterest analytics for Pins 6–12 (which posts have traction; informs Pin 15 launch-day positioning). **90 min**.
-- [ ] Retry refund on May 7 test purchase ($39, Order ID `h_DQOFLyyDW80DhC_e0mrA==`) — first attempt failed due to balance hold; should now have cleared. Fall back to support@gumroad.com if still failing.
-- [ ] Refund May 14 walkthrough purchase (today's test) — should clear immediately since first sale already settled. Confirm refund flow works as documented in `support-templates.md` template 1.
+### May 14 (Thu) — WALKTHROUGH 2 (~90 min)
+- [ ] **Walkthrough 2**: final dry-run. Create or reuse a 100% test discount in Gumroad (typically `TEST100`, 1 use cap). Buy the bundle yourself with the discount in incognito using a real personal email (e.g., Gmail `+walkthrough2` alias). Confirm the receipt email arrives within 60 seconds. Confirm both files download cleanly (`job-hunters-bundle.pdf` 119pp + `job-hunters-bundle-notion-link.txt`). Open the Notion link → confirm Duplicate button works. **Buyer-tagging is manual via Path B (Monday May 18)** — no auto-tag will fire during this walkthrough; that's expected, not a failure. Confirm Pinterest analytics for Pins 6–12 (which posts have traction; informs Pin 15 launch-day positioning). **90 min**.
+- [ ] **Defer to post-launch**: the May 7 test purchase refund ($39, Order ID `h_DQOFLyyDW80DhC_e0mrA==`) cannot be processed pre-launch — Gumroad balance is $0 and a $0 walkthrough sale doesn't add balance. Logged in `post-launch-week-1-plan.md` Mon May 18 morning when real sales settle.
+- [ ] Refund May 14 walkthrough purchase (today's $0 test) — cosmetic "mark as refunded" via Gumroad → Sales → Actions (no money was charged). Confirm refund flow works as documented in `support-templates.md` template 1.
 - [ ] **🟠 Pause Welcome 2 + 3 in Kit Sequence** (~3 min, owner-only) — per `welcome-sequence.md` cadence-collapse rule. Open Kit → Sequences → "Welcome — pre-launch May 2026" → click into Welcome 2 → toggle status from Published to Draft. Repeat for Welcome 3. Save. **Why**: prevents stale "$29 launch week" framing from sending after May 17 launch.
 
-### May 15 (Thu) — 30 min
+### May 15 (Fri) — 30 min
 - [ ] Pinterest: post Pin 14 (Salary playbook teaser, forest color). **10 min**.
 - [ ] ConvertKit Email 4: replace `[GUMROAD_URL]` placeholder with the real `/LAUNCH` URL — pre-staged 48h before send so the URL is locked in before launch-day chaos. **15 min**. (The `LAUNCH` discount code itself stays toggled OFF until 9 AM May 17.)
 - [ ] Final review of Email 4 body. **5 min**.
 
-### May 16 (Fri) — LAUNCH EVE (~60 min)
+### May 16 (Sat) — LAUNCH EVE (~60 min)
 - ✉️ **Email 3** (Launch Eve — full inventory) sends automatically at 5:00 PM ET.
 - [ ] **Pre-flight check** (45 min):
   - Gumroad listing fully drafted (Fields 1–14)

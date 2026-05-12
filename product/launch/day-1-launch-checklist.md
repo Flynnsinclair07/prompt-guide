@@ -6,7 +6,7 @@ Every item has four parts: **what** to do, **where** to do it (URL or app), **su
 
 All times are **ET** unless noted. Owner is in MDT (UTC−6); add 2 hours for ET.
 
-**Buyer-tagging is manual, not automated.** Kit free tier blocks Gumroad app integration. On Monday May 18 ~3 PM MT, export Gumroad sales CSV and bulk-add `bundle-buyer-2026-may` tag in Kit before publishing Email 5.
+**Buyer-tagging is manual, not automated.** Kit free tier blocks Gumroad app integration. On Monday May 18 **~3 PM ET (~1 PM MT)** — 2-hour buffer before the 5 PM ET Email 5 decision — export Gumroad sales CSV and bulk-add `bundle-buyer-2026-may` tag in Kit.
 
 > Print this page or pin it as a Notion page in your workspace. Don't try to navigate it on a phone during the launch window.
 
@@ -21,7 +21,7 @@ All times are **ET** unless noted. Owner is in MDT (UTC−6); add 2 hours for ET
 - **Fail-recovery**: any placeholder still present → fix it now, not at 8:55am tomorrow.
 
 ### 1.5. Verify Vladyslav deliverables are uploaded to Gumroad
-- **What**: horizontal 1280×720 bundle cover image uploaded, square 600×600 thumbnail uploaded, 60-second demo video uploaded as preview image (if recorded), 3 PDF page screenshot previews still present. Verify all 20 Pinterest pins from his batch are uploaded to the AI Prompts for Job Seekers board with proper descriptions and destination URLs from `PINTEREST_PINS.md`.
+- **What**: horizontal 1280×720 bundle cover image uploaded, square 600×600 thumbnail uploaded, 60-second demo video uploaded as preview image (if recorded), 3 PDF page screenshot previews still present. Verify all 20 Pinterest pins from his batch are uploaded to the AI Prompts for Job Seekers board with proper descriptions and destination URLs from `PINTEREST_PINS.md`. **Pin numbering**: Vlad's batch is sequential 1–20; `PINTEREST_PINS.md` uses the original 6–25 numbering — his Pin N maps to old Pin N+5 (e.g. his Pin 10 = old Pin 15 = launch-day pin).
 - **Where**: Gumroad → Products → Job Hunter's AI Bundle → Edit (cover/thumbnail/preview); Pinterest → AI Prompts for Job Seekers board.
 - **Success**: all assets present on Gumroad; all 20 pins live on Pinterest with correct descriptions + URLs.
 - **Fail-recovery**: missing asset → upload now from Vladyslav's delivery folder. Pin description wrong → edit inline on Pinterest.
@@ -202,7 +202,7 @@ The actual launch moment. Execute in this exact order. **~3 minutes total.**
 - **Success**: numbers captured for the May 17 row of your tracking spreadsheet (`tracking/daily-metrics-template.csv`).
 - **Fail-recovery**: tracking spreadsheet missing or broken → just note in any text file. Don't lose the data point because the tool isn't perfect.
 
-### 26a. Manual buyer tagging (Monday May 18, ~3 PM MT, before Email 5 decision)
+### 26a. Manual buyer tagging (Monday May 18, ~3 PM ET / ~1 PM MT — 2-hour buffer before Email 5 decision)
 - **What**: Export sales from Gumroad → Sales → Filter by The Job Hunter's AI Bundle → Export CSV. Open the CSV, copy the email column. In Kit → Subscribers → Bulk add subscribers (or import CSV with tag column). Apply tag `bundle-buyer-2026-may` to every buyer email. This must happen BEFORE Email 5 publishes — Email 5's `pre-launch-subscribers` segment relies on this tag to exclude buyers manually (Kit can't auto-exclude tags at broadcast level). Time: 5-15 min depending on sale count.
 - **Where**: Gumroad → Sales → Export CSV; Kit → Subscribers → Bulk add / Import.
 - **Success**: every buyer email shows `bundle-buyer-2026-may` tag in Kit before Email 5 sends.

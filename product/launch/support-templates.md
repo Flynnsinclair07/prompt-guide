@@ -1,6 +1,6 @@
 # Buyer support email templates
 
-Copy-paste-ready responses for the 8 most likely buyer support emails in the first 24–72 hours after launch (and beyond — Template 8 covers post-discount-window questions). Each is 1–3 sentences. Voice matches `DELIVERY_EMAIL.md` — lowercase `hey,` opener, sentence case body, properly cased proper nouns, signed `— Flynn`.
+Copy-paste-ready responses for the 9 most likely buyer support emails in the first 24–72 hours after launch (and beyond — Templates 8 and 9 cover post-discount-window questions and manual-tagging mishaps). Each is 1–3 sentences. Voice matches `DELIVERY_EMAIL.md` — lowercase `hey,` opener, sentence case body, properly cased proper nouns, signed `— Flynn`.
 
 Drop into your reply, edit the bracketed bits if any (most don't need editing), send. No subject line needed — your client will auto-prefix "Re: " on the buyer's original.
 
@@ -115,7 +115,7 @@ Yes — buyers get all future versions free via the same Gumroad library link. N
 ```
 hey,
 
-The LAUNCH code was a launch-window discount — it expired May 19, 2026, or after the first 100 buyers, whichever came first. The bundle is at full price now ($39).
+The LAUNCH code was a launch-window discount — it expired May 19, 2026 at 9 AM Eastern, or after the first 100 buyers, whichever came first. The bundle is at full price now ($39).
 
 No active discount codes at the moment. Future updates and v2 will be free for buyers — just hold onto your Gumroad library.
 
@@ -136,7 +136,7 @@ My fault — you bought the bundle and shouldn't have gotten that. I tag buyers 
 — Flynn
 ```
 
-**Operational note**: this fires if a buyer was missed in the Monday May 18 manual tag pass (Kit free tier blocks Gumroad-app integration, so buyer-tagging is manual via Gumroad CSV → Kit bulk-add — see `day-1-launch-checklist.md` Section 26a). Add their email to Kit's `bundle-buyer-2026-may` tag immediately after sending, then check if they're enrolled in any active broadcast queues and remove them. Apologize cleanly — the buyer's right to be annoyed; don't over-explain the integration limitation.
+**Operational note**: this fires if a buyer was missed in the Monday May 18 manual tag pass — scheduled for ~3 PM ET (per `post-launch-week-1-plan.md`, gives 2-hour buffer before the 5 PM ET Email 5 decision; the handoff's "3 PM MT" reference is stale, ignore it). Kit free tier blocks Gumroad-app integration, so buyer-tagging is manual via Gumroad CSV → Kit bulk-add — see `day-1-launch-checklist.md` Section 26a. Add their email to Kit's `bundle-buyer-2026-may` tag immediately after sending, then check if they're enrolled in any active broadcast queues and remove them. Apologize cleanly — the buyer's right to be annoyed; don't over-explain the integration limitation.
 
 ---
 
