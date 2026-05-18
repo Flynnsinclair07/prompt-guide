@@ -255,11 +255,15 @@ Capture in `tracking/daily-metrics-template.csv`, one row per day. Required colu
 - [ ] Optional repin: pick best-performing pin from May 4–17 ramp, repin to AI Prompts for Job Seekers board.
 - [ ] Reply to support emails.
 
+**Project block (~60 min, rested) — record the demo video**:
+- [ ] 60-sec screen recording, owner's voice, no face. Deferred from pre-launch (rightly — better recorded rested on a calm day). Script: `product/launch/demo-video-script-only.md`; setup: `demo-video-prompt-reference.md`.
+- [ ] After recording: upload to the Gumroad listing as a preview, and consider it as a Pinterest pin variant. Lifts conversion on all ongoing Pinterest traffic (pins run through June 5).
+
 **Evening (~6pm ET, 15 min)**:
 - [ ] Capture metrics.
 - [ ] First refund-rate check: if refund rate >5% by day 3, that's an early warning. Read the refund log; look for repeated language.
 
-**Success criteria**: refund rate <5%. Two pins live this week (Pin 16 + 17).
+**Success criteria**: refund rate <5%. Two pins live this week (Pin 16 + 17). Demo video recorded.
 
 ---
 

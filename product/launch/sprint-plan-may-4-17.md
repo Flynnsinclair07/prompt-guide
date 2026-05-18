@@ -84,6 +84,7 @@ Mother's Day. No Pinterest post (career content underperforms today per `PINTERE
   - ConvertKit Email 4 has real `/LAUNCH` URL inserted
   - Notion duplication URL still works in incognito
 - [ ] No Pinterest post today (Pin 15 is launch-day morning).
+- [ ] **(Optional, ~15 min)** Swap Gumroad listing preview images 2 + 4 — currently text-dense PDF pages, weak as thumbnails. Replace with a prompt-callout page, the TOC, or a worksheet. See `v1.1-backlog.md` NTH21. Skip if pre-flight runs long — bumps to post-launch week 1.
 - [ ] Sleep early. Tomorrow is the only morning that matters.
 
 ### May 17 (Sun) — LAUNCH DAY (~90 min, mostly morning)
