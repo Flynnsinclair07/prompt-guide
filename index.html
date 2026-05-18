@@ -64,16 +64,14 @@ gtag('config', 'G-1NQKX1S4E6');
   </div>
 </div>
 <!--
-  EMAIL CAPTURE — ConvertKit form UID d02eb77674.
-  Posts directly to ConvertKit's form endpoint. After ConvertKit confirms the
-  subscription, it redirects to whatever success URL is configured on the form
-  in ConvertKit's dashboard (default: a "thanks, check your inbox" page).
-  If you have a JS embed snippet from ConvertKit you'd rather use, swap the
-  whole <form> below for that <script> tag — UID stays the same.
+  EMAIL CAPTURE — Kit (ConvertKit) JS embed, form UID d02eb77674.
+  Uses Kit's current JS embed snippet (the deprecated direct-POST endpoint
+  returns 404 on JS-embed-only forms — do not revert to a <form action>).
+  UID d02eb77674 stays stable across Kit account changes.
 -->
 <section id="email-capture" class="email-capture">
-  <h2>Get the launch discount</h2>
-  <p>Subscribers get the bundle for $29 instead of $39 on May 17. Plus the new prompt-of-the-week, no spam.</p>
+  <h2>Free prompts in your inbox</h2>
+  <p>Get the prompt of the week — new, tested ChatGPT prompts for job hunting, writing, and business. No spam.</p>
   <script async data-uid="d02eb77674" src="https://promptguide.kit.com/d02eb77674/index.js"></script>
   <p class="email-capture-fineprint">No spam. Unsubscribe anytime.</p>
 </section>
