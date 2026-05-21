@@ -39,9 +39,11 @@ There's also a paid bundle for job hunters who want the deep version (44 prompts
 One thing I'm curious about — what's the worst AI-generated output you've gotten? An invented statistic, a cliché, something that just screamed "a bot wrote this"? The prompts are built around those exact failure modes, and I'd love to know if what I designed around matches what you've actually hit.
 ```
 
-## Topics
+## Categories (confirmed from PH's taxonomy)
 
-Pick 3 at submission — closest PH offers to: `Artificial Intelligence`, `Productivity`, `Career` (fall back to `Hiring` / `Education` if `Career` isn't a topic).
+Use these two — both exact fits:
+- **Prompt Engineering Tools** (under LLMs) — SnipPrompts is a prompt library
+- **Resume tools** (under Productivity) — "for job seekers needing ATS-ready resumes"
 
 ## Product URL
 
