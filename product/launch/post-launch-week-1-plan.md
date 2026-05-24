@@ -350,6 +350,20 @@ Decision matrix:
 | <5 | ≥1,000 | **Wait for June 15 trigger + investigate funnel**. Pinterest is driving traffic but the listing isn't converting. Pre-June-15 work: read the refund log, audit the listing, talk to anyone who almost-bought. |
 | <5 | <1,000 | **Wait for June 15 trigger; reduce expectations for v1**. The bundle may be a slow-burn. YouTube planning anyway makes sense as a lead-gen channel, but starts later (post-June-15) with adjusted ambition. |
 
+---
+
+### ✅ GATE RESULT — Sunday May 24, 2026
+
+**Numbers pulled:**
+- Gumroad: **0 real sales**, $0 revenue since the May 17 launch
+- Pinterest (last 7 days): **127 impressions** (up 119% WoW), 1 engagement, 0 outbound clicks, 0 saves, 13 total audience
+
+**Gate: FAIL on both thresholds.** → Bottom row of the matrix: **wait for June 15 trigger, reduce v1 expectations, treat the bundle as a slow-burn, YouTube starts post-June-15.**
+
+**Critical timing caveat (why this isn't a verdict):** the day-7 gate landed **3 days BEFORE the Product Hunt launch (May 27)** — the single biggest traffic event in the plan. It also landed before any of the week-2 distribution work could compound: 28 career-center emails sent (recipients mostly on holiday, 5-15 day decision cycle, 0 had time to act), 10 new SEO pages + 4 articles deployed (not yet indexed/ranked), GA4 only just started collecting. So the gate measured a period in which almost none of the built work had a chance to produce a result. The real reads are: **PH launch (May 27), career-center responses (~June 1-7), and the June 15 gate.**
+
+**Decision: HOLD. Do not start YouTube. Keep compounding SEO + Pinterest + career outreach + PH. Re-evaluate June 15 with post-PH data.**
+
 - [ ] Pull both numbers, run the matrix, note the decision in the tracking spreadsheet's notes column.
 - [ ] If decision is "start YouTube planning Q2 now": create a 3-line note in `product/launch/v1.1-backlog.md` (or a new `product/post-launch-roadmap.md`) capturing the trigger condition that fired and the 6-week plan window.
 
