@@ -66,5 +66,22 @@
 
 ---
 
+## Build-Next 10 — selected 2026-05-24 (the first 13 are now SHIPPED)
+
+The original Build-First 10 + 3 SEO pages (job-application-email, out-of-office-message, complaint-letter) are **live**. That cleared almost every HIGH-opportunity row. The next 10, in build order, balancing remaining volume, bundle-adjacency, and clear "AI fails by default" angles:
+
+1. **grad-school-sop** (#24, HIGH) — the only remaining HIGH; big distinct query vs personal-statement; bundle-adjacent.
+2. **job-rejection-response** (#6) — career, pure bundle funnel, strong keep-the-door-open angle.
+3. **promotion-request** (#8) — career + money, high-stakes, ChatGPT defaults vague.
+4. **business-email** (#38) — very high volume, career/business, bundle-adjacent.
+5. **explain-like-im-5** (#28) — enormous evergreen "ELI5" volume, easy ranking win.
+6. **meeting-minutes** (#11) — high volume, textbook AI-failure angle (drops action items).
+7. **hinge-prompts** (#32) — very high volume, near-zero quality competition = fast rank.
+8. **condolence-message** (#35) — high emotional stakes, ChatGPT defaults to hollow cliché.
+9. **demand-letter** (#17) — high-stakes money/legal, low competition; pairs with the live dispute-letter.
+10. **insurance-claim** (#20) — money topic, strong failure angle, low competition.
+
+Spread: career 3, education 2, money/legal 2, high-volume utility 2, lifestyle 1. All build-ready for a future session (post-PH).
+
 ### Notes on duplicate-avoidance
 Every slug above was cross-checked against the 134 existing pages. Closest near-collisions deliberately kept because they target *distinct* SERPs and searcher intent: thank-you-email-after-interview vs. existing `thank-you-note`; two-weeks-notice vs. `resignation-letter`; salary-negotiation-email vs. `negotiation`; college-essay vs. `essay-writing`/`scholarship-essay`; grad-school-sop vs. `personal-statement`/`mba-application`; tinder-bio/hinge-prompts vs. `dating-profile`; wedding-vows/toast vs. `wedding-speech`/`eulogy`; flashcards/study-schedule vs. `studying`; grocery-list vs. `meal-planning`; business-email vs. `writing-emails`.

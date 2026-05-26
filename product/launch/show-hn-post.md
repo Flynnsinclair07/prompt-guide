@@ -2,11 +2,11 @@
 
 **Title (80 char max for HN, current is 81 — see note):**
 
-> Show HN: SnipPrompts – 134 free, tested ChatGPT prompts that don't sound like AI
+> Show HN: SnipPrompts – 147 free, tested ChatGPT prompts that don't sound like AI
 
 **Title char count:** 81. HN truncates around 80. Variant if you want to be safe:
 
-> Show HN: SnipPrompts – 134 ChatGPT prompts engineered to not sound like AI
+> Show HN: SnipPrompts – 147 ChatGPT prompts engineered to not sound like AI
 
 (73 chars — same hook, fits cleanly.)
 
@@ -18,7 +18,7 @@
 
 ---
 
-I've been building SnipPrompts for the last few months — a free library of 134 ChatGPT prompts across resumes, cover letters, interviews, business writing, personal finance, and a few lifestyle categories. Site is static HTML/CSS, no signup, no paywall on the prompts.
+I've been building SnipPrompts for the last few months — a free library of 147 ChatGPT prompts across resumes, cover letters, interviews, business writing, personal finance, and a few lifestyle categories. Site is static HTML/CSS, no signup, no paywall on the prompts.
 
 The thing I actually want feedback on is the engineering inside each prompt, not the volume. Every prompt has three guardrails:
 
