@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+<script async data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+window.ezstandalone = window.ezstandalone || {};
+ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+<script src="//ezoicanalytics.com/analytics.js"></script>
+
+<meta name="google-site-verification" content="UsbuShh_rEGpXp2XLU7L0fjjSZpzPejHGhc8Z9uCh-0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KD86BLLKFF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KD86BLLKFF');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for API Documentation | SnipPrompts</title>
+<meta name="description" content="Generate clean, accurate API documentation from your code. Covers endpoints, request/response shapes, errors, and examples.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Best ChatGPT Prompt for API Documentation">
+<meta property="og:description" content="Generate clean, accurate API documentation from your code. Covers endpoints, request/response shapes, errors, and examples.">
+<meta property="og:url" content="https://snipprompts.com/prompts/best-chatgpt-prompt-for-api-documentation.html">
+<meta property="og:site_name" content="SnipPrompts">
+<meta property="og:image" content="https://snipprompts.com/og-cover.png">
+<meta name="twitter:image" content="https://snipprompts.com/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Best ChatGPT Prompt for API Documentation">
+<meta name="twitter:description" content="Generate clean, accurate API documentation from your code. Covers endpoints, request/response shapes, errors, and examples.">
+<link rel="canonical" href="https://snipprompts.com/prompts/best-chatgpt-prompt-for-api-documentation.html">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "HowTo", "name": "Best ChatGPT Prompt for API Documentation", "description": "Generate clean, accurate API documentation from your code. Covers endpoints, request/response shapes, errors, and examples.", "url": "https://snipprompts.com/prompts/best-chatgpt-prompt-for-api-documentation.html", "totalTime": "PT2M", "supply": [{"@type": "HowToSupply", "name": "ChatGPT or Claude account"}], "tool": [{"@type": "HowToTool", "name": "AI chatbot"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Copy the prompt", "text": "Click the copy button to grab the full prompt template."}, {"@type": "HowToStep", "position": 2, "name": "Fill in your details", "text": "Replace everything in [BRACKETS] with your specific information."}, {"@type": "HowToStep", "position": 3, "name": "Paste into your AI", "text": "Paste the filled-in prompt into ChatGPT or Claude and hit enter."}, {"@type": "HowToStep", "position": 4, "name": "Iterate the result", "text": "Review the output and ask follow-up questions to refine it."}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this prompt free to use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 every prompt on SnipPrompts is free to copy and use with ChatGPT, Claude, or any AI assistant. No account required."}}, {"@type": "Question", "name": "Does this work with ChatGPT and Claude?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, this prompt works with ChatGPT (free and paid plans), Claude, Gemini, and most other AI chatbots. Just paste it in and fill in your details."}}, {"@type": "Question", "name": "How do I get better results from this prompt?", "acceptedAnswer": {"@type": "Answer", "text": "Be specific when filling in the brackets. Generic input produces generic output. Include real details, numbers, and context. Follow up with 'make it shorter' or 'try a different angle' to iterate."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SnipPrompts", "item": "https://snipprompts.com/"}, {"@type": "ListItem", "position": 2, "name": "Prompts", "item": "https://snipprompts.com/categories.html"}, {"@type": "ListItem", "position": 3, "name": "Best ChatGPT Prompt for API Documentation", "item": "https://snipprompts.com/prompts/best-chatgpt-prompt-for-api-documentation.html"}]}]</script>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">SnipPrompts</a>
+  <a href="/categories.html">All Prompts</a>
+</nav>
+<main>
+  <article>
+    <h1>Best ChatGPT Prompt for API Documentation</h1>
+    <p class="subtitle">Turn your route handlers into docs developers actually read.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-header">
+        <span>The Prompt</span>
+        <button onclick="copyPrompt(this)">Copy</button>
+      </div>
+      <pre class="prompt-text">You are a senior technical writer who has documented APIs at scale (think Stripe, Twilio quality). Generate documentation for this endpoint.
+
+Documentation style: [OpenAPI / Stripe-style narrative / README-style / Postman / team-custom]
+Language / framework: [Python+FastAPI / Node+Express / Go / Ruby+Rails / etc.]
+The endpoint code:
+```
+[PASTE THE HANDLER + ROUTE DEFINITION + ANY MIDDLEWARE THAT MATTERS]
+```
+The data model (if relevant):
+```
+[PASTE THE SCHEMA / DATACLASS / STRUCT]
+```
+Who's reading this doc: [internal devs / external developers / partner integrators]
+Auth model: [API key / OAuth / JWT / cookie / none]
+
+Requirements:
+- Document: HTTP method, path, auth required, request params/body, response shape, status codes
+- For EVERY error status (4xx, 5xx) the endpoint can return, explain when it fires and what the developer should do
+- Include at least one working example: curl request + sample response
+- If you can infer rate limits or idempotency behavior from the code, note them
+- If a piece of the behavior isn't clear from the code (silent fallbacks, edge cases), FLAG it instead of guessing&mdash;ask me to confirm</pre>
+    </div>
+
+    <section>
+      <h2>How to Use This Prompt</h2>
+      <ol>
+        <li>Paste the route handler AND the schema/model it uses &mdash; without the schema the docs will be vague</li>
+        <li>Specify the doc style &mdash; OpenAPI is structured, Stripe-style is narrative; the output is very different</li>
+        <li>Tell the model who the reader is &mdash; internal developer docs and external partner docs have different tone</li>
+        <li>Paste into ChatGPT or Claude</li>
+        <li>Read the &ldquo;FLAG&rdquo; section carefully &mdash; those are the questions you need to answer before the docs ship</li>
+      </ol>
+      <p>The model will sometimes hallucinate error codes the endpoint doesn't actually return. After generation, grep your handler for every <code>raise</code> / <code>throw</code> / <code>return Response(status=</code> and verify the doc lists exactly those.</p>
+    </section>
+
+    <section>
+      <h2>Example Output</h2>
+      <div class="example-box">
+        <p><strong>Task:</strong> Document a POST /users/:id/refund endpoint that triggers an async refund</p>
+        <p><strong>Response:</strong></p>
+        <pre style="color:#ccc;font-size:13px;">POST /users/:id/refund
+Refund a charge for a specific user.
+
+Auth: API key (Bearer token)
+
+Path params:
+  id (string, required) &mdash; the user's UUID
+
+Request body (application/json):
+  {
+    "charge_id": "ch_xxx",   // required
+    "amount":    1500,        // optional, defaults to full charge; in cents
+    "reason":    "duplicate"  // optional: duplicate | fraudulent | requested_by_customer
+  }
+
+Responses:
+  202 Accepted &mdash; refund queued; returns { "refund_id": "rf_xxx", "status": "pending" }
+  400 Bad Request &mdash; charge_id missing, or amount > charge total
+  402 Payment Required &mdash; original payment method no longer available
+  404 Not Found &mdash; user or charge not found, or charge doesn't belong to user
+  409 Conflict &mdash; charge already fully refunded
+  429 Too Many Requests &mdash; more than 30 refund requests per minute per API key
+
+Example:
+  curl -X POST https://api.example.com/users/usr_123/refund \
+    -H "Authorization: Bearer sk_live_xxx" \
+    -d '{"charge_id": "ch_abc", "amount": 500, "reason": "duplicate"}'</pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips to Get Better Results</h2>
+      <ul>
+        <li><strong>Document errors developers can actually fix.</strong> &ldquo;500 internal error&rdquo; tells the integrator nothing. &ldquo;500 if the upstream payment processor times out &mdash; retry with exponential backoff&rdquo; tells them what to do.</li>
+        <li><strong>Include a working example.</strong> Not pseudocode &mdash; a real curl command they can copy and run. Tested examples are the highest-trust signal docs can give.</li>
+        <li><strong>Cover the unhappy path.</strong> Most API docs document the happy path well and the error responses poorly. The error path is where integrators get stuck and write support tickets.</li>
+        <li><strong>Verify after generation.</strong> The model will occasionally invent status codes. Grep your handler for actual return statements and reconcile.</li>
+      </ul>
+    </section>
+
+    <section class="tools-section">
+      <h2>Best AI Tools for This</h2>
+      <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide-20&linkCode=ur2&camp=1789&creative=9325&index=books&keywords=AI+productivity+tools" target="_blank" rel="noopener">AI Books on Amazon</a>
+      <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+    </section>
+
+    <section>
+      <h2>Related Prompts</h2>
+      <div class="related">
+        <a href="/prompts/best-chatgpt-prompt-for-coding.html">Best Prompt for Coding</a>
+        <a href="/prompts/best-chatgpt-prompt-for-white-paper.html">Best Prompt for White Papers</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+<p>&copy; 2026 SnipPrompts. AI prompts for every use case.</p>
+<p style="margin-top:8px;">
+<a href="/about.html" style="color:#999;margin-right:16px;">About</a>
+<a href="/privacy.html" style="color:#999;margin-right:16px;">Privacy</a>
+<a href="/terms.html" style="color:#999;margin-right:16px;">Terms</a>
+<a href="/faq.html" style="color:#999;margin-right:16px;">FAQ</a>
+<a href="/resources.html" style="color:#999;margin-right:16px;">Resources</a>
+<a href="/affiliate-disclosure.html" style="color:#999;">Affiliate Disclosure</a>
+</p>
+</footer>
+<script>
+function copyPrompt(btn) {
+  const text = btn.parentElement.nextElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>

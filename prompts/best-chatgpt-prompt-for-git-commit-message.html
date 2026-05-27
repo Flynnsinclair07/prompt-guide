@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+<script async data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+window.ezstandalone = window.ezstandalone || {};
+ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+<script src="//ezoicanalytics.com/analytics.js"></script>
+
+<meta name="google-site-verification" content="UsbuShh_rEGpXp2XLU7L0fjjSZpzPejHGhc8Z9uCh-0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KD86BLLKFF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KD86BLLKFF');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best ChatGPT Prompt for Git Commit Messages | SnipPrompts</title>
+<meta name="description" content="Write clear, conventional Git commit messages from your diff. Stops you shipping &ldquo;fix stuff&rdquo; commits.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Best ChatGPT Prompt for Git Commit Messages">
+<meta property="og:description" content="Write clear, conventional Git commit messages from your diff. Stops you shipping &ldquo;fix stuff&rdquo; commits.">
+<meta property="og:url" content="https://snipprompts.com/prompts/best-chatgpt-prompt-for-git-commit-message.html">
+<meta property="og:site_name" content="SnipPrompts">
+<meta property="og:image" content="https://snipprompts.com/og-cover.png">
+<meta name="twitter:image" content="https://snipprompts.com/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Best ChatGPT Prompt for Git Commit Messages">
+<meta name="twitter:description" content="Write clear, conventional Git commit messages from your diff. Stops you shipping &ldquo;fix stuff&rdquo; commits.">
+<link rel="canonical" href="https://snipprompts.com/prompts/best-chatgpt-prompt-for-git-commit-message.html">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "HowTo", "name": "Best ChatGPT Prompt for Git Commit Messages", "description": "Write clear, conventional Git commit messages from your diff. Stops you shipping &ldquo;fix stuff&rdquo; commits.", "url": "https://snipprompts.com/prompts/best-chatgpt-prompt-for-git-commit-message.html", "totalTime": "PT2M", "supply": [{"@type": "HowToSupply", "name": "ChatGPT or Claude account"}], "tool": [{"@type": "HowToTool", "name": "AI chatbot"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Copy the prompt", "text": "Click the copy button to grab the full prompt template."}, {"@type": "HowToStep", "position": 2, "name": "Fill in your details", "text": "Replace everything in [BRACKETS] with your specific information."}, {"@type": "HowToStep", "position": 3, "name": "Paste into your AI", "text": "Paste the filled-in prompt into ChatGPT or Claude and hit enter."}, {"@type": "HowToStep", "position": 4, "name": "Iterate the result", "text": "Review the output and ask follow-up questions to refine it."}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is this prompt free to use?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 every prompt on SnipPrompts is free to copy and use with ChatGPT, Claude, or any AI assistant. No account required."}}, {"@type": "Question", "name": "Does this work with ChatGPT and Claude?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, this prompt works with ChatGPT (free and paid plans), Claude, Gemini, and most other AI chatbots. Just paste it in and fill in your details."}}, {"@type": "Question", "name": "How do I get better results from this prompt?", "acceptedAnswer": {"@type": "Answer", "text": "Be specific when filling in the brackets. Generic input produces generic output. Include real details, numbers, and context. Follow up with 'make it shorter' or 'try a different angle' to iterate."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "SnipPrompts", "item": "https://snipprompts.com/"}, {"@type": "ListItem", "position": 2, "name": "Prompts", "item": "https://snipprompts.com/categories.html"}, {"@type": "ListItem", "position": 3, "name": "Best ChatGPT Prompt for Git Commit Messages", "item": "https://snipprompts.com/prompts/best-chatgpt-prompt-for-git-commit-message.html"}]}]</script>
+</head>
+<body>
+<nav>
+  <a href="/" class="logo">SnipPrompts</a>
+  <a href="/categories.html">All Prompts</a>
+</nav>
+<main>
+  <article>
+    <h1>Best ChatGPT Prompt for Git Commit Messages</h1>
+    <p class="subtitle">Paste the diff, get a commit message in the convention your team actually uses.</p>
+
+    <div class="prompt-box">
+      <div class="prompt-header">
+        <span>The Prompt</span>
+        <button onclick="copyPrompt(this)">Copy</button>
+      </div>
+      <pre class="prompt-text">You are a senior engineer who has reviewed thousands of pull requests. Write a Git commit message for this change.
+
+Convention to follow: [Conventional Commits / Angular / team-custom / just plain English]
+Repo context (one sentence): [WHAT THE PROJECT IS, e.g. &ldquo;a Next.js marketing site&rdquo;]
+The diff:
+```
+[PASTE git diff OR PATCH HERE]
+```
+What I was actually trying to do (in my own words): [ONE OR TWO SENTENCES]
+Related ticket / issue (if any): [ID or URL]
+
+Requirements:
+- Subject line: imperative mood, under 72 characters, no trailing period
+- If using Conventional Commits, pick the right type (feat / fix / refactor / docs / chore / test / perf / build / ci / style)
+- Body (if needed): explain WHY, not WHAT &mdash; the diff already shows what changed
+- If the change is split across concerns (e.g. a refactor + a bug fix), call that out and suggest splitting the commit
+- If the diff and my description disagree, ASK before writing &mdash; don't paper over a mismatch</pre>
+    </div>
+
+    <section>
+      <h2>How to Use This Prompt</h2>
+      <ol>
+        <li>Run <code>git diff --staged</code> (or <code>git diff HEAD~1</code>) and paste the output</li>
+        <li>Tell the model the convention &mdash; Conventional Commits is the most common but say what your team uses</li>
+        <li>Describe what you were trying to do in plain English &mdash; the diff alone doesn't tell the model the why</li>
+        <li>Paste into ChatGPT or Claude</li>
+        <li>Review the message before committing &mdash; the model can mis-read intent if the diff is large</li>
+      </ol>
+      <p>If the diff is over ~300 lines, the commit probably should be split. A good prompt response will tell you that instead of writing one giant message.</p>
+    </section>
+
+    <section>
+      <h2>Example Output</h2>
+      <div class="example-box">
+        <p><strong>Task:</strong> Commit message for a fix that adds null-check to a user lookup</p>
+        <p><strong>Response:</strong></p>
+        <pre style="color:#ccc;font-size:13px;">fix(auth): handle null user in session lookup
+
+The session lookup was crashing when a user was deleted mid-session
+because we assumed `users.findById` always returned an object. It can
+return null when the row is gone. Caller now handles the null case
+and clears the session instead.
+
+Refs #4821</pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips to Get Better Results</h2>
+      <ul>
+        <li><strong>Stage first, then diff.</strong> <code>git diff --staged</code> gives the model exactly what's going into the commit. <code>git diff</code> shows unstaged work too.</li>
+        <li><strong>Don't paste 1,000-line diffs.</strong> If the diff is huge, the commit should be split. Ask the model &ldquo;should this be one commit or multiple?&rdquo;</li>
+        <li><strong>The WHY is the whole point.</strong> &ldquo;Updated user.ts&rdquo; is useless. &ldquo;Handle null user in session lookup because deleted users were crashing the session middleware&rdquo; tells the next reader (or future you) what they need.</li>
+        <li><strong>Iterate on tone.</strong> If your team writes terse commits, say &ldquo;keep it to one line, no body.&rdquo; If your team writes essays, say so.</li>
+      </ul>
+    </section>
+
+    <section class="tools-section">
+      <h2>Best AI Tools for This</h2>
+      <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+      <a href="https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide-20&linkCode=ur2&camp=1789&creative=9325&index=books&keywords=AI+productivity+tools" target="_blank" rel="noopener">AI Books on Amazon</a>
+      <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a>
+    </section>
+
+    <section>
+      <h2>Related Prompts</h2>
+      <div class="related">
+        <a href="/prompts/best-chatgpt-prompt-for-coding.html">Best Prompt for Coding</a>
+        <a href="/prompts/best-chatgpt-prompt-for-standup-update.html">Best Prompt for Standup Updates</a>
+      </div>
+    </section>
+  </article>
+</main>
+<footer>
+<p>&copy; 2026 SnipPrompts. AI prompts for every use case.</p>
+<p style="margin-top:8px;">
+<a href="/about.html" style="color:#999;margin-right:16px;">About</a>
+<a href="/privacy.html" style="color:#999;margin-right:16px;">Privacy</a>
+<a href="/terms.html" style="color:#999;margin-right:16px;">Terms</a>
+<a href="/faq.html" style="color:#999;margin-right:16px;">FAQ</a>
+<a href="/resources.html" style="color:#999;margin-right:16px;">Resources</a>
+<a href="/affiliate-disclosure.html" style="color:#999;">Affiliate Disclosure</a>
+</p>
+</footer>
+<script>
+function copyPrompt(btn) {
+  const text = btn.parentElement.nextElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy', 2000);
+  });
+}
+</script>
+</body>
+</html>
