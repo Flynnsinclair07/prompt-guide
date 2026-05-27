@@ -74,6 +74,24 @@ good call — [X] isn't on the site yet. adding it to the list. if you want, i'l
 
 (Then actually build it — you've got a 40-topic pipeline; a real "you asked, here it is" follow-up is gold.)
 
+## 11. "What's the refund policy?" / "I'd buy it but I'm worried it won't work for me"
+
+```
+30 days, no questions, just email me at flynn@snipprompts.com or hit the refund button in your Gumroad library. i won't ask why. if the bundle doesn't help you in 30 days it doesn't help you and i'd rather you have the money back. the site has free versions of every prompt — start there, see if the structure works for you, then decide if you want the deeper paid version.
+```
+
+## 12. "Cool but I'd pay $19 not $39" / pricing pushback
+
+```
+fair. honest answer on $39 — it's priced low enough that anyone who actually job-hunts can pay for it, and high enough that i can spend the time keeping it updated when ChatGPT changes (which is most weeks). $19 would mean i can't, and the bundle would rot. that said: the site has all five career prompts free. start there. if the free pages do the job, you don't need the paid version and that's the point. if you want the deeper version after using the free ones, $39 is the deal.
+```
+
+## 13. "Why should I pay when [free competitor] exists?" (gentler version of refund/pricing)
+
+```
+honest answer: don't, if [free competitor] is working for you. the bundle is for people who tried the free side and want the deeper version — the verification tables, the negotiation scripts, the worksheets that aren't on the open internet. if you haven't tried the free pages on snipprompts.com yet, start there. that's the right entry point.
+```
+
 ---
 
 ## The maker's first comment (already in the PH listing, here for reference)
