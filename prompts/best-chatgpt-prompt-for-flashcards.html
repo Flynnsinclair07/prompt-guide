@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js"></script>
+<script async data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js"></script>
+<script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+<script>
+window.ezstandalone = window.ezstandalone || {};
+ezstandalone.cmd = ezstandalone.cmd || [];
+</script>
+<script src="//ezoicanalytics.com/analytics.js"></script>
+
+<meta name="google-site-verification" content="UsbuShh_rEGpXp2XLU7L0fjjSZpzPejHGhc8Z9uCh-0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KD86BLLKFF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KD86BLLKFF');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT Prompt for Flashcards (From Notes or Textbook) | SnipPrompts</title>
+<meta name="description" content="Free ChatGPT prompt that turns your notes or a textbook chapter into spaced-repetition flashcards — Anki-ready, no fluff cards, real recall pressure.">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ChatGPT Prompt for Flashcards">
+<meta property="og:description" content="Free ChatGPT prompt that turns your notes or a textbook chapter into spaced-repetition flashcards — Anki-ready, no fluff cards, real recall pressure.">
+<meta property="og:url" content="https://snipprompts.com/prompts/best-chatgpt-prompt-for-flashcards.html">
+<meta property="og:site_name" content="SnipPrompts">
+<meta property="og:image" content="https://snipprompts.com/og-cover.png">
+<meta name="twitter:image" content="https://snipprompts.com/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://snipprompts.com/prompts/best-chatgpt-prompt-for-flashcards.html">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"ChatGPT Prompt for Flashcards","description":"Free ChatGPT prompt that turns your notes or a textbook chapter into spaced-repetition flashcards — Anki-ready, no fluff cards, real recall pressure.","url":"https://snipprompts.com/prompts/best-chatgpt-prompt-for-flashcards.html","totalTime":"PT5M","supply":[{"@type":"HowToSupply","name":"ChatGPT or Claude account"}],"tool":[{"@type":"HowToTool","name":"AI chatbot"}],"step":[{"@type":"HowToStep","position":1,"name":"Copy the prompt","text":"Click the copy button to grab the full prompt template."},{"@type":"HowToStep","position":2,"name":"Fill in your material","text":"Replace bracketed sections with your real context."},{"@type":"HowToStep","position":3,"name":"Paste into your AI","text":"Paste the filled-in prompt into ChatGPT or Claude."},{"@type":"HowToStep","position":4,"name":"Review and edit","text":"Use the draft as scaffolding; edit it in your own voice."}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this prompt free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes — every prompt on SnipPrompts is free to copy and use with ChatGPT, Claude, or any AI assistant. No account required."}},{"@type":"Question","name":"Does this work with ChatGPT and Claude?","acceptedAnswer":{"@type":"Answer","text":"Yes, this prompt works with ChatGPT (free and paid plans), Claude, Gemini, and most other modern AI assistants."}},{"@type":"Question","name":"How do I get better results from this prompt?","acceptedAnswer":{"@type":"Answer","text":"Be specific when filling in the brackets. Vague input produces vague output. Include real details, real numbers, and real context wherever the prompt asks for them."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"SnipPrompts","item":"https://snipprompts.com/"},{"@type":"ListItem","position":2,"name":"Prompts","item":"https://snipprompts.com/categories.html"},{"@type":"ListItem","position":3,"name":"ChatGPT Prompt for Flashcards","item":"https://snipprompts.com/prompts/best-chatgpt-prompt-for-flashcards.html"}]}]</script>
+</head>
+<body>
+<nav><a href="/" class="logo">SnipPrompts</a><a href="/categories.html">All Prompts</a></nav>
+<main><article>
+<h1>ChatGPT Prompt for Flashcards</h1>
+<p class="subtitle">Turn your notes or a textbook chapter into Anki-ready flashcards that actually test recall — not just "what does X mean?" definitions.</p>
+<p style="color:#999;font-size:13px;margin-top:-8px;margin-bottom:24px;font-style:italic;">Updated May 2026.</p>
+<p class="snippet-answer" style="color:#ccc;font-size:15px;margin-bottom:24px;">The best ChatGPT prompt for flashcards turns your notes or textbook into Anki-ready Q&A pairs that test real recall — not vague definitions. It bans "what does X mean?" surface cards, forces application-level questions, and outputs in a CSV format you can import directly.</p>
+<div class="prompt-box"><div class="prompt-header"><span>The Prompt</span><button onclick="copyPrompt(this)">Copy</button></div>
+<pre class="prompt-text">You are a learning scientist who has helped thousands of students prepare for exams. You know the difference between flashcards that build real recall and flashcards that just feel like studying.
+
+WHAT I'M STUDYING (subject + topic + level): [PASTE]
+SOURCE MATERIAL (paste notes, chapter excerpt, or list of concepts): [PASTE]
+EXAM FORMAT I'M PREPARING FOR (multiple-choice / short-answer / essay / mixed): [PASTE]
+HOW MUCH TIME I HAVE per day to study: [e.g. 30 min, 1 hr]
+MY CURRENT LEVEL on this material (beginner / intermediate / shaky / strong): [PASTE]
+
+HARD RULES:
+1. Build cards in three tiers, with this ratio: 30% recall (basic facts), 50% application (use the concept), 20% synthesis (compare/contrast/explain).
+2. Banned card types: "What does X mean?" cards where the answer is just the definition. Replace with "When would you use X instead of Y?" or "Explain X in your own words to a friend."
+3. Every card must be self-contained. No "see card 14" references.
+4. Output as a 2-column CSV (Front,Back) that can paste directly into Anki, Quizlet, or RemNote.
+5. If my source material is sparse, ASK for more before generating — bad cards waste study time.
+
+OUTPUT IN ORDER:
+A. The flashcards as CSV (~20–40 cards depending on source material size).
+B. A study schedule given the exam date and my available daily time — when to add new cards vs. review existing.
+C. The three concepts in my material I should make MY OWN flashcards for (because explaining them out loud beats answering a prompt).</pre>
+</div>
+<section><h2>How to Use This Prompt</h2><ol><li>Copy the prompt and fill in the bracketed sections with your real details.</li><li>Be specific. Vague input produces vague output.</li><li>Paste into ChatGPT, Claude, or Gemini and read the output before using it.</li><li>Edit the draft in your own voice before sending or submitting. AI output is the scaffolding, not the final.</li></ol></section>
+<section><h2>Example Output</h2><div class="example-box"><p><strong>CSV excerpt (intro biology, mitosis):</strong></p><pre style="font-size:13px;line-height:1.5;">Front,Back
+Which phase of mitosis has sister chromatids aligned at the cell's equator?,Metaphase
+"A drug stops microtubules from shortening. Which phase will fail to complete?",Anaphase — sister chromatids can't be pulled apart
+What's the functional difference between mitosis and meiosis I in one sentence?,Mitosis produces two genetically identical diploid cells; meiosis I separates homologous chromosomes and halves ploidy</pre></div></section>
+<section><h2>Tips to Get Better Results</h2><ul><li>More cards isn't better. 30 well-built cards beat 200 surface-level ones every time.</li><li>Mix application and synthesis cards heavily. Pure recall cards trick you into feeling prepared when you're not.</li><li>Always review old cards before adding new ones. Anki's algorithm relies on this.</li><li>If a card feels easy on first review, mark it easy — don't pad your retention. Save the time for hard cards.</li></ul></section>
+<section class="tools-section"><h2>Best AI Tools for This</h2>
+<a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a>
+<a href="https://www.amazon.com/s?k=make+it+stick+peter+brown&tag=promptguide-20" target="_blank" rel="noopener">Learning Books</a>
+<a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></section>
+<section><h2>Related Prompts</h2><div class="related"><a href="/prompts/best-chatgpt-prompt-for-studying.html">Studying</a><a href="/prompts/best-chatgpt-prompt-for-study-schedule.html">Study Schedule</a><a href="/prompts/best-chatgpt-prompt-for-explain-like-im-5.html">Explain Like I'm 5</a></div></section>
+<section style="margin-top:40px;padding:28px;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);border:1px solid #333;border-radius:12px;text-align:center;">
+<h2 style="color:#fff;font-size:22px;margin-bottom:8px;">Get 50 More Prompts — Free</h2>
+<p style="color:#aaa;margin-bottom:20px;">Drop your email and I'll send you my 50 best prompts (not on the site).</p>
+<script async data-uid="d02eb77674" src="https://promptguide.kit.com/d02eb77674/index.js"></script>
+<p style="color:#999;font-size:12px;margin-top:12px;">No spam. Unsubscribe any time.</p>
+</section>
+</article></main>
+<footer>
+<p>&copy; 2026 SnipPrompts. AI prompts for every use case.</p>
+<p style="margin-top:8px;">
+<a href="/about.html" style="color:#999;margin-right:16px;">About</a>
+<a href="/privacy.html" style="color:#999;margin-right:16px;">Privacy</a>
+<a href="/terms.html" style="color:#999;margin-right:16px;">Terms</a>
+<a href="/affiliate-disclosure.html" style="color:#999;">Affiliate Disclosure</a>
+</p>
+</footer>
+<script>function copyPrompt(btn){const text=btn.parentElement.nextElementSibling.textContent;navigator.clipboard.writeText(text).then(()=>{btn.textContent='Copied!';setTimeout(()=>btn.textContent='Copy',2000)});}</script>
+</body></html>
