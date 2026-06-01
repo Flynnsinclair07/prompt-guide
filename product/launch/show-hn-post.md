@@ -1,14 +1,10 @@
 # Show HN post
 
-**Title (80 char max for HN, current is 81 — see note):**
+**Title (80 char max for HN — use the second one, fits cleanly at 74 chars):**
 
-> Show HN: SnipPrompts – 147 free, tested ChatGPT prompts that don't sound like AI
+> Show HN: SnipPrompts – 182 ChatGPT prompts engineered to not sound like AI
 
-**Title char count:** 81. HN truncates around 80. Variant if you want to be safe:
-
-> Show HN: SnipPrompts – 147 ChatGPT prompts engineered to not sound like AI
-
-(73 chars — same hook, fits cleanly.)
+**(74 chars, fits inside HN's 80-char limit. Use this one.)
 
 **Recommended posting window:** Tue, Wed, or Thu, 8:00–10:00 AM Eastern. Avoid Mondays (high noise) and Fridays (front-page decay before weekend traffic peaks). Submit, then sit on the comments for the first 2 hours — the second hour is where Show HN posts live or die.
 
@@ -18,7 +14,7 @@
 
 ---
 
-I've been building SnipPrompts for the last few months — a free library of 147 ChatGPT prompts across resumes, cover letters, interviews, business writing, personal finance, and a few lifestyle categories. Site is static HTML/CSS, no signup, no paywall on the prompts.
+I've been building SnipPrompts for the last few months — a free library of 182 ChatGPT prompts across resumes, cover letters, interviews, LinkedIn, salary negotiation, business writing, marketing, B2B sales, personal finance, and a few lifestyle categories. Plus eight long-form guides on the specific failure modes of generic AI in those tasks. Site is static HTML/CSS, no signup, no paywall on the prompts.
 
 The thing I actually want feedback on is the engineering inside each prompt, not the volume. Every prompt has three guardrails:
 
