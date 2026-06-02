@@ -3,7 +3,7 @@ add course recommendations, add email capture on 10 priority pages."""
 import re
 from pathlib import Path
 
-AMAZON_TAG = "promptguide-20"
+AMAZON_TAG = "promptguide0a-20"
 
 def amz(asin):
     """Build an Amazon affiliate link from an ASIN."""

@@ -50,7 +50,7 @@ gtag('config', 'G-1NQKX1S4E6');
 
 def make_page(slug, title, subtitle, prompt, how_to_use, example_output, tips, amazon_keywords, amazon_text, related):
     """Create a prompt page file."""
-    amazon_link = f"https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide-20&linkCode=ur2&camp=1789&creative=9325&keywords={amazon_keywords}"
+    amazon_link = f"https://www.amazon.com/gp/search?ie=UTF8&tag=promptguide0a-20&linkCode=ur2&camp=1789&creative=9325&keywords={amazon_keywords}"
     meta_description = subtitle[:160]
     related_html = "".join(f'<a href="/prompts/{r[0]}.html">{r[1]}</a>' for r in related)
     how_to_use_html = "<ol>" + "".join(f"<li>{step}</li>" for step in how_to_use) + "</ol>"
