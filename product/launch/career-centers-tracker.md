@@ -46,7 +46,7 @@
 | 26 | Cal Poly Pomona | Tracee Passeggi | tpasseggi@cpp.edu | 2026-05-23 | ✅ | — | Group A. FORMAT-GUESSED. VMock + Big Interview stack. |
 | 27 | SDSU | Daniel Newell | dnewell@sdsu.edu | 2026-05-23 | ✅ | — | Group A. FORMAT-GUESSED. $300K Strada grant. |
 | 28 | Ohio U | Aaron Sturgill | sturgia1@ohio.edu | 2026-05-23 | ✅ | — | Group A. AI reshaping entry-level work quote. |
-| 29 | UVM | Sarah Heath | Sarah.Heath@uvm.edu | 2026-05-28 | 💬 | 2026-05-28 | Group B. Same-day reply: "Thanks Flynn, I'll check it out. ~Sarah" — first real reply from the campaign. Flynn followed up with soft one-pager offer. |
+| 29 | UVM | Sarah Heath | Sarah.Heath@uvm.edu | 2026-05-28 | 💬 | 2026-05-29 | Group B. Same-day reply ("Thanks Flynn, I'll check it out. ~Sarah"). Flynn followed up with soft one-pager offer. Sarah "liked" the follow-up on 2026-05-29 7:34 AM — engaged, polite close, no commitment yet. Waiting for resource-page inclusion signal over next 2-8 weeks. |
 | 30 | URI | Meredith Armstrong | mereditharmstrong@uri.edu | 2026-05-28 | ✅ | — | Group B. #RamsGetJobs / Fannon Institute. |
 | 31 | SUNY Geneseo | Jessie Stack Lombardo | stack@geneseo.edu | 2026-05-28 | ✅ | — | Group B. Colleges of Distinction honoree. |
 | 32 | UNH | Raina Sprague | Raina.Sprague@unh.edu | 2026-05-28 | ✅ | — | Group B. CaPS hybrid model. |
