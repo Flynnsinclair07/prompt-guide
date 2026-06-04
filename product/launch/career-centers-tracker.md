@@ -75,6 +75,21 @@
 | 52 | Wichita State | Sarah Mathews | sarah.mathews@wichita.edu | 2026-06-02 | ✅ | — | Batch 3. Career Ready Guide. |
 | 53 | Northern Arizona | John Gartin | John.Gartin@nau.edu | 2026-06-02 | ✅ | — | Batch 3. Career in Curriculum / 100% Career Ready. |
 | 54 | Montana State | Elizabeth Feary | elizabeth.feary@montana.edu | 2026-06-02 | ✅ | — | Batch 3. 250+ employer career fair Oct 2025. |
+| 55 | University of Houston | Dr. Monica Thompson | mthomps3@central.uh.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 56 | Florida International University | Dr. Ruth E. Pacheco | rutpache@fiu.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 57 | University of Toledo | Shelly Drouillard | Shelly.Drouillard@utoledo.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 58 | University of Akron | Laura Carey | llf17@uakron.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 59 | University of Memphis | Alisha Rose Henderson | arose3@memphis.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 60 | East Tennessee State University | Jenny Lockmiller | lockmiller@etsu.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 61 | Old Dominion University | Dr. Jenn L. Grimm | jgrimm@odu.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 62 | Sacramento State | Melissa Repa | repam@csus.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 63 | Northern Illinois University | Michaela Holtz | mholtz@niu.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 64 | Texas State University | Ray Rogers | careerservices@txstate.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 — general inbox (director direct unconfirmed) |
+| 65 | Salt Lake Community College | Ella Aho | Ella.Aho@slcc.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 |
+| 66 | Mesa Community College | Amanda Copetillo | career@mesacc.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 — general inbox |
+| 67 | University of Wyoming | Michelle Harris | mharris48@uwyo.edu → aces@uwyo.edu | 2026-06-04 | 🔁 | 2026-06-04 | mharris48 BOUNCED; resent to aces@uwyo.edu (drafted, pending send) |
+| 68 | Grand Valley State University | Troy Farley | careercenter@gvsu.edu → farleytr@gvsu.edu | 2026-06-04 | 🔁 | 2026-06-04 | careercenter@ BOUNCED; resent to farleytr@gvsu.edu (drafted, pending send) |
+| 69 | Ball State University | Jim McAtee | careercenter@bsu.edu | 2026-06-04 | ✅ | 2026-06-04 | Batch 4 — drafted, pending send; unverified quote removed from opener |
 
 ## How to use
 
@@ -102,3 +117,12 @@
 **Total campaign: 54 outreaches (49 sent + 3 auto-replied + 1 reply + 1 deferred + 2 skipped not counted in sent). Across 3 batches.**
 
 **Total delivered (confirmed + assumed): 38 / 39**
+
+---
+
+### Batch 4 — sent 2026-06-04 (rows 55-69, 15 schools)
+- **12 sent** (no bounce yet): Houston, FIU, Toledo, Akron, Memphis, ETSU, ODU, Sac State, NIU, Texas State, SLCC, Mesa CC
+- **2 bounced -> resent:** Wyoming (mharris48@ X -> aces@uwyo.edu), GVSU (careercenter@ X -> farleytr@gvsu.edu) — corrected drafts pending send
+- **1 drafted, pending send:** Ball State (careercenter@bsu.edu)
+- Sent from `snipprompts.team@gmail.com` (not iCloud) — **replies + bounces land in that Gmail.**
+- **Running campaign total: 69 outreaches** across 4 batches.
