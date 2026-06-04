@@ -1,4 +1,9 @@
-# Show HN — Pre-drafted comment replies (for Wed June 3 launch)
+# Show HN — Pre-drafted comment replies (for Fri June 5 launch)
+
+> **⚠ DECIDE BEFORE POSTING (Tom flagged Wed Jun 3 night):**
+> 1. **Friday vs. weekday.** `show-hn-post.md` advises *avoid Fridays — front-page decay before the weekend*. You're launching Friday because it's your only no-work window. Accept the decay risk, or move to Thu Jun 4 (you work 11-4, so you'd post ~7 AM MT and lose the mid-day monitoring window). Your call.
+> 2. **Post time.** This file says submit **7:00 AM MT (= 9 AM ET, mid-window)**; the handoff says **8:00 AM MT (= 10 AM ET, tail edge)**. 7 AM MT is the stronger slot. Pick one and set the alarm to match.
+
 
 Have these in a separate browser tab when you post. The first 2 hours are where Show HN posts live or die — speed of reply matters as much as quality.
 
@@ -110,7 +115,44 @@ honest critique: yes, the page count helps SEO. that's not a bug, but it's a rea
 
 ---
 
-## Posting workflow Wed June 3
+---
+
+## More anticipated questions (added Tom, Jun 3)
+
+### "do these work on Claude / Gemini or just ChatGPT?"
+
+```
+all three. the prompts are written around chatgpt's phrasing but the structure — input slots, refuse-to-invent gate, banned-phrase list, self-validation step — is model-agnostic. tested most on gpt-4/4o and claude opus, lighter on gemini. the refuse-to-invent gate is actually most reliable on claude in my experience.
+```
+
+### "why copy-paste prompts instead of a custom GPT?"
+
+```
+fair — a custom gpt would be smoother for a chatgpt-plus user. two reasons i went copy-paste:
+
+1. works for everyone, including free-tier and non-chatgpt users. a custom gpt locks you into plus.
+2. you can see and edit the whole prompt. the guardrails are visible, so you can tune the banned-phrase list to your own field. a custom gpt hides the machinery.
+
+the tradeoff is friction — you paste instead of click. for a high-stakes one-off like a resume, i think the transparency is worth the paste.
+```
+
+### "what does 'tested' actually mean?"
+
+```
+honest scope: tested = i ran each prompt with real and deliberately-thin inputs across gpt-4/4o and claude opus, and checked that (a) the refuse-to-invent gate fired on missing inputs, (b) the output didn't emit banned phrases, (c) the self-validation step caught its own misses.
+
+it is NOT a/b tested at scale or benchmarked with metrics. it's one person's structured manual testing. i'd call it "hand-verified," not "empirically validated." if someone wants to help build a real eval harness, i'm interested.
+```
+
+### "isn't a banned-phrase list brittle as models change?"
+
+```
+yes, somewhat. the specific cliches shift as models retrain — "delve," "tapestry," "boasts" came and went. but the failure MODE (defaulting to high-frequency filler) is stable, so the approach holds even as the list needs updating. i treat the list as living and revise it when a new tell shows up. it's maintenance, not a one-time fix. the refuse-to-invent gate is the more durable of the two guardrails.
+```
+
+---
+
+## Posting workflow Fri June 5
 
 1. 6:50 AM MT — open https://news.ycombinator.com/submit
 2. Title: `Show HN: SnipPrompts – 182 ChatGPT prompts engineered to not sound like AI`
