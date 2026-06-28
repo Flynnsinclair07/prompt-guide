@@ -1,0 +1,11 @@
+# The tool runs with ZERO third-party packages on macOS:
+#   - HEIC->JPG, auto-rotate  -> built-in `sips`
+#   - OCR                     -> built-in Vision (via vision_ocr.swift, needs Xcode CLT)
+#   - dates                   -> built-in `mdls`
+#   - notify                  -> built-in `curl`
+#
+# These are OPTIONAL fallbacks for non-macOS hosts or extra features:
+pillow>=10.0          # image conversion/rotation fallback when sips is absent
+pillow-heif>=0.16     # HEIC decode for the Pillow fallback
+pytesseract>=0.3.10   # OCR fallback when Vision/swift is unavailable (needs `tesseract` binary)
+opencv-python>=4.9    # only needed for --crop (crop to receipt bounds)
