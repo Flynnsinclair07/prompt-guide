@@ -43,9 +43,6 @@ from pathlib import Path
 # ----------------------------------------------------------------------------
 DEFAULT_INBOX = Path(os.environ.get("CONCUR_INBOX", "~/expenses/dad/inbox")).expanduser()
 DEFAULT_OUTBOX = Path(os.environ.get("CONCUR_OUTBOX", "~/expenses/dad/outbox")).expanduser()
-# ntfy.sh topic for the "done" push. Pick something unguessable; see README.
-NTFY_TOPIC = os.environ.get("CONCUR_NTFY_TOPIC", "")
-NTFY_SERVER = os.environ.get("CONCUR_NTFY_SERVER", "https://ntfy.sh")
 CONCUR_TO = os.environ.get("CONCUR_TO", "receipts@concur.com")
 
 # Input formats we know how to handle.
@@ -410,22 +407,18 @@ def write_email_draft(receipts: list[Receipt], out_dir: Path, month_label: str) 
 
 
 def notify(count: int) -> None:
-    if not NTFY_TOPIC:
-        print("[notify] CONCUR_NTFY_TOPIC unset — skipping push.")
-        return
+    """Post a native macOS notification to Notification Center (no third-party service)."""
     msg = f"{count} receipts prepped for dad's Concur — review outbox."
-    url = f"{NTFY_SERVER.rstrip('/')}/{NTFY_TOPIC}"
-    if _have("curl"):
-        _run(["curl", "-fsS", "-H", "Title: Concur receipt prep",
-              "-d", msg, url])
+    if _have("osascript"):
+        # Escape double-quotes for the AppleScript string literal.
+        body = msg.replace('"', '\\"')
+        script = f'display notification "{body}" with title "Concur receipt prep" sound name "Glass"'
+        r = _run(["osascript", "-e", script])
+        if r.returncode != 0:
+            print(f"[notify] osascript failed: {r.stderr.strip()}")
     else:
-        try:
-            import urllib.request
-            req = urllib.request.Request(url, data=msg.encode(),
-                                         headers={"Title": "Concur receipt prep"})
-            urllib.request.urlopen(req, timeout=10)
-        except Exception as e:  # pragma: no cover
-            print(f"[notify] failed: {e}")
+        # Not on macOS — just log it (e.g. when run from a Linux host).
+        print(f"[notify] {msg}")
 
 
 # ----------------------------------------------------------------------------
@@ -519,7 +512,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--month", default=None,
                     help="Output subfolder label, e.g. 2026-05 (default: previous month).")
     ap.add_argument("--crop", action="store_true", help="Attempt crop to receipt bounds (needs OpenCV).")
-    ap.add_argument("--no-notify", action="store_true", help="Skip the ntfy push.")
+    ap.add_argument("--no-notify", action="store_true", help="Skip the macOS notification.")
     ap.add_argument("--dry-run", action="store_true", help="List what would happen; write nothing.")
     args = ap.parse_args(argv)
 

@@ -32,7 +32,5 @@ launchctl load "$TARGET"
 echo "Installed $LABEL -> runs 1st of each month @ 09:00."
 echo "Plist: $TARGET"
 echo
-echo "Set your ntfy topic so you get the 'done' push:"
-echo "  edit CONCUR_NTFY_TOPIC in $TARGET, then: launchctl unload \"$TARGET\" && launchctl load \"$TARGET\""
-echo
+echo "When it finishes it posts a native macOS notification (Notification Center)."
 echo "Test it now with:  launchctl start $LABEL   (then check ~/expenses/dad/prep.log)"

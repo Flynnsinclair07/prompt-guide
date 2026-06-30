@@ -38,19 +38,13 @@ cd boss/concur-receipt-prep
 ./install.sh            # substitutes paths + loads a launchd agent
 ```
 
-Runs the **1st of each month at 09:00**, processing whatever is in the inbox, and
-sends an [ntfy](https://ntfy.sh) push when done:
+Runs the **1st of each month at 09:00**, processing whatever is in the inbox. When
+it finishes it posts a **native macOS notification** (Notification Center) via
+`osascript` — no account, no app, no third-party service:
 *"X receipts prepped for dad's Concur — review outbox."*
 
-To get the push, set a topic (pick something unguessable — anyone who knows it can
-read your notifications):
-
 ```bash
-# edit CONCUR_NTFY_TOPIC in ~/Library/LaunchAgents/com.user.concur-receipt-prep.plist
-# subscribe on your phone via the ntfy app to the same topic, then reload:
-launchctl unload ~/Library/LaunchAgents/com.user.concur-receipt-prep.plist
-launchctl load   ~/Library/LaunchAgents/com.user.concur-receipt-prep.plist
-launchctl start  com.user.concur-receipt-prep     # test it once now
+launchctl start com.user.concur-receipt-prep     # test it once now
 ```
 
 Uninstall: `./install.sh --uninstall`.
@@ -72,13 +66,13 @@ Set via env vars (the launchd plist and `install.sh` wire these up):
 |-----|---------|---------|
 | `CONCUR_INBOX`       | `~/expenses/dad/inbox`  | where raw photos land (export from the shared Photos album) |
 | `CONCUR_OUTBOX`      | `~/expenses/dad/outbox` | where cleaned files + summary go |
-| `CONCUR_NTFY_TOPIC`  | *(empty)* | ntfy topic for the done push; empty = no push |
-| `CONCUR_NTFY_SERVER` | `https://ntfy.sh` | self-host if you prefer |
 | `CONCUR_TO`          | `receipts@concur.com` | address shown in the draft |
+
+The "done" notification uses macOS Notification Center (`osascript`) — nothing to configure.
 
 ## Dependencies
 
-**On macOS, none are required** — it uses built-in `sips`, `mdls`, `curl`, and the
+**On macOS, none are required** — it uses built-in `sips`, `mdls`, `osascript`, and the
 Vision framework (`vision_ocr.swift` needs the Xcode Command Line Tools:
 `xcode-select --install`).
 

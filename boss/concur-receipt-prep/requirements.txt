@@ -2,7 +2,7 @@
 #   - HEIC->JPG, auto-rotate  -> built-in `sips`
 #   - OCR                     -> built-in Vision (via vision_ocr.swift, needs Xcode CLT)
 #   - dates                   -> built-in `mdls`
-#   - notify                  -> built-in `curl`
+#   - notify                  -> built-in `osascript` (macOS Notification Center)
 #
 # These are OPTIONAL fallbacks for non-macOS hosts or extra features:
 pillow>=10.0          # image conversion/rotation fallback when sips is absent

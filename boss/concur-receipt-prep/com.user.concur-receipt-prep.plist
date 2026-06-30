@@ -43,8 +43,6 @@
         <string>/Users/__USER__/expenses/dad/inbox</string>
         <key>CONCUR_OUTBOX</key>
         <string>/Users/__USER__/expenses/dad/outbox</string>
-        <key>CONCUR_NTFY_TOPIC</key>
-        <string></string>
     </dict>
 
     <!-- If the Mac is asleep at 09:00, run as soon as it wakes. -->
