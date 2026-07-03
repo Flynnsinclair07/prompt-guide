@@ -219,6 +219,15 @@ _AMOUNT_RE = re.compile(r"\$?\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})|\d+\.\d{2})")
 _TOTAL_HINTS = ("grand total", "total due", "amount due", "balance due", "total", "amount", "balance")
 _TOTAL_NEGATIVE = ("subtotal", "sub total", "tax", "tip", "change", "cash", "tender")
 
+# Lines that look like a street address, city/state/ZIP, or phone number are NOT the
+# vendor -- used to skip past them when a receipt's name line starts with a number
+# (e.g. "7 ELEVEN" sits above "310 W UINTAH ST" / "COLORADO SPRINGS CO 80905").
+_STREET_SUFFIX = (r"st|street|ave|avenue|blvd|rd|road|dr|drive|ln|lane|way|hwy|highway|"
+                  r"ct|court|pkwy|pky|pl|plz|plaza|sq|ste|suite|unit|fl|floor")
+_ADDR_RE = re.compile(rf"^\s*\d{{1,6}}\s+\w+.*\b(?:{_STREET_SUFFIX})\b\.?", re.I)
+_CITYZIP_RE = re.compile(r"\b[A-Za-z]{2}\s+\d{5}(?:-?\d{4})?\b")   # "NE 68508", "CO 80905..."
+_PHONE_RE = re.compile(r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}")
+
 
 def parse_date(text: str) -> str:
     """Find the most plausible receipt date, return YYYY-MM-DD or ''."""
@@ -299,9 +308,12 @@ def parse_vendor(text: str) -> str:
             continue
         if digits > letters:        # phone numbers / amounts / mostly-numeric lines
             continue
-        if s[0].isdigit():          # street address / order-number lines
+        # Skip address / city-ZIP / phone lines. A brand may legitimately start with a
+        # number ("7 ELEVEN", "5 Guys"), so we test what the line *is* rather than just
+        # its first character.
+        if _ADDR_RE.match(s) or _CITYZIP_RE.search(s) or _PHONE_RE.search(s):
             continue
-        if any(h in s.lower() for h in ("receipt", "invoice", "order", "www.", "http", "tel", ".com", "@")):
+        if any(h in s.lower() for h in ("receipt", "invoice", "order #", "www.", "http", ".com", "@")):
             continue
         return s
     return ""
@@ -311,9 +323,19 @@ def sanitize_vendor(vendor: str) -> str:
     """Make a vendor string safe + tidy for a filename."""
     v = re.sub(r"[^A-Za-z0-9 ]", "", vendor).strip()
     v = re.sub(r"\s+", " ", v)
-    words = [w for w in v.split() if not w.isdigit()][:3]  # drop store/order numbers
-    out = "".join(w.capitalize() for w in words)
+    # Drop long numeric tokens (store/register/order numbers like 6003 or 53313) but keep
+    # short ones that are part of a brand name (the "7" in 7 Eleven, the "5" in 5 Guys).
+    words = [w for w in v.split() if not (w.isdigit() and len(w) >= 3)][:3]
+    out = "".join(_cap_word(w) for w in words)
     return out or ""
+
+
+def _cap_word(w: str) -> str:
+    # Normalize SHOUTY ("STARBUCKS"->"Starbucks") but preserve intentional mixed case
+    # ("UCHealth", "McDonald").
+    if w.isupper() or w.islower():
+        return w.capitalize()
+    return w
 
 
 def build_filename(rec: Receipt, fallback_index: int) -> str:

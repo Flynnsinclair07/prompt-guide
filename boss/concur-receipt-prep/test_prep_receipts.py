@@ -59,6 +59,37 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(p.sanitize_vendor("Joe's Diner & Co."), "JoesDinerCo")
         self.assertEqual(p.sanitize_vendor("WHOLE FOODS MARKET 10412"), "WholeFoodsMarket")
 
+    def test_sanitize_keeps_short_brand_numbers(self):
+        # Long numbers = store/register IDs (drop); short numbers = part of the name (keep).
+        self.assertEqual(p.sanitize_vendor("7 ELEVEN"), "7Eleven")
+        self.assertEqual(p.sanitize_vendor("5 Guys Burgers"), "5GuysBurgers")
+        self.assertEqual(p.sanitize_vendor("6003 Kiosk"), "Kiosk")
+        self.assertEqual(p.sanitize_vendor("Starbucks Coffee #53313"), "StarbucksCoffee")
+
+    def test_sanitize_preserves_mixed_case_brands(self):
+        self.assertEqual(p.sanitize_vendor("UCHealth"), "UCHealth")
+        self.assertEqual(p.sanitize_vendor("McDonald's"), "McDonalds")
+
+    def test_vendor_number_leading_name_over_address(self):
+        # 7-Eleven: the name starts with a digit and the address line does too.
+        # Must pick the brand, not the city/ZIP line below it.
+        txt = ("7 ELEVEN\n"
+               "310 W UINTAH ST\n"
+               "COLORADO SPRINGS CO 809051045\n"
+               "Ph: 7196350253\n")
+        self.assertEqual(p.parse_vendor(txt), "7 ELEVEN")
+
+    def test_vendor_skips_street_and_phone(self):
+        txt = ("2101 Transformation Dr.\n"
+               "Lincoln, NE 68508\n"
+               "(531) 300-6300\n"
+               "SCARLET HOTEL\n")
+        # First real name line wins; address/phone above a name are skipped.
+        self.assertEqual(p.parse_vendor(txt), "SCARLET HOTEL")
+
+    def test_vendor_number_leading_kiosk(self):
+        self.assertEqual(p.parse_vendor("6003 Kiosk\nCHK 5839\n"), "6003 Kiosk")
+
     def test_build_filename_full(self):
         rec = p.Receipt(source=p.Path("x.heic"))
         rec.out_path = p.Path("x.jpg")
