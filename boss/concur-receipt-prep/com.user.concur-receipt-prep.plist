@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  launchd job: run the Concur receipt prep on the 1st of each month at 09:00.
+
+  Before loading, replace:
+    __USER__   -> your macOS short username  (echo $USER)
+    __TOOLDIR__-> absolute path to this folder (echo $PWD while inside it)
+    __PYTHON__ -> output of `which python3`
+
+  Then:
+    cp com.user.concur-receipt-prep.plist ~/Library/LaunchAgents/
+    launchctl load   ~/Library/LaunchAgents/com.user.concur-receipt-prep.plist
+    launchctl start  com.user.concur-receipt-prep         # test it once now
+
+  install.sh does this substitution + load for you.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.concur-receipt-prep</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>__PYTHON__</string>
+        <string>__TOOLDIR__/prep_receipts.py</string>
+    </array>
+
+    <!-- 1st of every month at 09:00 local time. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Day</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!-- Inherit config from the environment; edit to taste. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>CONCUR_INBOX</key>
+        <string>/Users/__USER__/expenses/dad/inbox</string>
+        <key>CONCUR_OUTBOX</key>
+        <string>/Users/__USER__/expenses/dad/outbox</string>
+    </dict>
+
+    <!-- If the Mac is asleep at 09:00, run as soon as it wakes. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/__USER__/expenses/dad/prep.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/__USER__/expenses/dad/prep.err.log</string>
+</dict>
+</plist>
