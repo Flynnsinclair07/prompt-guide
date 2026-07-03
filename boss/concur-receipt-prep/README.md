@@ -56,7 +56,16 @@ Uninstall: `./install.sh --uninstall`.
 ./run.sh --dry-run        # show what would happen, write nothing
 ./run.sh --month 2026-05  # specific month label
 ./run.sh --crop           # also try to crop to receipt bounds (needs OpenCV)
+./run.sh --keep-inbox     # don't archive originals (see below)
 ```
+
+### Originals are archived, not left lying around
+
+After a receipt is prepped, its **original** is moved to
+`inbox/_processed/<month>/`. That keeps the inbox clear so the next monthly run
+only sees new receipts (no re-processing the whole history). Originals are moved,
+never deleted — you can always dig them out of `_processed/`. Pass `--keep-inbox`
+if you'd rather clear the inbox yourself.
 
 ## Configuration
 

@@ -446,14 +446,31 @@ def notify(count: int) -> None:
 # ----------------------------------------------------------------------------
 # Driver
 # ----------------------------------------------------------------------------
+ARCHIVE_DIRNAME = "_processed"
+
+
 def discover(inbox: Path) -> list[Path]:
+    # Top-level files only, so the _processed/ archive of prior months is ignored.
     files = [p for p in sorted(inbox.iterdir())
              if p.is_file() and p.suffix.lower() in SUPPORTED_EXTS]
     return files
 
 
+def archive_original(src: Path, inbox: Path, month_label: str) -> None:
+    """Move a prepped original into inbox/_processed/<month>/ so it isn't re-processed
+    next run. Non-destructive: originals are archived, never deleted."""
+    dest_dir = inbox / ARCHIVE_DIRNAME / month_label
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    dest = dest_dir / src.name
+    n = 2
+    while dest.exists():
+        dest = dest_dir / f"{src.stem}_{n}{src.suffix}"
+        n += 1
+    src.rename(dest)
+
+
 def process(inbox: Path, outbox: Path, month_label: str, *, do_crop: bool,
-            dry_run: bool) -> list[Receipt]:
+            dry_run: bool, keep_inbox: bool = False) -> list[Receipt]:
     out_dir = outbox / month_label
     files = discover(inbox)
     if not files:
@@ -506,6 +523,8 @@ def process(inbox: Path, outbox: Path, month_label: str, *, do_crop: bool,
             produced.rename(final)
         rec.out_path = final
         rec.out_name = name
+        if not keep_inbox:
+            archive_original(src, inbox, month_label)
         receipts.append(rec)
         flag = "ok" if rec.ocr_ok else "fallback"
         print(f"  - {src.name} -> {name}  [{flag}]")
@@ -534,6 +553,9 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--month", default=None,
                     help="Output subfolder label, e.g. 2026-05 (default: previous month).")
     ap.add_argument("--crop", action="store_true", help="Attempt crop to receipt bounds (needs OpenCV).")
+    ap.add_argument("--keep-inbox", action="store_true",
+                    help="Leave originals in the inbox (default: archive prepped originals "
+                         "to inbox/_processed/<month>/ so they aren't re-processed next run).")
     ap.add_argument("--no-notify", action="store_true", help="Skip the macOS notification.")
     ap.add_argument("--dry-run", action="store_true", help="List what would happen; write nothing.")
     args = ap.parse_args(argv)
@@ -546,7 +568,8 @@ def main(argv: list[str] | None = None) -> int:
         print(f"[prep] inbox not found: {inbox}", file=sys.stderr)
         return 1
 
-    receipts = process(inbox, outbox, month_label, do_crop=args.crop, dry_run=args.dry_run)
+    receipts = process(inbox, outbox, month_label, do_crop=args.crop,
+                       dry_run=args.dry_run, keep_inbox=args.keep_inbox)
     if not args.dry_run and receipts and not args.no_notify:
         notify(len([r for r in receipts if r.out_name]))
     print(f"[prep] done: {len([r for r in receipts if r.out_name])} prepped, "

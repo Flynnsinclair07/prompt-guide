@@ -112,5 +112,36 @@ class ParseTests(unittest.TestCase):
         self.assertEqual(p.default_month_label(dt.date(2026, 1, 1)), "2025-12")
 
 
+class ArchiveTests(unittest.TestCase):
+    def setUp(self):
+        import tempfile
+        self.tmp = tempfile.mkdtemp()
+        self.inbox = p.Path(self.tmp) / "inbox"
+        self.outbox = p.Path(self.tmp) / "outbox"
+        self.inbox.mkdir()
+        (self.inbox / "IMG_1.jpg").write_bytes(b"\xff\xd8\xff\xe0 jpg")
+        (self.inbox / "IMG_2.pdf").write_bytes(b"%PDF-1.4")
+
+    def tearDown(self):
+        import shutil
+        shutil.rmtree(self.tmp, ignore_errors=True)
+
+    def test_originals_archived_and_not_reprocessed(self):
+        first = p.process(self.inbox, self.outbox, "2026-06", do_crop=False, dry_run=False)
+        self.assertEqual(len([r for r in first if r.out_name]), 2)
+        # Inbox top level is now clear; originals live under _processed/<month>/.
+        self.assertEqual(p.discover(self.inbox), [])
+        archived = sorted((self.inbox / "_processed" / "2026-06").iterdir())
+        self.assertEqual([a.name for a in archived], ["IMG_1.jpg", "IMG_2.pdf"])
+        # A second run has nothing to do (no double-processing).
+        second = p.process(self.inbox, self.outbox, "2026-06", do_crop=False, dry_run=False)
+        self.assertEqual(second, [])
+
+    def test_keep_inbox_leaves_originals(self):
+        p.process(self.inbox, self.outbox, "2026-06", do_crop=False, dry_run=False, keep_inbox=True)
+        self.assertEqual(len(p.discover(self.inbox)), 2)
+        self.assertFalse((self.inbox / "_processed").exists())
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
