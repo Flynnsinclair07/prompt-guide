@@ -1,0 +1,15 @@
+# The core system runs on the Python standard library alone — no dependencies.
+# The demo and full test suite need nothing installed:
+#     python3 run_demo.py
+#     python3 tests/test_system.py
+#
+# OPTIONAL, only when you switch from the dry-run console adapter to live sending:
+twilio>=9.0          # live SMS via TwilioSender (needs TWILIO_* env vars)
+# email uses the stdlib smtplib (SmtpSender) — no package required.
+#
+# OPTIONAL, only if you run the tests via pytest instead of unittest:
+pytest>=8.0
+#
+# Timezone note: quiet-hours math uses the stdlib zoneinfo. On some minimal Linux
+# images the IANA tz database isn't present; install it there with:
+#     pip install tzdata
