@@ -119,12 +119,27 @@ class Engine:
             return 0
 
         step = seq[idx]
-        to = lead.phone if step.channel == Channel.SMS else lead.email
+        channel = step.channel
         body = pipeline.render(step.template, lead.name, lead.recommended_plan)
-        rec = MessageRecord(lead_id=lead.id, channel=step.channel, body=body,
+        to = lead.phone if channel == Channel.SMS else lead.email
+
+        # Channel fallback: if the lead lacks this step's native channel but has the
+        # other one, reroute so a contactable lead is never silently skipped.
+        # (This is what gives a phone-only COLD lead — whose sequence is email-only —
+        # real SMS outreach instead of a silent DEAD.)
+        if not to:
+            alt = Channel.EMAIL if channel == Channel.SMS else Channel.SMS
+            alt_to = lead.phone if alt == Channel.SMS else lead.email
+            if alt_to:
+                self.store.log(now, lead.id, "rerouted",
+                               f"{channel.value}->{alt.value} (no {channel.value} address)")
+                channel, to = alt, alt_to
+                body = pipeline.adapt_for_channel(body, channel)
+
+        rec = MessageRecord(lead_id=lead.id, channel=channel, body=body,
                             step=step.key, created_at=now)
 
-        # No address for this channel -> suppress and advance (don't get stuck).
+        # Still no address on either channel -> suppress and advance (don't get stuck).
         if not to:
             rec.status = DeliveryStatus.SUPPRESSED
             rec.suppressed_reason = f"no {step.channel.value} address"
@@ -143,14 +158,14 @@ class Engine:
             return 0
 
         # Rate limit: defer with backoff, don't consume the step.
-        ok, why = self.rl.allow(lead.id, step.channel.value, now)
+        ok, why = self.rl.allow(lead.id, channel.value, now)
         if not ok:
             lead.next_action_at = now + timedelta(hours=RETRY_BACKOFF_HOURS)
             self.store.log(now, lead.id, "deferred_rate_limit", why)
             return 0
 
         # Attempt delivery.
-        sender: Sender = self.senders[step.channel]
+        sender: Sender = self.senders[channel]
         attempt_key = (lead.id, step.key)
         try:
             rec.attempts = self._step_attempts.get(attempt_key, 0) + 1
@@ -161,8 +176,8 @@ class Engine:
             rec.sent_at = now
             self.store.messages.append(rec)
             self.store.mark_sent(rec.dedup_key)
-            self.rl.record(lead.id, step.channel.value, now)
-            self.store.log(now, lead.id, "sent", f"{step.channel.value} step={step.key}")
+            self.rl.record(lead.id, channel.value, now)
+            self.store.log(now, lead.id, "sent", f"{channel.value} step={step.key}")
             self._commit_step(lead, step, now, seq)
             return 1
         except SendError as e:

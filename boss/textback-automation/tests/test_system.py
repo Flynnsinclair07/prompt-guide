@@ -117,15 +117,16 @@ class Lifecycle(unittest.TestCase):
         sent = [m for m in e.store.messages if m.status == DeliveryStatus.SENT]
         self.assertEqual(len(sent), 3)
 
-    def test_email_only_lead_skips_sms_steps(self):
+    def test_email_only_lead_reroutes_sms_steps_to_email(self):
         e = fresh()
         lead = e.intake("Eve Email", email="eve@x.com", signals=HOT, now=DAY)
-        e.tick(now=DAY)                                   # hot_1 is SMS -> no phone -> suppressed, advance
+        e.tick(now=DAY)                                   # hot_1 is SMS -> no phone -> reroute to email
         self.assertEqual(lead.followups_sent, 1)
-        self.assertTrue(any(m.suppressed_reason.startswith("no SMS") for m in e.store.messages))
-        e.tick(now=DAY + timedelta(hours=1))              # hot_2 email -> sent
-        self.assertTrue(any(m.status == DeliveryStatus.SENT and m.channel == Channel.EMAIL
-                            for m in e.store.messages))
+        self.assertTrue(any(a.action == "rerouted" for a in e.store.audit))
+        e.tick(now=DAY + timedelta(hours=1))              # hot_2 email -> sent natively
+        sent = [m for m in e.store.messages if m.status == DeliveryStatus.SENT]
+        self.assertTrue(sent and all(m.channel == Channel.EMAIL for m in sent))
+        self.assertFalse(any(m.status == DeliveryStatus.SUPPRESSED for m in e.store.messages))
 
 
 class StopAndReply(unittest.TestCase):
@@ -229,9 +230,66 @@ class Retries(unittest.TestCase):
         self.assertGreaterEqual(lead.followups_sent, 1)
         self.assertEqual(lead.state, State.DEAD)
         failed = [m for m in e.store.messages if m.status == DeliveryStatus.FAILED]
-        # HOT has two SMS steps (hot_1, hot_3); each fails exactly MAX_STEP_RETRIES.
-        self.assertEqual(len(failed), 6)
+        # This lead is phone-only, so all three HOT steps land on SMS (hot_2's email
+        # step reroutes to SMS) and each fails exactly MAX_STEP_RETRIES: 3 x 3 = 9.
+        self.assertEqual(len(failed), 9)
         self.assertEqual(sum(1 for m in failed if m.step == "hot_1"), 3)
+
+
+class ChannelFallback(unittest.TestCase):
+    def test_cold_phone_only_lead_gets_sms_reroute(self):
+        # COLD sequence is email-only; a phone-only cold lead must still be
+        # contacted (rerouted to SMS) rather than silently dying.
+        e = fresh()
+        lead = e.intake("Cid Cold", phone="303-555-0142", signals=COLD,
+                        timezone="UTC", now=DAY)
+        self.assertEqual(lead.temperature, Temperature.COLD)
+        e.tick(now=DAY)
+        sent = [m for m in e.store.messages if m.status == DeliveryStatus.SENT]
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0].channel, Channel.SMS)        # rerouted from email
+        self.assertNotIn("\n", sent[0].body)                  # subject line stripped
+        self.assertTrue(any(a.action == "rerouted" for a in e.store.audit))
+
+    def test_no_channel_at_all_suppresses(self):
+        # A lead with neither channel can't exist (validation blocks it), but if a
+        # lead somehow loses both, the step suppresses rather than crashing.
+        e = fresh()
+        lead = e.intake("Cid", phone="303-555-0142", signals=COLD, timezone="UTC", now=DAY)
+        lead.phone = ""; lead.email = ""
+        e.tick(now=DAY)
+        self.assertTrue(any(m.status == DeliveryStatus.SUPPRESSED for m in e.store.messages))
+
+
+class Persistence(unittest.TestCase):
+    def test_save_load_roundtrip_survives_restart(self):
+        import tempfile, os as _os
+        e = fresh()
+        h = e.intake("Ren", phone="303-555-0101", signals=HOT, timezone="UTC", now=DAY)
+        e.tick(now=DAY)
+        path = _os.path.join(tempfile.mkdtemp(), "store.json")
+        e.store.save_json(path)
+
+        # Simulate a process restart: brand-new store loaded from disk.
+        store2 = LeadStore.load_json(path)
+        self.assertEqual(len(store2.all()), 1)
+        r = store2.get(h.id)
+        self.assertEqual(r.state, State.CONTACTED)
+        self.assertEqual(r.temperature, Temperature.HOT)
+        self.assertEqual(r.followups_sent, 1)
+        self.assertIsInstance(r.next_action_at, datetime)
+        # dedup memory persists too, so the same message isn't re-sent post-restart.
+        sent_key = next(m.dedup_key for m in e.store.messages if m.status == DeliveryStatus.SENT)
+        self.assertTrue(store2.already_sent(sent_key))
+
+    def test_dedup_index_rebuilt_on_load(self):
+        import tempfile, os as _os
+        e = fresh()
+        a = e.intake("Ann", phone="303-555-0142", now=DAY)
+        path = _os.path.join(tempfile.mkdtemp(), "s.json")
+        e.store.save_json(path)
+        store2 = LeadStore.load_json(path)
+        self.assertIs(store2.find_by_contact("+13035550142", ""), store2.get(a.id))
 
 
 class Determinism(unittest.TestCase):

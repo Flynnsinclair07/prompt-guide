@@ -159,6 +159,22 @@ def render(template: str, lead_name: str, plan: str) -> str:
     return template.format(name=name, plan=plan or "our plan")
 
 
+def adapt_for_channel(body: str, channel: Channel) -> str:
+    """Make a rendered body fit a channel it wasn't written for (used when a step
+    is rerouted because the lead lacks its native channel).
+
+    Convention: email bodies are "Subject\\nBody"; SMS bodies are a single line.
+      - email template -> SMS: drop the subject line.
+      - SMS template  -> email: synthesize a subject.
+    """
+    has_subject = "\n" in body
+    if channel == Channel.SMS and has_subject:
+        return body.split("\n", 1)[1].strip()
+    if channel == Channel.EMAIL and not has_subject:
+        return "Following up\n" + body
+    return body
+
+
 # Inbound reply parsing -------------------------------------------------------
 _STOP_WORDS = {"stop", "unsubscribe", "quit", "cancel", "end", "optout", "opt-out", "remove"}
 _YES_WORDS = {"yes", "y", "yeah", "yep", "sure", "ok", "okay", "interested", "sounds good"}

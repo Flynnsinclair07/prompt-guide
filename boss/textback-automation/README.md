@@ -84,6 +84,27 @@ print(eng.store.metrics())
 Run `tick()` on a schedule (cron / launchd / a worker loop) — it's idempotent and
 only acts on what's due.
 
+## Scheduler (included)
+
+`scheduler.py` drives `tick()` on a cadence with a **persisted JSON store** (atomic
+writes, survives restarts for a single worker) and picks live Twilio/SMTP senders
+automatically when configured:
+
+```bash
+python3 scheduler.py --once                 # one pass then exit (put in cron)
+python3 scheduler.py --loop --interval 900  # long-running worker
+python3 scheduler.py --add --name "Dana Lee" --phone "(303) 555-0111" \
+    --email dana@example.com --signal visited_pricing=1 --signal budget_confirmed=1
+python3 scheduler.py --inbound "STOP" --phone "(303) 555-0111"   # wire to your SMS webhook
+python3 scheduler.py --metrics
+```
+
+Cron, every 15 minutes:
+```
+*/15 * * * * cd /path/to/textback-automation && /usr/bin/python3 scheduler.py --once >> ~/.textback/run.log 2>&1
+```
+Store location defaults to `~/.textback/store.json` (override with `--store` or `TEXTBACK_STORE`).
+
 ## Going live (swap the adapters)
 
 The engine picks live providers automatically when their env vars are set, else
@@ -103,16 +124,20 @@ the pipeline keeps moving and the gap is visible in the audit log.
 
 ## Known limitations (be honest)
 
-- **COLD sequence is email-only.** A COLD lead with *only* a phone number gets
-  every step suppressed and ends `DEAD` without outreach (the suppressions are
-  logged and counted, not silent). Mitigation: capture an email for cold leads, or
-  add SMS steps to the cold sequence in `pipeline.py`.
-- **Store is in-memory** (with JSON export). Fine for a single worker; for
-  multi-process concurrency you'd back it with a real datastore and rely on the
-  existing dedup keys / committed-step marker for idempotency.
-- **Inbound is a function call.** Wire `handle_inbound()` to your Twilio SMS
-  webhook and email reply handler; the parsing (STOP / positive / other) is done.
-- **No hosting/scheduler included.** You drive `tick()` from your own cron/worker.
+- **Single-channel leads are rerouted, not lost.** If a step's native channel is
+  missing (e.g. the email-only COLD sequence for a phone-only lead), the message
+  reroutes to the channel the lead *does* have (email→SMS drops the subject line;
+  SMS→email adds one). A lead with neither channel can't pass validation. So no
+  contactable lead is silently skipped anymore.
+- **Persistence is a single-worker JSON file** (atomic writes, survives restarts).
+  Fine for one `scheduler.py` process; for *multiple concurrent* workers, back it
+  with a real datastore — the dedup keys + committed-step marker already give you
+  the idempotency to do so safely.
+- **Inbound still needs wiring.** `scheduler.py --inbound` and `handle_inbound()`
+  do the STOP/positive/other parsing; point your Twilio SMS webhook + email reply
+  handler at them. This matters legally for opt-outs.
+- **Message copy is placeholder.** Replace the templates in `pipeline.py` with your
+  real brand voice before going live.
 
 ## Layout
 
@@ -122,8 +147,9 @@ textback/
   pipeline.py     # validation, classification, plan rec, sequences, inbound parsing
   scheduling.py   # quiet hours + rate limiter
   channels.py     # Sender interface + Console (default) / Twilio / SMTP / Scripted
-  store.py        # lead store, dedup index, audit log, metrics
+  store.py        # lead store, dedup index, audit log, metrics, JSON persistence
   engine.py       # the state machine + orchestration
+scheduler.py      # cron/worker runner with persisted store + live-provider selection
 run_demo.py       # runnable end-to-end demo
 tests/test_system.py
 ```
