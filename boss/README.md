@@ -8,3 +8,7 @@ from it. These are scripts I run on my own machine, not part of the deployed sit
 - **[concur-receipt-prep/](concur-receipt-prep/)** — monthly job that turns a folder
   of raw receipt photos into clean, Concur-ready files + a review summary, ready to
   forward to `receipts@concur.com`. Built for prepping Dad's expense receipts.
+- **[textback-automation/](textback-automation/)** — lead follow-up engine: validate →
+  classify (HOT/WARM/COLD) → coordinated SMS + email sequences with dedup, rate
+  limiting, quiet hours, stop conditions, human override, and audit logging. Runs
+  with zero credentials (dry-run adapter); Twilio/SMTP plug in via env vars.
